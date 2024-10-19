@@ -1,4 +1,5 @@
-from flask import Flask, Response, render_template
+from functools import wraps
+from flask import Flask, Response, render_template, request
 from threading import Thread
 from werkzeug.serving import make_server
 from config import get_config
@@ -34,32 +35,62 @@ class ServerThread(Thread):
 def gen_frames(server_thread):
     while True:
         if server_thread.frame is not None:
-            ret, buffer = cv.imencode('.jpg', server_thread.frame)
+            _, buffer = cv.imencode(".jpg", server_thread.frame)
             frame = buffer.tobytes()
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+            yield (b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n")
+
+
+def check_auth(username, password):
+    config = get_config()
+    return (
+        username == config["WEB"]["Username"] and password == config["WEB"]["Password"]
+    )
+
+
+def http_basic_auth():
+    return Response(
+        "Could not verify your access level for that URL.\n"
+        "You have to login with proper credentials",
+        401,
+        {"WWW-Authenticate": 'Basic realm="Login Required"'},
+    )
+
+
+def requires_auth(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        auth = request.authorization
+        if not auth or not check_auth(auth.username, auth.password):
+            return http_basic_auth()
+        return f(*args, **kwargs)
+
+    return decorated
 
 
 def start():
     logging.info("Avvio Flask App")
     app = Flask(__name__)
 
-    @app.route('/')
+    @app.route("/")
+    @requires_auth
     def home():
-        return render_template('index.html')
-        #return '<img src="/video_feed" width="640" height="480" />'
+        return render_template("index.html")
+        # return '<img src="/video_feed" width="640" height="480" />'
 
-    @app.route('/video_feed')
+    @app.route("/video_feed")
+    @requires_auth
     def video_feed():
-        return Response(gen_frames(server),
-                        mimetype='multipart/x-mixed-replace; boundary=frame')
-        
-    @app.route('/timer')
-    def timer():
-        return render_template('timer.html')
+        return Response(
+            gen_frames(server), mimetype="multipart/x-mixed-replace; boundary=frame"
+        )
 
-    web_config = get_config()['WEB']
-    server = ServerThread(app, web_config['Host'], web_config['Port'])
+    @app.route("/timer")
+    @requires_auth
+    def timer():
+        return render_template("timer.html")
+
+    web_config = get_config()["WEB"]
+    server = ServerThread(app, web_config["Host"], web_config["Port"])
     server.start()
 
     return server
