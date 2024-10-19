@@ -2,45 +2,50 @@ import cv2 as cv
 import numpy as np
 import logging
 import web_server
-import utils
+import config as cf
 import time
-import os
+import log
+import utils
 
 '''
 =================== SETUP ==================
 '''
 
 
+def camera_setup(vc):
+    logging.info("Videocamera aperta")
+    camera_config = cf.get_config()['CAMERA']
+    vc.set(cv.CAP_PROP_FRAME_WIDTH, float(camera_config['Width']))
+    vc.set(cv.CAP_PROP_FRAME_HEIGHT, float(camera_config['Height']))
+    vc.set(cv.CAP_PROP_FPS, float(camera_config['FPS']))
+    logging.info("Videocamera impostata")
+
+
 def setup():
-    utils.load_config()
-    utils.logging_setup()
+    cf.load_config()
+    log.logging_setup()
 
     # Avvio Web Server
     global wserver
     wserver = web_server.start()
 
     global vc
-    video_path = '.\\data\\video\\example1.mp4'
-    vc = cv.VideoCapture(video_path)
+    vc = cv.VideoCapture(0)
     if not vc.isOpened():
         logging.error("Impossibile aprire la videocamera")
         return False
 
-    logging.info("Videocamera aperta")
-    camera_config = utils.get_config()['CAMERA']
-    vc.set(cv.CAP_PROP_FRAME_WIDTH, camera_config['Width'])
-    vc.set(cv.CAP_PROP_FRAME_HEIGHT, camera_config['Height'])
-    vc.set(cv.CAP_PROP_FPS, camera_config['FPS'])
-    logging.info("Videocamera impostata")
+    """ 
+    camera_setup(vc)
+    image = cv.imread('./data/imgs/test.png', cv.IMREAD_COLOR_BGR)
+    cv.imshow('test', image)
 
-    '''
     logging.info("Setup della maschera")
     logging.info("Ricerca mashera salvata in locale...")
     mask = utils.get_mask()
     if not mask:
         logging.warning("Maschera non trovata, avvio setup maschera")
-    '''
-
+ """
     return True
 
 
@@ -57,8 +62,6 @@ def main():
     while True:
         try:
             ret, frame = vc.read()
-            # Resize frame
-            frame = cv.resize(frame, (640, 480))
             if not ret:
                 logging.error("Impossibile leggere il frame")
                 return

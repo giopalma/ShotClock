@@ -1,7 +1,7 @@
-from flask import Flask, Response
+from flask import Flask, Response, render_template
 from threading import Thread
 from werkzeug.serving import make_server
-from utils import get_config
+from config import get_config
 import logging
 import cv2 as cv
 
@@ -46,12 +46,17 @@ def start():
 
     @app.route('/')
     def home():
-        return '<img src="/video_feed" width="640" height="480" />'
+        return render_template('index.html')
+        #return '<img src="/video_feed" width="640" height="480" />'
 
     @app.route('/video_feed')
     def video_feed():
         return Response(gen_frames(server),
                         mimetype='multipart/x-mixed-replace; boundary=frame')
+        
+    @app.route('/timer')
+    def timer():
+        return render_template('timer.html')
 
     web_config = get_config()['WEB']
     server = ServerThread(app, web_config['Host'], web_config['Port'])
