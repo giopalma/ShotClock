@@ -28,7 +28,7 @@ class ServerThread(Thread):
         self.server.server_close()
         self.join()
 
-    def print_frame(self, frame):
+    def set_frame(self, frame):
         self.frame = frame
 
 

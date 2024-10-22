@@ -67,7 +67,7 @@ def main():
                 (0, 255, 0),
                 2,
             )
-            wserver.print_frame(frame)
+            wserver.set_frame(frame)
         except KeyboardInterrupt:
             logging.info("Interruzione rilevata, chiusura in corso...")
             break
