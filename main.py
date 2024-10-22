@@ -18,7 +18,7 @@ def setup():
 
     # Avvio Web Server
     global wserver
-    wserver = webserver.start()
+    wserver = webserver.start(debug=True)
 
     # Avvio Videocamera
     global vc
