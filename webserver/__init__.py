@@ -1,4 +1,5 @@
 from functools import wraps
+import os
 from flask import Flask, Response, render_template, request
 from threading import Thread
 from werkzeug.serving import make_server
@@ -67,9 +68,10 @@ def requires_auth(f):
     return decorated
 
 
-def start():
+def start(debug:bool):
     logging.info("Avvio Flask App")
     app = Flask(__name__)
+    app.config["DEBUG"] = debug
 
     @app.route("/")
     @requires_auth
