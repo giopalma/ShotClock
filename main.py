@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 import logging
-import web_server
+import webserver
 import config as cf
 import time
 import log
@@ -18,7 +18,7 @@ def setup():
 
     # Avvio Web Server
     global wserver
-    wserver = web_server.start()
+    wserver = webserver.start()
 
     # Avvio Videocamera
     global vc
