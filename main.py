@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
 import logging
+from preset import get_default_preset
 import webserver
 import config as cf
 import time
@@ -12,6 +13,15 @@ import log
 
 
 def setup():
+    """
+    Fasi del setup
+    - Caricati i file di configurazione e di logging
+    - Avviato il webserver
+    - Avviato la videocamera
+    - Controllare se sono preset già esistenti e caricarli
+    - Eseguire il preset 0 (default) se esiste
+    """
+
     # Caricamento file config e setup logging
     cf.load_config()
     log.logging_setup()
@@ -26,6 +36,15 @@ def setup():
     if not vc.isOpened():
         logging.error("Impossibile aprire la videocamera")
         return False
+
+    # Lettura del preset di default
+    default_preset = get_default_preset()
+    if default_preset is None:
+        logging.warning("Preset di default non trovato, esecuzione setup inziale...")
+        # TODO: Implementazione del primo setup
+        intial_setup()
+
+    # TODO: Lettura del preset per il carimento iniziale
 
     return True
 
