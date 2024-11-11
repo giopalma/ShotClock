@@ -42,7 +42,7 @@ def setup():
     if default_preset is None:
         logging.warning("Preset di default non trovato, esecuzione setup inziale...")
         # TODO: Implementazione del primo setup
-        intial_setup()
+        # intial_setup()
 
     # TODO: Lettura del preset per il carimento iniziale
 
