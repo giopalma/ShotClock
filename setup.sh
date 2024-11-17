@@ -1,3 +1,7 @@
+# Lo script permette di utilizzare l'interfaccia wlan0 del RaspberryPi 4
+# come Host AP ed utilizza un sistema Captive Portal per far accedere
+# l'utente direttamente alla dashboard
+
 #!/bin/bash
 
 # Aggiorna i pacchetti e installa i pacchetti necessari per creare l'Host AP

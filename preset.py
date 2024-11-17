@@ -4,14 +4,24 @@ class Preset:
     Il preset tutte le informazioni necessarie per il setup.
     """
 
+    def __init__(self, points, colors):
+        """_summary_
+
+        Args:
+            points (Array of Tuple of Int): Array di 4 tuple di interi che rappresentano le coordinate dei punti di calibrazione del tavolo da gioco. Le coordinate sono in formato (x, y).
+            colors (Array of string): Array di stringhe che rappresentano i colori in formato esadecimale. Ad esempio: #FF0000 per il rosso.
+        """
+        self.points = points
+        self.colors = colors
+
     # TODO: Implementazione della classe Preset con le proprietà necessarie
-    pass
 
 
 def get_default_preset() -> Preset:
+    """
+    Recupera il preset di default. Il preset di default è il preset che viene utilizzato quando il dispositivo viene avviato senza aver selezionato un preset specifico.
+    Returns:
+        Preset: Preset impostato di default. Restituisce None se il preset non è stato trovato oppure non è valido.
+    """
     # TODO: Implementazione della funzione di recupero del preset di default
-    """
-    Restituisce il preset impostato di default.
-    return: Il preset è completo di tutte le informazioni. Restituisce None se il preset non è stato trovato oppure alcune informazioni essenziali sono mancanti.
-    """
     return None
