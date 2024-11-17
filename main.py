@@ -1,7 +1,8 @@
+import argparse
 import cv2 as cv
 import numpy as np
 import logging
-from preset import get_default_preset
+import preset
 import webserver
 import config as cf
 import time
@@ -19,16 +20,17 @@ def setup():
     - Avviato il webserver
     - Avviato la videocamera
     - Controllare se sono preset già esistenti e caricarli
-    - Eseguire il preset 0 (default) se esiste
+    - Eseguire il preset di default se esiste
     """
 
-    # Caricamento file config e setup logging
+    # Caricamento file config, setup logging e argomenti da linea di comando
+    args = parser.parse_args()
     cf.load_config()
     log.logging_setup()
 
     # Avvio Web Server
     global wserver
-    wserver = webserver.start(debug=True)
+    wserver = webserver.start(debug=args.debug)
 
     # Avvio Videocamera
     global vc
@@ -38,7 +40,7 @@ def setup():
         return False
 
     # Lettura del preset di default
-    default_preset = get_default_preset()
+    default_preset = preset.get_default_preset()
     if default_preset is None:
         logging.warning("Preset di default non trovato, esecuzione setup inziale...")
         # TODO: Implementazione del primo setup
@@ -109,6 +111,14 @@ def end():
 """
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        prog="BilliardTimer",
+        description="Codice sorgente del dispositivo BilliardTimer. Il dispositivo gestisce automaticamente il timer di gioco nel gioco del billiardo",
+    )
+    parser.add_argument(
+        "-d", "--debug", action="store_true", help="Abilita la modalità debug"
+    )
+
     if setup():
         main()
     else:
