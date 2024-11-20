@@ -7,6 +7,7 @@ import webserver
 import config as cf
 import time
 import log
+from imutils.video import FPS
 
 """
 =================== SETUP ==================
@@ -57,41 +58,21 @@ def setup():
 
 
 def main():
-    # TODO: Migliorare la legibilità del main
-    fps = 0
-    frame_count = 0
-    start_time = time.time()
-    fps_update_interval = 1 / 3
+    fps = FPS().start()
     while True:
         try:
             ret, frame = vc.read()
             if not ret:
                 logging.error("Impossibile leggere il frame")
                 return
-            # Scrivere FPS nel frame
 
-            frame_count += 1
-            elapsed_time = time.time() - start_time
-
-            if elapsed_time > fps_update_interval:
-                fps = frame_count / elapsed_time
-                frame_count = 0
-                start_time = time.time()
-
-            # Scrivere FPS nel frame
-            cv.putText(
-                frame,
-                f"FPS: {fps:.2f}",
-                (10, 30),
-                cv.FONT_HERSHEY_SIMPLEX,
-                1,
-                (0, 255, 0),
-                2,
-            )
             wserver.set_frame(frame)
+            fps.update()
         except KeyboardInterrupt:
             logging.info("Interruzione rilevata, chiusura in corso...")
             break
+    fps.stop()
+    logging.info(f"FPS: {fps.fps()}")
 
 
 """
