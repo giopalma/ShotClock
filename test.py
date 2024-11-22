@@ -3,7 +3,7 @@ import numpy as np
 import imutils
 import time
 from preset import Preset
-from utils import hex_to_opencv_hsv
+from utils.colors import hex_to_opencv_hsv
 
 
 def create_mask(hsv, points, table_colors):
@@ -51,8 +51,10 @@ def detect_balls(mask):
 def main():
     vc = cv.VideoCapture("./data/video/example.mp4")
     preset = Preset(
-        [(120, 80), (520, 80), (520, 280), (120, 280)],
-        ["#45c6ed", "#2288b5", "#1978a2", "#3bbbf3", "#0b6d9e"],
+        id=0,
+        name="Example",
+        points=[(120, 80), (520, 80), (520, 280), (120, 280)],
+        colors=["#45c6ed", "#2288b5", "#1978a2", "#3bbbf3", "#0b6d9e"],
     )
     table_colors = [hex_to_opencv_hsv(color) for color in preset.colors]
     points = np.array(preset.points, dtype=np.int32)

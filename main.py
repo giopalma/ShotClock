@@ -5,7 +5,6 @@ import logging
 import preset
 import webserver
 import config as cf
-import time
 import log
 from imutils.video import FPS
 
