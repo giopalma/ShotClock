@@ -10,9 +10,10 @@ class Preset:
 
     id: int
     name: str
-    frame: List[Tuple[int, int]]  # (x, y) punti del tavolo
-
-    colors: List[str]  # RGB values
+    points: List[Tuple[int, int]]  # (x, y) punti del tavolo
+    table_colors: List[
+        Tuple[int, int, int]
+    ]  # HSV (OpenCV format) per il colore del tavolo
 
 
 class PresetRepository:

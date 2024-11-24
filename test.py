@@ -1,69 +1,35 @@
+from typing import List
 import cv2 as cv
 import numpy as np
-import imutils
 import time
 from preset import Preset
+from utils.ball import Ball, check_ball_movement, detect_balls, draw_balls
 from utils.colors import hex_to_opencv_hsv
-
-
-def create_mask(hsv, points, table_colors):
-    h_diff, s_diff, v_diff = 5, 10, 5
-    color_lower = tuple(
-        min(color[i] for color in table_colors) - diff
-        for i, diff in enumerate([h_diff, s_diff, v_diff])
-    )
-    color_upper = tuple(
-        max(color[i] for color in table_colors) + diff
-        for i, diff in enumerate([h_diff, s_diff, v_diff])
-    )
-
-    rec_mask = cv.fillPoly(np.zeros(hsv.shape[:2], dtype=np.uint8), [points], 255)
-    color_mask = cv.bitwise_not(cv.inRange(hsv, color_lower, color_upper))
-    color_mask = cv.erode(color_mask, None, iterations=3)
-    color_mask = cv.dilate(color_mask, None, iterations=2)
-
-    return cv.bitwise_and(color_mask, rec_mask)
-
-
-def detect_balls(mask):
-    cnts = cv.findContours(mask.copy(), cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
-    cnts = imutils.grab_contours(cnts)
-    centers = []
-
-    for c in cnts:
-        area = cv.contourArea(c)
-        perimeter = cv.arcLength(c, True)
-        circularity = 4 * np.pi * area / (perimeter * perimeter)
-
-        if circularity > 0.8:
-            ((x, y), radius) = cv.minEnclosingCircle(c)
-            M = cv.moments(c)
-            center = (
-                (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
-                if M["m00"] != 0
-                else None
-            )
-            centers.append((center, int(x), int(y), int(radius)))
-
-    return centers
+from utils.mask import create_mask
 
 
 def main():
-    vc = cv.VideoCapture("./data/video/example.mp4")
+    vc = cv.VideoCapture("./test_data/video/example.mp4")
+    # TODO: Questo lavoro di preset e cambio colore HEX -> HSV deve essere fatto durante la fase di setup quando viene creato il preset
+    colors = ["#45c6ed", "#2288b5", "#1978a2", "#3bbbf3", "#0b6d9e"]
     preset = Preset(
         id=0,
         name="Example",
         points=[(120, 80), (520, 80), (520, 280), (120, 280)],
-        colors=["#45c6ed", "#2288b5", "#1978a2", "#3bbbf3", "#0b6d9e"],
+        table_colors=[hex_to_opencv_hsv(color) for color in colors],
     )
-    table_colors = [hex_to_opencv_hsv(color) for color in preset.colors]
+    table_colors = preset.table_colors
+
     points = np.array(preset.points, dtype=np.int32)
 
-    FRAMERATE = 30
-
+    previous_balls: List[Ball] = []
+    frame_count = 0
+    isBallMoving = False
     while vc.isOpened():
-        ret, frame = vc.read()
         start_time = time.time()
+        frame_count = frame_count + 1
+
+        ret, frame = vc.read()
 
         if not ret:
             vc.set(cv.CAP_PROP_POS_FRAMES, 0)
@@ -73,16 +39,55 @@ def main():
         hsv = cv.cvtColor(blurred, cv.COLOR_BGR2HSV)
 
         mask = create_mask(hsv, points, table_colors)
-        centers = detect_balls(mask)
 
-        for center, x, y, radius in centers:
-            cv.circle(frame, (x, y), radius, (0, 255, 255), 2)
-            if center:
-                cv.circle(frame, center, 1, (0, 0, 255), -1)
+        current_balls = detect_balls(mask, frame_count)
+        if frame_count % 10 == 0:
+            isBallMoving = check_ball_movement(previous_balls, current_balls)
+            previous_balls = current_balls
+        draw_balls(previous_balls, frame)
+        for ball in current_balls:
+            cv.circle(frame, ball.position, 30, color=(0, 255, 0), thickness=1)
+
+        # === TEXT ===
+
+        if isBallMoving:
+            cv.putText(
+                frame,
+                "Ball moving",
+                (10, 60),
+                cv.FONT_HERSHEY_SIMPLEX,
+                0.7,
+                (21, 20, 123),
+                2,
+                cv.LINE_AA,
+            )
+        else:
+            cv.putText(
+                frame,
+                "Ball not moving",
+                (10, 60),
+                cv.FONT_HERSHEY_SIMPLEX,
+                0.7,
+                (21, 20, 123),
+                2,
+                cv.LINE_AA,
+            )
+
+        cv.putText(
+            frame,
+            "ESC per uscire",
+            (10, 30),
+            cv.FONT_HERSHEY_SIMPLEX,
+            0.7,
+            (21, 20, 123),
+            2,
+            cv.LINE_AA,
+        )
 
         cv.imshow("Video", frame)
 
         elapsed_time = time.time() - start_time
+        FRAMERATE = 30
         time.sleep(max(0, 1 / FRAMERATE - elapsed_time))
 
         if cv.waitKey(1) & 0xFF == 27:  # Exit with ESC key
