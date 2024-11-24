@@ -1,6 +1,7 @@
 import cv2 as cv
 from dataclasses import dataclass
 from typing import Dict, List, Tuple
+from scipy.spatial.distance import euclidean
 
 import imutils
 import numpy as np
@@ -58,10 +59,6 @@ def detect_balls(mask, frame_count) -> List[Ball]:
     return balls
 
 
-def _distance(pos1, pos2):
-    return ((pos1[0] - pos2[0]) ** 2 + (pos1[1] - pos2[1]) ** 2) ** 0.5
-
-
 def check_ball_movement(
     previous_balls: List[Ball],
     current_balls: List[Ball],
@@ -71,7 +68,7 @@ def check_ball_movement(
         nearest_prev_ball = {"ball": None, "distance": float("inf")}
 
         for p_ball in previous_balls:
-            d = _distance(ball.position, p_ball.position)
+            d = euclidean(ball.position, p_ball.position)
             if d < nearest_prev_ball["distance"]:
                 nearest_prev_ball["distance"] = d
                 nearest_prev_ball["ball"] = p_ball
