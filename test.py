@@ -24,7 +24,8 @@ def main():
 
     previous_balls: List[Ball] = []
     frame_count = 0
-    isBallMoving = False
+    i = 0
+    is_ball_moving_arr = np.zeros(3)
     while vc.isOpened():
         start_time = time.time()
         frame_count = frame_count + 1
@@ -42,7 +43,11 @@ def main():
 
         current_balls = detect_balls(mask, frame_count)
         if frame_count % 10 == 0:
-            isBallMoving = check_ball_movement(previous_balls, current_balls)
+            is_ball_moving_arr[i % 3] = check_ball_movement(
+                previous_balls, current_balls
+            )
+            i = i + 1
+            # is_ball_moving = check_ball_movement(previous_balls, current_balls)
             previous_balls = current_balls
         draw_balls(previous_balls, frame)
         for ball in current_balls:
@@ -50,10 +55,10 @@ def main():
 
         # === TEXT ===
 
-        if isBallMoving:
+        if np.all(is_ball_moving_arr == 0):
             cv.putText(
                 frame,
-                "Ball moving",
+                "Ball not moving",
                 (10, 60),
                 cv.FONT_HERSHEY_SIMPLEX,
                 0.7,
@@ -64,7 +69,7 @@ def main():
         else:
             cv.putText(
                 frame,
-                "Ball not moving",
+                "Ball moving",
                 (10, 60),
                 cv.FONT_HERSHEY_SIMPLEX,
                 0.7,
