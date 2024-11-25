@@ -2,6 +2,7 @@ import argparse
 import cv2 as cv
 import numpy as np
 import logging
+from database import DatabaseConnection
 import preset
 import webserver
 import config as cf
@@ -25,28 +26,33 @@ def setup():
 
     # Caricamento file config, setup logging e argomenti da linea di comando
     args = parser.parse_args()
+    is_debug = args.debug
     cf.load_config()
     log.logging_setup()
 
     # Avvio Web Server
     global wserver
-    wserver = webserver.start(debug=args.debug)
+    wserver = webserver.start(debug=is_debug)
 
     # Avvio Videocamera
     global vc
-    vc = cv.VideoCapture(0)
+    vc = (
+        cv.VideoCapture(0)
+        if is_debug
+        else cv.VideoCapture("./test_data/video/example.mp4")
+    )
     if not vc.isOpened():
         logging.error("Impossibile aprire la videocamera")
         return False
 
     # Lettura del preset di default
-    default_preset = preset.get_default_preset()
+
+    preset_repo = preset.PresetRepository(DatabaseConnection(debug=is_debug))
+    default_preset = preset_repo.get_default_preset()
     if default_preset is None:
         logging.warning("Preset di default non trovato, esecuzione setup inziale...")
         # TODO: Implementazione del primo setup
         # intial_setup()
-
-    # TODO: Lettura del preset per il carimento iniziale
 
     return True
 
