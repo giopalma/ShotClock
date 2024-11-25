@@ -62,7 +62,7 @@ def detect_balls(mask, frame_count) -> List[Ball]:
 def check_ball_movement(
     previous_balls: List[Ball],
     current_balls: List[Ball],
-    movement_threshold: float = 1.0,
+    movement_threshold: float = 2.0,
 ) -> bool:
     for ball in current_balls:
         nearest_prev_ball = {"ball": None, "distance": float("inf")}
