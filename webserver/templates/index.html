@@ -13,7 +13,34 @@
 </head>
 
 <body>
-    <img id="video_feed" src="/video_feed" style="width: 600px;" />
+    <canvas id="videoCanvas" width="600" height="450"></canvas>
+
+    <button class="btn btn-primary mb-2">
+        Aggiungi Crosshair
+    </button>
+
+    <script type="module">
+        import interact from 'https://cdn.interactjs.io/v1.10.27/interactjs/index.js'
+        const canvas = document.getElementById('videoCanvas');
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+
+        img.onload = function () {
+            // Draw image to fit canvas while maintaining aspect ratio
+            const scale = Math.min(canvas.width / img.width, canvas.height / img.height);
+            const x = (canvas.width - img.width * scale) / 2;
+            const y = (canvas.height - img.height * scale) / 2;
+
+            ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+        };
+
+        img.src = '/video_feed';
+
+        // Refresh the image periodically for live video feed
+        setInterval(() => {
+            img.src = '/video_feed';
+        }, 1000); // Update every second
+    </script>
 </body>
 
 </html>

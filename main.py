@@ -36,11 +36,13 @@ def setup():
 
     # Avvio Videocamera
     global vc
-    vc = (
+    vc = cv.VideoCapture(0)
+
+    """ vc = (
         cv.VideoCapture(0)
         if is_debug
         else cv.VideoCapture("./test_data/video/example.mp4")
-    )
+    ) """
     if not vc.isOpened():
         logging.error("Impossibile aprire la videocamera")
         return False
@@ -64,7 +66,8 @@ def setup():
 
 def main():
     fps = FPS().start()
-    while True:
+    global vc
+    while vc.isOpened():
         try:
             ret, frame = vc.read()
             if not ret:
