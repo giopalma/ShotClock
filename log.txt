@@ -1,0 +1,142 @@
+2024-11-30 16:49:24,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 16:49:24,358 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 16:49:24,362 - INFO -  * Restarting with stat
+2024-11-30 16:49:25,181 - WARNING -  * Debugger is active!
+2024-11-30 16:49:25,192 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:00:27,842 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\__main__.py', reloading
+2024-11-30 17:00:27,945 - INFO -  * Restarting with stat
+2024-11-30 17:00:28,716 - WARNING -  * Debugger is active!
+2024-11-30 17:00:28,731 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:00:40,875 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\__main__.py', reloading
+2024-11-30 17:00:40,975 - INFO -  * Restarting with stat
+2024-11-30 17:00:41,626 - WARNING -  * Debugger is active!
+2024-11-30 17:00:41,639 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:00:52,753 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\__main__.py', reloading
+2024-11-30 17:00:52,919 - INFO -  * Restarting with stat
+2024-11-30 17:00:53,809 - WARNING -  * Debugger is active!
+2024-11-30 17:00:53,821 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:03:02,321 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\api\\__init__.py', reloading
+2024-11-30 17:03:02,446 - INFO -  * Restarting with stat
+2024-11-30 17:07:14,223 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:07:14,224 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:07:14,225 - INFO -  * Restarting with stat
+2024-11-30 17:07:14,879 - WARNING -  * Debugger is active!
+2024-11-30 17:07:14,889 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:07:47,184 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\video\\__init__.py', reloading
+2024-11-30 17:07:47,257 - INFO -  * Restarting with stat
+2024-11-30 17:07:47,914 - WARNING -  * Debugger is active!
+2024-11-30 17:07:47,924 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:08:25,333 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\video\\__init__.py', reloading
+2024-11-30 17:08:25,415 - INFO -  * Restarting with stat
+2024-11-30 17:08:26,162 - WARNING -  * Debugger is active!
+2024-11-30 17:08:26,172 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:08:57,436 - INFO -  * Detected change in 'C:\\Users\\Giovanni\\Desktop\\Billiard Timer\\device\\args.py', reloading
+2024-11-30 17:08:57,530 - INFO -  * Restarting with stat
+2024-11-30 17:08:58,269 - WARNING -  * Debugger is active!
+2024-11-30 17:08:58,281 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:15:04,253 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:15:04,253 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:15:04,256 - INFO -  * Restarting with stat
+2024-11-30 17:15:04,878 - WARNING -  * Debugger is active!
+2024-11-30 17:15:04,886 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:20:59,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:20:59,884 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:20:59,886 - INFO -  * Restarting with stat
+2024-11-30 17:21:00,508 - WARNING -  * Debugger is active!
+2024-11-30 17:21:00,517 - INFO -  * Debugger PIN: 612-260-999
+2024-11-30 17:23:13,940 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:23:13,942 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:28:56,041 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:28:56,042 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:36:57,540 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:36:57,541 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:39:00,081 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:39:00,082 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:39:24,700 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:39:24,702 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:39:30,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:39:30,722 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:41:19,795 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:41:19,797 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 17:56:18,477 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 17:56:18,478 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 18:01:23,016 - ERROR - Exception on /video [GET]
+Traceback (most recent call last):
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 271, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Desktop\Billiard Timer\device\api\video.py", line 10, in get
+    self._frame_stream(),
+    ^^^^^^^^^^^^^^^^^^^^
+TypeError: VideoStreaming._frame_stream() takes 0 positional arguments but 1 was given
+2024-11-30 18:01:23,030 - INFO - 127.0.0.1 - - [30/Nov/2024 18:01:23] "[35m[1mGET /video HTTP/1.1[0m" 500 -
+2024-11-30 18:02:04,914 - ERROR - Exception on /video [GET]
+Traceback (most recent call last):
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 271, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Desktop\Billiard Timer\device\api\video.py", line 10, in get
+    self._frame_stream(),
+    ^^^^^^^^^^^^^^^^^^^^
+TypeError: VideoStreaming._frame_stream() takes 0 positional arguments but 1 was given
+2024-11-30 18:02:04,937 - INFO - 127.0.0.1 - - [30/Nov/2024 18:02:04] "[35m[1mGET /video HTTP/1.1[0m" 500 -

@@ -1,5 +1,5 @@
 import logging
-import config as cf
+from device.config import get_config
 import sys
 
 
@@ -9,7 +9,7 @@ def logging_setup():
     Il livello di logging è impostato a INFO, e i messaggi vengono stampati su console e su file.
     Il nome del file di log è specificato nel file di configurazione.
     """
-    config = cf.get_config()
+    config = get_config()
     formatter = "%(asctime)s - %(levelname)s - %(message)s"
     logging.basicConfig(
         level=logging.INFO,
