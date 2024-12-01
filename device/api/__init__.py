@@ -1,7 +1,8 @@
 from ast import arg
 import threading
 from flask import Flask, render_template
-from .video import VideoStreaming
+from .resources.video import VideoStreaming
+from .resources.game import GameResource
 from flask_cors import CORS
 from flask_restful import Api
 
@@ -11,12 +12,7 @@ CORS(app)
 
 
 api.add_resource(VideoStreaming, "/video")
-
-
-@app.route("/", defaults={"path": ""})
-@app.route("/<path:path>")
-def catch_all(path):
-    return render_template("index.html")
+api.add_resource(GameResource, "/game")
 
 
 def run(debug=False):
