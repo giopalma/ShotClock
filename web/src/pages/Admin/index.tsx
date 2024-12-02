@@ -1,4 +1,9 @@
+import { ErrorAlert } from "@/components/ErrorAlert"
+import { Header } from "@/components/Header"
+import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "preact/hooks"
+
+
 
 export function Admin() {
     const [loading, setLoading] = useState(true)
@@ -24,10 +29,26 @@ export function Admin() {
         fetchData()
     }, [])
 
+    const startNewGame = () => {
+        // TODO: Richiedere all'API di iniziare un nuovo gioco
+    }
+
+    if (loading) {
+        return (
+            <p>Loading...</p>
+        )
+    }
+
     return (
         <>
-            {error && <p>Error: {error}</p>}
-            {loading && <p>Loading...</p>}
+            <Header />
+            <ErrorAlert error={error} />
+            {game == null &&
+                <>
+                    <p>Nessun gioco in corso</p>
+                    <Button onClick={startNewGame}>Inizia un nuovo gioco</Button>
+                </>
+            }
             <img src="/api/video" width="600"></img>
         </>
     )

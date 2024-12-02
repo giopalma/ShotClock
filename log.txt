@@ -140,3 +140,19 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^
 TypeError: VideoStreaming._frame_stream() takes 0 positional arguments but 1 was given
 2024-11-30 18:02:04,937 - INFO - 127.0.0.1 - - [30/Nov/2024 18:02:04] "[35m[1mGET /video HTTP/1.1[0m" 500 -
+2024-12-01 08:36:18,340 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-01 08:36:18,341 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-01 08:44:49,285 - INFO - 127.0.0.1 - - [01/Dec/2024 08:44:49] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 08:44:57,276 - INFO - 127.0.0.1 - - [01/Dec/2024 08:44:57] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 08:48:22,269 - INFO - 127.0.0.1 - - [01/Dec/2024 08:48:22] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 08:50:10,275 - INFO - 127.0.0.1 - - [01/Dec/2024 08:50:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 08:57:10,278 - INFO - 127.0.0.1 - - [01/Dec/2024 08:57:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 09:00:05,780 - INFO - 127.0.0.1 - - [01/Dec/2024 09:00:05] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 09:05:19,768 - INFO - 127.0.0.1 - - [01/Dec/2024 09:05:19] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 09:11:53,581 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-01 09:11:53,583 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-01 09:11:58,733 - INFO - 127.0.0.1 - - [01/Dec/2024 09:11:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 09:12:01,419 - INFO - 127.0.0.1 - - [01/Dec/2024 09:12:01] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-01 09:12:01,439 - INFO - 127.0.0.1 - - [01/Dec/2024 09:12:01] "GET /video HTTP/1.1" 200 -
