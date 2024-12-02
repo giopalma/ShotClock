@@ -1,15 +1,11 @@
-# `create-preact`
+<h2 align="center">Web interface for Billiard Timer</h3>
 
-<h2 align="center">
-  <img height="256" width="256" src="./src/assets/preact.svg">
-</h2>
+Viene utilizzato [Preact](https://preactjs.com/) e [Vite](https://vitejs.dev/) per creare l'interfaccia web.
 
-<h3 align="center">Get started using Preact and Vite!</h3>
+## Comandi utili
 
-## Getting Started
+- `pnpm dev` - Starts a dev server at http://localhost:5173/
 
--   `pnpm dev` - Starts a dev server at http://localhost:5173/
+- `pnpm build` - Builds for production, emitting to `dist/`. Prerenders all found routes in app to static HTML
 
--   `pnpm build` - Builds for production, emitting to `dist/`. Prerenders all found routes in app to static HTML
-
--   `pnpm preview` - Starts a server at http://localhost:4173/ to test production build locally
+- `pnpm preview` - Starts a server at http://localhost:4173/ to test production build locally
