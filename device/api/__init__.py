@@ -24,6 +24,7 @@ def _server_run(debug):
     socketio.run(app, debug=debug)
 
 
+# TODO: Vedere besta sta cosa del thread
 def run(debug=False):
     if not debug:  # In debug mode, flask deve girare sul main thread
         api_thread = threading.Thread(target=_server_run(debug=debug))

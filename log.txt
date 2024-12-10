@@ -156,3 +156,208 @@ TypeError: VideoStreaming._frame_stream() takes 0 positional arguments but 1 was
 2024-12-01 09:11:58,733 - INFO - 127.0.0.1 - - [01/Dec/2024 09:11:58] "[33mGET /game HTTP/1.1[0m" 404 -
 2024-12-01 09:12:01,419 - INFO - 127.0.0.1 - - [01/Dec/2024 09:12:01] "[33mGET /game HTTP/1.1[0m" 404 -
 2024-12-01 09:12:01,439 - INFO - 127.0.0.1 - - [01/Dec/2024 09:12:01] "GET /video HTTP/1.1" 200 -
+2024-12-02 17:08:15,929 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-02 17:08:15,983 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 17:08:15,984 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 17:29:17,901 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-02 17:29:17,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 17:29:17,915 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 17:29:41,760 - INFO - 127.0.0.1 - - [02/Dec/2024 17:29:41] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:29:48,251 - INFO - 127.0.0.1 - - [02/Dec/2024 17:29:48] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:29:48,395 - INFO - 127.0.0.1 - - [02/Dec/2024 17:29:48] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:29:48,412 - INFO - 127.0.0.1 - - [02/Dec/2024 17:29:48] "GET /video HTTP/1.1" 200 -
+2024-12-02 17:33:28,692 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:28] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:33:28,800 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:28] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:33:28,801 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:28] "GET /video HTTP/1.1" 200 -
+2024-12-02 17:33:37,909 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:37] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:33:38,008 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:38] "GET /video HTTP/1.1" 200 -
+2024-12-02 17:33:38,023 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:38] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:33:53,927 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:53] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:33:54,005 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:54] "GET /video HTTP/1.1" 200 -
+2024-12-02 17:33:54,036 - INFO - 127.0.0.1 - - [02/Dec/2024 17:33:54] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:34:36,865 - INFO - 127.0.0.1 - - [02/Dec/2024 17:34:36] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:34:38,877 - INFO - 127.0.0.1 - - [02/Dec/2024 17:34:38] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:34:38,955 - INFO - 127.0.0.1 - - [02/Dec/2024 17:34:38] "GET /video HTTP/1.1" 200 -
+2024-12-02 17:34:38,956 - INFO - 127.0.0.1 - - [02/Dec/2024 17:34:38] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:43:02,106 - INFO - 127.0.0.1 - - [02/Dec/2024 17:43:02] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:43:02,355 - INFO - 127.0.0.1 - - [02/Dec/2024 17:43:02] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:44:29,035 - INFO - 127.0.0.1 - - [02/Dec/2024 17:44:29] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:44:36,798 - INFO - 127.0.0.1 - - [02/Dec/2024 17:44:36] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:44:53,860 - INFO - 127.0.0.1 - - [02/Dec/2024 17:44:53] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:50:35,328 - INFO - 127.0.0.1 - - [02/Dec/2024 17:50:35] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:50:35,332 - INFO - 127.0.0.1 - - [02/Dec/2024 17:50:35] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:51:22,333 - INFO - 127.0.0.1 - - [02/Dec/2024 17:51:22] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:51:46,228 - INFO - 127.0.0.1 - - [02/Dec/2024 17:51:46] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:51:46,385 - INFO - 127.0.0.1 - - [02/Dec/2024 17:51:46] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:52:26,944 - INFO - 127.0.0.1 - - [02/Dec/2024 17:52:26] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:52:40,156 - INFO - 127.0.0.1 - - [02/Dec/2024 17:52:40] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:52:40,466 - INFO - 127.0.0.1 - - [02/Dec/2024 17:52:40] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:52:44,320 - INFO - 127.0.0.1 - - [02/Dec/2024 17:52:44] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:53:14,552 - INFO - 127.0.0.1 - - [02/Dec/2024 17:53:14] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 17:53:14,581 - INFO - 127.0.0.1 - - [02/Dec/2024 17:53:14] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:53:54,409 - INFO - 127.0.0.1 - - [02/Dec/2024 17:53:54] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:54:37,424 - INFO - 127.0.0.1 - - [02/Dec/2024 17:54:37] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:55:09,832 - INFO - 127.0.0.1 - - [02/Dec/2024 17:55:09] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:56:10,017 - INFO - 127.0.0.1 - - [02/Dec/2024 17:56:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:56:33,326 - INFO - 127.0.0.1 - - [02/Dec/2024 17:56:33] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:57:14,882 - INFO - 127.0.0.1 - - [02/Dec/2024 17:57:14] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:58:06,041 - INFO - 127.0.0.1 - - [02/Dec/2024 17:58:06] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:58:21,548 - INFO - 127.0.0.1 - - [02/Dec/2024 17:58:21] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:58:34,625 - INFO - 127.0.0.1 - - [02/Dec/2024 17:58:34] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:58:40,800 - INFO - 127.0.0.1 - - [02/Dec/2024 17:58:40] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:58:50,712 - INFO - 127.0.0.1 - - [02/Dec/2024 17:58:50] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:58:59,903 - INFO - 127.0.0.1 - - [02/Dec/2024 17:58:59] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 17:59:10,378 - INFO - 127.0.0.1 - - [02/Dec/2024 17:59:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 18:01:31,003 - INFO - 127.0.0.1 - - [02/Dec/2024 18:01:31] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-02 18:01:31,028 - INFO - 127.0.0.1 - - [02/Dec/2024 18:01:31] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-02 18:02:03,265 - INFO - 127.0.0.1 - - [02/Dec/2024 18:02:03] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:28:52,365 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-03 17:28:52,440 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 17:28:52,441 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 17:29:40,746 - INFO - 127.0.0.1 - - [03/Dec/2024 17:29:40] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:29:45,617 - INFO - 127.0.0.1 - - [03/Dec/2024 17:29:45] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:29:45,832 - INFO - 127.0.0.1 - - [03/Dec/2024 17:29:45] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:29:45,845 - INFO - 127.0.0.1 - - [03/Dec/2024 17:29:45] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:34:47,117 - INFO - 127.0.0.1 - - [03/Dec/2024 17:34:47] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:34:47,300 - INFO - 127.0.0.1 - - [03/Dec/2024 17:34:47] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:34:47,300 - INFO - 127.0.0.1 - - [03/Dec/2024 17:34:47] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:35:07,374 - INFO - 127.0.0.1 - - [03/Dec/2024 17:35:07] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:35:07,481 - INFO - 127.0.0.1 - - [03/Dec/2024 17:35:07] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:35:07,486 - INFO - 127.0.0.1 - - [03/Dec/2024 17:35:07] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:35:53,159 - INFO - 127.0.0.1 - - [03/Dec/2024 17:35:53] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:35:53,342 - INFO - 127.0.0.1 - - [03/Dec/2024 17:35:53] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:35:53,356 - INFO - 127.0.0.1 - - [03/Dec/2024 17:35:53] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:46:18,668 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-03 17:46:18,685 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 17:46:18,686 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 17:46:29,445 - ERROR - Exception on /game [GET]
+Traceback (most recent call last):
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 271, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 471, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 500, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Game is not JSON serializable
+2024-12-03 17:46:29,480 - INFO - 127.0.0.1 - - [03/Dec/2024 17:46:29] "[35m[1mGET /game HTTP/1.1[0m" 500 -
+2024-12-03 17:46:29,593 - INFO - 127.0.0.1 - - [03/Dec/2024 17:46:29] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:46:29,610 - INFO - 127.0.0.1 - - [03/Dec/2024 17:46:29] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:47:28,219 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-03 17:47:28,241 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 17:47:28,242 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 17:47:30,428 - ERROR - Exception on /game [GET]
+Traceback (most recent call last):
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 271, in error_router
+    return original_handler(e)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\miniconda3\envs\billiardTimer\Lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Desktop\Billiard Timer\device\api\resources\game.py", line 15, in get
+    return json(game.__dict__) if game else {"message": "No game in progress"}, 404
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2024-12-03 17:47:30,474 - INFO - 127.0.0.1 - - [03/Dec/2024 17:47:30] "[35m[1mGET /game HTTP/1.1[0m" 500 -
+2024-12-03 17:47:30,578 - INFO - 127.0.0.1 - - [03/Dec/2024 17:47:30] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:47:30,584 - INFO - 127.0.0.1 - - [03/Dec/2024 17:47:30] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:48:31,316 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-03 17:48:31,339 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 17:48:31,341 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 17:48:32,802 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:32] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:48:32,905 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:32] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:48:32,906 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:32] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:48:50,703 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:50] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:48:50,811 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:50] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:48:50,813 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:50] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:49:11,294 - INFO - 127.0.0.1 - - [03/Dec/2024 17:49:11] "[33mGET /game HTTP/1.1[0m" 404 -
+2024-12-03 17:49:11,407 - INFO - 127.0.0.1 - - [03/Dec/2024 17:49:11] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:49:11,414 - INFO - 127.0.0.1 - - [03/Dec/2024 17:49:11] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 17:50:26,076 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-03 17:50:26,100 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 17:50:26,101 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 17:50:30,000 - INFO - 127.0.0.1 - - [03/Dec/2024 17:50:30] "GET /game HTTP/1.1" 200 -
+2024-12-03 17:50:30,118 - INFO - 127.0.0.1 - - [03/Dec/2024 17:50:30] "GET /video HTTP/1.1" 200 -
+2024-12-03 17:50:30,124 - INFO - 127.0.0.1 - - [03/Dec/2024 17:50:30] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 18:00:51,308 - INFO - 127.0.0.1 - - [03/Dec/2024 18:00:51] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:01:05,291 - INFO - 127.0.0.1 - - [03/Dec/2024 18:01:05] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:01:13,324 - INFO - 127.0.0.1 - - [03/Dec/2024 18:01:13] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:03:15,079 - INFO - 127.0.0.1 - - [03/Dec/2024 18:03:15] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:03:15,317 - INFO - 127.0.0.1 - - [03/Dec/2024 18:03:15] "GET /video HTTP/1.1" 200 -
+2024-12-03 18:03:15,407 - INFO - 127.0.0.1 - - [03/Dec/2024 18:03:15] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-03 18:04:49,317 - INFO - 127.0.0.1 - - [03/Dec/2024 18:04:49] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:07:07,398 - INFO - 127.0.0.1 - - [03/Dec/2024 18:07:07] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:07:16,291 - INFO - 127.0.0.1 - - [03/Dec/2024 18:07:16] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:08:59,927 - INFO - 127.0.0.1 - - [03/Dec/2024 18:08:59] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:09:08,914 - INFO - 127.0.0.1 - - [03/Dec/2024 18:09:08] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:20:07,401 - INFO - 127.0.0.1 - - [03/Dec/2024 18:20:07] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:20:38,367 - INFO - 127.0.0.1 - - [03/Dec/2024 18:20:38] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:23:34,338 - INFO - 127.0.0.1 - - [03/Dec/2024 18:23:34] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:31:04,122 - INFO - 127.0.0.1 - - [03/Dec/2024 18:31:04] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:31:04,372 - INFO - 127.0.0.1 - - [03/Dec/2024 18:31:04] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:31:11,334 - INFO - 127.0.0.1 - - [03/Dec/2024 18:31:11] "GET /game HTTP/1.1" 200 -
+2024-12-03 18:31:11,603 - INFO - 127.0.0.1 - - [03/Dec/2024 18:31:11] "GET /video HTTP/1.1" 200 -
+2024-12-03 18:31:11,675 - INFO - 127.0.0.1 - - [03/Dec/2024 18:31:11] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-10 09:01:18,481 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-10 09:01:18,511 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-10 09:01:18,513 - INFO - [33mPress CTRL+C to quit[0m

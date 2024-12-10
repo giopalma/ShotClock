@@ -17,7 +17,10 @@ class Timer:
         self.thread = None
 
     def _run(self):
-        """Esegue il conto alla rovescia del timer."""
+        """
+        Esegue il conto alla rovescia del timer. Se il timer viene fermato oppure è scaduto il timer,
+        allora viene eseguita la funzione di callback.
+        """
         start_time = time.time()
         while not self._stop_event.is_set() and self.remaining_time > 0:
             if self._pause_event.is_set():
@@ -47,7 +50,10 @@ class Timer:
         self._pause_event.set()  # Forza un segnale per uscire dalla pausa
 
     def stop(self):
-        """Ferma il timer."""
+        """
+        Ferma il timer.
+        Viene mandato l'evento stop_event e viene terminato il thread.
+        """
         self._stop_event.set()
         if self.thread and self.thread.is_alive():
             self.thread.join()
