@@ -24,7 +24,7 @@ export default function Navbar({ links }: { links: Link[] }) {
 			{url.name}
 		</a>
 	));
-	const project_name = "Billiard Timer"; //TODO: Forse usare una variabile d'ambiente sarebbe il caso
+	const project_name = "Shot Clock"; //TODO: Forse usare una variabile d'ambiente sarebbe il caso
 	return (
 		<header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
 			<Sheet>

@@ -2,7 +2,6 @@ import { ErrorAlert } from "@/components/ErrorAlert";
 import GameComponent from "@/components/GameComponent";
 import { Header } from "@/components/Header";
 import { PresetSelect } from "@/components/PresetSelect";
-import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "preact/hooks";
 
 export function Admin() {

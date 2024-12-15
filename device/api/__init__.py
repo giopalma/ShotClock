@@ -1,4 +1,3 @@
-from ast import arg
 import threading
 from flask import Flask
 from flask_socketio import SocketIO

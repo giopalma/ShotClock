@@ -361,3 +361,20 @@ TypeError: 'module' object is not callable
 2024-12-10 09:01:18,511 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2024-12-10 09:01:18,513 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 10:00:10,348 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-10 10:00:10,417 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-10 10:00:10,419 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 10:31:08,918 - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2024-12-10 10:31:08,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-10 10:31:08,968 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 10:31:15,837 - INFO - 127.0.0.1 - - [10/Dec/2024 10:31:15] "GET /game HTTP/1.1" 200 -
+2024-12-10 10:31:16,070 - INFO - 127.0.0.1 - - [10/Dec/2024 10:31:16] "GET /video HTTP/1.1" 200 -
+2024-12-10 10:31:16,071 - INFO - 127.0.0.1 - - [10/Dec/2024 10:31:16] "[33mGET /table HTTP/1.1[0m" 404 -
+2024-12-10 10:36:54,478 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-10 10:36:54,479 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 10:37:07,099 - INFO - 127.0.0.1 - - [10/Dec/2024 10:37:07] "GET /game HTTP/1.1" 200 -
+2024-12-10 10:37:07,303 - INFO - 127.0.0.1 - - [10/Dec/2024 10:37:07] "GET /video HTTP/1.1" 200 -
+2024-12-10 10:37:07,396 - INFO - 127.0.0.1 - - [10/Dec/2024 10:37:07] "[33mGET /table HTTP/1.1[0m" 404 -

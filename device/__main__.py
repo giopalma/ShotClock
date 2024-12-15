@@ -5,8 +5,8 @@ import device.api as api
 from device.video import VideoProcessor
 
 parser = argparse.ArgumentParser(
-    prog="BilliardTimer",
-    description="Codice sorgente del dispositivo BilliardTimer. Il dispositivo gestisce automaticamente il timer di gioco nel gioco del billiardo",
+    prog="ShotClock",
+    description="Codice sorgente del dispositivo ShotClock. Il dispositivo gestisce automaticamente il timer di gioco nel gioco del billiardo",
 )
 parser.add_argument(
     "-d", "--debug", action="store_true", help="Abilita la modalità debug"

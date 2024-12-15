@@ -1,4 +1,4 @@
-<h2 align="center">Web interface for Billiard Timer</h3>
+<h2 align="center">Web interface for Shot Clock</h3>
 
 Viene utilizzato [Preact](https://preactjs.com/) e [Vite](https://vitejs.dev/) per creare l'interfaccia web.
 

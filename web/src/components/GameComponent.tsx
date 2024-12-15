@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Manager } from "socket.io-client";
 
 interface Game {
 	turn_duration: number;
@@ -15,6 +16,11 @@ interface Game {
 
 export default function GameComponent() {
 	const [game, setGame] = useState<Game | null>(null);
+
+	useEffect(() => {
+		const wsManager = new Manager("ws://localhost:3000");
+		console.log(wsManager);
+	}, []);
 
 	const startNewGame = () => {
 		setGame({
@@ -53,7 +59,7 @@ export default function GameComponent() {
 	};
 
 	return (
-		<div class="w-full h-full">
+		<div class="w-full h-full p-4">
 			{game === null ? (
 				<div className="text-center space-y-4">
 					<p className="text-lg font-medium">Nessun gioco in corso</p>
