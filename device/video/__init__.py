@@ -4,7 +4,15 @@ import time
 
 
 class VideoProcessor:
+    """
+    VideoProcessor è un Singleton che gira su un thread separato e gestirà la registrazione
+    video. Fornisce la funzione get_frame() che restituisce il frame attuale.
+    TODO: La classe potrà fornire non solo il frame RAW, ma anche elaborato (GRAY + GAUSSIAN) che verrà utilizzato dal Game per individuare il movimento
+    """
     _instance = None
+
+    def __init__(self):
+        self.is_running = False
 
     def __new__(cls, video_source=0):
         if not cls._instance:
