@@ -1,40 +1,56 @@
 from typing import Literal
+
+from .ruleset import Ruleset
 from .timer import Timer
 
 
 class Game:
-    def __init__(self, turn_duration: int, player1_name: str, player2_name):
-        self.turn_duration = turn_duration
+    def __init__(self, ruleset: Ruleset, player1_name: str, player2_name):
+        self.ruleset = ruleset
         self.player1_name = player1_name
         self.player2_name = player2_name
         self.current_player = 1
-        self.timers = {1: None, 2: None}
+        self.timer = Timer(ruleset.turn_duration, self.next_turn)
         self.status: Literal["ready", "running", "waiting", "ended"] = "ready"
 
     def start_game(self):
         """Avvia il gioco e inizia il turno per il primo giocatore."""
-        self.status = "running"
-        self.start_turn()
+        if self.status == "ready":
+            self.status = "running"
+            self.start_turn()
 
     def end_game(self):
         """Ferma il gioco e cancella tutti i timer."""
-        self.stop_timer(1)
-        self.stop_timer(2)
-        print("Gioco terminato.")
+        if self.status != "ended":
+            self.end_timer()
+            print("Gioco terminato.")
+
+    def next_turn(self):
+        if self.status == "running":
+            self.current_player = self.current_player + 1 % 2
+            # TODO: Forse necessario un controllo per verificare che il thread del timer si è chiuso
+            self.timer = Timer(self.ruleset.turn_duration, self.next_turn) # Qui ricreo il timer, TODO: da testare se effettivamente si chiude bene il vecchio thread del timer
+            self.start_turn()
 
     def start_turn(self):
         """Inizia il turno per il giocatore corrente e avvia il timer."""
-        self.stop_timer(self.current_player)  # Fermo eventuali timer precedenti
-        self.timers[self.current_player] = Timer(self.turn_duration, self.end_turn)
-        self.timers[self.current_player].start()
+        self.timer.start()
+
+    def pause_turn(self):
+        """
+        Mette in pausa il timer del turno, NON LO TERMINA.
+        Per terminare il timer e passare al successivo utilizzare la funzione end_turn()
+        """
+        self.timer.pause()
+
+    def resume_turn(self):
+        """
+        Riprende l'esecuzione del timer, funziona solo se il timer è in pausa, non fa nulla se non lo è
+        """
+        self.timer.resume()
 
     def end_turn(self):
         """Termina il turno corrente e passa al giocatore successivo."""
-        self.stop_timer(self.current_player)
-        self.current_player = 2 if self.current_player == 1 else 1
-        self.start_turn()
-
-    def stop_timer(self, player):
-        if self.timers[player]:
-            self.timers[player].cancel()
-            self.timers[player] = None
+        # TODO: Si potrebbe aggiungere del tempo di attesa (10-15 secondi) prima di inizare il turno
+        self.timer.end()
+        self.next_turn()
