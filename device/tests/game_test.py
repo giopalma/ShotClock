@@ -1,6 +1,6 @@
 import unittest
 
-from device.game import Game
+from device.game import Game, game_manager
 from device.game.ruleset import Ruleset
 
 TEST_RULESET = Ruleset(0,"test_ruleset", 35, 25, 1)
@@ -17,6 +17,16 @@ class GameTest(unittest.TestCase):
 
     def test_timer_init(self):
         self.assertEqual(self.game.timer.remaining_time, TEST_RULESET.turn_duration, "Alla creazione del gioco, la durata del timer non corrisponde alla durata impostata nel ruleset")
+
+    def test_game_manager_new_game(self):
+        game = game_manager.new_game(TEST_RULESET, "Giovanni", "Paolo")
+        self.assertEqual(game, game_manager.get_game(), "Il gioco creato non corrisponde al gioco attuale")
+
+    def test_game_manager_new_game_replace_old_game(self):
+        game = game_manager.new_game(TEST_RULESET, "Giovanni", "Paolo")
+        game2 = game_manager.new_game(TEST_RULESET, "Giovanni", "Marco")
+        self.assertEqual(game2, game_manager.get_game(), "Il gioco creato non corrisponde al gioco attuale")
+        self.assertEqual(game.status, "ended", "Il gioco vecchio non è terminato")
 
 if __name__ == '__main__':
     unittest.main()

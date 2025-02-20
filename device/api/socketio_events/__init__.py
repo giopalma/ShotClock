@@ -6,6 +6,6 @@ def register_socketio_events(socketio):
 
     @socketio.on("connect")
     def connected():
-        print(request.sid)
+        print(socketio.request.sid)
         print("client has connected")
-        emit("connect", {"data": f"id: {request.sid} is connected"})
+        socketio.emit("connect", {"data": f"id: {socketio.request.sid} is connected"})

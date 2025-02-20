@@ -1,7 +1,7 @@
 from typing import Literal
 
-from video_consumer import VideoConsumer
-from ruleset import Ruleset
+from .video_consumer import VideoConsumer
+from .ruleset import Ruleset
 from .timer import Timer
 
 class Game:
@@ -18,6 +18,24 @@ class Game:
         self.status: Literal["ready", "running", "waiting", "ended"] = "ready"
         self.video_consumer = VideoConsumer(self.start_movement, self.stop_movement)
 
+    def start(self):
+        """Avvia il gioco e inizia il turno per il primo giocatore."""
+        if self.status == "ready":
+            self.status = "running"
+            self.video_consumer.start()
+            self.start_turn()
+
+    def end(self):
+        """Ferma il gioco e cancella tutti i timer."""
+        if self.status != "ended":
+            self.timer.end()
+            self.video_consumer.end()
+            self.status = "ended"
+            #TODO: Controllare bene se tutto è stato terminato
+            print("Gioco terminato.")
+
+    """------MOVEMENT EVENTS CALLBACKS-----"""
+
     def start_movement(self):
         if self.status == "running":
             self.status = "waiting"
@@ -27,21 +45,6 @@ class Game:
         if self.status == "waiting":
             self.status = "running"
             self.next_turn()
-
-    def start_game(self):
-        """Avvia il gioco e inizia il turno per il primo giocatore."""
-        if self.status == "ready":
-            self.status = "running"
-            self.start_turn()
-
-    def end_game(self):
-        """Ferma il gioco e cancella tutti i timer."""
-        if self.status != "ended":
-            self.timer.end()
-            self.video_consumer.end()
-            self.status = "ended"
-            #TODO: Controllare bene se tutto è stato terminato
-            print("Gioco terminato.")
 
     """------TURN COMMANDS-----"""
 
