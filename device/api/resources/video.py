@@ -1,7 +1,7 @@
 import cv2 as cv
 from flask import Response
 from flask_restful import Resource
-from device.video import VideoProcessor
+from device.video_producer import VideoProducer
 
 
 class VideoStreaming(Resource):
@@ -24,7 +24,7 @@ class VideoStreaming(Resource):
         Semplicemente prende il frame dal VideoProcessor e lo codifica in formato JPEG.
         TODO: Si potrebbe aggiungere la possibilità di streammare differenti frame, ad esempio frame con maschere applicate.
         """
-        vp = VideoProcessor()
+        vp = VideoProducer()
         while True:
             frame = vp.frame
             if frame is None:

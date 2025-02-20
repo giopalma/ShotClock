@@ -2,8 +2,7 @@ import cv2
 import threading
 import time
 
-
-class VideoProcessor:
+class VideoProducer:
     """
     VideoProcessor è un Singleton che gira su un thread separato e gestirà la registrazione
     video. Fornisce la funzione get_frame() che restituisce il frame attuale.
@@ -12,17 +11,24 @@ class VideoProcessor:
     _instance = None
 
     def __init__(self):
-        self.is_running = False
+        raise RuntimeError("VideoProcessor instance cannot be instantiated")
+
 
     def __new__(cls, video_source=0):
         if not cls._instance:
-            cls._instance = super(VideoProcessor, cls).__new__(cls)
+            cls._instance = super(VideoProducer, cls).__new__(cls)
             cls._instance.frame = None
             cls._instance.video_capture = cv2.VideoCapture(video_source)
             cls._instance.is_running = False
             cls._instance.capture_thread = None
             cls._instance.frame_lock = threading.Lock()
             cls._instance._start_capture()
+        return cls._instance
+
+    @classmethod
+    def get_instance(cls):
+        if not cls._instance:
+            cls._instance = cls.__new__(cls)
         return cls._instance
 
     def _capture_loop(self):
@@ -44,12 +50,19 @@ class VideoProcessor:
         with self.frame_lock:
             return self.frame.copy() if self.frame is not None else None
 
+    def get_frame_blurred(self):
+        with self.frame_lock:
+            return cv2.GaussianBlur(self.frame.copy(), (5,5), 0)
+
     def stop(self):
         self.is_running = False
         if self.capture_thread:
             self.capture_thread.join()
         if self.video_capture:
             self.video_capture.release()
+
+    def is_opened(self):
+        return self.video_capture.isOpened()
 
     def __del__(self):
         self.stop()

@@ -2,7 +2,7 @@ import argparse
 from device.log import logging_setup
 from device.config import load_config
 import device.api as api
-from device.video import VideoProcessor
+from device.video_producer import VideoProducer
 
 parser = argparse.ArgumentParser(
     prog="ShotClock",
@@ -12,13 +12,12 @@ parser.add_argument(
     "-d", "--debug", action="store_true", help="Abilita la modalità debug"
 )
 
-
 def setup():
     args = parser.parse_args()
     load_config()
     logging_setup()
+    VideoProducer()
 
-    video_processor = VideoProcessor()
     api_thread = api.run(debug=args.debug)
 
     try:

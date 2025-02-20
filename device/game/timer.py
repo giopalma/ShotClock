@@ -15,6 +15,7 @@ class Timer:
         self.remaining_time = duration
         self._pause_event = Event()
         self._end_event = Event() # L'end event è necessario per terminare il loop del run
+        # TODO: Qui già si potrebbe creare il thread se si mette subito il _pause_event a True, tanto c'è il blocco del while
         self.thread = None
 
     def _run(self):
