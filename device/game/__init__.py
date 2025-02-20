@@ -3,20 +3,30 @@ from typing import Literal
 from .video_consumer import VideoConsumer
 from .ruleset import Ruleset
 from .timer import Timer
+from ..table import Table
+
 
 class Game:
 
-    def __init__(self, ruleset: Ruleset, player1_name: str, player2_name:str):
+    def __init__(
+        self, ruleset: Ruleset, table: Table, player1_name: str, player2_name: str
+    ):
         """
         Scrivere il doc della classe Game
         """
         self.ruleset = ruleset
+        self.table = table
         self.player_names = [player1_name, player2_name]
         self.current_player = 1
-        self.remaining_increments = [ruleset.max_increment_for_match, ruleset.max_increment_for_match]
+        self.increments = [
+            ruleset.max_increment_for_match,
+            ruleset.max_increment_for_match,
+        ]
         self.timer = Timer(ruleset.turn_duration, self.next_turn)
         self.status: Literal["ready", "running", "waiting", "ended"] = "ready"
-        self.video_consumer = VideoConsumer(self.start_movement, self.stop_movement)
+        self.video_consumer = VideoConsumer(
+            table, self.start_movement, self.stop_movement
+        )
 
     def start(self):
         """Avvia il gioco e inizia il turno per il primo giocatore."""
@@ -31,7 +41,7 @@ class Game:
             self.timer.end()
             self.video_consumer.end()
             self.status = "ended"
-            #TODO: Controllare bene se tutto è stato terminato
+            # TODO: Controllare bene se tutto è stato terminato
             print("Gioco terminato.")
 
     """------MOVEMENT EVENTS CALLBACKS-----"""
@@ -50,24 +60,27 @@ class Game:
 
     def increment_time(self):
         if self.status == "running":
-            if self.remaining_increments[self.current_player] > 0:
-                self.remaining_increments[self.current_player] -= 1
+            if self.increments[self.current_player] > 0:
+                self.increments[self.current_player] -= 1
                 # TODO: valutare se mettere in pausa il timer per l'incremento oppure no
                 self.timer.add_time(self.ruleset.increment_duration)
             else:
-                print(f"Nessun incremento disponibile per il giocatore: {self.player_names[self.current_player]}")
+                print(
+                    f"Nessun incremento disponibile per il giocatore: {self.player_names[self.current_player]}"
+                )
 
     def remaining_increments(self, player=None):
         if player is None:
             player = self.current_player
-        return self.remaining_increments[player]
+        return self.increments[player]
 
     def next_turn(self):
         if self.status == "running":
             self.current_player = self.current_player + 1 % 2
             # TODO: Forse necessario un controllo per verificare che il thread del timer si è chiuso
-            self.timer = Timer(self.ruleset.turn_duration,
-                               self.next_turn)  # Qui ricreo il timer, TODO: da testare se effettivamente si chiude bene il vecchio thread del timer
+            self.timer = Timer(
+                self.ruleset.turn_duration, self.next_turn
+            )  # Qui ricreo il timer, TODO: da testare se effettivamente si chiude bene il vecchio thread del timer
             self.start_turn()
 
     def start_turn(self):
