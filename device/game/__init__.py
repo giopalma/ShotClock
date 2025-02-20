@@ -1,15 +1,15 @@
 from typing import Literal
 
 from .video_consumer import VideoConsumer
-from .ruleset import Ruleset
-from .timer import Timer
-from ..table import Table
+from device.game.ruleset import Ruleset
+from device.game.timer import Timer
+from device.table import TablePreset
 
 
 class Game:
 
     def __init__(
-        self, ruleset: Ruleset, table: Table, player1_name: str, player2_name: str
+        self, ruleset: Ruleset, table: TablePreset, player1_name: str, player2_name: str
     ):
         """
         Scrivere il doc della classe Game

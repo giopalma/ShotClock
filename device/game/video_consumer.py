@@ -1,10 +1,10 @@
-from threading import Event
-from ..video_producer import VideoProducer
-from ..table import TablePreset
+from threading import Event, Thread
+from device.video_producer import VideoProducer
+from device.table import TablePreset
 import cv2
 import numpy as np
 import imutils
-from ..utils import CircularArray
+from device.utils import CircularArray
 
 
 class VideoConsumer:
@@ -15,9 +15,16 @@ class VideoConsumer:
     """
 
     def __init__(
-        self, table: TablePreset, start_movement_callback, stop_movement_callback
+        self,
+        table: TablePreset,
+        start_movement_callback,
+        stop_movement_callback,
+        video_producer: VideoProducer,  # Il video producer, nonostate sia un singleton glielo passo come parametro per rendere il codice più testabile
     ):
-        self.video_producer = VideoProducer()
+        self.video_producer = video_producer
+        self.video_consumer_thread = Thread(target=self.run)
+        self.video_consumer_thread.daemon = True  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
+
         """
         Queste due fuzioni sono dei callback che vengono chiamati quando il VideoConsumer cambia di stato
         MOVIMENTO -> FERMO : stop_movement_callback
@@ -28,7 +35,7 @@ class VideoConsumer:
         self.table = table
         self._is_running = Event()
         self._is_running.clear()
-        self.run()
+        self.video_consumer_thread.start()
 
     def start(self):
         self._is_running.set()

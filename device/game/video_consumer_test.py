@@ -1,7 +1,8 @@
 import unittest
-from ..table import TablePreset
-from .video_consumer import VideoConsumer
-from ..utils import hex_to_opencv_hsv
+from device.table import TablePreset
+from device.game.video_consumer import VideoConsumer
+from device.utils import hex_to_opencv_hsv
+from device.video_producer import VideoProducer
 
 
 class VideoConsumerTest(unittest.TestCase):
@@ -14,6 +15,12 @@ class VideoConsumerTest(unittest.TestCase):
             points=[(120, 80), (520, 80), (520, 280), (120, 280)],
             table_colors=[hex_to_opencv_hsv(color) for color in colors],
         )
+        self.video_consumer = VideoConsumer(
+            self.table,
+            self.start_movement_callback,
+            self.stop_movement_callback,
+            VideoProducer.get_instance(),
+        )
 
     def start_movement_callback(self):
         print("START MOVEMENT")
@@ -22,8 +29,10 @@ class VideoConsumerTest(unittest.TestCase):
         print("STOP MOVEMENT")
 
     def test_init_video_consumer(self):
-        video_consumer = VideoConsumer(
-            self.table, self.start_movement_callback, self.stop_movement_callback
+        self.assertIsInstance(
+            self.video_consumer,
+            VideoConsumer,
+            "new video_consumer is not an instance of VideoConsumer",
         )
 
 
