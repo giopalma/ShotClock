@@ -12,7 +12,8 @@ def get_game() -> Game:
     """
     return _game
 
-def new_game(ruleset:Ruleset, player1_name:str, player2_name) -> Game:
+
+def new_game(ruleset: Ruleset, player1_name: str, player2_name) -> Game:
     """
     Crea un nuovo gioco con le regole specificate e i nomi dei giocatori.
     Se esiste già un gioco in corso, lo termina e ne crea uno nuovo.

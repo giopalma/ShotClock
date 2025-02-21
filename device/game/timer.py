@@ -14,7 +14,9 @@ class Timer:
         self.callback = callback
         self.remaining_time = duration
         self._pause_event = Event()
-        self._end_event = Event() # L'end event è necessario per terminare il loop del run
+        self._end_event = (
+            Event()
+        )  # L'end event è necessario per terminare il loop del run
         # TODO: Qui già si potrebbe creare il thread se si mette subito il _pause_event a True, tanto c'è il blocco del while
         self.thread = None
 
@@ -26,7 +28,7 @@ class Timer:
         while not self._end_event.is_set() and self.remaining_time > 0:
             if not self._pause_event.is_set():
                 start_time = time.time()
-                time.sleep(0.1) # TODO: Impostare la precisione tramite config
+                time.sleep(0.1)  # TODO: Impostare la precisione tramite config
                 elapsed = time.time() - start_time
                 self.remaining_time = max(0, self.remaining_time - elapsed)
         self.callback()
@@ -35,6 +37,7 @@ class Timer:
         """Avvia il timer."""
         self._pause_event.clear()
         self.thread = Thread(target=self._run, daemon=True)
+        self.thread.name = "TimerThread"
         self.thread.start()
 
     def pause(self):

@@ -21,10 +21,10 @@ class VideoConsumer:
         stop_movement_callback,
         video_producer: VideoProducer,  # Il video producer, nonostate sia un singleton glielo passo come parametro per rendere il codice più testabile
     ):
-        self.video_producer = video_producer
-        self.video_consumer_thread = Thread(target=self.run)
-        self.video_consumer_thread.daemon = True  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
-
+        self._video_producer = video_producer
+        self._video_consumer_thread = Thread(target=self.run)
+        self._video_consumer_thread.daemon = True  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
+        self._video_consumer_thread.name = "VideoConsumerThread"
         """
         Queste due fuzioni sono dei callback che vengono chiamati quando il VideoConsumer cambia di stato
         MOVIMENTO -> FERMO : stop_movement_callback
@@ -35,7 +35,7 @@ class VideoConsumer:
         self.table = table
         self._is_running = Event()
         self._is_running.clear()
-        self.video_consumer_thread.start()
+        self._video_consumer_thread.start()
 
     def start(self):
         self._is_running.set()
@@ -70,13 +70,13 @@ class VideoConsumer:
         motion_history = CircularArray(
             self.NUMBER_OF_MOTION_COUNT
         )  # Il motion_count viene calcolato inizialmente su 3 frame, ma poi viene calcolato ad ogni frame, perchè ad ogni frame vengono usati i due frame precedenti per calcolarlo. Quindi aumentando il NUMBER_OF_MOTION_COUNT su quanti frame non si vuole il movimento, valori troppo bassi sono più soggetti a rumore, valori troppo alti potrebbero ritardare l'interruzione del timer.
-        while self.video_producer.is_opened():
+        while self._video_producer.is_opened():
             if not self._is_running.is_set():
                 # Resetto gli array, perchè il video consumer potrebbe rimanere per tanti frame fermo e non voglio che valori vecchi dell'array vengono usati per determinare il movimento nuovo
                 balls_mask_history = CircularArray(3)
                 motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
                 continue
-            blurred = self.video_producer.get_frame_blurred()
+            blurred = self._video_producer.get_frame_blurred()
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
             mask = self._create_mask(hsv, self.table.points, self.table.colors)
             current_balls_mask = self._detect_balls(mask)
