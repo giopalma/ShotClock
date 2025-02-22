@@ -9,6 +9,4 @@ class TablePreset:
     id: int
     name: str
     points: List[Tuple[int, int]]  # (x, y) punti del tavolo
-    table_colors: List[
-        Tuple[int, int, int]
-    ]  # HSV (OpenCV format) per il colore del tavolo
+    colors: List[Tuple[int, int, int]]  # HSV (OpenCV format) per il colore del tavolo

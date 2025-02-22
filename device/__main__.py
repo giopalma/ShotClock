@@ -1,6 +1,7 @@
 import argparse
 from device.log import logging_setup
 from device.config import load_config
+from device.test import test
 
 # from device.video_producer import VideoProducer
 
@@ -35,8 +36,6 @@ if __name__ == "__main__":
     load_config()
     logging_setup()
     if args.test:
-        from device.test import test
-
         test()
     else:
         setup()

@@ -13,7 +13,7 @@ class VideoConsumerTest(unittest.TestCase):
             id=0,
             name="test_table_preset",
             points=[(120, 80), (520, 80), (520, 280), (120, 280)],
-            table_colors=[hex_to_opencv_hsv(color) for color in colors],
+            colors=[hex_to_opencv_hsv(color) for color in colors],
         )
         self.video_consumer = VideoConsumer(
             self.table,

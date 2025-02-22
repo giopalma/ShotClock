@@ -1,21 +1,30 @@
+import json
 from device.game import Game, Ruleset
 from device.table import TablePreset
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
+import cv2
 
 
 def test():
     ruleset = Ruleset(0, "wpa_rules", 60, 35, 25, 1)
-    colors = ["#45c6ed", "#2288b5", "#1978a2", "#3bbbf3", "#0b6d9e"]
+
+    # Leggi i dati dal file JSON
+    with open("./device/test_data/video/example_edited.json", "r") as f:
+        data = json.load(f)
+
+    points = data["points"]
+    colors = [hex_to_opencv_hsv(color) for color in data["colors"]]
+
     table = TablePreset(
         0,
         "test_table",
-        points=[(120, 80), (520, 80), (520, 280), (120, 280)],
-        table_colors=[hex_to_opencv_hsv(color) for color in colors],
+        points=points,
+        colors=colors,
     )
     video_producer = VideoProducer.get_instance(
-        video_source="./test_data/video/example.mp4"
+        video_source="./device/test_data/video/example_edited.mp4", loop=False
     )
-    game = Game(ruleset, table, "Player 1", "Player 2", video_producer)
 
-    # game.start()
+    game = Game(ruleset, table, "Player 1", "Player 2", video_producer)
+    game.start()

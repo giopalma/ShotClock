@@ -77,9 +77,12 @@ class VideoConsumer:
                 motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
                 continue
             blurred = self._video_producer.get_frame_blurred()
+
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
-            mask = self._create_mask(hsv, self.table.points, self.table.colors)
-            current_balls_mask = self._detect_balls(mask)
+            current_balls_mask = self._create_mask(
+                hsv, self.table.points, self.table.colors
+            )
+
             balls_mask_history.add(current_balls_mask)
             if balls_mask_history.get_len() == 3:
                 current_motion_count = self._motion_count(
@@ -150,24 +153,31 @@ class VideoConsumer:
             max(color[i] for color in colors) + diff
             for i, diff in enumerate([self.H_DIFF, self.S_DIFF, self.V_DIFF])
         )
-
+        points = np.array(points, dtype=np.int32).reshape((-1, 1, 2))
         rec_mask = cv2.fillPoly(np.zeros(hsv.shape[:2], dtype=np.uint8), [points], 255)
-        color_mask = cv2.bitwise_not(cv2.inRange(hsv, color_lower, color_upper))
+        color_mask = cv2.inRange(hsv, color_lower, color_upper)
         color_mask = cv2.erode(color_mask, None, iterations=3)
         color_mask = cv2.dilate(color_mask, None, iterations=2)
-        combined_mask = cv2.bitwise_and(color_mask, rec_mask)
-
-        contours, _ = cv2.findContours(
-            combined_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
-        )
-        contours = imutils.grab_contours(contours)
-        circularity_mask = np.zeros_like(combined_mask)
+        color_mask = cv2.bitwise_not(color_mask)  # Inverti la color mask
+        combined_mask = cv2.bitwise_and(rec_mask, color_mask)
+        hsv_masked = cv2.bitwise_and(hsv, hsv, mask=rec_mask)
+        gray = cv2.split(hsv)[2]
+        # combined_mask = cv2.bitwise_and(color_mask, rec_mask)
+        cv2.imshow("Gray masked", gray)
+        contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        # contours = imutils.grab_contours(contours)
+        circularity_mask = np.zeros_like(gray)
 
         for c in contours:
             area = cv2.contourArea(c)
             perimeter = cv2.arcLength(c, True)
+            if perimeter == 0:
+                continue
             circularity = 4 * np.pi * area / perimeter**2
 
             if circularity > self.CIRCULARITY_THRESHOLD:
                 cv2.drawContours(circularity_mask, [c], -1, 255, thickness=cv2.FILLED)
+        # Debug: Visualizza le maschere intermedie
+        cv2.imshow("Circularity Mask", circularity_mask)
+        cv2.waitKey(4)
         return circularity_mask

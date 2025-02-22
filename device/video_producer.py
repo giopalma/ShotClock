@@ -15,43 +15,45 @@ class VideoProducer:
     def __init__(self):
         raise RuntimeError("VideoProcessor instance cannot be instantiated")
 
-    def __new__(cls, video_source):
+    def __new__(cls, video_source, loop):
         if not cls._instance:
             cls._instance = super(VideoProducer, cls).__new__(cls)
+
             cls._instance.frame = None
             cls._instance.video_capture = cv2.VideoCapture(video_source)
+            cls._instance._loop = loop
             cls._instance.is_running = False
             cls._instance.capture_thread = None
-            cls._instance.frame_lock = threading.Lock()
             cls._instance.stop_lock = threading.Lock()
             cls._instance._start_capture()
         return cls._instance
 
     @classmethod
-    def get_instance(cls, video_source):
+    def get_instance(cls, video_source=0, loop=False):
         if not cls._instance:
-            cls._instance = cls.__new__(cls, video_source)
+            cls._instance = cls.__new__(cls, video_source, loop)
         return cls._instance
 
     def _capture_loop(self):
-        while self.is_running:
+        while self.video_capture.isOpened():
             ret, frame = self.video_capture.read()
-            if ret:
-                with self.frame_lock:
-                    self.frame = frame
+            self.frame = frame
+            if not ret and self._loop:
+                self.video_capture.set(cv2.CAP_PROP_POS_FRAMES, 0)
             time.sleep(1 / 30)
 
     def _start_capture(self):
         if not self.is_running:
             self.is_running = True
             self.capture_thread = threading.Thread(target=self._capture_loop)
-            self.capture_thread.daemon = True
+            self.capture_thread.daemon = False
             self.capture_thread.name = "VideoProducerThread"
             self.capture_thread.start()
 
     def get_frame(self):
-        with self.frame_lock:
-            return self.frame.copy() if self.frame is not None else None
+        while self.frame is None:
+            pass
+        return self.frame
 
     def get_frame_blurred(self):
         frame = self.get_frame()
