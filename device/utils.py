@@ -1,4 +1,13 @@
 import colorsys
+from gpiozero import pi_info, BadPinFactory
+
+
+def is_raspberry_pi():
+    try:
+        pi_info()
+        return True
+    except (OSError, BadPinFactory):
+        return False
 
 
 def hex_to_rgb(color: str):

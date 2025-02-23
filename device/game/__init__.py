@@ -1,10 +1,15 @@
+import threading
+import time
 from typing import Literal
 
 from .video_consumer import VideoConsumer
 from device.game.ruleset import Ruleset
 from device.game.timer import Timer
 from device.table import TablePreset
-from device.video_producer import VideoProducer
+from device.utils import is_raspberry_pi
+import logging
+from gpiozero import Buzzer
+import winsound
 
 
 class Game:
@@ -48,13 +53,21 @@ class Game:
         """
         self._ruleset = ruleset
         self._table = table
+
+        self._is_running_rpi = is_raspberry_pi()
+        self._buzzer = Buzzer(11) if self._is_running_rpi else None
         self._player_names = [player1_name, player2_name]
         self._current_player = 1
         self._increments = [
             ruleset.max_increment_for_match,
             ruleset.max_increment_for_match,
         ]
-        self._timer = Timer(ruleset.turn_duration, self.next_turn)
+        self._timer = Timer(
+            duration=ruleset.initial_duration,
+            allarm_time=ruleset.allarm_time,
+            callback=self.next_turn,
+            allarm_callback=self._allarm,
+        )
         self._status: Literal["ready", "running", "waiting", "ended"] = "ready"
         self._video_consumer = VideoConsumer(
             table=table,
@@ -112,9 +125,12 @@ class Game:
     def next_turn(self):
         if self._status == "running":
             self._current_player = self._current_player + 1 % 2
-            # TODO: Forse necessario un controllo per verificare che il thread del timer si è chiuso
+            self._timer.end()  # Termino il vecchio timer
             self._timer = Timer(
-                self._ruleset.turn_duration, self.next_turn
+                duration=self._ruleset.turn_duration,
+                allarm_time=self._ruleset.allarm_time,
+                callback=self.next_turn,
+                allarm_callback=self._allarm,
             )  # Qui ricreo il timer, TODO: da testare se effettivamente si chiude bene il vecchio thread del timer
             self.start_turn()
 
@@ -140,3 +156,18 @@ class Game:
         # TODO: Si potrebbe aggiungere del tempo di attesa (10-15 secondi) prima di inizare il turno
         self._timer.end()
         self.next_turn()
+
+    TIME_SOUND_BUZZER = 1
+
+    def _buzzer(self):
+        self._buzzer.on()
+        time.sleep(self.TIME_SOUND_BUZZER)
+        self._buzzer.off()
+
+    def _allarm(self):
+        if self._is_running_rpi:
+            t = threading.Thread(target=self._buzzer)
+            t.start()
+        else:
+            # Quando viene eseguito su Windows
+            winsound.Beep(1000, int(1000 * self.TIME_SOUND_BUZZER))

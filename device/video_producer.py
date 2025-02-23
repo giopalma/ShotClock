@@ -50,6 +50,9 @@ class VideoProducer:
             self.capture_thread.name = "VideoProducerThread"
             self.capture_thread.start()
 
+    def get_fps(self):
+        return self.video_capture.get(cv2.CAP_PROP_FPS)
+
     def get_frame(self):
         while self.frame is None:
             pass

@@ -1,18 +1,25 @@
 import time
 from threading import Thread, Event
+import logging
+from math import floor
 
 
 # TODO: Ricontrollare il timer
 class Timer:
-    def __init__(self, duration, callback):
+    def __init__(self, duration: int, allarm_time: int, callback, allarm_callback):
         """
         Inizializza un timer.
         :param duration: Durata del timer in secondi.
         :param callback: Funzione da chiamare quando il timer scade.
         """
         self.duration = duration
-        self.callback = callback
         self.remaining_time = duration
+        self.callback = callback
+
+        self.allarm_time = allarm_time
+        self.allarm_callback = allarm_callback
+        self._allarm_triggered = False
+
         self._pause_event = Event()
         self._end_event = (
             Event()
@@ -25,13 +32,26 @@ class Timer:
         Esegue il conto alla rovescia del timer. Se il timer è scaduto oppure viene formato il termine del timer,
         allora viene eseguita la funzione di callback.
         """
-        while not self._end_event.is_set() and self.remaining_time > 0:
+        while (not self._end_event.is_set()) and (self.remaining_time > 0):
             if not self._pause_event.is_set():
+                debug_last_remaining_time = floor(self.remaining_time)
                 start_time = time.time()
-                time.sleep(0.1)  # TODO: Impostare la precisione tramite config
+                time.sleep(0.01)  # TODO: Impostare la precisione tramite config
                 elapsed = time.time() - start_time
                 self.remaining_time = max(0, self.remaining_time - elapsed)
-        self.callback()
+                if (
+                    self.remaining_time <= self.allarm_time
+                    and not self._allarm_triggered
+                ):
+                    # self.allarm_callback()
+                    self._allarm_triggered = True
+                elif self.remaining_time <= 0:
+                    self.callback()
+                # DEBUG
+                if floor(self.remaining_time) != debug_last_remaining_time:
+                    logging.info(
+                        f"Timer: {floor(self.remaining_time)} remaining time",
+                    )
 
     def start(self):
         """Avvia il timer."""
@@ -55,4 +75,3 @@ class Timer:
         """
         if self.thread and self.thread.is_alive():
             self._end_event.set()
-            self.thread.join()

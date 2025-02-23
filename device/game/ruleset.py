@@ -13,5 +13,6 @@ class Ruleset:
     name: str
     initial_duration: int
     turn_duration: int
+    allarm_time: int
     increment_duration: int
     max_increment_for_match: int

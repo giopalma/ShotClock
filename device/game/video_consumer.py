@@ -1,9 +1,11 @@
 from threading import Event, Thread
+import time
 from device.video_producer import VideoProducer
 from device.table import TablePreset
 import cv2
 import numpy as np
-import imutils
+
+# import imutils
 from device.utils import CircularArray
 
 
@@ -70,8 +72,12 @@ class VideoConsumer:
         motion_history = CircularArray(
             self.NUMBER_OF_MOTION_COUNT
         )  # Il motion_count viene calcolato inizialmente su 3 frame, ma poi viene calcolato ad ogni frame, perchè ad ogni frame vengono usati i due frame precedenti per calcolarlo. Quindi aumentando il NUMBER_OF_MOTION_COUNT su quanti frame non si vuole il movimento, valori troppo bassi sono più soggetti a rumore, valori troppo alti potrebbero ritardare l'interruzione del timer.
+
+        isMoving = False
         while self._video_producer.is_opened():
+            time.sleep(0.17)
             if not self._is_running.is_set():
+                # TODO: Non è necessario sta cosa del motion history
                 # Resetto gli array, perchè il video consumer potrebbe rimanere per tanti frame fermo e non voglio che valori vecchi dell'array vengono usati per determinare il movimento nuovo
                 balls_mask_history = CircularArray(3)
                 motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
@@ -85,18 +91,43 @@ class VideoConsumer:
 
             balls_mask_history.add(current_balls_mask)
             if balls_mask_history.get_len() == 3:
-                current_motion_count = self._motion_count(
-                    balls_mask_history.get_array()
+                current_motion = self._motion_count(balls_mask_history.get_array())
+                # Debug: Visualizza se è in movimento o no
+
+                test_image = blurred.copy()
+                text = "MOVIMENTO" if current_motion else "FERMO"
+                cv2.putText(
+                    img=test_image,
+                    text=text,
+                    org=(10, 30),
+                    fontFace=cv2.FONT_HERSHEY_SIMPLEX,
+                    fontScale=1,
+                    color=(255, 255, 255),
+                    thickness=2,
+                    lineType=cv2.LINE_AA,
                 )
-                motion_history.add(current_motion_count)
+                cv2.imshow("Blurred with movement", test_image)
+                cv2.waitKey(4)
+
+                if current_motion != isMoving:
+                    isMoving = current_motion
+                    if isMoving:
+                        self.start_movement_callback()
+                    else:
+                        self.stop_movement_callback()
+                """ motion_history.add(current_motion)
                 if motion_history.get_len() == self.NUMBER_OF_MOTION_COUNT:
                     # Verifico che tutti i N motion count siano False
                     if all(not motion for motion in motion_history.get_array()):
-                        self.stop_movement_callback()
+                        # Controllo se si è fermato, cioè prima era in movimento e ora si è fermato
+                        # self.stop_movement_callback()
+                        logging
+                        pass
                     else:
-                        self.start_movement_callback()
+                        pass
+                        # self.start_movement_callback() """
 
-    CURRENT_MOTION_THRESHOLD = 100
+    CURRENT_MOTION_THRESHOLD = 50
 
     def _motion_count(self, balls_mask_history):
         """
@@ -111,16 +142,14 @@ class VideoConsumer:
         frame_p2 = balls_mask_history[0]  # Frame -2
         frame_p1 = balls_mask_history[1]  # Frame -1
         frame_c = balls_mask_history[2]  # Frame corrente
-
         diff1 = cv2.absdiff(frame_p1, frame_p2)
         diff2 = cv2.absdiff(frame_c, frame_p1)
-        diff = cv2.bitwise_and(
-            diff1, diff2
-        )  # Permette di ridurre il volume, andando a evidenziare le aree che sono cambiate in entrambi i confronti
+        white_pixel_frame_d1 = cv2.countNonZero(diff1)
+        white_pixel_frame_d2 = cv2.countNonZero(diff2)
+        max_white_pixel = max(white_pixel_frame_d1, white_pixel_frame_d2)
+        return max_white_pixel > self.CURRENT_MOTION_THRESHOLD
 
-        return cv2.countNonZero(diff) > self.CURRENT_MOTION_THRESHOLD
-
-    CIRCULARITY_THRESHOLD = 0.8
+    CIRCULARITY_THRESHOLD = 0.6
     H_DIFF, S_DIFF, V_DIFF = 5, 10, 5
 
     def _create_mask(self, hsv, points, colors):
@@ -156,17 +185,16 @@ class VideoConsumer:
         points = np.array(points, dtype=np.int32).reshape((-1, 1, 2))
         rec_mask = cv2.fillPoly(np.zeros(hsv.shape[:2], dtype=np.uint8), [points], 255)
         color_mask = cv2.inRange(hsv, color_lower, color_upper)
-        color_mask = cv2.erode(color_mask, None, iterations=3)
+        # color_mask = cv2.erode(color_mask, None, iterations=3)
         color_mask = cv2.dilate(color_mask, None, iterations=2)
         color_mask = cv2.bitwise_not(color_mask)  # Inverti la color mask
-        combined_mask = cv2.bitwise_and(rec_mask, color_mask)
-        hsv_masked = cv2.bitwise_and(hsv, hsv, mask=rec_mask)
-        gray = cv2.split(hsv)[2]
-        # combined_mask = cv2.bitwise_and(color_mask, rec_mask)
-        cv2.imshow("Gray masked", gray)
-        contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        combined_mask = cv2.bitwise_and(color_mask, rec_mask)
+
+        contours, _ = cv2.findContours(
+            combined_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
+        )
         # contours = imutils.grab_contours(contours)
-        circularity_mask = np.zeros_like(gray)
+        circularity_mask = np.zeros_like(combined_mask)
 
         for c in contours:
             area = cv2.contourArea(c)
@@ -178,6 +206,4 @@ class VideoConsumer:
             if circularity > self.CIRCULARITY_THRESHOLD:
                 cv2.drawContours(circularity_mask, [c], -1, 255, thickness=cv2.FILLED)
         # Debug: Visualizza le maschere intermedie
-        cv2.imshow("Circularity Mask", circularity_mask)
-        cv2.waitKey(4)
         return circularity_mask
