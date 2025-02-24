@@ -7,6 +7,7 @@ from device.game.ruleset import Ruleset
 from device.game.timer import Timer
 from device.table import TablePreset
 from device.utils import is_raspberry_pi
+from device.video_producer import VideoProducer
 import logging
 from gpiozero import Buzzer
 import winsound
@@ -39,7 +40,7 @@ class Game:
         table: TablePreset,
         player1_name: str,
         player2_name: str,
-        video_producer,
+        video_producer: VideoProducer,
     ):
         """
         Inizializza una nuova istanza di Game impostando il set di regole, la configurazione del tavolo e i nomi dei giocatori.

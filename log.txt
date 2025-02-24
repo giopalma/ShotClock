@@ -642,3 +642,771 @@ TypeError: 'module' object is not callable
 2025-02-23 18:30:49,795 - INFO - Timer: 33 remaining time
 2025-02-23 18:30:50,831 - INFO - Timer: 32 remaining time
 2025-02-23 18:30:51,869 - INFO - Timer: 31 remaining time
+2025-02-24 09:35:26,467 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 09:35:26,470 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 09:36:24,515 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 09:36:24,516 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 09:49:49,073 - ERROR - Exception on /game [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources\game.py", line 14, in get
+    data = json.dumps(game.__dict__)
+                      ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+2025-02-24 09:49:49,093 - INFO - 127.0.0.1 - - [24/Feb/2025 09:49:49] "[35m[1mGET /game HTTP/1.1[0m" 500 -
+2025-02-24 09:51:03,104 - ERROR - Exception on /game [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources\game.py", line 14, in get
+    return (
+             
+AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+2025-02-24 09:51:03,112 - INFO - 127.0.0.1 - - [24/Feb/2025 09:51:03] "[35m[1mGET /game HTTP/1.1[0m" 500 -
+2025-02-24 09:51:19,258 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 09:51:19,259 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 09:51:23,953 - INFO - 127.0.0.1 - - [24/Feb/2025 09:51:23] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-02-24 11:45:55,703 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:45:55,704 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:46:12,940 - INFO - 127.0.0.1 - - [24/Feb/2025 11:46:12] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-02-24 11:47:01,316 - ERROR - Exception on /table [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: table_preset
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 26, in get
+    tables = models_dao.TablePresetDao.get_all()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\models_dao.py", line 55, in get_all
+    return TablePreset.query.all()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2699, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2853, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: table_preset
+[SQL: SELECT table_preset.id AS table_preset_id, table_preset.name AS table_preset_name, table_preset.points AS table_preset_points, table_preset.colors AS table_preset_colors 
+FROM table_preset]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-24 11:47:01,344 - INFO - 127.0.0.1 - - [24/Feb/2025 11:47:01] "[35m[1mGET /table HTTP/1.1[0m" 500 -
+2025-02-24 11:48:54,452 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:48:54,454 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:48:59,925 - INFO - 127.0.0.1 - - [24/Feb/2025 11:48:59] "GET /table HTTP/1.1" 200 -
+2025-02-24 11:49:39,918 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:49:39,919 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:49:41,732 - INFO - 127.0.0.1 - - [24/Feb/2025 11:49:41] "GET /table HTTP/1.1" 200 -
+2025-02-24 11:50:06,442 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:50:06,442 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:50:58,858 - INFO - 127.0.0.1 - - [24/Feb/2025 11:50:58] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 11:54:06,935 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:54:06,936 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:54:10,815 - INFO - {'name': 'wpa_standard', 'initial_duration': 60, 'turn_duration': 35, 'allarm_time': 10, 'incremenet_duration': 25, 'max_incremenet_for_match': 1}
+2025-02-24 11:54:10,816 - WARNING - POST method not implemented for RulesetResource
+2025-02-24 11:54:10,828 - INFO - 127.0.0.1 - - [24/Feb/2025 11:54:10] "POST /ruleset HTTP/1.1" 200 -
+2025-02-24 11:57:24,189 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:57:24,190 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:57:27,516 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 47, in post
+    data = json.loads(request.json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+2025-02-24 11:57:27,526 - INFO - 127.0.0.1 - - [24/Feb/2025 11:57:27] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 11:58:03,453 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:58:03,454 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:58:06,070 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 53, in post
+    increment_duration=data["increment_duration"],
+                       ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'increment_duration'
+2025-02-24 11:58:06,081 - INFO - 127.0.0.1 - - [24/Feb/2025 11:58:06] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 11:58:55,862 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 11:58:55,863 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 11:58:57,858 - INFO - 127.0.0.1 - - [24/Feb/2025 11:58:57] "POST /ruleset HTTP/1.1" 200 -
+2025-02-24 12:00:19,387 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:00:19,388 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:00:22,174 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 53, in post
+    increment_duration=data["increment_duration"],
+                       ~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'increment_duration'
+2025-02-24 12:00:22,187 - INFO - 127.0.0.1 - - [24/Feb/2025 12:00:22] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:00:52,823 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 54, in post
+    max_increment_for_match=data["max_increment_for_match"],
+                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_increment_for_match'
+2025-02-24 12:00:52,831 - INFO - 127.0.0.1 - - [24/Feb/2025 12:00:52] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:01:07,149 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 56, in post
+    return (json.dumps(ruleset), 201)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Ruleset is not JSON serializable
+2025-02-24 12:01:07,194 - INFO - 127.0.0.1 - - [24/Feb/2025 12:01:07] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:01:43,818 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: ruleset.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 48, in post
+    ruleset = models_dao.RulesetDao.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\models_dao.py", line 41, in create
+    db.session.commit()
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: ruleset.name
+[SQL: INSERT INTO ruleset (name, initial_duration, turn_duration, allarm_time, increment_duration, max_increment_for_match) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: ('wpa_standard', 60, 35, 10, 25, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-24 12:01:43,851 - INFO - 127.0.0.1 - - [24/Feb/2025 12:01:43] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:01:59,991 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Ruleset is not JSON serializable
+2025-02-24 12:01:59,996 - INFO - 127.0.0.1 - - [24/Feb/2025 12:01:59] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:02:17,392 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Ruleset is not JSON serializable
+2025-02-24 12:02:17,399 - INFO - 127.0.0.1 - - [24/Feb/2025 12:02:17] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:05:54,501 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:05:54,502 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:06:00,728 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 44, in get
+    return (jsonify([r.to_dict() for r in rulesets]), 200)
+                     ^^^^^^^^^
+AttributeError: 'Ruleset' object has no attribute 'to_dict'
+2025-02-24 12:06:00,740 - INFO - 127.0.0.1 - - [24/Feb/2025 12:06:00] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:06:23,127 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:06:23,128 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:06:27,324 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 44, in get
+    return (jsonify([r.__dict__ for r in rulesets]), 200)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type InstanceState is not JSON serializable
+2025-02-24 12:06:27,341 - INFO - 127.0.0.1 - - [24/Feb/2025 12:06:27] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:08:46,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:08:46,566 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:09:05,384 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:09:05,385 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:10:23,230 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2025-02-24 12:10:23,247 - INFO - 127.0.0.1 - - [24/Feb/2025 12:10:23] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:13:40,635 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:13:40,637 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:13:42,870 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 44, in get
+    return (jsonify(rulesets), 200)
+            ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ScalarResult is not JSON serializable
+2025-02-24 12:13:42,885 - INFO - 127.0.0.1 - - [24/Feb/2025 12:13:42] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:15:19,994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:15:19,995 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:15:21,916 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2025-02-24 12:15:21,927 - INFO - 127.0.0.1 - - [24/Feb/2025 12:15:21] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:16:45,144 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:16:45,145 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:16:48,081 - INFO - [Ruleset(id=1, name='wpa_standard', initial_duration=60, turn_duration=35, allarm_time=10, increment_duration=25, max_increment_for_match=1)]
+2025-02-24 12:16:48,093 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2025-02-24 12:16:48,114 - INFO - 127.0.0.1 - - [24/Feb/2025 12:16:48] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:17:57,715 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:17:57,716 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:18:02,968 - INFO - [{'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001397FC5C710>, 'allarm_time': 10, 'turn_duration': 35, 'initial_duration': 60, 'max_increment_for_match': 1, 'id': 1, 'name': 'wpa_standard', 'increment_duration': 25}]
+2025-02-24 12:18:02,977 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2025-02-24 12:18:02,991 - INFO - 127.0.0.1 - - [24/Feb/2025 12:18:02] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:18:57,586 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:18:57,587 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:19:02,977 - ERROR - Exception on /ruleset [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Ruleset is not JSON serializable
+2025-02-24 12:19:02,989 - INFO - 127.0.0.1 - - [24/Feb/2025 12:19:02] "[35m[1mGET /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:19:23,859 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:19:23,860 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:19:33,420 - INFO - 127.0.0.1 - - [24/Feb/2025 12:19:33] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 12:20:16,226 - INFO - 127.0.0.1 - - [24/Feb/2025 12:20:16] "GET /game HTTP/1.1" 200 -
+2025-02-24 12:20:31,779 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:20:31,780 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:20:47,327 - INFO - 127.0.0.1 - - [24/Feb/2025 12:20:47] "GET /game HTTP/1.1" 200 -
+2025-02-24 12:20:54,838 - INFO - 127.0.0.1 - - [24/Feb/2025 12:20:54] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 12:21:04,270 - ERROR - Exception on /ruleset [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Ruleset is not JSON serializable
+2025-02-24 12:21:04,280 - INFO - 127.0.0.1 - - [24/Feb/2025 12:21:04] "[35m[1mPOST /ruleset HTTP/1.1[0m" 500 -
+2025-02-24 12:21:33,360 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:21:33,361 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:22:41,534 - INFO - 127.0.0.1 - - [24/Feb/2025 12:22:41] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 12:29:13,531 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:29:13,534 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:29:21,217 - INFO - 127.0.0.1 - - [24/Feb/2025 12:29:21] "[33mGET /ruleset HTTP/1.1[0m" 404 -
