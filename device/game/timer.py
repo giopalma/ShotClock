@@ -26,7 +26,7 @@ class Timer:
         self.periodic_callback = periodic_callback
         self.periodic_time = periodic_time
         self._allarm_triggered = False
-        self._pause_event = Event()
+        self._is_running_event = Event()
         self._end_event = (
             Event()
         )  # L'end event è necessario per terminare il loop del run
@@ -41,8 +41,8 @@ class Timer:
         _last_time_check = time.monotonic()
         while (not self._end_event.is_set()) and (self.remaining_time > 0):
             start_time = time.monotonic()
-            if self._pause_event.is_set():
-                self._pause_event.wait()  # Attende che il timer venga ripreso
+            if not self._is_running_event.is_set():
+                self._is_running_event.wait()  # Attende che il timer venga ripreso
                 start_time = time.monotonic()
 
             time.sleep(max(0.001, min(self.remaining_time / 10, 0.1)))
@@ -64,18 +64,18 @@ class Timer:
 
     def start(self):
         """Avvia il timer."""
-        self._pause_event.clear()
+        self._is_running_event.set()
         self.thread = Thread(target=self._run, daemon=True)
         self.thread.name = "TimerThread"
         self.thread.start()
 
     def pause(self):
         """Metti in pausa il timer."""
-        self._pause_event.set()
+        self._is_running_event.clear()
 
     def resume(self):
         """Riprendi il timer dalla pausa."""
-        self._pause_event.clear()
+        self._is_running_event.set()
 
     def end(self):
         """
