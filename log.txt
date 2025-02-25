@@ -1410,3 +1410,610 @@ TypeError: Object of type Ruleset is not JSON serializable
  * Running on http://127.0.0.1:5000
 2025-02-24 12:29:13,534 - INFO - [33mPress CTRL+C to quit[0m
 2025-02-24 12:29:21,217 - INFO - 127.0.0.1 - - [24/Feb/2025 12:29:21] "[33mGET /ruleset HTTP/1.1[0m" 404 -
+2025-02-24 12:32:45,674 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 12:32:45,675 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 12:32:58,529 - INFO - 127.0.0.1 - - [24/Feb/2025 12:32:58] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 12:33:29,980 - INFO - 127.0.0.1 - - [24/Feb/2025 12:33:29] "DELETE /ruleset/1 HTTP/1.1" 200 -
+2025-02-24 12:33:37,668 - INFO - 127.0.0.1 - - [24/Feb/2025 12:33:37] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 12:33:48,866 - INFO - 127.0.0.1 - - [24/Feb/2025 12:33:48] "DELETE /ruleset/2 HTTP/1.1" 200 -
+2025-02-24 12:33:59,657 - INFO - 127.0.0.1 - - [24/Feb/2025 12:33:59] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 17:19:50,469 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:19:50,470 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:24:27,896 - INFO - 127.0.0.1 - - [24/Feb/2025 17:24:27] "[33mGET /game/actions HTTP/1.1[0m" 404 -
+2025-02-24 17:24:42,208 - INFO - 127.0.0.1 - - [24/Feb/2025 17:24:42] "[31m[1mPOST /game/actions HTTP/1.1[0m" 415 -
+2025-02-24 17:28:09,020 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:28:09,021 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:28:12,760 - INFO - 127.0.0.1 - - [24/Feb/2025 17:28:12] "[31m[1mPOST /game/actions HTTP/1.1[0m" 400 -
+2025-02-24 17:28:22,329 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 19, in post
+    ruleset = models_dao.RulesetDao.get(data["ruleset_id"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RulesetDao' has no attribute 'get'
+2025-02-24 17:28:22,340 - INFO - 127.0.0.1 - - [24/Feb/2025 17:28:22] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-02-24 17:29:30,632 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:29:30,633 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:29:40,454 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 19, in post
+    ruleset = models_dao.RulesetDao.get(data["ruleset_id"])
+                                        ~~~~^^^^^^^^^^^^^^
+KeyError: 'ruleset_id'
+2025-02-24 17:29:40,470 - INFO - 127.0.0.1 - - [24/Feb/2025 17:29:40] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-02-24 17:29:58,454 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 19, in post
+    ruleset = models_dao.RulesetDao.get(data["ruleset_id"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RulesetDao.get() takes 0 positional arguments but 1 was given
+2025-02-24 17:29:58,461 - INFO - 127.0.0.1 - - [24/Feb/2025 17:29:58] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-02-24 17:30:23,913 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:30:23,913 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:30:27,831 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 21, in post
+    game = game_manager.new_game(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\game\game_manager.py", line 36, in new_game
+    if _game is not None:
+       ^^^^^
+UnboundLocalError: cannot access local variable '_game' where it is not associated with a value
+2025-02-24 17:30:27,847 - INFO - 127.0.0.1 - - [24/Feb/2025 17:30:27] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-02-24 17:32:00,852 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:32:00,852 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:32:06,503 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 21, in post
+    game = game_manager.new_game(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\game\game_manager.py", line 39, in new_game
+    _game = Game(
+            ^^^^^
+TypeError: Game.__init__() missing 1 required positional argument: 'video_producer'
+2025-02-24 17:32:06,520 - INFO - 127.0.0.1 - - [24/Feb/2025 17:32:06] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-02-24 17:33:28,917 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:33:28,918 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:33:32,365 - INFO - 127.0.0.1 - - [24/Feb/2025 17:33:32] "GET /table HTTP/1.1" 200 -
+2025-02-24 17:36:35,995 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:36:36,001 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:37:27,527 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:37:27,530 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:37:31,448 - INFO - 127.0.0.1 - - [24/Feb/2025 17:37:31] "GET /table HTTP/1.1" 200 -
+2025-02-24 17:37:35,784 - INFO - 127.0.0.1 - - [24/Feb/2025 17:37:35] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 17:37:45,442 - INFO - 127.0.0.1 - - [24/Feb/2025 17:37:45] "POST /ruleset HTTP/1.1" 200 -
+2025-02-24 17:37:49,694 - INFO - 127.0.0.1 - - [24/Feb/2025 17:37:49] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 17:39:40,986 - INFO - 127.0.0.1 - - [24/Feb/2025 17:39:40] "GET /game HTTP/1.1" 200 -
+2025-02-24 17:39:57,024 - INFO - 127.0.0.1 - - [24/Feb/2025 17:39:57] "GET /table HTTP/1.1" 200 -
+2025-02-24 17:41:43,031 - INFO - 127.0.0.1 - - [24/Feb/2025 17:41:43] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 17:44:53,688 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:44:53,689 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:45:08,305 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:45:08,306 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:45:35,766 - ERROR - Exception on /table [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 74, in post
+    if ["name", "points", "colors"] not in data:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+2025-02-24 17:45:35,778 - INFO - 127.0.0.1 - - [24/Feb/2025 17:45:35] "[35m[1mPOST /table HTTP/1.1[0m" 500 -
+2025-02-24 17:46:59,032 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:46:59,033 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:47:04,189 - ERROR - Exception on /table [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 76, in post
+    tablepreset = models_dao.TablePreset.create(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TablePreset' has no attribute 'create'
+2025-02-24 17:47:04,204 - INFO - 127.0.0.1 - - [24/Feb/2025 17:47:04] "[35m[1mPOST /table HTTP/1.1[0m" 500 -
+2025-02-24 17:47:41,174 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:47:41,175 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:47:45,754 - INFO - 127.0.0.1 - - [24/Feb/2025 17:47:45] "POST /table HTTP/1.1" 200 -
+2025-02-24 17:51:36,380 - ERROR - Exception on /table [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 493, in wrapper
+    return self.make_response(data, code, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 522, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TablePreset is not JSON serializable
+2025-02-24 17:51:36,394 - INFO - 127.0.0.1 - - [24/Feb/2025 17:51:36] "[35m[1mGET /table HTTP/1.1[0m" 500 -
+2025-02-24 17:53:38,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:53:38,052 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:53:39,450 - INFO - 127.0.0.1 - - [24/Feb/2025 17:53:39] "GET /table HTTP/1.1" 200 -
+2025-02-24 17:54:25,550 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:54:25,551 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:54:28,583 - ERROR - Exception on /table [GET]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 69, in get
+    table["colors"] = json.loads(table["colors"])
+                                 ~~~~~^^^^^^^^^^
+TypeError: 'TablePreset' object is not subscriptable
+2025-02-24 17:54:28,595 - INFO - 127.0.0.1 - - [24/Feb/2025 17:54:28] "[35m[1mGET /table HTTP/1.1[0m" 500 -
+2025-02-24 17:55:44,082 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-24 17:55:44,083 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-24 17:55:47,129 - INFO - 127.0.0.1 - - [24/Feb/2025 17:55:47] "GET /table HTTP/1.1" 200 -
+2025-02-24 17:56:05,667 - INFO - 127.0.0.1 - - [24/Feb/2025 17:56:05] "GET /ruleset HTTP/1.1" 200 -
+2025-02-24 17:56:21,427 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 28, in post
+    return jsonify(game)
+           ^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Game is not JSON serializable
+2025-02-24 17:56:21,457 - INFO - 127.0.0.1 - - [24/Feb/2025 17:56:21] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-02-25 15:04:33,512 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:04:33,514 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:04:36,455 - INFO - 127.0.0.1 - - [25/Feb/2025 15:04:36] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:05:14,957 - INFO - 127.0.0.1 - - [25/Feb/2025 15:05:14] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:06:44,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:06:44,834 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:07:00,115 - INFO - 127.0.0.1 - - [25/Feb/2025 15:07:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:07:57,716 - INFO - 127.0.0.1 - - [25/Feb/2025 15:07:57] "[31m[1mGET /socket.io HTTP/1.1[0m" 400 -
+2025-02-25 15:17:02,206 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:17:02,207 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:17:07,132 - INFO - 127.0.0.1 - - [25/Feb/2025 15:17:07] "[31m[1mGET /socket.io HTTP/1.1[0m" 400 -
+2025-02-25 15:17:11,065 - INFO - 127.0.0.1 - - [25/Feb/2025 15:17:11] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:18:06,195 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:18:06,195 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:20:01,933 - INFO - 127.0.0.1 - - [25/Feb/2025 15:20:01] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:20:07,460 - INFO - 127.0.0.1 - - [25/Feb/2025 15:20:07] "[31m[1mGET /socket.io HTTP/1.1[0m" 400 -
+2025-02-25 15:28:29,736 - INFO -  * Restarting with stat
+2025-02-25 15:28:34,644 - WARNING -  * Debugger is active!
+2025-02-25 15:28:34,670 - INFO -  * Debugger PIN: 982-796-455
+2025-02-25 15:29:07,212 - INFO -  * Restarting with stat
+2025-02-25 15:29:12,193 - WARNING -  * Debugger is active!
+2025-02-25 15:29:12,217 - INFO -  * Debugger PIN: 982-796-455
+2025-02-25 15:29:21,778 - INFO -  * Restarting with stat
+2025-02-25 15:29:26,637 - WARNING -  * Debugger is active!
+2025-02-25 15:29:26,661 - INFO -  * Debugger PIN: 982-796-455
+2025-02-25 15:30:10,059 - INFO -  * Restarting with stat
+2025-02-25 15:34:58,206 - INFO - 127.0.0.1 - - [2025-02-25 15:34:58] "GET /ruleset HTTP/1.1" 200 284 0.047303
+2025-02-25 15:36:58,968 - INFO - 127.0.0.1 - - [2025-02-25 15:36:58] " ÷  óÉ6\x9a\x88\x95øÁ2.)[\x87.üÒ%\x986f \x96|±@±\x90äAOGó ¨\x91æÌ\x90FBìd.ÿºD'7\x84éÚÑ\x83±¹\x88/ØoK $À/À+À0À,À'Ì©Ì¨À	ÀÀ" 400 - 0.004071
+2025-02-25 15:45:22,993 - INFO - received event "message" from domOelDafDyngbuNAAAB [/]
+2025-02-25 15:45:23,002 - INFO - WebSocket client connected
+2025-02-25 15:45:23,003 - INFO - emitting event "message" to domOelDafDyngbuNAAAB [/]
+2025-02-25 15:46:17,968 - INFO - received event "message" from c_b0MYEPBOvjqkMXAAAB [/]
+2025-02-25 15:46:17,977 - INFO - WebSocket client connected
+2025-02-25 15:46:17,978 - INFO - emitting event "message" to c_b0MYEPBOvjqkMXAAAB [/]
+2025-02-25 15:47:25,906 - INFO - received event "message" from fzy2CCVkyv-N0wMzAAAB [/]
+2025-02-25 15:47:25,913 - INFO - Client message: ciao
+2025-02-25 15:47:25,914 - INFO - emitting event "message" to fzy2CCVkyv-N0wMzAAAB [/]
+2025-02-25 15:47:38,650 - INFO - received event "message" from fzy2CCVkyv-N0wMzAAAB [/]
+2025-02-25 15:47:38,653 - INFO - Client message: ciao
+2025-02-25 15:47:38,654 - INFO - emitting event "message" to fzy2CCVkyv-N0wMzAAAB [/]
+2025-02-25 17:26:29,041 - INFO - Remaining time: 34.79699999999866
+2025-02-25 17:26:30,046 - INFO - Remaining time: 33.79699999999866
+2025-02-25 17:26:31,052 - INFO - Remaining time: 32.78100000000268
+2025-02-25 17:26:32,058 - INFO - Remaining time: 31.781000000002678
+2025-02-25 17:26:33,063 - INFO - Remaining time: 30.764999999999418
+2025-02-25 17:26:34,069 - INFO - Remaining time: 29.764999999999418
+2025-02-25 17:26:35,074 - INFO - Remaining time: 28.764999999999418
+2025-02-25 17:26:36,079 - INFO - Remaining time: 27.75
+2025-02-25 17:26:37,083 - INFO - Remaining time: 26.75
+2025-02-25 17:26:38,089 - INFO - Remaining time: 25.75
+2025-02-25 17:26:39,095 - INFO - Remaining time: 24.734000000004016
+2025-02-25 17:26:40,100 - INFO - Remaining time: 23.734000000004016
+2025-02-25 17:26:41,105 - INFO - Remaining time: 22.734000000004016
+2025-02-25 17:26:42,110 - INFO - Remaining time: 21.718000000000757
+2025-02-25 17:26:43,116 - INFO - Remaining time: 20.718000000000757
+2025-02-25 17:27:25,582 - INFO - Remaining time: 34.79699999999866
+2025-02-25 17:27:26,589 - INFO - Remaining time: 33.79699999999866
+2025-02-25 17:27:27,594 - INFO - Remaining time: 32.78100000000268
+2025-02-25 17:27:28,599 - INFO - Remaining time: 31.781000000002678
+2025-02-25 17:27:29,607 - INFO - Remaining time: 30.781000000002678
+2025-02-25 17:27:30,612 - INFO - Remaining time: 29.764999999999418
+2025-02-25 17:27:31,618 - INFO - Remaining time: 28.764999999999418
+2025-02-25 17:27:53,294 - INFO - Remaining time: 59.0
+2025-02-25 17:27:54,300 - INFO - Remaining time: 57.984000000004016
+2025-02-25 17:27:55,306 - INFO - Remaining time: 56.984000000004016
+2025-02-25 17:27:56,310 - INFO - Remaining time: 55.984000000004016
+2025-02-25 17:27:57,315 - INFO - Remaining time: 54.96800000000076
+2025-02-25 17:27:58,320 - INFO - Remaining time: 53.96800000000076
+2025-02-25 17:27:59,325 - INFO - Remaining time: 52.96800000000076
+2025-02-25 17:28:00,332 - INFO - Remaining time: 51.95300000000134
+2025-02-25 17:28:01,338 - INFO - Remaining time: 50.95300000000134
+2025-02-25 17:28:02,343 - INFO - Remaining time: 49.95300000000134
+2025-02-25 17:28:03,455 - INFO - Remaining time: 49.84399999999732
+2025-02-25 17:28:04,460 - INFO - Remaining time: 48.84399999999732
+2025-02-25 17:28:05,466 - INFO - Remaining time: 47.84399999999732
+2025-02-25 17:28:06,473 - INFO - Remaining time: 46.82800000000134
+2025-02-25 17:28:07,478 - INFO - Remaining time: 45.82800000000134
+2025-02-25 17:28:09,497 - INFO - Remaining time: 34.812000000005355
+2025-02-25 17:28:10,520 - INFO - Remaining time: 33.796000000002095
+2025-02-25 17:28:11,525 - INFO - Remaining time: 32.796000000002095
+2025-02-25 17:28:12,615 - INFO - Remaining time: 31.702000000004773
+2025-02-25 17:28:13,701 - INFO - Remaining time: 30.67000000000553
+2025-02-25 17:28:14,749 - INFO - Remaining time: 29.65400000000227
+2025-02-25 17:28:15,769 - INFO - Remaining time: 28.669000000001688
+2025-02-25 17:28:16,804 - INFO - Remaining time: 27.685000000004948
+2025-02-25 17:28:17,903 - INFO - Remaining time: 26.60700000000361
+2025-02-25 17:28:19,000 - INFO - Remaining time: 25.513000000006286
+2025-02-25 17:48:28,340 - INFO - Remaining time: 59.0
+2025-02-25 17:51:04,648 - INFO - Remaining time: 59.0
+2025-02-25 17:51:21,529 - INFO - Remaining time: 59.0
+2025-02-25 17:51:22,535 - INFO - Remaining time: 57.98500000000058
+2025-02-25 17:51:23,541 - INFO - Remaining time: 56.98500000000058
+2025-02-25 17:51:24,547 - INFO - Remaining time: 55.9690000000046
+2025-02-25 17:51:25,553 - INFO - Remaining time: 54.9690000000046
+2025-02-25 17:51:26,558 - INFO - Remaining time: 53.9690000000046
+2025-02-25 17:51:27,564 - INFO - Remaining time: 52.95300000000134
+2025-02-25 17:51:28,569 - INFO - Remaining time: 51.95300000000134
+2025-02-25 17:52:16,609 - INFO - 127.0.0.1 - - [2025-02-25 17:52:16] "GET /game HTTP/1.1" 404 182 0.008787
+2025-02-25 17:52:26,753 - INFO - 127.0.0.1 - - [2025-02-25 17:52:26] "POST /game HTTP/1.1" 200 181 1.601886
+2025-02-25 17:52:45,515 - INFO - 127.0.0.1 - - [2025-02-25 17:52:45] "GET /game HTTP/1.1" 200 166 0.003612
+2025-02-25 17:53:18,852 - INFO - 127.0.0.1 - - [2025-02-25 17:53:18] "POST /game/actions HTTP/1.1" 200 193 0.038053
+2025-02-25 17:58:01,231 - INFO - 127.0.0.1 - - [2025-02-25 17:58:01] "GET /game HTTP/1.1" 404 182 0.042430
+2025-02-25 17:58:07,573 - INFO - 127.0.0.1 - - [2025-02-25 17:58:07] "GET /ruleset HTTP/1.1" 200 284 0.090581
+2025-02-25 17:58:21,379 - INFO - 127.0.0.1 - - [2025-02-25 17:58:21] "GET /table HTTP/1.1" 200 285 0.009716
+2025-02-25 17:58:28,480 - ERROR - Exception on /game [POST]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 38, in post
+    table.colors = [hex_to_opencv_hsv(color) for color in table.colors]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\utils.py", line 29, in hex_to_opencv_hsv
+    hsv = hex_to_hsv(color)
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\utils.py", line 19, in hex_to_hsv
+    r, g, b = hex_to_rgb(color)
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\utils.py", line 14, in hex_to_rgb
+    r, g, b = int(color[1:3], 16), int(color[3:5], 16), int(color[5:7], 16)
+              ^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 16: ''
+2025-02-25 17:58:28,499 - INFO - 127.0.0.1 - - [2025-02-25 17:58:28] "POST /game HTTP/1.1" 500 196 0.047141
+2025-02-25 18:00:57,416 - ERROR - invalid literal for int() with base 16: ''
+2025-02-25 18:00:57,439 - INFO - 127.0.0.1 - - [2025-02-25 18:00:57] "POST /game HTTP/1.1" 500 196 0.104625
+2025-02-25 18:01:44,404 - ERROR - invalid literal for int() with base 16: ''
+2025-02-25 18:01:44,418 - INFO - 127.0.0.1 - - [2025-02-25 18:01:44] "POST /game HTTP/1.1" 500 159 23.449708
+2025-02-25 18:02:43,884 - INFO - 127.0.0.1 - - [2025-02-25 18:02:43] "POST /game HTTP/1.1" 200 181 11.922136
+2025-02-25 18:02:59,431 - INFO - 127.0.0.1 - - [2025-02-25 18:02:59] "POST /game/actions HTTP/1.1" 200 193 0.025646
+2025-02-25 18:04:23,044 - INFO - 127.0.0.1 - - [2025-02-25 18:04:23] "POST /game HTTP/1.1" 200 181 0.805937
+2025-02-25 18:04:31,651 - INFO - 127.0.0.1 - - [2025-02-25 18:04:31] "POST /game/actions HTTP/1.1" 200 193 0.024458
+2025-02-25 18:10:06,050 - INFO - 127.0.0.1 - - [2025-02-25 18:10:06] "POST /game HTTP/1.1" 200 181 0.866822
+2025-02-25 18:10:10,818 - INFO - 127.0.0.1 - - [2025-02-25 18:10:10] "POST /game/actions HTTP/1.1" 200 193 0.035028
+2025-02-25 18:10:48,912 - INFO - 127.0.0.1 - - [2025-02-25 18:10:48] "POST /game HTTP/1.1" 200 181 0.750005
+2025-02-25 18:10:52,038 - INFO - 127.0.0.1 - - [2025-02-25 18:10:52] "POST /game/actions HTTP/1.1" 200 193 0.024489
+2025-02-25 18:10:53,041 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:53,043 - INFO - Remaining time: 59.0
+2025-02-25 18:10:54,049 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:54,051 - INFO - Remaining time: 57.984000000004016
+2025-02-25 18:10:55,055 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:55,056 - INFO - Remaining time: 56.984000000004016
+2025-02-25 18:10:56,061 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:56,062 - INFO - Remaining time: 55.984000000004016
+2025-02-25 18:10:57,067 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:57,068 - INFO - Remaining time: 54.96800000000076
+2025-02-25 18:10:58,076 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:58,077 - INFO - Remaining time: 53.96800000000076
+2025-02-25 18:10:59,084 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:10:59,085 - INFO - Remaining time: 52.96800000000076
+2025-02-25 18:11:00,091 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:00,092 - INFO - Remaining time: 51.96800000000076
+2025-02-25 18:11:01,097 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:01,100 - INFO - Remaining time: 50.95200000000477
+2025-02-25 18:11:02,104 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:02,105 - INFO - Remaining time: 49.95200000000477
+2025-02-25 18:11:03,111 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:03,112 - INFO - Remaining time: 48.93600000000151
+2025-02-25 18:11:04,117 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:04,119 - INFO - Remaining time: 47.93600000000151
+2025-02-25 18:11:05,124 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:05,125 - INFO - Remaining time: 46.93600000000151
+2025-02-25 18:11:06,130 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:06,131 - INFO - Remaining time: 45.93600000000151
+2025-02-25 18:11:07,137 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:07,138 - INFO - Remaining time: 44.93600000000151
+2025-02-25 18:11:08,143 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:08,144 - INFO - Remaining time: 43.919999999998254
+2025-02-25 18:11:09,149 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:09,150 - INFO - Remaining time: 42.919999999998254
+2025-02-25 18:11:10,157 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:10,159 - INFO - Remaining time: 41.904999999998836
+2025-02-25 18:11:11,164 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:11,165 - INFO - Remaining time: 40.904999999998836
+2025-02-25 18:11:12,170 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:12,171 - INFO - Remaining time: 39.904999999998836
+2025-02-25 18:11:13,177 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:13,179 - INFO - Remaining time: 38.904999999998836
+2025-02-25 18:11:14,184 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:14,185 - INFO - Remaining time: 37.904999999998836
+2025-02-25 18:11:15,191 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:15,192 - INFO - Remaining time: 36.888999999995576
+2025-02-25 18:11:16,198 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:16,199 - INFO - Remaining time: 35.888999999995576
+2025-02-25 18:11:17,205 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:17,206 - INFO - Remaining time: 34.87399999999616
+2025-02-25 18:11:18,211 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:18,212 - INFO - Remaining time: 33.87399999999616
+2025-02-25 18:11:19,219 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:19,221 - INFO - Remaining time: 32.858000000000175
+2025-02-25 18:11:20,231 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:20,233 - INFO - Remaining time: 31.858000000000175
+2025-02-25 18:11:21,241 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:21,242 - INFO - Remaining time: 30.858000000000175
+2025-02-25 18:11:22,247 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:22,248 - INFO - Remaining time: 29.858000000000175
+2025-02-25 18:11:23,254 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:23,255 - INFO - Remaining time: 28.843000000000757
+2025-02-25 18:11:24,260 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:24,261 - INFO - Remaining time: 27.843000000000757
+2025-02-25 18:11:25,266 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:25,267 - INFO - Remaining time: 26.826999999997497
+2025-02-25 18:11:26,272 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:26,274 - INFO - Remaining time: 25.826999999997497
+2025-02-25 18:11:27,278 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:27,279 - INFO - Remaining time: 24.826999999997497
+2025-02-25 18:11:28,283 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:28,284 - INFO - Remaining time: 23.81199999999808
+2025-02-25 18:11:29,290 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:29,290 - INFO - Remaining time: 22.81199999999808
+2025-02-25 18:11:30,297 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:30,298 - INFO - Remaining time: 21.81199999999808
+2025-02-25 18:11:31,305 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:31,306 - INFO - Remaining time: 20.81199999999808
+2025-02-25 18:11:32,311 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:32,312 - INFO - Remaining time: 19.81199999999808
+2025-02-25 18:11:33,317 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:33,318 - INFO - Remaining time: 18.81199999999808
+2025-02-25 18:11:34,324 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:34,326 - INFO - Remaining time: 17.81199999999808
+2025-02-25 18:11:35,332 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:35,333 - INFO - Remaining time: 16.79699999999866
+2025-02-25 18:11:36,339 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:36,340 - INFO - Remaining time: 15.796999999998661
+2025-02-25 18:11:37,345 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:37,346 - INFO - Remaining time: 14.781000000002678
+2025-02-25 18:11:38,351 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:38,352 - INFO - Remaining time: 13.781000000002678
+2025-02-25 18:11:39,357 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:39,358 - INFO - Remaining time: 12.781000000002678
+2025-02-25 18:11:40,364 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:40,365 - INFO - Remaining time: 11.764999999999418
+2025-02-25 18:11:41,370 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:41,371 - INFO - Remaining time: 10.764999999999418
+2025-02-25 18:11:43,282 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:43,283 - INFO - Remaining time: 9.843999999997322
+2025-02-25 18:11:44,290 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:44,291 - INFO - Remaining time: 8.843999999997322
+2025-02-25 18:11:45,296 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:45,297 - INFO - Remaining time: 7.8439999999973224
+2025-02-25 18:11:46,302 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:46,303 - INFO - Remaining time: 6.8439999999973224
+2025-02-25 18:11:47,308 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:47,309 - INFO - Remaining time: 5.8439999999973224
+2025-02-25 18:11:48,314 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:48,316 - INFO - Remaining time: 4.827999999994063
+2025-02-25 18:11:49,319 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:49,320 - INFO - Remaining time: 3.827999999994063
+2025-02-25 18:11:50,326 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:50,327 - INFO - Remaining time: 2.827999999994063
+2025-02-25 18:11:51,332 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:51,334 - INFO - Remaining time: 1.812999999994645
+2025-02-25 18:11:52,330 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:52,331 - INFO - Remaining time: 0.8129999999946449
+2025-02-25 18:11:54,148 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:54,149 - INFO - Remaining time: 34.0
+2025-02-25 18:11:55,158 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:55,159 - INFO - Remaining time: 32.98500000000058
+2025-02-25 18:11:56,165 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:56,166 - INFO - Remaining time: 31.985000000000582
+2025-02-25 18:11:57,172 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:57,173 - INFO - Remaining time: 30.9690000000046
+2025-02-25 18:11:58,179 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:58,180 - INFO - Remaining time: 29.9690000000046
+2025-02-25 18:11:59,186 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:11:59,188 - INFO - Remaining time: 28.9690000000046
+2025-02-25 18:12:00,193 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:12:00,195 - INFO - Remaining time: 27.9690000000046
+2025-02-25 18:12:01,200 - INFO - emitting event "timer" to all [/]
+2025-02-25 18:12:01,202 - INFO - Remaining time: 26.9690000000046

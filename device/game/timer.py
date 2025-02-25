@@ -1,12 +1,17 @@
 import time
-from threading import Thread, Event
-import logging
-from math import floor
+from threading import Lock, Thread, Event
 
 
-# TODO: Ricontrollare il timer
 class Timer:
-    def __init__(self, duration: int, allarm_time: int, callback, allarm_callback):
+    def __init__(
+        self,
+        duration: int,
+        allarm_time: int,
+        callback,
+        allarm_callback,
+        periodic_callback,
+        periodic_time=1,
+    ):
         """
         Inizializza un timer.
         :param duration: Durata del timer in secondi.
@@ -14,12 +19,13 @@ class Timer:
         """
         self.duration = duration
         self.remaining_time = duration
+        self._remaining_time_lock = Lock()
         self.callback = callback
-
         self.allarm_time = allarm_time
         self.allarm_callback = allarm_callback
+        self.periodic_callback = periodic_callback
+        self.periodic_time = periodic_time
         self._allarm_triggered = False
-
         self._pause_event = Event()
         self._end_event = (
             Event()
@@ -32,26 +38,29 @@ class Timer:
         Esegue il conto alla rovescia del timer. Se il timer è scaduto oppure viene formato il termine del timer,
         allora viene eseguita la funzione di callback.
         """
+        _last_time_check = time.monotonic()
         while (not self._end_event.is_set()) and (self.remaining_time > 0):
-            if not self._pause_event.is_set():
-                debug_last_remaining_time = floor(self.remaining_time)
-                start_time = time.time()
-                time.sleep(0.01)  # TODO: Impostare la precisione tramite config
-                elapsed = time.time() - start_time
+            start_time = time.monotonic()
+            if self._pause_event.is_set():
+                self._pause_event.wait()  # Attende che il timer venga ripreso
+                start_time = time.monotonic()
+
+            time.sleep(max(0.001, min(self.remaining_time / 10, 0.1)))
+
+            elapsed = time.monotonic() - start_time
+            with self._remaining_time_lock:
                 self.remaining_time = max(0, self.remaining_time - elapsed)
-                if (
-                    self.remaining_time <= self.allarm_time
-                    and not self._allarm_triggered
-                ):
-                    # self.allarm_callback()
-                    self._allarm_triggered = True
-                elif self.remaining_time <= 0:
-                    self.callback()
-                # DEBUG
-                if floor(self.remaining_time) != debug_last_remaining_time:
-                    logging.info(
-                        f"Timer: {floor(self.remaining_time)} remaining time",
-                    )
+
+            current_time = time.monotonic()
+            if current_time - _last_time_check >= self.periodic_time:
+                self.periodic_callback(self.remaining_time)
+                _last_time_check = current_time
+
+            if self.remaining_time <= self.allarm_time and not self._allarm_triggered:
+                self.allarm_callback()
+                self._allarm_triggered = True
+            elif self.remaining_time <= 0:
+                self.callback()
 
     def start(self):
         """Avvia il timer."""

@@ -3,7 +3,6 @@ from sqlalchemy.orm import Mapped, mapped_column
 from typing import List, Tuple
 import json
 from dataclasses import dataclass
-import logging
 
 
 @dataclass
@@ -18,6 +17,10 @@ class Ruleset(db.Model):
 
 
 class RulesetDao:
+    @staticmethod
+    def get(id):
+        return Ruleset.query.get(id)
+
     @staticmethod
     def get_all():
         return Ruleset.query.all()
@@ -62,6 +65,10 @@ class TablePreset(db.Model):
 
 
 class TablePresetDao:
+    @staticmethod
+    def get(id):
+        return TablePreset.query.get(id)
+
     @staticmethod
     def get_all():
         return TablePreset.query.all()

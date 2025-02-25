@@ -1,14 +1,13 @@
 import json
-from device.game import Game, Ruleset
-from device.table import TablePreset
-from device.utils import hex_to_opencv_hsv
-from device.video_producer import VideoProducer
-import device.api as api
+import os
 
-"""
-TEST SENZA API
 
-def test():
+def test_video():
+    from device.game import Game, Ruleset
+    from device.table import TablePreset
+    from device.utils import hex_to_opencv_hsv
+    from device.video_producer import VideoProducer
+
     ruleset = Ruleset(
         id=0,
         name="wpa_rules",
@@ -38,8 +37,18 @@ def test():
 
     game = Game(ruleset, table, "Player 1", "Player 2", video_producer)
     game.start()
-"""
 
 
-def test():
-    api.start()
+def test_api():
+    import device.api as api
+
+    api.start(debug=True)
+
+
+def test(is_video=False):
+    if is_video:
+        os.environ["FLASK_ENV"] = "video"
+        test_video()
+    else:
+        os.environ["FLASK_ENV"] = "development"
+        test_api()

@@ -1,6 +1,10 @@
 import threading
 import time
 from typing import Literal
+import logging
+from gpiozero import Buzzer
+import winsound
+import os
 
 from .video_consumer import VideoConsumer
 from device.game.ruleset import Ruleset
@@ -8,9 +12,6 @@ from device.game.timer import Timer
 from device.table import TablePreset
 from device.utils import is_raspberry_pi
 from device.video_producer import VideoProducer
-import logging
-from gpiozero import Buzzer
-import winsound
 
 
 class Game:
@@ -41,6 +42,7 @@ class Game:
         player1_name: str,
         player2_name: str,
         video_producer: VideoProducer,
+        socketio=None,
     ):
         """
         Inizializza una nuova istanza di Game impostando il set di regole, la configurazione del tavolo e i nomi dei giocatori.
@@ -63,12 +65,7 @@ class Game:
             ruleset.max_increment_for_match,
             ruleset.max_increment_for_match,
         ]
-        self._timer = Timer(
-            duration=ruleset.initial_duration,
-            allarm_time=ruleset.allarm_time,
-            callback=self.next_turn,
-            allarm_callback=self._allarm,
-        )
+        self._timer = self._new_timer(ruleset.initial_duration)
         self._status: Literal["ready", "running", "waiting", "ended"] = "ready"
         self._video_consumer = VideoConsumer(
             table=table,
@@ -76,6 +73,7 @@ class Game:
             start_movement_callback=self._start_movement,
             stop_movement_callback=self._stop_movement,
         )
+        self.socketio = socketio
 
     def start(self):
         """Avvia il gioco e inizia il turno per il primo giocatore."""
@@ -127,26 +125,21 @@ class Game:
         if self._status == "running":
             self._current_player = self._current_player + 1 % 2
             self._timer.end()  # Termino il vecchio timer
-            self._timer = Timer(
-                duration=self._ruleset.turn_duration,
-                allarm_time=self._ruleset.allarm_time,
-                callback=self.next_turn,
-                allarm_callback=self._allarm,
-            )  # Qui ricreo il timer, TODO: da testare se effettivamente si chiude bene il vecchio thread del timer
+            self._timer = self._new_timer(duration=self._ruleset.turn_duration)
             self.start_turn()
 
     def start_turn(self):
         """Inizia il turno per il giocatore corrente e avvia il timer."""
         self._timer.start()
 
-    def pause_turn(self):
+    def pause(self):
         """
         Mette in pausa il timer del turno, NON LO TERMINA.
         Per terminare il timer e passare al successivo utilizzare la funzione end_turn()
         """
         self._timer.pause()
 
-    def resume_turn(self):
+    def resume(self):
         """
         Riprende l'esecuzione del timer, funziona solo se il timer è in pausa, non fa nulla se non lo è
         """
@@ -158,6 +151,7 @@ class Game:
         self._timer.end()
         self.next_turn()
 
+    """------BUZZER / SUONO-----"""
     TIME_SOUND_BUZZER = 1
 
     def _buzzer(self):
@@ -172,3 +166,25 @@ class Game:
         else:
             # Quando viene eseguito su Windows
             winsound.Beep(1000, int(1000 * self.TIME_SOUND_BUZZER))
+
+    """------ TIMER -----"""
+
+    def _new_timer(self, duration: int):
+        return Timer(
+            duration=duration,
+            allarm_time=self._ruleset.allarm_time,
+            callback=self.next_turn,
+            allarm_callback=self._allarm,
+            periodic_callback=self._periodic_callback,
+            periodic_time=1,
+        )
+
+    def _periodic_callback(self, remaining_time):
+        if os.getenv("FLASK_ENV") == "development":
+            self.socketio.emit(
+                # Il timestamp serve a sincronizzare il server con il client
+                "timer",
+                {"timestamp": time.time(), "remaining_time": remaining_time},
+            )
+
+        logging.info(f"Remaining time: {remaining_time}")

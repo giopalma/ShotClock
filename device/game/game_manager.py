@@ -14,6 +14,7 @@ Variabili:
 from .ruleset import Ruleset
 from . import Game
 from device.table import TablePreset
+from device.video_producer import VideoProducer
 
 _game: Game | None = None
 
@@ -33,6 +34,7 @@ def new_game(
     Crea un nuovo gioco con le regole specificate e i nomi dei giocatori.
     Se esiste già un gioco in corso, lo termina e ne crea uno nuovo.
     """
+    global _game
     if _game is not None:
         _game.end()
     _game = Game(
@@ -40,5 +42,6 @@ def new_game(
         table=table,
         player1_name=player1_name,
         player2_name=player2_name,
+        video_producer=VideoProducer.get_instance(),
     )
     return _game
