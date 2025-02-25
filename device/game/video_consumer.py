@@ -24,9 +24,9 @@ class VideoConsumer:
         video_producer: VideoProducer,  # Il video producer, nonostate sia un singleton glielo passo come parametro per rendere il codice più testabile
     ):
         self._video_producer = video_producer
-        self._video_consumer_thread = Thread(target=self.run)
-        self._video_consumer_thread.daemon = True  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
-        self._video_consumer_thread.name = "VideoConsumerThread"
+        self._thread = Thread(target=self.run)
+        self._thread.daemon = True  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
+        self._thread.name = "VideoConsumerThread"
         """
         Queste due fuzioni sono dei callback che vengono chiamati quando il VideoConsumer cambia di stato
         MOVIMENTO -> FERMO : stop_movement_callback
@@ -37,13 +37,15 @@ class VideoConsumer:
         self.table = table
         self._is_running = Event()
         self._is_running.clear()
-        self._video_consumer_thread.start()
+        self._end_event = Event()
+        self._thread.start()
 
     def start(self):
         self._is_running.set()
 
     def end(self):
-        raise NotImplementedError
+        if self._thread and self._thread.is_alive():
+            self._end_event.set()
 
     def pause(self):
         self._is_running.clear()
@@ -74,7 +76,7 @@ class VideoConsumer:
         )  # Il motion_count viene calcolato inizialmente su 3 frame, ma poi viene calcolato ad ogni frame, perchè ad ogni frame vengono usati i due frame precedenti per calcolarlo. Quindi aumentando il NUMBER_OF_MOTION_COUNT su quanti frame non si vuole il movimento, valori troppo bassi sono più soggetti a rumore, valori troppo alti potrebbero ritardare l'interruzione del timer.
 
         isMoving = False
-        while self._video_producer.is_opened():
+        while self._video_producer.is_opened() and not self._end_event.is_set():
             time.sleep(0.17)
             if not self._is_running.is_set():
                 # TODO: Non è necessario sta cosa del motion history
@@ -115,17 +117,6 @@ class VideoConsumer:
                         self.start_movement_callback()
                     else:
                         self.stop_movement_callback()
-                """ motion_history.add(current_motion)
-                if motion_history.get_len() == self.NUMBER_OF_MOTION_COUNT:
-                    # Verifico che tutti i N motion count siano False
-                    if all(not motion for motion in motion_history.get_array()):
-                        # Controllo se si è fermato, cioè prima era in movimento e ora si è fermato
-                        # self.stop_movement_callback()
-                        logging
-                        pass
-                    else:
-                        pass
-                        # self.start_movement_callback() """
 
     CURRENT_MOTION_THRESHOLD = 50
 

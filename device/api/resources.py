@@ -20,6 +20,8 @@ class GameResource(Resource):
         )
 
     def post(self):
+        from . import socketio
+
         try:
             if not request.is_json:
                 return ({"message": "Missing JSON in request"}, 400)
@@ -45,6 +47,7 @@ class GameResource(Resource):
                     table=table,
                     player1_name=data["player1_name"],
                     player2_name=data["player2_name"],
+                    socketio=socketio,
                 )
                 return ({"message": "Game created successfully"}, 200)
             else:
@@ -79,7 +82,7 @@ class GameActionsResource(Resource):
         elif action == "resume":
             game.resume()
         elif action == "end":
-            game.end()
+            game_manager.end_game()
         else:
             return ({"message": "Invalid action"}, 400)
 

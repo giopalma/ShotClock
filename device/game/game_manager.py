@@ -28,7 +28,7 @@ def get_game() -> Game:
 
 
 def new_game(
-    ruleset: Ruleset, table: TablePreset, player1_name: str, player2_name
+    ruleset: Ruleset, table: TablePreset, player1_name: str, player2_name, socketio
 ) -> Game:
     """
     Crea un nuovo gioco con le regole specificate e i nomi dei giocatori.
@@ -43,5 +43,16 @@ def new_game(
         player1_name=player1_name,
         player2_name=player2_name,
         video_producer=VideoProducer.get_instance(),
+        socketio=socketio,
     )
     return _game
+
+
+def end_game():
+    """
+    Termina il gioco attualmente in esecuzione.
+    """
+    global _game
+    if _game is not None:
+        _game.end()
+        _game = None
