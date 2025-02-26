@@ -36,3 +36,129 @@
 2025-02-26 15:41:49,966 - INFO - [33mPress CTRL+C to quit[0m
 2025-02-26 15:41:55,653 - INFO - 127.0.0.1 - - [26/Feb/2025 15:41:55] "GET /video/frame HTTP/1.1" 200 -
 2025-02-26 15:42:17,990 - INFO - 127.0.0.1 - - [26/Feb/2025 15:42:17] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:49:21,943 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:49:21,946 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:50:05,617 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:50:05,619 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:50:36,202 - INFO - 127.0.0.1 - - [26/Feb/2025 15:50:36] "[35m[1mGET /video/stream HTTP/1.1[0m" 500 -
+2025-02-26 15:50:36,222 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/root/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/root/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/root/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/root/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/root/ShotClock/device/api/resources.py", line 35, in generate
+    b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n"
+numpy._core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('S37'), dtype('uint8')) -> None
+2025-02-26 15:50:36,644 - INFO - 127.0.0.1 - - [26/Feb/2025 15:50:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-26 15:52:10,683 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:52:10,685 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:52:16,084 - INFO - 127.0.0.1 - - [26/Feb/2025 15:52:16] "GET /video/stream HTTP/1.1" 200 -
+2025-02-26 15:56:06,406 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:56:06,409 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:56:11,844 - INFO - 127.0.0.1 - - [26/Feb/2025 15:56:11] "GET /video HTTP/1.1" 200 -
+2025-02-26 15:56:12,544 - INFO - 127.0.0.1 - - [26/Feb/2025 15:56:12] "GET /video/stream HTTP/1.1" 200 -
+2025-02-26 15:57:57,097 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:57:57,099 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:58:03,629 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:03] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:08,660 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:08] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:15,904 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:15] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:21,353 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:21] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:26,469 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:26] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:31,016 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:31] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:33,029 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:33] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:58:36,544 - INFO - 127.0.0.1 - - [26/Feb/2025 15:58:36] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:00:39,451 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:39] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:00:42,697 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:42] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:00:52,899 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:52] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:00:56,316 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:56] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:17:27,757 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:17:27,760 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:17:41,004 - INFO - 127.0.0.1 - - [26/Feb/2025 16:17:41] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:17:48,614 - INFO - 127.0.0.1 - - [26/Feb/2025 16:17:48] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:18:14,660 - INFO - 127.0.0.1 - - [26/Feb/2025 16:18:14] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:18:31,176 - INFO - 127.0.0.1 - - [26/Feb/2025 16:18:31] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:18:40,622 - INFO - 127.0.0.1 - - [26/Feb/2025 16:18:40] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:18:45,873 - INFO - 127.0.0.1 - - [26/Feb/2025 16:18:45] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:18:59,614 - INFO - 127.0.0.1 - - [26/Feb/2025 16:18:59] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:19:50,030 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:19:50,033 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:20:07,116 - INFO - 127.0.0.1 - - [26/Feb/2025 16:20:07] "GET /video HTTP/1.1" 200 -
+2025-02-26 16:20:07,987 - INFO - 127.0.0.1 - - [26/Feb/2025 16:20:07] "GET /video/stream HTTP/1.1" 200 -
+2025-02-26 16:25:34,481 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:25:34,485 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:26:25,618 - INFO - 127.0.0.1 - - [26/Feb/2025 16:26:25] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:26:26,682 - INFO - 127.0.0.1 - - [26/Feb/2025 16:26:26] "GET /video/record HTTP/1.1" 200 -
+2025-02-26 16:26:34,903 - INFO - 127.0.0.1 - - [26/Feb/2025 16:26:34] "GET /video/record HTTP/1.1" 200 -
+2025-02-26 16:34:32,601 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:34:32,605 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:35:06,727 - INFO - 127.0.0.1 - - [26/Feb/2025 16:35:06] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:35:09,233 - INFO - 127.0.0.1 - - [26/Feb/2025 16:35:09] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:35:22,248 - INFO - 127.0.0.1 - - [26/Feb/2025 16:35:22] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:39:04,011 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:39:04,015 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:39:15,175 - INFO - 127.0.0.1 - - [26/Feb/2025 16:39:15] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:39:26,230 - INFO - 127.0.0.1 - - [26/Feb/2025 16:39:26] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:39:35,703 - INFO - 127.0.0.1 - - [26/Feb/2025 16:39:35] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:39:44,214 - INFO - 127.0.0.1 - - [26/Feb/2025 16:39:44] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:39:54,894 - INFO - 127.0.0.1 - - [26/Feb/2025 16:39:54] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:40:21,414 - INFO - 127.0.0.1 - - [26/Feb/2025 16:40:21] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:40:27,461 - INFO - 127.0.0.1 - - [26/Feb/2025 16:40:27] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:40:42,709 - INFO - 127.0.0.1 - - [26/Feb/2025 16:40:42] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:40:52,673 - INFO - 127.0.0.1 - - [26/Feb/2025 16:40:52] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:40:58,599 - INFO - 127.0.0.1 - - [26/Feb/2025 16:40:58] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:41:12,261 - INFO - 127.0.0.1 - - [26/Feb/2025 16:41:12] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:41:13,897 - INFO - 127.0.0.1 - - [26/Feb/2025 16:41:13] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:41:15,438 - INFO - 127.0.0.1 - - [26/Feb/2025 16:41:15] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 16:46:38,209 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:46:38,212 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 17:09:47,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 17:09:47,622 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 17:11:47,495 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 17:11:47,496 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 17:11:52,178 - INFO - 127.0.0.1 - - [26/Feb/2025 17:11:52] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-26 17:11:52,870 - INFO - 127.0.0.1 - - [26/Feb/2025 17:11:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-26 17:11:59,843 - INFO - 127.0.0.1 - - [26/Feb/2025 17:11:59] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:01,982 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:01] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:08,180 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:08] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:09,397 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:09] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:10,697 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:10] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:16,868 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:16] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:24,348 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:24] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:12:30,466 - INFO - 127.0.0.1 - - [26/Feb/2025 17:12:30] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:13:49,562 - INFO - 127.0.0.1 - - [26/Feb/2025 17:13:49] "GET /video/record HTTP/1.1" 200 -
+2025-02-26 17:15:45,605 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 17:15:45,606 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 17:17:54,102 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 17:17:54,103 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 17:17:58,365 - INFO - 127.0.0.1 - - [26/Feb/2025 17:17:58] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:18:02,074 - INFO - Video Recording Started
+                                                                                                         2025-02-26 17:26:52,688 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 17:26:52,689 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 17:27:15,421 - INFO - 127.0.0.1 - - [26/Feb/2025 17:27:15] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:27:17,573 - INFO - 127.0.0.1 - - [26/Feb/2025 17:27:17] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:27:31,009 - INFO - 127.0.0.1 - - [26/Feb/2025 17:27:31] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 17:27:39,346 - INFO - Video Recording Started
+2025-02-26 17:28:46,161 - INFO - 127.0.0.1 - - [26/Feb/2025 17:28:46] "GET /video/record HTTP/1.1" 200 -
+2025-02-26 17:53:49,544 - INFO - Remaining time: 58.99520972100004

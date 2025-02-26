@@ -21,7 +21,7 @@ def test_video():
     )
 
     # Leggi i dati dal file JSON
-    with open("./device/test_data/video/example_edited.json", "r") as f:
+    with open("./device/test_data/video/output.json", "r") as f:
         data = json.load(f)
 
     points = data["points"]
@@ -33,7 +33,7 @@ def test_video():
         points=points,
         colors=colors,
     )
-    video_test = "./device/test_data/video/example_edited_extended.mp4"
+    video_test = "./device/test_data/video/output.avi"
     webcam = 0
     video_producer = VideoProducer.get_instance(video_source=video_test, loop=False)
 
@@ -47,7 +47,7 @@ def test_api():
     api.start(debug=True)
 
 
-def test(is_video=False):
+def test(is_video=True):
     if is_video:
         os.environ["FLASK_ENV"] = "video"
         test_video()

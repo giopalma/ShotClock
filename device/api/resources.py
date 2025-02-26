@@ -6,7 +6,7 @@ import cv2
 import time
 import tempfile
 from flask import send_file
-
+import os
 
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
@@ -15,7 +15,7 @@ from device.api import db
 from device.api import models_dao
 
 
-class FrameResource(Resource):
+class VideoFrameResource(Resource):
     def get(self):
         frame = VideoProducer.get_instance().get_frame()
         _, buffer = cv2.imencode(".jpg", frame)
@@ -23,21 +23,56 @@ class FrameResource(Resource):
         return response
 
 
+class VideoStreamResource(Resource):
+    def get(self):
+        def generate():
+            video_producer = VideoProducer.get_instance()
+            while True:
+                frame = video_producer.get_frame()
+                frame = frame.tobytes()
+                yield (
+                    b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n"
+                )
+
+        return Response(
+            generate(), mimetype="multipart/x-mixed-replace; boundary=frame"
+        )
+
+
+class VideoStreamPageResource(Resource):
+    def get(self):
+        html = """
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Video Stream</title>
+        </head>
+        <body>
+            <img src="/video/stream" alt="Video Stream">
+        </body>
+        </html>
+        """
+        return Response(html, mimetype="text/html")
+
+
 class VideoRecordResource(Resource):
     def get(self):
-
+        logging.info("Video Recording Started")
         video_producer = VideoProducer.get_instance()
         frames = []
         start_time = time.time()
 
-        while time.time() - start_time < 30:
+        while time.time() - start_time < 50:
             frame = video_producer.get_frame()
             frames.append(frame)
             time.sleep(1 / 30)  # Assuming 30 FPS
 
+        video_path = os.path.join(os.getcwd(), "output.avi")
+
         temp_video = tempfile.NamedTemporaryFile(delete=False, suffix=".avi")
         out = cv2.VideoWriter(
-            temp_video.name,
+            video_path,
             cv2.VideoWriter_fourcc(*"XVID"),
             30,
             (frames[0].shape[1], frames[0].shape[0]),
@@ -47,7 +82,7 @@ class VideoRecordResource(Resource):
             out.write(frame)
         out.release()
 
-        return send_file(temp_video.name, mimetype="video/x-msvideo")
+        return send_file(video_path, mimetype="video/x-msvideo")
 
 
 class GameResource(Resource):
