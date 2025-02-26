@@ -1,12 +1,53 @@
-from flask import jsonify, request
+from flask import jsonify, request, Response
 from flask_restful import Resource
-from device.game import game_manager
 import json
-from device.api import db
-from device.api import models_dao
 import logging
+import cv2
+import time
+import tempfile
+from flask import send_file
+
 
 from device.utils import hex_to_opencv_hsv
+from device.video_producer import VideoProducer
+from device.game import game_manager
+from device.api import db
+from device.api import models_dao
+
+
+class FrameResource(Resource):
+    def get(self):
+        frame = VideoProducer.get_instance().get_frame()
+        _, buffer = cv2.imencode(".jpg", frame)
+        response = Response(buffer.tobytes(), mimetype="image/jpeg")
+        return response
+
+
+class VideoRecordResource(Resource):
+    def get(self):
+
+        video_producer = VideoProducer.get_instance()
+        frames = []
+        start_time = time.time()
+
+        while time.time() - start_time < 30:
+            frame = video_producer.get_frame()
+            frames.append(frame)
+            time.sleep(1 / 30)  # Assuming 30 FPS
+
+        temp_video = tempfile.NamedTemporaryFile(delete=False, suffix=".avi")
+        out = cv2.VideoWriter(
+            temp_video.name,
+            cv2.VideoWriter_fourcc(*"XVID"),
+            30,
+            (frames[0].shape[1], frames[0].shape[0]),
+        )
+
+        for frame in frames:
+            out.write(frame)
+        out.release()
+
+        return send_file(temp_video.name, mimetype="video/x-msvideo")
 
 
 class GameResource(Resource):

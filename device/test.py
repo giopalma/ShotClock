@@ -1,6 +1,8 @@
 import json
 import os
 
+from device.video_producer import VideoProducer
+
 
 def test_video():
     from device.game import Game, Ruleset

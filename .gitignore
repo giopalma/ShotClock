@@ -1,5 +1,5 @@
 **/__pycache__/
-./log.txt
+log.txt
 .idea
 **/.venv/
 **/.env

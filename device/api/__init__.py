@@ -48,6 +48,8 @@ api.add_resource(resources.TablePresetResource, "/table")
 api.add_resource(resources.TablePresetResource2, "/table/<int:id>")
 api.add_resource(resources.RulesetResource, "/ruleset")
 api.add_resource(resources.RulesetResource2, "/ruleset/<int:id>")
+api.add_resource(resources.FrameResource, "/video/frame")
+api.add_resource(resources.VideoRecordResource, "/video/record")
 
 
 def start(debug=False):
