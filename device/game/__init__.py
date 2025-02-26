@@ -3,7 +3,6 @@ import time
 from typing import Literal
 import logging
 from gpiozero import Buzzer
-import winsound
 import os
 
 from .video_consumer import VideoConsumer
@@ -164,6 +163,8 @@ class Game:
             t = threading.Thread(target=self._buzzer)
             t.start()
         else:
+            import winsound
+
             # Quando viene eseguito su Windows
             winsound.Beep(1000, int(1000 * self.TIME_SOUND_BUZZER))
 

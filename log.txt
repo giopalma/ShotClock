@@ -1,0 +1,38 @@
+2025-02-26 15:23:22,943 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:23:22,943 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:25:04,314 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:25:04,316 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:27:03,747 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:27:03,749 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:27:41,149 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:27:41,151 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:30:31,927 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:30:31,929 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:30:59,945 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:30:59,947 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:32:17,920 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:32:17,922 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:32:56,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:32:56,754 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:33:46,539 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:33:46,541 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:34:23,097 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:34:23,099 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:35:19,216 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:35:19,217 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:41:49,966 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:41:49,966 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:41:55,653 - INFO - 127.0.0.1 - - [26/Feb/2025 15:41:55] "GET /video/frame HTTP/1.1" 200 -
+2025-02-26 15:42:17,990 - INFO - 127.0.0.1 - - [26/Feb/2025 15:42:17] "GET /video/frame HTTP/1.1" 200 -
