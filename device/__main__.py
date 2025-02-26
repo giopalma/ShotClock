@@ -19,6 +19,7 @@ parser.add_argument(
 
 def setup():
     import device.api as api
+
     api_thread = api.run(debug=args.debug)
 
     try:
