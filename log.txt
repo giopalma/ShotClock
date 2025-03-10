@@ -162,3 +162,52 @@ numpy._core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop wi
 2025-02-26 17:27:39,346 - INFO - Video Recording Started
 2025-02-26 17:28:46,161 - INFO - 127.0.0.1 - - [26/Feb/2025 17:28:46] "GET /video/record HTTP/1.1" 200 -
 2025-02-26 17:53:49,544 - INFO - Remaining time: 58.99520972100004
+2025-02-27 08:36:03,943 - INFO - Remaining time: 58.996490296999994
+2025-02-27 08:36:04,946 - INFO - Remaining time: 57.995359353
+2025-02-27 08:36:52,728 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 08:36:52,728 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-27 08:37:05,259 - INFO - Video Recording Started
+2025-02-27 08:38:13,449 - INFO - 127.0.0.1 - - [27/Feb/2025 08:38:13] "GET /video/record HTTP/1.1" 200 -
+2025-02-27 08:41:29,799 - INFO - Video Recording Started
+2025-02-27 08:42:36,979 - INFO - 127.0.0.1 - - [27/Feb/2025 08:42:36] "GET /video/record HTTP/1.1" 200 -
+2025-03-09 16:10:25,956 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-09 16:10:25,959 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 16:11:22,603 - INFO - 127.0.0.1 - - [09/Mar/2025 16:11:22] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-09 16:11:29,056 - ERROR - 'NoneType' object has no attribute 'points'
+2025-03-09 16:11:29,063 - INFO - 127.0.0.1 - - [09/Mar/2025 16:11:29] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-09 16:11:54,493 - INFO - 127.0.0.1 - - [09/Mar/2025 16:11:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-09 16:11:59,777 - INFO - 127.0.0.1 - - [09/Mar/2025 16:11:59] "GET /table HTTP/1.1" 200 -
+2025-03-09 16:12:07,667 - INFO - 127.0.0.1 - - [09/Mar/2025 16:12:07] "POST /table HTTP/1.1" 200 -
+2025-03-09 16:12:14,055 - INFO - 127.0.0.1 - - [09/Mar/2025 16:12:14] "POST /ruleset HTTP/1.1" 200 -
+2025-03-09 16:12:17,256 - INFO - 127.0.0.1 - - [09/Mar/2025 16:12:17] "GET /ruleset HTTP/1.1" 200 -
+2025-03-09 16:12:22,049 - INFO - 127.0.0.1 - - [09/Mar/2025 16:12:22] "POST /game HTTP/1.1" 200 -
+2025-03-09 16:14:51,568 - INFO - 127.0.0.1 - - [09/Mar/2025 16:14:51] "GET /game HTTP/1.1" 200 -
+2025-03-09 16:31:08,319 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-09 16:31:08,322 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 16:31:18,815 - INFO - Initialization successful.
+2025-03-09 16:31:18,816 - INFO - Camera now open.
+2025-03-09 16:31:18,840 - INFO - Camera configuration has been adjusted!
+2025-03-09 16:31:18,848 - INFO - Configuration successful!
+2025-03-09 16:31:19,059 - INFO - Camera started
+2025-03-09 16:31:19,138 - INFO - 127.0.0.1 - - [09/Mar/2025 16:31:19] "POST /game HTTP/1.1" 200 -
+2025-03-09 16:31:33,768 - INFO - 127.0.0.1 - - [09/Mar/2025 16:31:33] "GET /video/frame HTTP/1.1" 200 -
+2025-03-09 16:50:50,364 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-09 16:50:50,371 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 16:50:57,528 - INFO - Initialization successful.
+2025-03-09 16:50:57,529 - INFO - Camera now open.
+2025-03-09 16:50:57,546 - ERROR - Bad key <built-in function format>: valid stream configuration keys are ('format', 'size', 'stride', 'preserve_ar')
+2025-03-09 16:50:57,561 - INFO - 127.0.0.1 - - [09/Mar/2025 16:50:57] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-09 16:51:27,224 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-09 16:51:27,226 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 16:51:38,963 - INFO - Initialization successful.
+2025-03-09 16:51:38,965 - INFO - Camera now open.
+2025-03-09 16:51:38,989 - INFO - Camera configuration has been adjusted!
+2025-03-09 16:51:38,992 - INFO - Configuration successful!
+2025-03-09 16:51:39,198 - INFO - Camera started
+2025-03-09 16:51:40,574 - INFO - 127.0.0.1 - - [09/Mar/2025 16:51:40] "POST /game HTTP/1.1" 200 -
+2025-03-09 16:51:44,340 - INFO - 127.0.0.1 - - [09/Mar/2025 16:51:44] "GET /video/frame HTTP/1.1" 200 -

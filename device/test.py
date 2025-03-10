@@ -47,7 +47,7 @@ def test_api():
     api.start(debug=True)
 
 
-def test(is_video=True):
+def test(is_video=False):
     if is_video:
         os.environ["FLASK_ENV"] = "video"
         test_video()
