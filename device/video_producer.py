@@ -1,7 +1,6 @@
 import cv2
 import threading
 import time
-from picamera2 import Picamera2
 
 
 class VideoProducer:
@@ -25,6 +24,8 @@ class VideoProducer:
             )  # Usa picamera se non è specificata una sorgente
 
             if cls._instance.is_picamera:
+                from picamera2 import Picamera2
+
                 cls._instance.picam = Picamera2()
                 # Configurazione base della camera
                 config = cls._instance.picam.create_preview_configuration(

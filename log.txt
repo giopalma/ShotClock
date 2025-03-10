@@ -211,3 +211,5 @@ numpy._core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop wi
 2025-03-09 16:51:39,198 - INFO - Camera started
 2025-03-09 16:51:40,574 - INFO - 127.0.0.1 - - [09/Mar/2025 16:51:40] "POST /game HTTP/1.1" 200 -
 2025-03-09 16:51:44,340 - INFO - 127.0.0.1 - - [09/Mar/2025 16:51:44] "GET /video/frame HTTP/1.1" 200 -
+2025-03-10 17:25:19,665 - INFO - 127.0.0.1 - - [2025-03-10 17:25:19] "GET /game HTTP/1.1" 404 182 0.027817
+2025-03-10 17:25:31,180 - INFO - 127.0.0.1 - - [2025-03-10 17:25:31] "GET /game HTTP/1.1" 404 182 0.001516

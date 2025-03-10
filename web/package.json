@@ -1,33 +1,25 @@
 {
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@radix-ui/react-dialog": "^1.1.2",
-		"@radix-ui/react-label": "^2.1.0",
-		"@radix-ui/react-select": "^2.1.2",
-		"@radix-ui/react-slot": "^1.1.0",
-		"class-variance-authority": "^0.7.1",
-		"clsx": "^2.1.1",
-		"lucide-react": "^0.462.0",
-		"preact": "^10.22.1",
-		"preact-iso": "^2.8.1",
-		"preact-render-to-string": "^6.5.11",
-		"socket.io-client": "^4.8.1",
-		"tailwind-merge": "^2.5.5",
-		"tailwindcss-animate": "^1.0.7"
-	},
-	"devDependencies": {
-		"@preact/preset-vite": "^2.9.2",
-		"@types/node": "^22.10.1",
-		"autoprefixer": "^10.4.20",
-		"postcss": "^8.4.49",
-		"tailwindcss": "^3.4.15",
-		"typescript": "^5.7.2",
-		"vite": "^5.3.3"
-	}
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.2.0"
+  },
+  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }
