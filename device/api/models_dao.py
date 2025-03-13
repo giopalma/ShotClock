@@ -92,3 +92,12 @@ class TablePresetDao:
         db.session.add(new_tablepreset)
         db.session.commit()
         return new_tablepreset
+
+    @staticmethod
+    def delete(id):
+        tablepreset = TablePreset.query.get(id)
+        if tablepreset is None:
+            return False
+        db.session.delete(tablepreset)
+        db.session.commit()
+        return True

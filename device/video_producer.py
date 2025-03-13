@@ -1,6 +1,7 @@
 import cv2
 import threading
 import time
+from device.utils import is_raspberry_pi
 
 
 class VideoProducer:
@@ -14,21 +15,19 @@ class VideoProducer:
     def __init__(self):
         raise RuntimeError("VideoProcessor instance cannot be instantiated")
 
-    def __new__(cls, video_source=None, loop=False):
+    def __new__(cls, video_source, loop):
         if not cls._instance:
             cls._instance = super(VideoProducer, cls).__new__(cls)
 
             cls._instance.frame = None
-            cls._instance.is_picamera = (
-                video_source is None
-            )  # Usa picamera se non è specificata una sorgente
-
+            cls._instance.is_picamera = is_raspberry_pi()
             if cls._instance.is_picamera:
                 from picamera2 import Picamera2
 
                 cls._instance.picam = Picamera2()
                 # Configurazione base della camera
                 config = cls._instance.picam.create_preview_configuration(
+                    # TODO: Prendere il config dal file di configurazione
                     main={"size": (640, 480), "format": "BGR888"},
                 )
                 cls._instance.picam.configure(config)
@@ -44,7 +43,7 @@ class VideoProducer:
         return cls._instance
 
     @classmethod
-    def get_instance(cls, video_source=None, loop=False):
+    def get_instance(cls, video_source=0, loop=False):
         if not cls._instance:
             cls._instance = cls.__new__(cls, video_source, loop)
         return cls._instance

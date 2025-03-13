@@ -16,7 +16,7 @@ class GameTest(unittest.TestCase):
 
     def test_game_creation(self):
         self.assertEqual(
-            self.game._status, "ready", "Il gioco non inizia con lo status ready"
+            self.game.status, "ready", "Il gioco non inizia con lo status ready"
         )
 
     def test_timer_init(self):

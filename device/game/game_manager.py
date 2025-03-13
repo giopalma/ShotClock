@@ -56,3 +56,5 @@ def end_game():
     if _game is not None:
         _game.end()
         _game = None
+    else:
+        return "No game in progress"

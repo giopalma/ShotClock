@@ -213,3 +213,195 @@ numpy._core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop wi
 2025-03-09 16:51:44,340 - INFO - 127.0.0.1 - - [09/Mar/2025 16:51:44] "GET /video/frame HTTP/1.1" 200 -
 2025-03-10 17:25:19,665 - INFO - 127.0.0.1 - - [2025-03-10 17:25:19] "GET /game HTTP/1.1" 404 182 0.027817
 2025-03-10 17:25:31,180 - INFO - 127.0.0.1 - - [2025-03-10 17:25:31] "GET /game HTTP/1.1" 404 182 0.001516
+2025-03-10 18:00:20,293 - INFO - 127.0.0.1 - - [2025-03-10 18:00:20] "GET /game HTTP/1.1" 404 182 0.009037
+2025-03-10 18:00:32,923 - INFO - 127.0.0.1 - - [2025-03-10 18:00:32] "GET /game HTTP/1.1" 404 182 0.001022
+2025-03-10 18:00:35,699 - INFO - 127.0.0.1 - - [2025-03-10 18:00:35] "GET /game HTTP/1.1" 404 182 0.002028
+2025-03-10 18:01:52,659 - INFO - 127.0.0.1 - - [2025-03-10 18:01:52] "GET /game HTTP/1.1" 404 182 0.003523
+2025-03-10 18:01:59,589 - INFO - 127.0.0.1 - - [2025-03-10 18:01:59] "GET /game HTTP/1.1" 404 182 0.000962
+2025-03-10 18:02:24,106 - INFO - 127.0.0.1 - - [2025-03-10 18:02:24] "GET /game HTTP/1.1" 404 182 0.000996
+2025-03-10 18:02:27,029 - INFO - 127.0.0.1 - - [2025-03-10 18:02:27] "GET /game HTTP/1.1" 404 182 0.002000
+2025-03-10 18:02:32,538 - INFO - 127.0.0.1 - - [2025-03-10 18:02:32] "GET /game HTTP/1.1" 404 182 0.000999
+2025-03-10 18:02:35,195 - INFO - 127.0.0.1 - - [2025-03-10 18:02:35] "GET /game HTTP/1.1" 404 182 0.003599
+2025-03-10 18:02:36,111 - INFO - 127.0.0.1 - - [2025-03-10 18:02:36] "GET /game HTTP/1.1" 404 182 0.001491
+2025-03-10 18:02:39,923 - INFO - 127.0.0.1 - - [2025-03-10 18:02:39] "GET /game HTTP/1.1" 404 182 0.000500
+2025-03-10 18:08:03,877 - INFO - 127.0.0.1 - - [2025-03-10 18:08:03] "GET /game HTTP/1.1" 404 182 0.003157
+2025-03-10 18:08:47,977 - INFO - 127.0.0.1 - - [2025-03-10 18:08:47] "GET /game HTTP/1.1" 404 182 0.002020
+2025-03-10 18:09:16,470 - INFO - 127.0.0.1 - - [2025-03-10 18:09:16] "GET /game HTTP/1.1" 404 182 0.000508
+2025-03-10 18:09:17,956 - INFO - 127.0.0.1 - - [2025-03-10 18:09:17] "GET /game HTTP/1.1" 404 182 0.001010
+2025-03-10 18:09:27,527 - INFO - 127.0.0.1 - - [2025-03-10 18:09:27] "GET /game HTTP/1.1" 404 182 0.003013
+2025-03-10 18:09:30,899 - INFO - 127.0.0.1 - - [2025-03-10 18:09:30] "GET /game HTTP/1.1" 404 182 0.000487
+2025-03-10 18:09:45,423 - INFO - 127.0.0.1 - - [2025-03-10 18:09:45] "GET /game HTTP/1.1" 404 182 0.003038
+2025-03-10 18:09:46,365 - INFO - 127.0.0.1 - - [2025-03-10 18:09:46] "GET /game HTTP/1.1" 404 182 0.001508
+2025-03-10 18:10:29,663 - INFO - 127.0.0.1 - - [2025-03-10 18:10:29] "GET /game HTTP/1.1" 404 182 0.001526
+2025-03-10 18:10:35,616 - INFO - 127.0.0.1 - - [2025-03-10 18:10:35] "GET /game HTTP/1.1" 404 182 0.001013
+2025-03-10 18:11:25,616 - INFO - 127.0.0.1 - - [2025-03-10 18:11:25] "GET /game HTTP/1.1" 404 182 0.000999
+2025-03-10 18:11:32,478 - INFO - 127.0.0.1 - - [2025-03-10 18:11:32] "GET /game HTTP/1.1" 404 182 0.001013
+2025-03-10 18:12:30,392 - INFO - 127.0.0.1 - - [2025-03-10 18:12:30] "GET /game HTTP/1.1" 404 182 0.001532
+2025-03-10 18:12:45,691 - INFO - 127.0.0.1 - - [2025-03-10 18:12:45] "GET /game HTTP/1.1" 404 182 0.001531
+2025-03-10 18:12:51,855 - INFO - 127.0.0.1 - - [2025-03-10 18:12:51] "GET /game HTTP/1.1" 404 182 0.001493
+2025-03-10 18:14:51,725 - INFO - 127.0.0.1 - - [2025-03-10 18:14:51] "GET /game HTTP/1.1" 404 182 0.000998
+2025-03-11 11:02:11,402 - INFO - 127.0.0.1 - - [2025-03-11 11:02:11] "GET /game HTTP/1.1" 404 182 0.009045
+2025-03-11 11:02:37,466 - INFO - 127.0.0.1 - - [2025-03-11 11:02:37] "GET /game HTTP/1.1" 404 182 0.001496
+2025-03-11 11:05:04,042 - INFO - 127.0.0.1 - - [2025-03-11 11:05:04] "GET /game HTTP/1.1" 404 182 0.001031
+2025-03-11 11:06:01,026 - INFO - 127.0.0.1 - - [2025-03-11 11:06:01] "GET /game HTTP/1.1" 404 182 0.001531
+2025-03-11 11:06:02,436 - INFO - 127.0.0.1 - - [2025-03-11 11:06:02] "GET /game HTTP/1.1" 404 182 0.004486
+2025-03-11 11:06:13,480 - INFO - 127.0.0.1 - - [2025-03-11 11:06:13] "GET /game HTTP/1.1" 404 182 0.001004
+2025-03-11 11:06:34,265 - INFO - 127.0.0.1 - - [2025-03-11 11:06:34] "GET /game HTTP/1.1" 404 182 0.001534
+2025-03-11 11:07:38,379 - INFO - 127.0.0.1 - - [2025-03-11 11:07:38] "GET /game HTTP/1.1" 404 182 0.000511
+2025-03-12 16:42:31,600 - INFO - 127.0.0.1 - - [2025-03-12 16:42:31] "GET /table HTTP/1.1" 200 142 0.031876
+2025-03-12 16:42:35,805 - INFO - 127.0.0.1 - - [2025-03-12 16:42:35] "POST /table HTTP/1.1" 200 308 0.029986
+2025-03-12 16:42:38,220 - INFO - 127.0.0.1 - - [2025-03-12 16:42:38] "GET /table HTTP/1.1" 200 285 0.002108
+2025-03-12 16:48:48,325 - INFO - 127.0.0.1 - - [2025-03-12 16:48:48] "DELETE /table/1 HTTP/1.1" 404 167 0.010668
+2025-03-12 16:49:35,851 - INFO - 127.0.0.1 - - [2025-03-12 16:49:35] "GET /table HTTP/1.1" 200 285 0.050937
+2025-03-12 16:49:38,195 - ERROR - Exception on /table/1 [DELETE]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 192, in delete
+    if models_dao.TablePreset.delete(id):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TablePreset' has no attribute 'delete'
+2025-03-12 16:49:38,203 - INFO - 127.0.0.1 - - [2025-03-12 16:49:38] "DELETE /table/1 HTTP/1.1" 500 196 0.009621
+2025-03-12 16:50:43,016 - ERROR - Exception on /table/1 [DELETE]
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\device\api\resources.py", line 192, in delete
+    if models_dao.TablePreset.delete(id):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TablePreset' has no attribute 'delete'
+2025-03-12 16:50:43,032 - INFO - 127.0.0.1 - - [2025-03-12 16:50:43] "DELETE /table/1 HTTP/1.1" 500 196 0.021652
+2025-03-12 16:51:34,211 - INFO - 127.0.0.1 - - [2025-03-12 16:51:34] "DELETE /table/1 HTTP/1.1" 200 162 0.067433
+2025-03-12 16:53:08,552 - INFO - 127.0.0.1 - - [2025-03-12 16:53:08] "DELETE /table/1 HTTP/1.1" 404 171 0.004531
+2025-03-12 16:54:56,265 - INFO - 127.0.0.1 - - [2025-03-12 16:54:56] "GET /ruleset HTTP/1.1" 200 142 0.004536
+2025-03-12 16:55:01,121 - INFO - 127.0.0.1 - - [2025-03-12 16:55:01] "POST /ruleset HTTP/1.1" 200 283 0.026386
+2025-03-12 16:56:08,783 - INFO - 127.0.0.1 - - [2025-03-12 16:56:08] "GET /ruleset HTTP/1.1" 200 285 0.002020
+2025-03-12 17:29:02,376 - INFO - 127.0.0.1 - - [2025-03-12 17:29:02] "GET /game HTTP/1.1" 404 182 0.001499
+2025-03-12 17:36:20,886 - INFO - 127.0.0.1 - - [2025-03-12 17:36:20] "GET /game HTTP/1.1" 404 182 0.010105
+2025-03-12 17:36:25,879 - ERROR - 'NoneType' object has no attribute 'points'
+2025-03-12 17:36:25,881 - INFO - 127.0.0.1 - - [2025-03-12 17:36:25] "POST /game HTTP/1.1" 500 196 0.032362
+2025-03-12 17:36:37,992 - INFO - 127.0.0.1 - - [2025-03-12 17:36:37] "GET /table HTTP/1.1" 200 142 0.003665
+2025-03-12 17:36:40,640 - INFO - 127.0.0.1 - - [2025-03-12 17:36:40] "POST /table HTTP/1.1" 200 308 0.029717
+2025-03-12 17:36:42,831 - INFO - 127.0.0.1 - - [2025-03-12 17:36:42] "GET /table HTTP/1.1" 200 285 0.003020
+2025-03-12 17:36:46,343 - INFO - 127.0.0.1 - - [2025-03-12 17:36:46] "GET /ruleset HTTP/1.1" 200 285 0.003093
+2025-03-12 17:36:53,153 - ERROR - No module named 'picamera2'
+2025-03-12 17:36:53,163 - INFO - 127.0.0.1 - - [2025-03-12 17:36:53] "POST /game HTTP/1.1" 500 196 3.442009
+2025-03-12 17:38:01,499 - INFO - 127.0.0.1 - - [2025-03-12 17:38:01] "GET /table HTTP/1.1" 200 285 0.035167
+2025-03-12 17:38:04,068 - INFO - 127.0.0.1 - - [2025-03-12 17:38:04] "GET /ruleset HTTP/1.1" 200 285 0.003508
+2025-03-12 17:38:06,830 - INFO - 127.0.0.1 - - [2025-03-12 17:38:06] "GET /game HTTP/1.1" 404 182 0.002004
+2025-03-12 17:38:11,915 - ERROR - No module named 'picamera2'
+2025-03-12 17:38:11,922 - INFO - 127.0.0.1 - - [2025-03-12 17:38:11] "POST /game HTTP/1.1" 500 196 2.026948
+2025-03-12 17:38:20,346 - INFO - 127.0.0.1 - - [2025-03-12 17:38:20] "POST /game HTTP/1.1" 200 181 0.045515
+2025-03-12 17:38:33,963 - INFO - 127.0.0.1 - - [2025-03-12 17:38:33] "GET /game HTTP/1.1" 200 271 0.001001
+2025-03-12 17:42:45,177 - INFO - 127.0.0.1 - - [2025-03-12 17:42:45] "GET /game HTTP/1.1" 404 182 0.009591
+2025-03-12 17:42:47,837 - INFO - 127.0.0.1 - - [2025-03-12 17:42:47] "POST /game HTTP/1.1" 200 181 0.184175
+2025-03-12 17:43:24,342 - INFO - 127.0.0.1 - - [2025-03-12 17:43:24] "GET /game HTTP/1.1" 200 271 0.001055
+2025-03-12 17:44:04,745 - INFO - 127.0.0.1 - - [2025-03-12 17:44:04] "GET /game HTTP/1.1" 404 182 0.010575
+2025-03-12 17:44:06,951 - INFO - 127.0.0.1 - - [2025-03-12 17:44:06] "POST /game HTTP/1.1" 200 181 0.131631
+2025-03-12 17:45:16,607 - INFO - 127.0.0.1 - - [2025-03-12 17:45:16] "POST /game HTTP/1.1" 200 181 1.101341
+2025-03-12 17:45:21,082 - INFO - 127.0.0.1 - - [2025-03-12 17:45:21] "GET /game HTTP/1.1" 200 271 0.002035
+2025-03-12 17:51:46,536 - INFO - 127.0.0.1 - - [2025-03-12 17:51:46] "GET /game HTTP/1.1" 404 182 0.008026
+2025-03-12 17:51:59,314 - INFO - 127.0.0.1 - - [2025-03-12 17:51:59] "POST /game HTTP/1.1" 404 189 0.036761
+2025-03-12 17:53:07,870 - INFO - 127.0.0.1 - - [2025-03-12 17:53:07] "GET /game HTTP/1.1" 404 182 0.008044
+2025-03-12 17:53:09,612 - INFO - 127.0.0.1 - - [2025-03-12 17:53:09] "POST /game HTTP/1.1" 404 195 0.039457
+2025-03-12 17:53:14,816 - INFO - 127.0.0.1 - - [2025-03-12 17:53:14] "POST /game HTTP/1.1" 200 181 0.569899
+2025-03-12 17:53:24,519 - INFO - 127.0.0.1 - - [2025-03-12 17:53:24] "GET /game HTTP/1.1" 200 271 0.000501
+2025-03-12 17:53:27,882 - INFO - 127.0.0.1 - - [2025-03-12 17:53:27] "POST /game/actions HTTP/1.1" 200 191 0.010182
+2025-03-12 17:53:37,303 - INFO - 127.0.0.1 - - [2025-03-12 17:53:37] "GET /game HTTP/1.1" 404 182 0.001500
+2025-03-13 09:53:36,266 - INFO - Remaining time: 58.98400000000038
+2025-03-13 09:53:37,275 - INFO - Remaining time: 57.98400000000038
+2025-03-13 09:53:38,280 - INFO - Remaining time: 56.98400000000038
+2025-03-13 09:53:39,285 - INFO - Remaining time: 55.96900000000005
+2025-03-13 09:53:40,292 - INFO - Remaining time: 54.96900000000005
+2025-03-13 09:53:41,296 - INFO - Remaining time: 53.95300000000043
+2025-03-13 09:53:42,301 - INFO - Remaining time: 52.95300000000043
+2025-03-13 09:53:43,311 - INFO - Remaining time: 51.95300000000043
+2025-03-13 09:53:44,314 - INFO - Remaining time: 50.9369999999999
+2025-03-13 09:53:45,319 - INFO - Remaining time: 49.9369999999999
+2025-03-13 09:53:46,438 - INFO - Remaining time: 49.826999999999316
+2025-03-13 09:53:47,443 - INFO - Remaining time: 48.826999999999316
+2025-03-13 09:53:55,729 - INFO - Remaining time: 34.8119999999999
+2025-03-13 09:53:56,735 - INFO - Remaining time: 33.79600000000028
+2025-03-13 09:53:57,741 - INFO - Remaining time: 32.79600000000028
+2025-03-13 09:53:58,747 - INFO - Remaining time: 31.796000000000276
+2025-03-13 09:53:59,753 - INFO - Remaining time: 30.78099999999995
+2025-03-13 09:54:09,543 - INFO - Remaining time: 59.0
+2025-03-13 09:54:10,550 - INFO - Remaining time: 57.98400000000038
+2025-03-13 09:54:11,555 - INFO - Remaining time: 56.98400000000038
+2025-03-13 09:54:12,559 - INFO - Remaining time: 55.98400000000038
+2025-03-13 09:54:13,565 - INFO - Remaining time: 54.96799999999985
+2025-03-13 09:54:14,571 - INFO - Remaining time: 53.96799999999985
+2025-03-13 09:54:15,578 - INFO - Remaining time: 52.95300000000043
+2025-03-13 09:54:16,584 - INFO - Remaining time: 51.95300000000043
+2025-03-13 09:54:17,590 - INFO - Remaining time: 50.95300000000043
+2025-03-13 09:54:18,596 - INFO - Remaining time: 49.9369999999999
+2025-03-13 09:54:19,701 - INFO - Remaining time: 49.84299999999985
+2025-03-13 09:54:20,708 - INFO - Remaining time: 48.82800000000043
+2025-03-13 09:54:28,654 - INFO - Remaining time: 34.79700000000048
+2025-03-13 09:54:29,659 - INFO - Remaining time: 33.78200000000015
+2025-03-13 09:54:30,665 - INFO - Remaining time: 32.78200000000015
+2025-03-13 09:54:31,671 - INFO - Remaining time: 31.782000000000153
+2025-03-13 09:54:32,677 - INFO - Remaining time: 30.782000000000153
+2025-03-13 09:54:33,682 - INFO - Remaining time: 29.782000000000153
+2025-03-13 09:54:34,688 - INFO - Remaining time: 28.76599999999962
+2025-03-13 09:54:35,692 - INFO - Remaining time: 27.76599999999962
+2025-03-13 09:54:36,699 - INFO - Remaining time: 26.76599999999962
+2025-03-13 09:54:37,706 - INFO - Remaining time: 25.751000000000204
+2025-03-13 09:54:38,713 - INFO - Remaining time: 24.751000000000204
+2025-03-13 09:54:39,717 - INFO - Remaining time: 23.751000000000204
+2025-03-13 09:54:40,722 - INFO - Remaining time: 22.734999999999673
+2025-03-13 09:54:41,729 - INFO - Remaining time: 21.734999999999673
+2025-03-13 09:54:42,733 - INFO - Remaining time: 20.734999999999673
+2025-03-13 09:54:43,737 - INFO - Remaining time: 19.734999999999673
+2025-03-13 09:54:44,742 - INFO - Remaining time: 18.734999999999673
+2025-03-13 09:54:45,746 - INFO - Remaining time: 17.734999999999673
+2025-03-13 09:54:46,749 - INFO - Remaining time: 16.719999999999345
+2025-03-13 09:54:47,753 - INFO - Remaining time: 15.719999999999345
+2025-03-13 09:55:10,124 - INFO - Remaining time: 59.0
+2025-03-13 09:55:11,129 - INFO - Remaining time: 58.0
+2025-03-13 09:55:12,134 - INFO - Remaining time: 57.0
+2025-03-13 09:55:13,140 - INFO - Remaining time: 55.98400000000038
+2025-03-13 09:55:14,145 - INFO - Remaining time: 54.98400000000038
+2025-03-13 09:55:15,150 - INFO - Remaining time: 53.98400000000038
+2025-03-13 09:55:16,156 - INFO - Remaining time: 52.96900000000005
+2025-03-13 09:55:18,311 - INFO - Remaining time: 34.8119999999999
+2025-03-13 09:55:19,811 - INFO - Remaining time: 34.8119999999999
+2025-03-13 09:55:29,421 - INFO - Remaining time: 34.78099999999995
+2025-03-13 09:55:30,426 - INFO - Remaining time: 33.78099999999995
+2025-03-13 09:55:31,433 - INFO - Remaining time: 32.78099999999995
+2025-03-13 09:55:32,439 - INFO - Remaining time: 31.764999999999418
+2025-03-13 09:55:33,444 - INFO - Remaining time: 30.764999999999418
+2025-03-13 09:55:38,059 - INFO - Remaining time: 59.0
+2025-03-13 09:55:39,066 - INFO - Remaining time: 57.98399999999947
+2025-03-13 09:55:40,072 - INFO - Remaining time: 56.98399999999947
+2025-03-13 09:55:41,077 - INFO - Remaining time: 55.98399999999947
+2025-03-13 09:55:42,083 - INFO - Remaining time: 54.98399999999947
+2025-03-13 09:55:43,100 - INFO - Remaining time: 53.96799999999894
+2025-03-13 09:55:44,125 - INFO - Remaining time: 52.93699999999899
+2025-03-13 09:55:46,143 - INFO - Remaining time: 34.78099999999995

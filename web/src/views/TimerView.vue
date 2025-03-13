@@ -8,6 +8,9 @@ async function fetchGame() {
     try {
         const response = await fetch('/api/game');
         const _game = await response.json();
+        if (_game.message == 'No game in progress') {
+            throw new Error('Nessun gioco in corso');
+        }
         game.value = _game;
     } catch (e) {
         error.value = e.toString();
@@ -20,7 +23,7 @@ watchEffect(() => {fetchGame()});
 
 <template>
     <div v-if="loading"><p>Caricamento...</p></div>
-    <div v-if="error"><p>Errore: {{ error }}</p></div>
+    <div v-if="error"><p>{{ error }}</p></div>
     <div v-else>
         <h1>Timer</h1>
         <p>Tempo rimanente: {{ game.time }}</p>

@@ -25,7 +25,7 @@ class VideoConsumer:
     ):
         self._video_producer = video_producer
         self._thread = Thread(target=self.run)
-        self._thread.daemon = True  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
+        self._thread.daemon = False  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
         self._thread.name = "VideoConsumerThread"
         """
         Queste due fuzioni sono dei callback che vengono chiamati quando il VideoConsumer cambia di stato
@@ -140,7 +140,7 @@ class VideoConsumer:
         max_white_pixel = max(white_pixel_frame_d1, white_pixel_frame_d2)
         return max_white_pixel > self.CURRENT_MOTION_THRESHOLD
 
-    CIRCULARITY_THRESHOLD = 0.6
+    CIRCULARITY_THRESHOLD = 0.7
     H_DIFF, S_DIFF, V_DIFF = 5, 10, 5
 
     def _create_mask(self, hsv, points, colors):
@@ -197,4 +197,8 @@ class VideoConsumer:
             if circularity > self.CIRCULARITY_THRESHOLD:
                 cv2.drawContours(circularity_mask, [c], -1, 255, thickness=cv2.FILLED)
         # Debug: Visualizza le maschere intermedie
+        cv2.imshow("Color Mask", color_mask)
+        cv2.imshow("Rec Mask", rec_mask)
+        cv2.imshow("Combined Mask", combined_mask)
+        cv2.imshow("Circularity Mask", circularity_mask)
         return circularity_mask

@@ -58,71 +58,72 @@ class Game:
 
         self._is_running_rpi = is_raspberry_pi()
         self._buzzer = Buzzer(11) if self._is_running_rpi else None
-        self._player_names = [player1_name, player2_name]
-        self._current_player = 1
-        self._increments = [
+        self.player_names = [player1_name, player2_name]
+        self.current_player = 1
+        self.increments = [
             ruleset.max_increment_for_match,
             ruleset.max_increment_for_match,
         ]
         self._timer = self._new_timer(ruleset.initial_duration)
-        self._status: Literal["ready", "running", "waiting", "ended"] = "ready"
+        self.status: Literal["ready", "running", "waiting", "ended"] = "ready"
         self._video_consumer = VideoConsumer(
             table=table,
             video_producer=video_producer,
             start_movement_callback=self._start_movement,
             stop_movement_callback=self._stop_movement,
         )
+        self.last_remaining_time = 0
         self.socketio = socketio
 
     def start(self):
         """Avvia il gioco e inizia il turno per il primo giocatore."""
-        if self._status == "ready":
-            self._status = "running"
+        if self.status == "ready":
+            self.status = "running"
             self._video_consumer.start()
             self.start_turn()
+        else:
+            return "Game already started."
 
     def end(self):
         """Ferma il gioco e cancella tutti i timer."""
-        if self._status != "ended":
+        if self.status != "ended":
             self._timer.end()
             self._video_consumer.end()
-            self._status = "ended"
+            self.status = "ended"
             # TODO: Controllare bene se tutto è stato terminato
             print("Gioco terminato.")
 
     """------MOVEMENT EVENTS CALLBACKS-----"""
 
     def _start_movement(self):
-        if self._status == "running":
-            self._status = "waiting"
+        if self.status == "running":
+            self.status = "waiting"
             self._timer.pause()
 
     def _stop_movement(self):
-        if self._status == "waiting":
-            self._status = "running"
+        if self.status == "waiting":
+            self.status = "running"
             self.next_turn()
 
     """------TURN COMMANDS-----"""
 
     def increment_time(self):
-        if self._status == "running":
-            if self._increments[self._current_player] > 0:
-                self._increments[self._current_player] -= 1
+        if self.status == "running":
+            if self.increments[self.current_player] > 0:
+                self.increments[self.current_player] -= 1
                 # TODO: valutare se mettere in pausa il timer per l'incremento oppure no
                 self._timer.add_time(self._ruleset.increment_duration)
             else:
-                print(
-                    f"Nessun incremento disponibile per il giocatore: {self._player_names[self._current_player]}"
-                )
+                return f"Nessun incremento disponibile per il giocatore: {self.player_names[self.current_player]}"
 
     def remaining_increments(self, player=None):
         if player is None:
-            player = self._current_player
-        return self._increments[player]
+            player = self.current_player
+        return self.increments[player]
 
     def next_turn(self):
-        if self._status == "running":
-            self._current_player = self._current_player + 1 % 2
+        if self.status == "running":
+            self.current_player = self.current_player + 1 % 2
             self._timer.end()  # Termino il vecchio timer
             self._timer = self._new_timer(duration=self._ruleset.turn_duration)
             self.start_turn()
@@ -181,6 +182,7 @@ class Game:
         )
 
     def _periodic_callback(self, remaining_time):
+        self.last_remaining_time = remaining_time
         if os.getenv("FLASK_ENV") == "development":
             self.socketio.emit(
                 # Il timestamp serve a sincronizzare il server con il client

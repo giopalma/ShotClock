@@ -88,12 +88,18 @@ class VideoRecordResource(Resource):
 class GameResource(Resource):
 
     def get(self):
-
-        return (
-            ({"message": "Game ready"}, 200)
-            if game_manager.get_game()
-            else ({"message": "No game in progress"}, 404)
-        )
+        game = game_manager.get_game()
+        if game is None:
+            return ({"message": "No game in progress"}, 404)
+        else:
+            data_return = {
+                "player_names": game.player_names,
+                "current_player": game.current_player,
+                "last_remaining_time": game.last_remaining_time,
+                "current_increments": game.increments,
+                "game_status": game.status,
+            }
+            return jsonify(data_return)
 
     def post(self):
         from . import socketio
@@ -127,7 +133,7 @@ class GameResource(Resource):
                 )
                 return ({"message": "Game created successfully"}, 200)
             else:
-                return ({"message": "Ruleset or table not found"}, 404)
+                return ({"message": "Ruleset or TablePreset not found"}, 404)
         except Exception as e:
             logging.error(e)
             return ({"message": "Internal server error"}, 500)
@@ -152,16 +158,19 @@ class GameActionsResource(Resource):
         action = data["action"].lower()
 
         if action == "start":
-            game.start()
+            error = game.start()
         elif action == "pause":
             game.pause()
         elif action == "resume":
             game.resume()
         elif action == "end":
-            game_manager.end_game()
+            error = game_manager.end_game()
+        elif action == "increment_time":
+            error = game.increment_time()
         else:
             return ({"message": "Invalid action"}, 400)
-
+        if error:
+            return ({"message": error}, 400)
         return ({"message": f"Action '{action}' performed successfully"}, 200)
 
 
@@ -189,9 +198,9 @@ class TablePresetResource(Resource):
 
 class TablePresetResource2(Resource):
     def delete(self, id):
-        if models_dao.RulesetDao.delete(id):
-            return ("Ruleset deleted", 200)
-        return ("Ruleset not found", 404)
+        if models_dao.TablePresetDao.delete(id):
+            return ("TablePreset deleted", 200)
+        return ("TablePreset not found", 404)
 
 
 class RulesetResource(Resource):

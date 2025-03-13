@@ -65,7 +65,7 @@ class Timer:
     def start(self):
         """Avvia il timer."""
         self._is_running_event.set()
-        self.thread = Thread(target=self._run, daemon=True)
+        self.thread = Thread(target=self._run, daemon=False)
         self.thread.name = "TimerThread"
         self.thread.start()
 
