@@ -1,170 +1,205 @@
 from threading import Event, Thread
 import time
-from device.video_producer import VideoProducer
-from device.table import TablePreset
 import cv2
 import numpy as np
 
-# import imutils
+from device.video_producer import VideoProducer
+from device.table import TablePreset
 from device.utils import CircularArray
 
 
 class VideoConsumer:
     """
-    VideoConsumer è la classe che effettivamente riconosce il movimento delle biglie da gioco.
-    Viene eseguito dal Game ed esegue nel suo stesso thread dato che l'unico loop che viene
-    eseguito in questo thread (il timer viene eseguito in un thread separato).
+    VideoConsumer riconosce il movimento delle biglie da gioco.
+    Viene eseguito in un thread separato e utilizza un meccanismo di debounce e hysteresis temporale
+    per evitare falsi positivi dovuti a variazioni troppo rapide.
     """
+
+    NUMBER_OF_MOTION_COUNT = 5
+    CURRENT_MOTION_THRESHOLD = 130  # Soglia per considerare che vi sia movimento
+    CIRCULARITY_THRESHOLD = 0.7  # Soglia per filtrare contorni non circolari
+    H_DIFF, S_DIFF, V_DIFF = 5, 10, 5  # Differenze per il filtro colore in HSV
+
+    # Tempo minimo (in secondi) tra cambi di stato
+    MIN_STATE_CHANGE_INTERVAL = 1.0
 
     def __init__(
         self,
         table: TablePreset,
         start_movement_callback,
         stop_movement_callback,
-        video_producer: VideoProducer,  # Il video producer, nonostate sia un singleton glielo passo come parametro per rendere il codice più testabile
+        video_producer: VideoProducer,
     ):
-        self._video_producer = video_producer
-        self._thread = Thread(target=self.run)
-        self._thread.daemon = False  # Il thread del video consumer è un thread demon, quindi non blocca l'uscita del programma
-        self._thread.name = "VideoConsumerThread"
         """
-        Queste due fuzioni sono dei callback che vengono chiamati quando il VideoConsumer cambia di stato
-        MOVIMENTO -> FERMO : stop_movement_callback
-        FERMO -> MOVIMENTO : start_movement_callback
+        Inizializza il VideoConsumer.
+
+        Args:
+            table (TablePreset): Preset del tavolo contenente punti e colori.
+            start_movement_callback (callable): Funzione chiamata al rilevamento del movimento.
+            stop_movement_callback (callable): Funzione chiamata al passaggio allo stato fermo.
+            video_producer (VideoProducer): Istanza del produttore video.
         """
+        self.table = table
         self.start_movement_callback = start_movement_callback
         self.stop_movement_callback = stop_movement_callback
-        self.table = table
+        self._video_producer = video_producer
+
         self._is_running = Event()
         self._is_running.clear()
         self._end_event = Event()
+
+        self._thread = Thread(target=self.run, name="VideoConsumerThread")
+        self._thread.daemon = False  # Non è daemon per garantire una chiusura ordinata
         self._thread.start()
 
+        self._last_state_change_time = 0  # Tempo dell'ultimo cambio di stato
+
     def start(self):
+        """Avvia il ciclo di elaborazione del video."""
         self._is_running.set()
 
+    def pause(self):
+        """Pausa il ciclo di elaborazione e resetta le cronologie."""
+        self._is_running.clear()
+
     def end(self):
+        """Termina il ciclo di elaborazione se il thread è attivo."""
         if self._thread and self._thread.is_alive():
             self._end_event.set()
 
-    def pause(self):
-        self._is_running.clear()
-
-    NUMBER_OF_MOTION_COUNT = 3
-
     def run(self):
         """
-        Esegue il ciclo principale del video consumer.
-        Il metodo continua a eseguire il ciclo finché il video producer è aperto.
-        Durante ogni iterazione del ciclo:
-        - Attende che il segnale `_is_running` sia impostato.
-        - Ottiene un frame sfocato dal video producer.
-        - Converte il frame in spazio colore HSV.
-        - Crea una maschera utilizzando i punti e i colori del tavolo.
-        - Rileva le palle nella maschera corrente e aggiorna la cronologia delle maschere delle palle.
-        - Se la cronologia delle maschere delle palle contiene 3 elementi, calcola il conteggio del movimento corrente.
-        - Aggiorna la cronologia dei conteggi del movimento.
-        - Se la cronologia dei conteggi del movimento contiene `NUMBER_OF_MOTION_COUNT` elementi, verifica se tutti i conteggi del movimento sono falsi.
-            - Se tutti i conteggi del movimento sono falsi, chiama `stop_movement_callback`.
-            - Altrimenti, chiama `start_movement_callback`.
+        Ciclo principale del VideoConsumer.
+        - Acquisisce il frame, applica i filtri e aggiorna il buffer dei frame.
+        - Calcola il movimento tramite confronto tra 3 frame.
+        - Utilizza un buffer per il debounce e applica una finestra temporale minima per evitare
+          cambiamenti troppo rapidi tra movimento e fermo.
         """
-        balls_mask_history = CircularArray(
-            3
-        )  # TODO: Qui memorizzo massimo 3 frame, sarebbe meglio non usare un magic number ma bisognerebbe cambiare l'algoritmo di rilevamento movimento per gestire più frame.
-        motion_history = CircularArray(
-            self.NUMBER_OF_MOTION_COUNT
-        )  # Il motion_count viene calcolato inizialmente su 3 frame, ma poi viene calcolato ad ogni frame, perchè ad ogni frame vengono usati i due frame precedenti per calcolarlo. Quindi aumentando il NUMBER_OF_MOTION_COUNT su quanti frame non si vuole il movimento, valori troppo bassi sono più soggetti a rumore, valori troppo alti potrebbero ritardare l'interruzione del timer.
-
+        balls_mask_history = CircularArray(3)
+        motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
         isMoving = False
+
         while self._video_producer.is_opened() and not self._end_event.is_set():
-            time.sleep(0.17)
+            # Se non inserisci time.sleep, il ciclo va ad alta frequenza
+            # La finestra temporale minima gestirà il cambio di stato
+            time.sleep(0.1)  # Ad esempio, aggiungere un ritardo di 100ms
+
             if not self._is_running.is_set():
-                # TODO: Non è necessario sta cosa del motion history
-                # Resetto gli array, perchè il video consumer potrebbe rimanere per tanti frame fermo e non voglio che valori vecchi dell'array vengono usati per determinare il movimento nuovo
                 balls_mask_history = CircularArray(3)
                 motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
                 continue
-            blurred = self._video_producer.get_frame_blurred()
 
+            blurred = self._video_producer.get_frame_blurred()
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
             current_balls_mask = self._create_mask(
                 hsv, self.table.points, self.table.colors
             )
-
             balls_mask_history.add(current_balls_mask)
+
             if balls_mask_history.get_len() == 3:
                 current_motion = self._motion_count(balls_mask_history.get_array())
-                # Debug: Visualizza se è in movimento o no
+                motion_history.add(current_motion)
 
+                # Visualizza il risultato corrente sul frame
                 test_image = blurred.copy()
                 text = "MOVIMENTO" if current_motion else "FERMO"
                 cv2.putText(
-                    img=test_image,
-                    text=text,
-                    org=(10, 30),
-                    fontFace=cv2.FONT_HERSHEY_SIMPLEX,
-                    fontScale=1,
-                    color=(255, 255, 255),
-                    thickness=2,
-                    lineType=cv2.LINE_AA,
+                    test_image,
+                    text,
+                    (10, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    1,
+                    (255, 255, 255),
+                    2,
+                    cv2.LINE_AA,
                 )
                 cv2.imshow("Blurred with movement", test_image)
-                cv2.waitKey(4)
 
-                if current_motion != isMoving:
-                    isMoving = current_motion
-                    if isMoving:
-                        self.start_movement_callback()
+                # Controlla se un tasto è premuto
+                key = cv2.waitKey(1)
+                if key == ord("p"):  # Usa il tasto 'p' per bloccare le schermate
+                    while cv2.waitKey(1) != ord("p"):
+                        pass  # Attendi fino a quando il tasto 'p' viene premuto di nuovo
+
+                if motion_history.get_len() == self.NUMBER_OF_MOTION_COUNT:
+                    history = motion_history.get_array()
+                    motion_count = sum(history)
+                    if (
+                        motion_count > self.NUMBER_OF_MOTION_COUNT * 0.7
+                    ):  # Ad esempio, 70%
+                        new_motion_state = True
+                    elif (
+                        motion_count < self.NUMBER_OF_MOTION_COUNT * 0.3
+                    ):  # Ad esempio, 30%
+                        new_motion_state = False
                     else:
-                        self.stop_movement_callback()
+                        new_motion_state = isMoving
 
-    CURRENT_MOTION_THRESHOLD = 50
+                    # Verifica se è trascorso il tempo minimo dall'ultimo cambio di stato
+                    current_time = time.time()
+                    if (
+                        new_motion_state != isMoving
+                        and (current_time - self._last_state_change_time)
+                        >= self.MIN_STATE_CHANGE_INTERVAL
+                    ):
+                        isMoving = new_motion_state
+                        self._last_state_change_time = current_time
+                        if isMoving:
+                            self.start_movement_callback()
+                        else:
+                            self.stop_movement_callback()
 
     def _motion_count(self, balls_mask_history):
         """
         Determina se c'è stato movimento tra i frame delle biglie rilevate.
 
         Args:
-            balls_mask_history (CircularArray): Una struttura dati contenente le maschere delle biglie rilevate nei tre frame più recenti.
+            balls_mask_history (list): Array contenente le maschere delle biglie degli ultimi 3 frame.
 
         Returns:
-            bool: True se c'è stato movimento, False altrimenti.
+            bool: True se è stato rilevato movimento, False altrimenti.
         """
         frame_p2 = balls_mask_history[0]  # Frame -2
         frame_p1 = balls_mask_history[1]  # Frame -1
         frame_c = balls_mask_history[2]  # Frame corrente
+
+        # Converti i frame in immagini binarie
+        _, frame_p2 = cv2.threshold(frame_p2, 127, 255, cv2.THRESH_BINARY)
+        _, frame_p1 = cv2.threshold(frame_p1, 127, 255, cv2.THRESH_BINARY)
+        _, frame_c = cv2.threshold(frame_c, 127, 255, cv2.THRESH_BINARY)
+
+        # Calcola le differenze assolute tra frame consecutivi
         diff1 = cv2.absdiff(frame_p1, frame_p2)
         diff2 = cv2.absdiff(frame_c, frame_p1)
+
+        # Rimuovi piccoli artefatti con operazioni morfologiche
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+        diff1 = cv2.morphologyEx(diff1, cv2.MORPH_OPEN, kernel)
+        diff2 = cv2.morphologyEx(diff2, cv2.MORPH_OPEN, kernel)
+
         white_pixel_frame_d1 = cv2.countNonZero(diff1)
         white_pixel_frame_d2 = cv2.countNonZero(diff2)
         max_white_pixel = max(white_pixel_frame_d1, white_pixel_frame_d2)
-        return max_white_pixel > self.CURRENT_MOTION_THRESHOLD
 
-    CIRCULARITY_THRESHOLD = 0.7
-    H_DIFF, S_DIFF, V_DIFF = 5, 10, 5
+        # Visualizza i frame differenza per debugging
+        cv2.imshow("Diff1", diff1)
+        cv2.imshow("Diff2", diff2)
+
+        return max_white_pixel > self.CURRENT_MOTION_THRESHOLD
 
     def _create_mask(self, hsv, points, colors):
         """
-        Crea una maschera considerando solo le biglie da gioco.
-
-        Questa funzione prende un'immagine HSV (formato OpenCV), un insieme di punti che definiscono un poligono,
-        e una lista di colori del tavolo. Crea una maschera che combina due filtri:
-
-        1. Una maschera poligonale basata sui punti forniti
-        2. Una maschera di intervallo di colore basata sui colori del tavolo forniti
-
-        Dopo, vengono calcolati i contorni che superano una certa circolarità e viene creata una maschera contenente tali contorni (filled)
+        Crea una maschera per rilevare le biglie da gioco basata sui colori e sulla forma del tavolo.
 
         Args:
-            hsv (MatLike): Frame da cui ricavare la maschera. Deve essere in formato HSV (formato OpenCV)
-
-            points (List[Tuple(int, int)]): I 4 punti (x,y) che descrivono il rettangolo che delimita il tavolo da gioco. I punti devono essere ordinati in senso orario.
-
-            colors (List[Tuple(int,int,int)]): Un array di colori scritti in HSV (formato OpenCV) che descrivono il tavolo da gioco
+            hsv (Mat): Frame in formato HSV.
+            points (list of tuple): Punti (x,y) che definiscono il poligono del tavolo.
+            colors (list of tuple): Lista di colori in formato HSV per il tavolo.
 
         Returns:
-            MatLike: Una maschera contenente i contorni delle biglie rilevate.
+            Mat: Maschera binaria contenente i contorni delle biglie.
         """
+        # Definisce l'intervallo di colore basato sui valori minimi e massimi dei colori
         color_lower = tuple(
             min(color[i] for color in colors) - diff
             for i, diff in enumerate([self.H_DIFF, self.S_DIFF, self.V_DIFF])
@@ -173,32 +208,34 @@ class VideoConsumer:
             max(color[i] for color in colors) + diff
             for i, diff in enumerate([self.H_DIFF, self.S_DIFF, self.V_DIFF])
         )
+
+        # Crea una maschera rettangolare basata sui punti del tavolo
         points = np.array(points, dtype=np.int32).reshape((-1, 1, 2))
         rec_mask = cv2.fillPoly(np.zeros(hsv.shape[:2], dtype=np.uint8), [points], 255)
+
+        # Crea la maschera di colore e la inverte
         color_mask = cv2.inRange(hsv, color_lower, color_upper)
-        # color_mask = cv2.erode(color_mask, None, iterations=3)
         color_mask = cv2.dilate(color_mask, None, iterations=2)
-        color_mask = cv2.bitwise_not(color_mask)  # Inverti la color mask
+        color_mask = cv2.bitwise_not(color_mask)
+
+        # Combina la maschera di colore con quella del tavolo
         combined_mask = cv2.bitwise_and(color_mask, rec_mask)
 
+        # Trova i contorni e filtra per circolarità
         contours, _ = cv2.findContours(
             combined_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
         )
-        # contours = imutils.grab_contours(contours)
         circularity_mask = np.zeros_like(combined_mask)
-
         for c in contours:
             area = cv2.contourArea(c)
             perimeter = cv2.arcLength(c, True)
             if perimeter == 0:
                 continue
-            circularity = 4 * np.pi * area / perimeter**2
-
+            circularity = 4 * np.pi * area / (perimeter**2)
             if circularity > self.CIRCULARITY_THRESHOLD:
                 cv2.drawContours(circularity_mask, [c], -1, 255, thickness=cv2.FILLED)
-        # Debug: Visualizza le maschere intermedie
-        cv2.imshow("Color Mask", color_mask)
-        cv2.imshow("Rec Mask", rec_mask)
+
+        # Visualizza le maschere intermedie per debugging
         cv2.imshow("Combined Mask", combined_mask)
         cv2.imshow("Circularity Mask", circularity_mask)
         return circularity_mask
