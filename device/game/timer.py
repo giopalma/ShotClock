@@ -53,7 +53,9 @@ class Timer:
 
             current_time = time.monotonic()
             if current_time - _last_time_check >= self.periodic_time:
-                self.periodic_callback(self.remaining_time)
+                self.periodic_callback(
+                    self.remaining_time, self._is_running_event.isSet()
+                )
                 _last_time_check = current_time
 
             if self.remaining_time <= self.allarm_time and not self._allarm_triggered:
@@ -72,10 +74,12 @@ class Timer:
     def pause(self):
         """Metti in pausa il timer."""
         self._is_running_event.clear()
+        return self.remaining_time
 
     def resume(self):
         """Riprendi il timer dalla pausa."""
         self._is_running_event.set()
+        return self.remaining_time
 
     def end(self):
         """

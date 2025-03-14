@@ -137,13 +137,33 @@ class Game:
         Mette in pausa il timer del turno, NON LO TERMINA.
         Per terminare il timer e passare al successivo utilizzare la funzione end_turn()
         """
-        self._timer.pause()
+        remaining_time = self._timer.pause()
+        if os.getenv("FLASK_ENV") == "development":
+            self.socketio.emit(
+                # Il timestamp serve a sincronizzare il server con il client
+                "timer",
+                {
+                    "timestamp": time.time(),
+                    "remaining_time": remaining_time,
+                    "status": "paused",
+                },
+            )
 
     def resume(self):
         """
         Riprende l'esecuzione del timer, funziona solo se il timer è in pausa, non fa nulla se non lo è
         """
-        self._timer.resume()
+        remaining_time = self._timer.resume()
+        if os.getenv("FLASK_ENV") == "development":
+            self.socketio.emit(
+                # Il timestamp serve a sincronizzare il server con il client
+                "timer",
+                {
+                    "timestamp": time.time(),
+                    "remaining_time": remaining_time,
+                    "status": "running",
+                },
+            )
 
     def end_turn(self):
         """Termina il turno corrente e passa al giocatore successivo."""
@@ -181,13 +201,17 @@ class Game:
             periodic_time=1,
         )
 
-    def _periodic_callback(self, remaining_time):
+    def _periodic_callback(self, remaining_time, is_timer_running):
         self.last_remaining_time = remaining_time
         if os.getenv("FLASK_ENV") == "development":
             self.socketio.emit(
                 # Il timestamp serve a sincronizzare il server con il client
                 "timer",
-                {"timestamp": time.time(), "remaining_time": remaining_time},
+                {
+                    "timestamp": time.time(),
+                    "remaining_time": remaining_time,
+                    "status": "running" if is_timer_running else "paused",
+                },
             )
 
         logging.info(f"Remaining time: {remaining_time}")

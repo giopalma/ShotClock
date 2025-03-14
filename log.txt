@@ -742,3 +742,87 @@ AttributeError: type object 'TablePreset' has no attribute 'delete'
 2025-03-13 11:10:28,318 - INFO - Remaining time: 15.704000000003361
 2025-03-13 11:10:29,324 - INFO - Remaining time: 14.704000000003361
 2025-03-13 11:10:30,330 - INFO - Remaining time: 13.689000000002125
+2025-03-13 12:23:28,695 - INFO - 127.0.0.1 - - [2025-03-13 12:23:28] "GET /ruleset HTTP/1.1" 200 285 0.034047
+2025-03-13 12:23:36,297 - INFO - 127.0.0.1 - - [2025-03-13 12:23:36] "GET /table HTTP/1.1" 200 285 0.009646
+2025-03-13 12:23:44,198 - INFO - 127.0.0.1 - - [2025-03-13 12:23:44] "POST /game HTTP/1.1" 200 181 1.582841
+2025-03-13 12:23:53,485 - INFO - 127.0.0.1 - - [2025-03-13 12:23:53] "POST /game/actions HTTP/1.1" 200 193 0.021336
+2025-03-13 12:23:54,488 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:23:54,491 - INFO - Remaining time: 58.98400000000038
+2025-03-13 12:23:55,497 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:23:55,503 - INFO - Remaining time: 57.98400000000038
+2025-03-13 12:23:56,511 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:23:56,513 - INFO - Remaining time: 56.98400000000038
+2025-03-13 12:23:57,537 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:23:57,539 - INFO - Remaining time: 55.96900000000096
+2025-03-13 12:23:58,547 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:23:58,548 - INFO - Remaining time: 54.95300000000134
+2025-03-13 12:23:59,556 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:23:59,557 - INFO - Remaining time: 53.95300000000134
+2025-03-13 12:24:00,568 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:00,570 - INFO - Remaining time: 52.93700000000172
+2025-03-13 12:24:01,575 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:01,578 - INFO - Remaining time: 51.93700000000172
+2025-03-13 12:24:02,585 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:02,588 - INFO - Remaining time: 50.93700000000172
+2025-03-13 12:24:03,600 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:03,605 - INFO - Remaining time: 49.921000000002095
+2025-03-13 12:24:04,612 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:04,615 - INFO - Remaining time: 48.905000000002474
+2025-03-13 12:24:05,623 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:05,624 - INFO - Remaining time: 47.905000000002474
+2025-03-13 12:24:06,629 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:06,633 - INFO - Remaining time: 46.905000000002474
+2025-03-13 12:24:07,641 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:07,644 - INFO - Remaining time: 45.88900000000103
+2025-03-13 12:24:08,668 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:08,671 - INFO - Remaining time: 44.874000000001615
+2025-03-13 12:24:09,678 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:09,681 - INFO - Remaining time: 43.874000000001615
+2025-03-13 12:24:10,688 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:10,690 - INFO - Remaining time: 42.858000000001994
+2025-03-13 12:24:11,696 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:11,699 - INFO - Remaining time: 41.858000000001994
+2025-03-13 12:24:12,706 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:12,709 - INFO - Remaining time: 40.84300000000076
+2025-03-13 12:24:13,717 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:13,720 - INFO - Remaining time: 39.84300000000076
+2025-03-13 12:24:14,726 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:14,729 - INFO - Remaining time: 38.84300000000076
+2025-03-13 12:24:15,736 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:15,744 - INFO - Remaining time: 37.827000000001135
+2025-03-13 12:24:16,752 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:16,763 - INFO - Remaining time: 36.81200000000172
+2025-03-13 12:24:17,770 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:17,774 - INFO - Remaining time: 35.79600000000028
+2025-03-13 12:24:18,781 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:18,783 - INFO - Remaining time: 34.78100000000086
+2025-03-13 12:24:19,791 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:19,794 - INFO - Remaining time: 33.78100000000086
+2025-03-13 12:24:20,801 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:20,803 - INFO - Remaining time: 32.76500000000124
+2025-03-13 12:24:21,811 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:21,813 - INFO - Remaining time: 31.765000000001237
+2025-03-13 12:24:22,819 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:22,821 - INFO - Remaining time: 30.765000000001237
+2025-03-13 12:24:23,827 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:23,830 - INFO - Remaining time: 29.765000000001237
+2025-03-13 12:24:24,837 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:24,841 - INFO - Remaining time: 28.765000000001237
+2025-03-13 12:24:25,848 - INFO - emitting event "timer" to all [/]
+2025-03-13 12:24:25,853 - INFO - Remaining time: 27.749000000001615
+2025-03-13 17:14:43,772 - INFO - Remaining time: 58.98399999999674
+2025-03-13 17:14:44,779 - INFO - Remaining time: 57.98399999999674
+2025-03-13 17:14:45,784 - INFO - Remaining time: 56.96899999999732
+2025-03-13 17:14:46,790 - INFO - Remaining time: 55.96899999999732
+2025-03-13 17:15:35,015 - INFO - Remaining time: 59.0
+2025-03-13 17:15:36,022 - INFO - Remaining time: 58.0
+2025-03-13 17:15:37,027 - INFO - Remaining time: 57.0
+2025-03-13 17:15:38,033 - INFO - Remaining time: 55.98500000000058
+2025-03-13 17:15:39,039 - INFO - Remaining time: 54.98500000000058
+2025-03-13 17:15:40,043 - INFO - Remaining time: 53.98500000000058
+2025-03-13 17:15:41,048 - INFO - Remaining time: 52.9690000000046
+2025-03-13 17:15:42,054 - INFO - Remaining time: 51.9690000000046
+2025-03-13 17:15:43,058 - INFO - Remaining time: 50.9690000000046
+2025-03-13 17:15:44,063 - INFO - Remaining time: 49.95300000000134
+2025-03-13 17:15:45,180 - INFO - Remaining time: 49.859000000004016
+2025-03-13 17:15:46,185 - INFO - Remaining time: 48.859000000004016

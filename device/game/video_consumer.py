@@ -21,7 +21,7 @@ class VideoConsumer:
     H_DIFF, S_DIFF, V_DIFF = 5, 10, 5  # Differenze per il filtro colore in HSV
 
     # Tempo minimo (in secondi) tra cambi di stato
-    MIN_STATE_CHANGE_INTERVAL = 1.0
+    MIN_STATE_CHANGE_INTERVAL = 0.5
 
     def __init__(
         self,
@@ -90,6 +90,7 @@ class VideoConsumer:
                 continue
 
             blurred = self._video_producer.get_frame_blurred()
+            cv2.imshow("Blurred", blurred)
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
             current_balls_mask = self._create_mask(
                 hsv, self.table.points, self.table.colors
