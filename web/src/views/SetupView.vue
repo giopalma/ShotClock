@@ -1,3 +1,16 @@
+<script>
+import { defineComponent } from 'vue';
+import SetupTimerComponent from '../components/SetupTimerComponent.vue';
+
+export default defineComponent({
+  components: {
+    SetupTimerComponent
+  }
+});
+</script>
+
 <template>
-    SETUP
+  <div>
+    <SetupTimerComponent />
+  </div>
 </template>

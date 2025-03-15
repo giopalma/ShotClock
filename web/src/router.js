@@ -1,12 +1,11 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
-
-import SetupView from './views/SetupView.vue'
-import TimerView from './views/TimerView.vue'
-import { createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-    { path: '/', component: TimerView },
-    { path: '/setup', component: SetupView },
+    { path: '/', component: () => import('./views/TimerView.vue') },
+    {
+        path: '/setup',
+        component: () => import('./views/SetupView.vue')
+    },
 ]
 
 export const router = createRouter({

@@ -62,6 +62,10 @@ class VideoConsumer:
         """Pausa il ciclo di elaborazione e resetta le cronologie."""
         self._is_running.clear()
 
+    def resume(self):
+        """Riprende il ciclo di elaborazione dopo una pausa."""
+        self.start()
+
     def end(self):
         """Termina il ciclo di elaborazione se il thread è attivo."""
         if self._thread and self._thread.is_alive():

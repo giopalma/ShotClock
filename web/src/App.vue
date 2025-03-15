@@ -1,7 +1,12 @@
+<script>
+import { socket } from "./socket"
+export default {
+  setup() {
+    socket.connect()
+  }
+}
+</script>
 <template>
-  <p>
-    <strong>Current route path:</strong> {{ $route.fullPath }}
-  </p>
   <main>
     <RouterView />
   </main>

@@ -124,7 +124,7 @@ class GameResource(Resource):
             table.colors = json.loads(table.colors)
             table.colors = [hex_to_opencv_hsv(color) for color in table.colors]
             if ruleset and table:
-                game = game_manager.new_game(
+                game_manager.new_game(
                     ruleset=ruleset,
                     table=table,
                     player1_name=data["player1_name"],
@@ -156,7 +156,7 @@ class GameActionsResource(Resource):
             return ({"message": "No game in progress"}, 400)
 
         action = data["action"].lower()
-
+        error = None
         if action == "start":
             error = game.start()
         elif action == "pause":

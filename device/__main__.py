@@ -2,6 +2,7 @@ import argparse
 from device.log import logging_setup
 from device.config import load_config
 from device.test import test
+import os
 
 # from device.video_producer import VideoProducer
 
@@ -17,14 +18,12 @@ parser.add_argument(
 )
 
 
-def setup():
-    import device.api as api
-
-    api_thread = api.run(debug=args.debug)
-
+def main():
     try:
-        if api_thread:
-            api_thread.join()
+        import device.api as api
+
+        os.environ["FLASK_ENV"] = "api"
+        api.start(debug=args.debug)
     except KeyboardInterrupt:
         print("\nShutting down...")
 
@@ -36,4 +35,4 @@ if __name__ == "__main__":
     if args.test:
         test()
     else:
-        setup()
+        main()

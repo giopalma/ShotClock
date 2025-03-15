@@ -51,5 +51,5 @@ def test(is_video=True):
         os.environ["FLASK_ENV"] = "video"
         test_video()
     else:
-        os.environ["FLASK_ENV"] = "development"
+        os.environ["FLASK_ENV"] = "api"
         test_api()

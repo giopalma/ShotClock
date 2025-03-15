@@ -65,7 +65,7 @@ class Game:
             ruleset.max_increment_for_match,
         ]
         self._timer = self._new_timer(ruleset.initial_duration)
-        self.status: Literal["ready", "running", "waiting", "ended"] = "ready"
+        self.status: Literal["ready", "running", "waiting", "ended", "paused"] = "ready"
         self._video_consumer = VideoConsumer(
             table=table,
             video_producer=video_producer,
@@ -87,6 +87,7 @@ class Game:
     def end(self):
         """Ferma il gioco e cancella tutti i timer."""
         if self.status != "ended":
+            self.resume()  # Importante se viene chiuso mentre è in pausa
             self._timer.end()
             self._video_consumer.end()
             self.status = "ended"
@@ -137,33 +138,39 @@ class Game:
         Mette in pausa il timer del turno, NON LO TERMINA.
         Per terminare il timer e passare al successivo utilizzare la funzione end_turn()
         """
-        remaining_time = self._timer.pause()
-        if os.getenv("FLASK_ENV") == "development":
-            self.socketio.emit(
-                # Il timestamp serve a sincronizzare il server con il client
-                "timer",
-                {
-                    "timestamp": time.time(),
-                    "remaining_time": remaining_time,
-                    "status": "paused",
-                },
-            )
+        if self.status == "running":
+            remaining_time = self._timer.pause()
+            self._video_consumer.pause()
+            if os.getenv("FLASK_ENV") == "api":
+                self.socketio.emit(
+                    # Il timestamp serve a sincronizzare il server con il client
+                    "timer",
+                    {
+                        "timestamp": time.time(),
+                        "remaining_time": remaining_time,
+                        "status": "paused",
+                    },
+                )
+            self.status = "paused"
 
     def resume(self):
         """
         Riprende l'esecuzione del timer, funziona solo se il timer è in pausa, non fa nulla se non lo è
         """
-        remaining_time = self._timer.resume()
-        if os.getenv("FLASK_ENV") == "development":
-            self.socketio.emit(
-                # Il timestamp serve a sincronizzare il server con il client
-                "timer",
-                {
-                    "timestamp": time.time(),
-                    "remaining_time": remaining_time,
-                    "status": "running",
-                },
-            )
+        if self.status == "paused":
+            remaining_time = self._timer.resume()
+            self._video_consumer.resume()
+            if os.getenv("FLASK_ENV") == "api":
+                self.socketio.emit(
+                    # Il timestamp serve a sincronizzare il server con il client
+                    "timer",
+                    {
+                        "timestamp": time.time(),
+                        "remaining_time": remaining_time,
+                        "status": "running",
+                    },
+                )
+            self.status = "running"
 
     def end_turn(self):
         """Termina il turno corrente e passa al giocatore successivo."""
@@ -203,7 +210,7 @@ class Game:
 
     def _periodic_callback(self, remaining_time, is_timer_running):
         self.last_remaining_time = remaining_time
-        if os.getenv("FLASK_ENV") == "development":
+        if os.getenv("FLASK_ENV") == "api":
             self.socketio.emit(
                 # Il timestamp serve a sincronizzare il server con il client
                 "timer",
