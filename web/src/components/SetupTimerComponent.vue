@@ -1,104 +1,89 @@
-<script>
-import { onMounted, ref } from 'vue'
-import { useGameStore, useTimerStore } from '../store'
+<script setup>
+import { ref, onMounted, computed } from 'vue'
 import Panel from 'primevue/panel'
-import Button from 'primevue/button';
-import { startGame, pauseGame, resumeGame } from '../api';
+import Button from 'primevue/button'
+import NewGameModal from './NewGameModal.vue'
+import { useGameStore, useTimerStore } from '../store'
+import { startGame, pauseGame, resumeGame, endGame } from '../api'
 
-export default {
-  components: {
-    Panel, Button
-  },
-  setup() {
-    const isGameCreated = ref(false)
-    const currentIncrements = ref([0, 0])
-    const currentPlayer = ref(0)
-    const gameStatus = ref('paused')
-    const playerNames = ref(['Player 1', 'Player 2'])
-    const gameStore = useGameStore()
-    const timerStore = useTimerStore()
+// Stato locale
+const dialogVisible = ref(false)
 
-    onMounted(async () => {
-      await gameStore.fetchGame()
-      const game = gameStore.game
-      console.log(game)
-      if (game !== null) {
-        isGameCreated.value = true
-        gameStatus.value = game.game_status
-        currentPlayer.value = game.current_player
-        playerNames.value = game.player_names
-        currentIncrements.value = game.current_increments
-      }
-    })
+// Store di gioco e timer
+const gameStore = useGameStore()
+const timerStore = useTimerStore()
 
-    const incrementTime = () => {
-      // Define the logic for incrementing time here
-      console.log('Increment time clicked')
+// Computed properties per monitorare lo stato dello store
+const isGameCreated = computed(() => gameStore.game !== null)
+const gameStatus = computed(() => gameStore.game ? gameStore.game.game_status : 'paused')
+const currentPlayer = computed(() => gameStore.game ? gameStore.game.current_player : 0)
+const playerNames = computed(() => gameStore.game ? gameStore.game.player_names : ['Player 1', 'Player 2'])
+const currentIncrements = computed(() => gameStore.game ? gameStore.game.current_increments : [0, 0])
+
+// Carica il gioco al montaggio del componente
+onMounted(async () => {
+  await gameStore.fetchGame()
+})
+
+// Logica per l'incremento del tempo
+const incrementTime = () => {
+  console.log('Increment time clicked')
+}
+
+// Alterna pausa/ripresa del gioco
+const togglePauseResume = async () => {
+  if (gameStatus.value === 'running') {
+    if (await pauseGame()) {
+      gameStore.game.game_status = 'paused'
+      timerStore.stopTimer()
     }
-
-    const cPauseResumeGame = async () => {
-      if (gameStatus.value === 'running') {
-        const success = await pauseGame()
-        if (success) {
-          gameStatus.value = 'paused'
-          timerStore.stopTimer()
-        }
-      } else {
-        const success = await resumeGame()
-        if (success) {
-          gameStatus.value = 'running'
-          timerStore.startTimer()
-        }
-      }
-    }
-
-    const cNewGame = () => {
-      // Define the logic for starting a new game here
-      console.log('Start new game clicked')
-    }
-
-    const cStartGame = async () => {
-      const success = await startGame()
-      if (success) {
-        timerStore.newTimer(60)
-        timerStore.startTimer()
-        gameStatus.value = 'running'
-      }
-    }
-
-    return {
-      isGameCreated,
-      currentIncrements,
-      currentPlayer,
-      gameStatus,
-      timerStore,
-      playerNames,
-      incrementTime,
-      cPauseResumeGame,
-      cNewGame,
-      cStartGame
+  } else {
+    if (await resumeGame()) {
+      gameStore.game.game_status = 'running'
+      timerStore.startTimer()
     }
   }
+}
+
+// Avvio del gioco
+const startGameHandler = async () => {
+  if (await startGame()) {
+    timerStore.newTimer(60)
+    timerStore.startTimer()
+    gameStore.game.game_status = 'running'
+  }
+}
+
+const endGameHandler = async () => {
+  await endGame()
 }
 </script>
 
 <template>
   <Panel header="Game Panel" id="game-panel">
-    <div v-if="isGameCreated">
+    <template v-if="isGameCreated">
       <div class="time-display">
-        <span>{{ timerStore.time !== null ? timerStore.time.toString().padStart(2, '0').slice(0, 2) : '--' }}</span>
+        <span>
+          {{
+            timerStore.time !== null
+              ? timerStore.time.toString().padStart(2, '0').slice(0, 2)
+              : '--'
+          }}
+        </span>
       </div>
-      <Button v-if="isGameCreated && gameStatus === 'ready'" @click="cStartGame" label="START" raised />
+      <Button v-if="gameStatus === 'ready'" @click="startGameHandler" label="START" raised />
       <div class="buttons">
-        <Button @click="cPauseResumeGame" :label="gameStatus === 'paused' ? 'RIPRENDI' : 'PAUSA'"
+        <Button @click="togglePauseResume" :label="gameStatus === 'paused' ? 'RIPRENDI' : 'PAUSA'"
           :severity="gameStatus === 'paused' ? 'success' : 'warn'" />
         <Button :disabled="currentIncrements[currentPlayer] <= 0" @click="incrementTime" label="INCREMENTA TEMPO"
           severity="secondary" />
+        <Button label="TERMINA" raised @click="endGameHandler" severity="danger" />
       </div>
-    </div>
-    <div v-else>
+    </template>
+    <template v-else>
       <p>Nessun gioco avviato</p>
-      <Button @click="cNewGame" label="AVVIA GIOCO" raised />
-    </div>
+      <Button @click="dialogVisible = true" label="AVVIA GIOCO" raised />
+      <NewGameModal v-model:visible="dialogVisible" />
+    </template>
   </Panel>
 </template>

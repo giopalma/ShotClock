@@ -1,3 +1,5 @@
+import { useGameStore, useTimerStore } from "./store";
+
 async function gameAction(action) {
     const formData = new FormData();
     formData.append('action', action);
@@ -31,4 +33,11 @@ export async function pauseGame() {
 
 export async function resumeGame() {
     return gameAction('resume');
+}
+
+export async function endGame() {
+    const result = gameAction('end');
+    useGameStore().fetchGame()
+    useTimerStore().endTimer()
+    return result
 }

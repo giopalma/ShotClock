@@ -3491,3 +3491,597 @@ AttributeError: type object 'TablePreset' has no attribute 'delete'
 2025-03-14 18:58:28,273 - INFO - Remaining time: 17.796000000002095
 2025-03-14 18:58:28,563 - INFO - emitting event "timer" to all [/]
 2025-03-14 18:58:28,566 - INFO - 127.0.0.1 - - [2025-03-14 18:58:28] "POST /game/actions HTTP/1.1" 200 227 0.010023
+2025-03-16 09:19:18,276 - INFO - 127.0.0.1 - - [2025-03-16 09:19:18] "GET /socket.io/?EIO=4&transport=polling&t=d6z3yn6u HTTP/1.1" 200 328 0.003000
+2025-03-16 09:19:18,292 - INFO - 127.0.0.1 - - [2025-03-16 09:19:18] "POST /socket.io/?EIO=4&transport=polling&t=d6zyhpcj&sid=FgYUtuwcar6Aku9yAAAA HTTP/1.1" 200 195 0.004464
+2025-03-16 09:19:18,295 - INFO - 127.0.0.1 - - [2025-03-16 09:19:18] "GET /socket.io/?EIO=4&transport=polling&t=d6zyj53s&sid=FgYUtuwcar6Aku9yAAAA HTTP/1.1" 200 241 0.000511
+2025-03-16 09:19:18,599 - INFO - 127.0.0.1 - - [2025-03-16 09:19:18] "GET /socket.io/?EIO=4&transport=polling&t=d6zyywy2&sid=FgYUtuwcar6Aku9yAAAA HTTP/1.1" 200 209 0.297530
+2025-03-16 09:25:37,798 - INFO - 127.0.0.1 - - [2025-03-16 09:25:37] "GET /game HTTP/1.1" 404 182 0.008043
+2025-03-16 09:25:37,811 - INFO - 127.0.0.1 - - [2025-03-16 09:25:37] "GET /socket.io/?EIO=4&transport=polling&t=df4kdfvj HTTP/1.1" 200 328 0.001001
+2025-03-16 09:25:37,819 - INFO - 127.0.0.1 - - [2025-03-16 09:25:37] "POST /socket.io/?EIO=4&transport=polling&t=df4t1pg8&sid=FI2F1HDXNuwWH1LdAAAC HTTP/1.1" 200 195 0.001502
+2025-03-16 09:25:37,823 - INFO - 127.0.0.1 - - [2025-03-16 09:25:37] "GET /socket.io/?EIO=4&transport=polling&t=df4t20x0&sid=FI2F1HDXNuwWH1LdAAAC HTTP/1.1" 200 241 0.000463
+2025-03-16 09:25:38,136 - INFO - 127.0.0.1 - - [2025-03-16 09:25:38] "GET /socket.io/?EIO=4&transport=polling&t=df4td408&sid=FI2F1HDXNuwWH1LdAAAC HTTP/1.1" 200 209 0.308403
+2025-03-16 09:25:44,862 - INFO - 127.0.0.1 - - [2025-03-16 09:25:44] "GET /socket.io/?EIO=4&transport=polling&t=dfa86bk0 HTTP/1.1" 200 328 0.001005
+2025-03-16 09:25:44,920 - INFO - 127.0.0.1 - - [2025-03-16 09:25:44] "POST /socket.io/?EIO=4&transport=polling&t=dfaa4edx&sid=HyYuaotuThmMFSp3AAAE HTTP/1.1" 200 195 0.001495
+2025-03-16 09:25:44,923 - INFO - 127.0.0.1 - - [2025-03-16 09:25:44] "GET /socket.io/?EIO=4&transport=polling&t=dfaa5noa&sid=HyYuaotuThmMFSp3AAAE HTTP/1.1" 200 241 0.000000
+2025-03-16 09:25:45,194 - INFO - 127.0.0.1 - - [2025-03-16 09:25:45] "GET /game HTTP/1.1" 404 182 0.003041
+2025-03-16 09:25:45,239 - INFO - 127.0.0.1 - - [2025-03-16 09:25:45] "GET /socket.io/?EIO=4&transport=polling&t=dfab1n66&sid=HyYuaotuThmMFSp3AAAE HTTP/1.1" 200 209 0.268682
+2025-03-16 10:01:00,549 - INFO - 127.0.0.1 - - [2025-03-16 10:01:00] "GET /socket.io/?EIO=4&transport=polling&t=eomfyu1g HTTP/1.1" 200 328 0.001000
+2025-03-16 10:01:00,681 - INFO - 127.0.0.1 - - [2025-03-16 10:01:00] "POST /socket.io/?EIO=4&transport=polling&t=eomtc13z&sid=CZvkOI_ptClJtu5UAAAG HTTP/1.1" 200 195 0.003497
+2025-03-16 10:01:00,725 - INFO - 127.0.0.1 - - [2025-03-16 10:01:00] "GET /socket.io/?EIO=4&transport=polling&t=eomtet8k&sid=CZvkOI_ptClJtu5UAAAG HTTP/1.1" 200 241 0.000501
+2025-03-16 10:01:00,775 - INFO - 127.0.0.1 - - [2025-03-16 10:01:00] "GET /game HTTP/1.1" 404 182 0.004569
+2025-03-16 10:01:01,045 - INFO - 127.0.0.1 - - [2025-03-16 10:01:01] "GET /socket.io/?EIO=4&transport=polling&t=eomyhxwy&sid=CZvkOI_ptClJtu5UAAAG HTTP/1.1" 200 209 0.182006
+2025-03-16 10:01:02,724 - INFO - 127.0.0.1 - - [2025-03-16 10:01:02] "GET /socket.io/?EIO=4&transport=polling&t=eoodh6eq HTTP/1.1" 200 328 0.001501
+2025-03-16 10:01:02,800 - INFO - 127.0.0.1 - - [2025-03-16 10:01:02] "POST /socket.io/?EIO=4&transport=polling&t=eoog5xc4&sid=NWIruUVVHYNqbWy1AAAI HTTP/1.1" 200 195 0.003580
+2025-03-16 10:01:02,804 - INFO - 127.0.0.1 - - [2025-03-16 10:01:02] "GET /socket.io/?EIO=4&transport=polling&t=eoog70o2&sid=NWIruUVVHYNqbWy1AAAI HTTP/1.1" 200 241 0.000496
+2025-03-16 10:01:03,198 - INFO - 127.0.0.1 - - [2025-03-16 10:01:03] "GET /game HTTP/1.1" 404 182 0.002561
+2025-03-16 10:01:03,211 - INFO - 127.0.0.1 - - [2025-03-16 10:01:03] "GET /socket.io/?EIO=4&transport=polling&t=eoohk41w&sid=NWIruUVVHYNqbWy1AAAI HTTP/1.1" 200 209 0.365531
+2025-03-16 10:01:43,176 - INFO - 127.0.0.1 - - [2025-03-16 10:01:43] "GET /socket.io/?EIO=4&transport=polling&t=epjltj29 HTTP/1.1" 200 328 0.000519
+2025-03-16 10:01:43,678 - INFO - 127.0.0.1 - - [2025-03-16 10:01:43] "POST /socket.io/?EIO=4&transport=polling&t=epjzo7ut&sid=heqHdozBnmOv4Es_AAAK HTTP/1.1" 200 195 0.003001
+2025-03-16 10:01:43,690 - INFO - 127.0.0.1 - - [2025-03-16 10:01:43] "GET /socket.io/?EIO=4&transport=polling&t=epjzuv6h&sid=heqHdozBnmOv4Es_AAAK HTTP/1.1" 200 241 0.000993
+2025-03-16 10:01:44,187 - INFO - 127.0.0.1 - - [2025-03-16 10:01:44] "GET /socket.io/?EIO=4&transport=polling&t=epk14ih1&sid=heqHdozBnmOv4Es_AAAK HTTP/1.1" 200 209 0.453442
+2025-03-16 10:01:44,200 - INFO - 127.0.0.1 - - [2025-03-16 10:01:44] "GET /game HTTP/1.1" 404 182 0.005072
+2025-03-16 10:02:09,537 - INFO - 127.0.0.1 - - [2025-03-16 10:02:09] "GET /socket.io/?EIO=4&transport=polling&t=eq3y4xz6 HTTP/1.1" 200 328 0.000511
+2025-03-16 10:02:09,656 - INFO - 127.0.0.1 - - [2025-03-16 10:02:09] "POST /socket.io/?EIO=4&transport=polling&t=eq416roh&sid=2mNGBKIVGtPbPJK1AAAM HTTP/1.1" 200 195 0.003095
+2025-03-16 10:02:09,658 - INFO - 127.0.0.1 - - [2025-03-16 10:02:09] "GET /socket.io/?EIO=4&transport=polling&t=eq418dqt&sid=2mNGBKIVGtPbPJK1AAAM HTTP/1.1" 200 241 0.000000
+2025-03-16 10:02:10,110 - INFO - 127.0.0.1 - - [2025-03-16 10:02:10] "GET /socket.io/?EIO=4&transport=polling&t=eq42yoc3&sid=2mNGBKIVGtPbPJK1AAAM HTTP/1.1" 200 209 0.383765
+2025-03-16 10:02:10,178 - INFO - 127.0.0.1 - - [2025-03-16 10:02:10] "GET /game HTTP/1.1" 404 182 0.005148
+2025-03-16 10:02:15,513 - INFO - 127.0.0.1 - - [2025-03-16 10:02:15] "GET /socket.io/?EIO=4&transport=polling&t=eq8k4vjk HTTP/1.1" 200 328 0.000501
+2025-03-16 10:02:15,625 - INFO - 127.0.0.1 - - [2025-03-16 10:02:15] "POST /socket.io/?EIO=4&transport=polling&t=eq8n18ko&sid=QsyO3AFmXSoySuzlAAAO HTTP/1.1" 200 195 0.002497
+2025-03-16 10:02:15,629 - INFO - 127.0.0.1 - - [2025-03-16 10:02:15] "GET /socket.io/?EIO=4&transport=polling&t=eq8n28m3&sid=QsyO3AFmXSoySuzlAAAO HTTP/1.1" 200 241 0.001022
+2025-03-16 10:02:15,786 - INFO - 127.0.0.1 - - [2025-03-16 10:02:15] "GET /game HTTP/1.1" 404 182 0.005564
+2025-03-16 10:02:16,018 - INFO - 127.0.0.1 - - [2025-03-16 10:02:16] "GET /socket.io/?EIO=4&transport=polling&t=eq8ocae2&sid=QsyO3AFmXSoySuzlAAAO HTTP/1.1" 200 209 0.327926
+2025-03-16 10:02:19,509 - INFO - 127.0.0.1 - - [2025-03-16 10:02:19] "GET /socket.io/?EIO=4&transport=polling&t=eqbn3ins HTTP/1.1" 200 328 0.000496
+2025-03-16 10:02:19,623 - INFO - 127.0.0.1 - - [2025-03-16 10:02:19] "POST /socket.io/?EIO=4&transport=polling&t=eqbq4cpk&sid=h5uAkjA0HUyIGxhIAAAQ HTTP/1.1" 200 195 0.002500
+2025-03-16 10:02:19,626 - INFO - 127.0.0.1 - - [2025-03-16 10:02:19] "GET /socket.io/?EIO=4&transport=polling&t=eqbq9gue&sid=h5uAkjA0HUyIGxhIAAAQ HTTP/1.1" 200 241 0.000999
+2025-03-16 10:02:19,809 - INFO - 127.0.0.1 - - [2025-03-16 10:02:19] "GET /game HTTP/1.1" 404 182 0.004566
+2025-03-16 10:02:20,064 - INFO - 127.0.0.1 - - [2025-03-16 10:02:20] "GET /socket.io/?EIO=4&transport=polling&t=eqbqrpd7&sid=h5uAkjA0HUyIGxhIAAAQ HTTP/1.1" 200 209 0.424178
+2025-03-16 10:03:33,680 - INFO - 127.0.0.1 - - [2025-03-16 10:03:33] "GET /socket.io/?EIO=4&transport=polling&t=erwvgy6r HTTP/1.1" 200 328 0.000499
+2025-03-16 10:03:33,811 - INFO - 127.0.0.1 - - [2025-03-16 10:03:33] "POST /socket.io/?EIO=4&transport=polling&t=erwz2xmd&sid=WpBymS2dWEXSyzE0AAAS HTTP/1.1" 200 195 0.002053
+2025-03-16 10:03:33,814 - INFO - 127.0.0.1 - - [2025-03-16 10:03:33] "GET /socket.io/?EIO=4&transport=polling&t=erwz4hn0&sid=WpBymS2dWEXSyzE0AAAS HTTP/1.1" 200 241 0.000499
+2025-03-16 10:03:34,158 - INFO - 127.0.0.1 - - [2025-03-16 10:03:34] "GET /game HTTP/1.1" 404 182 0.002081
+2025-03-16 10:03:34,160 - INFO - 127.0.0.1 - - [2025-03-16 10:03:34] "GET /socket.io/?EIO=4&transport=polling&t=erwzstip&sid=WpBymS2dWEXSyzE0AAAS HTTP/1.1" 200 209 0.320885
+2025-03-16 10:04:17,415 - INFO - 127.0.0.1 - - [2025-03-16 10:04:17] "GET /game HTTP/1.1" 404 182 0.002496
+2025-03-16 10:09:05,349 - INFO - 127.0.0.1 - - [2025-03-16 10:09:05] "GET /socket.io/?EIO=4&transport=polling&t=ez0jvgwb HTTP/1.1" 200 328 0.000549
+2025-03-16 10:09:05,469 - INFO - 127.0.0.1 - - [2025-03-16 10:09:05] "POST /socket.io/?EIO=4&transport=polling&t=ez0v633p&sid=5CcaM1WibrrThLNZAAAU HTTP/1.1" 200 195 0.021486
+2025-03-16 10:09:05,473 - INFO - 127.0.0.1 - - [2025-03-16 10:09:05] "GET /socket.io/?EIO=4&transport=polling&t=ez0v7m5d&sid=5CcaM1WibrrThLNZAAAU HTTP/1.1" 200 241 0.001489
+2025-03-16 10:09:05,755 - INFO - 127.0.0.1 - - [2025-03-16 10:09:05] "GET /socket.io/?EIO=4&transport=polling&t=ez0zb0mf&sid=5CcaM1WibrrThLNZAAAU HTTP/1.1" 200 209 0.154982
+2025-03-16 10:09:29,635 - INFO - 127.0.0.1 - - [2025-03-16 10:09:29] "GET /socket.io/?EIO=4&transport=polling&t=ezjj1vcs HTTP/1.1" 200 328 0.000496
+2025-03-16 10:09:29,701 - INFO - 127.0.0.1 - - [2025-03-16 10:09:29] "POST /socket.io/?EIO=4&transport=polling&t=ezjkr7dm&sid=wB2TuyFon2QjGHGHAAAW HTTP/1.1" 200 195 0.002487
+2025-03-16 10:09:29,707 - INFO - 127.0.0.1 - - [2025-03-16 10:09:29] "GET /socket.io/?EIO=4&transport=polling&t=ezjkxhfk&sid=wB2TuyFon2QjGHGHAAAW HTTP/1.1" 200 241 0.001551
+2025-03-16 10:09:30,241 - INFO - 127.0.0.1 - - [2025-03-16 10:09:30] "GET /socket.io/?EIO=4&transport=polling&t=ezjlrfg4&sid=wB2TuyFon2QjGHGHAAAW HTTP/1.1" 200 209 0.509655
+2025-03-16 10:09:30,336 - INFO - 127.0.0.1 - - [2025-03-16 10:09:30] "GET /game HTTP/1.1" 404 182 0.003497
+2025-03-16 10:11:29,345 - INFO - 127.0.0.1 - - [2025-03-16 10:11:29] "GET /socket.io/?EIO=4&transport=polling&t=f23wdcqk HTTP/1.1" 200 328 0.000500
+2025-03-16 10:11:29,389 - INFO - 127.0.0.1 - - [2025-03-16 10:11:29] "POST /socket.io/?EIO=4&transport=polling&t=f23xigz7&sid=NJzKMbpfrA5riGMLAAAY HTTP/1.1" 200 195 0.002502
+2025-03-16 10:11:29,392 - INFO - 127.0.0.1 - - [2025-03-16 10:11:29] "GET /socket.io/?EIO=4&transport=polling&t=f23xkiut&sid=NJzKMbpfrA5riGMLAAAY HTTP/1.1" 200 241 0.001014
+2025-03-16 10:11:29,822 - INFO - 127.0.0.1 - - [2025-03-16 10:11:29] "GET /socket.io/?EIO=4&transport=polling&t=f23y3mb9&sid=NJzKMbpfrA5riGMLAAAY HTTP/1.1" 200 209 0.414494
+2025-03-16 10:11:29,889 - INFO - 127.0.0.1 - - [2025-03-16 10:11:29] "GET /game HTTP/1.1" 404 182 0.002516
+2025-03-16 10:12:31,472 - INFO - 127.0.0.1 - - [2025-03-16 10:12:31] "GET /socket.io/?EIO=4&transport=polling&t=f3fu2f0v HTTP/1.1" 200 328 0.000506
+2025-03-16 10:12:31,546 - INFO - 127.0.0.1 - - [2025-03-16 10:12:31] "POST /socket.io/?EIO=4&transport=polling&t=f3fw3217&sid=zs8krIirCl-tZuurAAAa HTTP/1.1" 200 195 0.001528
+2025-03-16 10:12:31,555 - INFO - 127.0.0.1 - - [2025-03-16 10:12:31] "GET /socket.io/?EIO=4&transport=polling&t=f3fw5xwl&sid=zs8krIirCl-tZuurAAAa HTTP/1.1" 200 241 0.000501
+2025-03-16 10:12:32,056 - INFO - 127.0.0.1 - - [2025-03-16 10:12:32] "GET /socket.io/?EIO=4&transport=polling&t=f3fxa9af&sid=zs8krIirCl-tZuurAAAa HTTP/1.1" 200 209 0.467525
+2025-03-16 10:12:32,225 - INFO - 127.0.0.1 - - [2025-03-16 10:12:32] "GET /game HTTP/1.1" 404 182 0.004520
+2025-03-16 10:23:47,247 - INFO - 127.0.0.1 - - [2025-03-16 10:23:47] "GET /game HTTP/1.1" 404 182 0.001598
+2025-03-16 10:23:47,257 - INFO - 127.0.0.1 - - [2025-03-16 10:23:47] "GET /game HTTP/1.1" 404 182 0.001996
+2025-03-16 10:23:47,537 - INFO - 127.0.0.1 - - [2025-03-16 10:23:47] "GET /socket.io/?EIO=4&transport=polling&t=fhx8wqnu HTTP/1.1" 200 328 0.000000
+2025-03-16 10:23:47,548 - INFO - 127.0.0.1 - - [2025-03-16 10:23:47] "POST /socket.io/?EIO=4&transport=polling&t=fhxhx1s2&sid=Cx9nilvNJXlt_H0gAAAc HTTP/1.1" 200 195 0.001500
+2025-03-16 10:23:47,552 - INFO - 127.0.0.1 - - [2025-03-16 10:23:47] "GET /socket.io/?EIO=4&transport=polling&t=fhxhzpy3&sid=Cx9nilvNJXlt_H0gAAAc HTTP/1.1" 200 241 0.000504
+2025-03-16 10:23:47,862 - INFO - 127.0.0.1 - - [2025-03-16 10:23:47] "GET /socket.io/?EIO=4&transport=polling&t=fhxibqwr&sid=Cx9nilvNJXlt_H0gAAAc HTTP/1.1" 200 209 0.304983
+2025-03-16 10:24:12,541 - INFO - 127.0.0.1 - - [2025-03-16 10:24:12] "GET /socket.io/?EIO=4&transport=polling&t=figs5s22 HTTP/1.1" 200 328 0.000502
+2025-03-16 10:24:12,563 - INFO - 127.0.0.1 - - [2025-03-16 10:24:12] "GET /game HTTP/1.1" 404 182 0.002001
+2025-03-16 10:24:12,586 - INFO - 127.0.0.1 - - [2025-03-16 10:24:12] "GET /game HTTP/1.1" 404 182 0.005584
+2025-03-16 10:24:12,590 - INFO - 127.0.0.1 - - [2025-03-16 10:24:12] "POST /socket.io/?EIO=4&transport=polling&t=figtd0ot&sid=qt0B-45z8b4hCyzFAAAe HTTP/1.1" 200 195 0.001503
+2025-03-16 10:24:12,593 - INFO - 127.0.0.1 - - [2025-03-16 10:24:12] "GET /socket.io/?EIO=4&transport=polling&t=figtgi78&sid=qt0B-45z8b4hCyzFAAAe HTTP/1.1" 200 241 0.000000
+2025-03-16 10:24:12,909 - INFO - 127.0.0.1 - - [2025-03-16 10:24:12] "GET /socket.io/?EIO=4&transport=polling&t=figtw7wz&sid=qt0B-45z8b4hCyzFAAAe HTTP/1.1" 200 209 0.306832
+2025-03-16 10:28:44,975 - INFO - 127.0.0.1 - - [2025-03-16 10:28:44] "GET /table HTTP/1.1" 200 285 0.035965
+2025-03-16 10:28:44,986 - INFO - 127.0.0.1 - - [2025-03-16 10:28:44] "GET /ruleset HTTP/1.1" 200 285 0.003055
+2025-03-16 10:32:15,846 - INFO - 127.0.0.1 - - [2025-03-16 10:32:15] "GET /socket.io/?EIO=4&transport=polling&t=fstgn2go HTTP/1.1" 200 328 0.000497
+2025-03-16 10:32:15,905 - INFO - 127.0.0.1 - - [2025-03-16 10:32:15] "POST /socket.io/?EIO=4&transport=polling&t=fstqxuzn&sid=x7Na16Me2NrfvpN6AAAg HTTP/1.1" 200 195 0.002549
+2025-03-16 10:32:15,907 - INFO - 127.0.0.1 - - [2025-03-16 10:32:15] "GET /socket.io/?EIO=4&transport=polling&t=fstqzken&sid=x7Na16Me2NrfvpN6AAAg HTTP/1.1" 200 241 0.000000
+2025-03-16 10:32:16,221 - INFO - 127.0.0.1 - - [2025-03-16 10:32:16] "GET /socket.io/?EIO=4&transport=polling&t=fstugby7&sid=x7Na16Me2NrfvpN6AAAg HTTP/1.1" 200 209 0.187392
+2025-03-16 10:32:33,972 - INFO - 127.0.0.1 - - [2025-03-16 10:32:33] "GET /socket.io/?EIO=4&transport=polling&t=ft7ox5bs HTTP/1.1" 200 328 0.000498
+2025-03-16 10:32:34,024 - INFO - 127.0.0.1 - - [2025-03-16 10:32:34] "POST /socket.io/?EIO=4&transport=polling&t=ft7q94cd&sid=UDmAGniBXdNUl6eXAAAi HTTP/1.1" 200 195 0.001998
+2025-03-16 10:32:34,027 - INFO - 127.0.0.1 - - [2025-03-16 10:32:34] "GET /socket.io/?EIO=4&transport=polling&t=ft7qbwtw&sid=UDmAGniBXdNUl6eXAAAi HTTP/1.1" 200 241 0.000501
+2025-03-16 10:32:34,451 - INFO - 127.0.0.1 - - [2025-03-16 10:32:34] "GET /socket.io/?EIO=4&transport=polling&t=ft7qwfpn&sid=UDmAGniBXdNUl6eXAAAi HTTP/1.1" 200 209 0.407225
+2025-03-16 10:32:34,533 - INFO - 127.0.0.1 - - [2025-03-16 10:32:34] "GET /game HTTP/1.1" 404 182 0.003024
+2025-03-16 10:32:36,210 - INFO - 127.0.0.1 - - [2025-03-16 10:32:36] "GET /table HTTP/1.1" 200 285 0.003999
+2025-03-16 10:32:36,247 - INFO - 127.0.0.1 - - [2025-03-16 10:32:36] "GET /ruleset HTTP/1.1" 200 285 0.001514
+2025-03-16 10:33:53,201 - INFO - 127.0.0.1 - - [2025-03-16 10:33:53] "GET /table HTTP/1.1" 200 285 0.003006
+2025-03-16 10:33:53,234 - INFO - 127.0.0.1 - - [2025-03-16 10:33:53] "GET /ruleset HTTP/1.1" 200 285 0.002535
+2025-03-16 10:34:04,944 - INFO - 127.0.0.1 - - [2025-03-16 10:34:04] "GET /table HTTP/1.1" 200 285 0.003001
+2025-03-16 10:34:04,972 - INFO - 127.0.0.1 - - [2025-03-16 10:34:04] "GET /ruleset HTTP/1.1" 200 285 0.003033
+2025-03-16 10:35:53,271 - INFO - 127.0.0.1 - - [2025-03-16 10:35:53] "GET /socket.io/?EIO=4&transport=polling&t=fxhgxrq6 HTTP/1.1" 200 328 0.000508
+2025-03-16 10:35:53,327 - INFO - 127.0.0.1 - - [2025-03-16 10:35:53] "POST /socket.io/?EIO=4&transport=polling&t=fxhifx3w&sid=-A240s3KBz_IgzbHAAAk HTTP/1.1" 200 195 0.002003
+2025-03-16 10:35:53,329 - INFO - 127.0.0.1 - - [2025-03-16 10:35:53] "GET /socket.io/?EIO=4&transport=polling&t=fxhig269&sid=-A240s3KBz_IgzbHAAAk HTTP/1.1" 200 241 0.000000
+2025-03-16 10:35:53,772 - INFO - 127.0.0.1 - - [2025-03-16 10:35:53] "GET /socket.io/?EIO=4&transport=polling&t=fxhj0wpb&sid=-A240s3KBz_IgzbHAAAk HTTP/1.1" 200 209 0.429567
+2025-03-16 10:36:05,917 - INFO - 127.0.0.1 - - [2025-03-16 10:36:05] "GET /socket.io/?EIO=4&transport=polling&t=fxr88aso HTTP/1.1" 200 328 0.000998
+2025-03-16 10:36:05,971 - INFO - 127.0.0.1 - - [2025-03-16 10:36:05] "POST /socket.io/?EIO=4&transport=polling&t=fxr9i97i&sid=JGXUOzME00E-SxbLAAAm HTTP/1.1" 200 195 0.001998
+2025-03-16 10:36:05,972 - INFO - 127.0.0.1 - - [2025-03-16 10:36:05] "GET /socket.io/?EIO=4&transport=polling&t=fxr9lhlw&sid=JGXUOzME00E-SxbLAAAm HTTP/1.1" 200 241 0.000000
+2025-03-16 10:36:06,417 - INFO - 127.0.0.1 - - [2025-03-16 10:36:06] "GET /socket.io/?EIO=4&transport=polling&t=fxrab6fv&sid=JGXUOzME00E-SxbLAAAm HTTP/1.1" 200 209 0.427843
+2025-03-16 10:36:06,509 - INFO - 127.0.0.1 - - [2025-03-16 10:36:06] "GET /game HTTP/1.1" 404 182 0.004544
+2025-03-16 10:36:07,662 - INFO - 127.0.0.1 - - [2025-03-16 10:36:07] "GET /table HTTP/1.1" 200 285 0.002523
+2025-03-16 10:36:07,701 - INFO - 127.0.0.1 - - [2025-03-16 10:36:07] "GET /ruleset HTTP/1.1" 200 285 0.002016
+2025-03-16 16:09:18,494 - INFO - 127.0.0.1 - - [2025-03-16 16:09:18] "GET /game HTTP/1.1" 404 182 0.002999
+2025-03-16 16:09:18,508 - INFO - 127.0.0.1 - - [2025-03-16 16:09:18] "GET /game HTTP/1.1" 404 182 0.002527
+2025-03-16 16:09:18,778 - INFO - 127.0.0.1 - - [2025-03-16 16:09:18] "GET /socket.io/?EIO=4&transport=polling&t=ru9kumuk HTTP/1.1" 200 328 0.000497
+2025-03-16 16:09:18,786 - INFO - 127.0.0.1 - - [2025-03-16 16:09:18] "POST /socket.io/?EIO=4&transport=polling&t=ru9tpvoi&sid=_qFLu-OY5-ifGVjtAAAo HTTP/1.1" 200 195 0.000997
+2025-03-16 16:09:18,789 - INFO - 127.0.0.1 - - [2025-03-16 16:09:18] "GET /socket.io/?EIO=4&transport=polling&t=ru9trr3m&sid=_qFLu-OY5-ifGVjtAAAo HTTP/1.1" 200 241 0.000500
+2025-03-16 16:09:19,104 - INFO - 127.0.0.1 - - [2025-03-16 16:09:19] "GET /socket.io/?EIO=4&transport=polling&t=ru9u0ywy&sid=_qFLu-OY5-ifGVjtAAAo HTTP/1.1" 200 209 0.308829
+2025-03-16 16:09:33,317 - INFO - 127.0.0.1 - - [2025-03-16 16:09:33] "GET /socket.io/?EIO=4&transport=polling&t=rul1dbln HTTP/1.1" 200 328 0.001013
+2025-03-16 16:09:33,372 - INFO - 127.0.0.1 - - [2025-03-16 16:09:33] "POST /socket.io/?EIO=4&transport=polling&t=rul2u1m6&sid=XMkFR6W1QnCxtJWDAAAq HTTP/1.1" 200 195 0.002013
+2025-03-16 16:09:33,377 - INFO - 127.0.0.1 - - [2025-03-16 16:09:33] "GET /socket.io/?EIO=4&transport=polling&t=rul2w5qm&sid=XMkFR6W1QnCxtJWDAAAq HTTP/1.1" 200 241 0.000517
+2025-03-16 16:09:33,697 - INFO - 127.0.0.1 - - [2025-03-16 16:09:33] "GET /socket.io/?EIO=4&transport=polling&t=rul3mwu8&sid=XMkFR6W1QnCxtJWDAAAq HTTP/1.1" 200 209 0.299635
+2025-03-16 16:09:33,802 - INFO - 127.0.0.1 - - [2025-03-16 16:09:33] "GET /game HTTP/1.1" 404 182 0.002536
+2025-03-16 16:09:35,595 - INFO - 127.0.0.1 - - [2025-03-16 16:09:35] "GET /table HTTP/1.1" 200 285 0.003006
+2025-03-16 16:09:35,647 - INFO - 127.0.0.1 - - [2025-03-16 16:09:35] "GET /ruleset HTTP/1.1" 200 285 0.002542
+2025-03-16 16:18:37,988 - INFO - 127.0.0.1 - - [2025-03-16 16:18:37] "GET /table HTTP/1.1" 200 285 0.004085
+2025-03-16 16:18:38,013 - INFO - 127.0.0.1 - - [2025-03-16 16:18:38] "GET /ruleset HTTP/1.1" 200 285 0.001556
+2025-03-16 16:20:27,794 - INFO - 127.0.0.1 - - [2025-03-16 16:20:27] "GET /socket.io/?EIO=4&transport=polling&t=s8lsmdnz HTTP/1.1" 200 328 0.000503
+2025-03-16 16:20:27,888 - INFO - 127.0.0.1 - - [2025-03-16 16:20:27] "POST /socket.io/?EIO=4&transport=polling&t=s8m3qgml&sid=sgptVh6nKiQ4o6S0AAAs HTTP/1.1" 200 195 0.001499
+2025-03-16 16:20:27,891 - INFO - 127.0.0.1 - - [2025-03-16 16:20:27] "GET /socket.io/?EIO=4&transport=polling&t=s8m3sfs1&sid=sgptVh6nKiQ4o6S0AAAs HTTP/1.1" 200 241 0.001009
+2025-03-16 16:20:28,148 - INFO - 127.0.0.1 - - [2025-03-16 16:20:28] "GET /game HTTP/1.1" 404 182 0.003502
+2025-03-16 16:20:28,212 - INFO - 127.0.0.1 - - [2025-03-16 16:20:28] "GET /socket.io/?EIO=4&transport=polling&t=s8m84xg8&sid=sgptVh6nKiQ4o6S0AAAs HTTP/1.1" 200 209 0.169986
+2025-03-16 16:20:29,518 - INFO - 127.0.0.1 - - [2025-03-16 16:20:29] "GET /table HTTP/1.1" 200 285 0.004109
+2025-03-16 16:20:29,571 - INFO - 127.0.0.1 - - [2025-03-16 16:20:29] "GET /ruleset HTTP/1.1" 200 285 0.003583
+2025-03-16 16:25:31,499 - INFO - 127.0.0.1 - - [2025-03-16 16:25:31] "GET /table HTTP/1.1" 200 285 0.007637
+2025-03-16 16:25:31,568 - INFO - 127.0.0.1 - - [2025-03-16 16:25:31] "GET /ruleset HTTP/1.1" 200 285 0.005500
+2025-03-16 16:29:18,668 - INFO - 127.0.0.1 - - [2025-03-16 16:29:18] "GET /table HTTP/1.1" 200 285 0.004524
+2025-03-16 16:29:18,722 - INFO - 127.0.0.1 - - [2025-03-16 16:29:18] "GET /ruleset HTTP/1.1" 200 285 0.005026
+2025-03-16 16:31:36,833 - INFO - 127.0.0.1 - - [2025-03-16 16:31:36] "GET /table HTTP/1.1" 200 285 0.004992
+2025-03-16 16:31:36,890 - INFO - 127.0.0.1 - - [2025-03-16 16:31:36] "GET /ruleset HTTP/1.1" 200 285 0.007580
+2025-03-16 16:31:40,444 - INFO - 127.0.0.1 - - [2025-03-16 16:31:40] "POST /game HTTP/1.1" 400 222 0.007999
+2025-03-16 16:32:33,848 - INFO - 127.0.0.1 - - [2025-03-16 16:32:33] "GET /game HTTP/1.1" 404 182 0.004533
+2025-03-16 16:32:33,864 - INFO - 127.0.0.1 - - [2025-03-16 16:32:33] "GET /game HTTP/1.1" 404 182 0.005116
+2025-03-16 16:32:33,898 - INFO - 127.0.0.1 - - [2025-03-16 16:32:33] "GET /game HTTP/1.1" 404 182 0.002555
+2025-03-16 16:32:33,914 - INFO - 127.0.0.1 - - [2025-03-16 16:32:33] "GET /game HTTP/1.1" 404 182 0.008062
+2025-03-16 16:32:34,104 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "GET /socket.io/?EIO=4&transport=polling&t=so67utav HTTP/1.1" 200 328 0.000526
+2025-03-16 16:32:34,107 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "GET /socket.io/?EIO=4&transport=polling&t=so67upp6 HTTP/1.1" 200 328 0.000516
+2025-03-16 16:32:34,121 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "POST /socket.io/?EIO=4&transport=polling&t=so6gt3jn&sid=8B9kALhuOTwQuU5zAAAu HTTP/1.1" 200 195 0.002069
+2025-03-16 16:32:34,142 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "POST /socket.io/?EIO=4&transport=polling&t=so6gvb8s&sid=d6oI4hxkoV5RfH-PAAAv HTTP/1.1" 200 195 0.002000
+2025-03-16 16:32:34,145 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "GET /socket.io/?EIO=4&transport=polling&t=so6gwh8q&sid=8B9kALhuOTwQuU5zAAAu HTTP/1.1" 200 241 0.000510
+2025-03-16 16:32:34,149 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "GET /socket.io/?EIO=4&transport=polling&t=so6gxyic&sid=d6oI4hxkoV5RfH-PAAAv HTTP/1.1" 200 241 0.000997
+2025-03-16 16:32:34,455 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "GET /socket.io/?EIO=4&transport=polling&t=so6hy00v&sid=8B9kALhuOTwQuU5zAAAu HTTP/1.1" 200 209 0.295685
+2025-03-16 16:32:34,472 - INFO - 127.0.0.1 - - [2025-03-16 16:32:34] "GET /socket.io/?EIO=4&transport=polling&t=so6i2cym&sid=d6oI4hxkoV5RfH-PAAAv HTTP/1.1" 200 209 0.310179
+2025-03-16 16:32:48,502 - INFO - 127.0.0.1 - - [2025-03-16 16:32:48] "GET /table HTTP/1.1" 200 285 0.004059
+2025-03-16 16:32:48,565 - INFO - 127.0.0.1 - - [2025-03-16 16:32:48] "GET /ruleset HTTP/1.1" 200 285 0.008008
+2025-03-16 16:32:56,201 - INFO - 127.0.0.1 - - [2025-03-16 16:32:56] "GET /socket.io/?EIO=4&transport=polling&t=sonibyje HTTP/1.1" 200 328 0.000989
+2025-03-16 16:32:56,296 - INFO - 127.0.0.1 - - [2025-03-16 16:32:56] "POST /socket.io/?EIO=4&transport=polling&t=sonkqavf&sid=mQiPrK5HeuZV4McaAAAy HTTP/1.1" 200 195 0.003543
+2025-03-16 16:32:56,302 - INFO - 127.0.0.1 - - [2025-03-16 16:32:56] "GET /socket.io/?EIO=4&transport=polling&t=sonkvgec&sid=mQiPrK5HeuZV4McaAAAy HTTP/1.1" 200 241 0.000518
+2025-03-16 16:32:57,452 - INFO - 127.0.0.1 - - [2025-03-16 16:32:57] "GET /socket.io/?EIO=4&transport=polling&t=sonm1tji&sid=mQiPrK5HeuZV4McaAAAy HTTP/1.1" 200 209 1.118296
+2025-03-16 16:32:57,755 - INFO - 127.0.0.1 - - [2025-03-16 16:32:57] "GET /game HTTP/1.1" 404 182 0.005096
+2025-03-16 16:32:59,042 - INFO - 127.0.0.1 - - [2025-03-16 16:32:59] "GET /table HTTP/1.1" 200 285 0.003997
+2025-03-16 16:32:59,135 - INFO - 127.0.0.1 - - [2025-03-16 16:32:59] "GET /ruleset HTTP/1.1" 200 285 0.005073
+2025-03-16 16:33:04,646 - INFO - 127.0.0.1 - - [2025-03-16 16:33:04] "POST /game HTTP/1.1" 200 215 2.138976
+2025-03-16 16:33:04,680 - INFO - 127.0.0.1 - - [2025-03-16 16:33:04] "GET /game HTTP/1.1" 200 290 0.007001
+2025-03-16 16:33:30,800 - INFO - 127.0.0.1 - - [2025-03-16 16:33:30] "GET /socket.io/?EIO=4&transport=polling&t=spdqhp8u HTTP/1.1" 200 328 0.002573
+2025-03-16 16:33:30,806 - INFO - 127.0.0.1 - - [2025-03-16 16:33:30] "GET /socket.io/?EIO=4&transport=polling&t=spdqhm4j HTTP/1.1" 200 328 0.001024
+2025-03-16 16:33:30,823 - INFO - 127.0.0.1 - - [2025-03-16 16:33:30] "POST /socket.io/?EIO=4&transport=polling&t=spe7p1b6&sid=sHIGb73cQfO9Vv1lAAAA HTTP/1.1" 200 195 0.007550
+2025-03-16 16:33:30,828 - INFO - 127.0.0.1 - - [2025-03-16 16:33:30] "GET /socket.io/?EIO=4&transport=polling&t=spe7tkm2&sid=sHIGb73cQfO9Vv1lAAAA HTTP/1.1" 200 241 0.000534
+2025-03-16 16:33:30,835 - INFO - 127.0.0.1 - - [2025-03-16 16:33:30] "POST /socket.io/?EIO=4&transport=polling&t=spe7vd7w&sid=MFZW2e0zscIw7h5hAAAB HTTP/1.1" 200 195 0.002004
+2025-03-16 16:33:30,839 - INFO - 127.0.0.1 - - [2025-03-16 16:33:30] "GET /socket.io/?EIO=4&transport=polling&t=spe823wq&sid=MFZW2e0zscIw7h5hAAAB HTTP/1.1" 200 241 0.000501
+2025-03-16 16:33:31,146 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spe8iwcx&sid=sHIGb73cQfO9Vv1lAAAA HTTP/1.1" 200 209 0.301296
+2025-03-16 16:33:31,163 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spe8t8n5&sid=MFZW2e0zscIw7h5hAAAB HTTP/1.1" 200 209 0.143677
+2025-03-16 16:33:31,258 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spejc9av HTTP/1.1" 200 328 0.001499
+2025-03-16 16:33:31,264 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spejhl4y HTTP/1.1" 200 328 0.001551
+2025-03-16 16:33:31,291 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "POST /socket.io/?EIO=4&transport=polling&t=spekmeyk&sid=LmfrGJ8iU4KZSlCyAAAE HTTP/1.1" 200 195 0.002511
+2025-03-16 16:33:31,294 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spekxxmf&sid=LmfrGJ8iU4KZSlCyAAAE HTTP/1.1" 200 241 0.000500
+2025-03-16 16:33:31,302 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "POST /socket.io/?EIO=4&transport=polling&t=spel5jl1&sid=HTM23of90Crpf2N1AAAF HTTP/1.1" 200 195 0.001999
+2025-03-16 16:33:31,310 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spelg99b&sid=HTM23of90Crpf2N1AAAF HTTP/1.1" 200 241 0.000502
+2025-03-16 16:33:31,609 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=speloxy1&sid=LmfrGJ8iU4KZSlCyAAAE HTTP/1.1" 200 209 0.292281
+2025-03-16 16:33:31,622 - INFO - 127.0.0.1 - - [2025-03-16 16:33:31] "GET /socket.io/?EIO=4&transport=polling&t=spelx1ph&sid=HTM23of90Crpf2N1AAAF HTTP/1.1" 200 209 0.298847
+2025-03-16 16:35:21,252 - INFO - 127.0.0.1 - - [2025-03-16 16:35:21] "GET /game HTTP/1.1" 404 182 0.011576
+2025-03-16 16:35:21,266 - INFO - 127.0.0.1 - - [2025-03-16 16:35:21] "GET /game HTTP/1.1" 404 182 0.004562
+2025-03-16 16:35:24,873 - INFO - 127.0.0.1 - - [2025-03-16 16:35:24] "GET /table HTTP/1.1" 200 285 0.047097
+2025-03-16 16:35:24,899 - INFO - 127.0.0.1 - - [2025-03-16 16:35:24] "GET /ruleset HTTP/1.1" 200 285 0.008600
+2025-03-16 16:35:29,931 - INFO - 127.0.0.1 - - [2025-03-16 16:35:29] "POST /game HTTP/1.1" 200 215 1.346067
+2025-03-16 16:35:29,964 - INFO - 127.0.0.1 - - [2025-03-16 16:35:29] "GET /game HTTP/1.1" 200 290 0.004997
+2025-03-16 16:35:45,510 - INFO - 127.0.0.1 - - [2025-03-16 16:35:45] "GET /socket.io/?EIO=4&transport=polling&t=ss9w6flh HTTP/1.1" 200 328 0.003757
+2025-03-16 16:35:45,549 - INFO - 127.0.0.1 - - [2025-03-16 16:35:45] "POST /socket.io/?EIO=4&transport=polling&t=ssa5r6qk&sid=dmlAfPQxsSbpZdpqAAAA HTTP/1.1" 200 195 0.013341
+2025-03-16 16:35:45,557 - INFO - 127.0.0.1 - - [2025-03-16 16:35:45] "GET /socket.io/?EIO=4&transport=polling&t=ssa5wy82&sid=dmlAfPQxsSbpZdpqAAAA HTTP/1.1" 200 241 0.001506
+2025-03-16 16:35:45,886 - INFO - 127.0.0.1 - - [2025-03-16 16:35:45] "GET /socket.io/?EIO=4&transport=polling&t=ssa72l7k&sid=dmlAfPQxsSbpZdpqAAAA HTTP/1.1" 200 209 0.305852
+2025-03-16 16:35:46,209 - INFO - 127.0.0.1 - - [2025-03-16 16:35:46] "GET /socket.io/?EIO=4&transport=polling&t=ssao1oas HTTP/1.1" 200 328 0.001534
+2025-03-16 16:35:46,240 - INFO - 127.0.0.1 - - [2025-03-16 16:35:46] "POST /socket.io/?EIO=4&transport=polling&t=ssap6sif&sid=wMl9sGgj7Wim91etAAAC HTTP/1.1" 200 195 0.004560
+2025-03-16 16:35:46,249 - INFO - 127.0.0.1 - - [2025-03-16 16:35:46] "GET /socket.io/?EIO=4&transport=polling&t=ssapfkn4&sid=wMl9sGgj7Wim91etAAAC HTTP/1.1" 200 241 0.000499
+2025-03-16 16:35:46,564 - INFO - 127.0.0.1 - - [2025-03-16 16:35:46] "GET /socket.io/?EIO=4&transport=polling&t=ssaq5bxc&sid=wMl9sGgj7Wim91etAAAC HTTP/1.1" 200 209 0.305034
+2025-03-16 16:35:47,202 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "GET /socket.io/?EIO=4&transport=polling&t=ssbfxbt9 HTTP/1.1" 200 328 0.001496
+2025-03-16 16:35:47,210 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "GET /socket.io/?EIO=4&transport=polling&t=ssbfy64d HTTP/1.1" 200 328 0.001506
+2025-03-16 16:35:47,247 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "POST /socket.io/?EIO=4&transport=polling&t=ssbgy2ig&sid=mlyO3GGEveUkBNy4AAAE HTTP/1.1" 200 195 0.005999
+2025-03-16 16:35:47,257 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "POST /socket.io/?EIO=4&transport=polling&t=ssbh0duj&sid=3R1GVY3pZaVgaRp9AAAF HTTP/1.1" 200 195 0.005045
+2025-03-16 16:35:47,272 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "GET /socket.io/?EIO=4&transport=polling&t=ssbh5xmo&sid=3R1GVY3pZaVgaRp9AAAF HTTP/1.1" 200 241 0.001028
+2025-03-16 16:35:47,279 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "GET /socket.io/?EIO=4&transport=polling&t=ssbh4ffm&sid=mlyO3GGEveUkBNy4AAAE HTTP/1.1" 200 241 0.001996
+2025-03-16 16:35:47,577 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "GET /socket.io/?EIO=4&transport=polling&t=ssbiz8qk&sid=mlyO3GGEveUkBNy4AAAE HTTP/1.1" 200 209 0.263699
+2025-03-16 16:35:47,597 - INFO - 127.0.0.1 - - [2025-03-16 16:35:47] "GET /socket.io/?EIO=4&transport=polling&t=ssbiscr9&sid=3R1GVY3pZaVgaRp9AAAF HTTP/1.1" 200 209 0.289248
+2025-03-16 16:37:25,443 - INFO - 127.0.0.1 - - [2025-03-16 16:37:25] "GET /game HTTP/1.1" 404 182 0.012130
+2025-03-16 16:37:25,472 - INFO - 127.0.0.1 - - [2025-03-16 16:37:25] "GET /game HTTP/1.1" 404 182 0.005529
+2025-03-16 16:37:29,217 - INFO - 127.0.0.1 - - [2025-03-16 16:37:29] "GET /table HTTP/1.1" 200 285 0.057952
+2025-03-16 16:37:29,245 - INFO - 127.0.0.1 - - [2025-03-16 16:37:29] "GET /ruleset HTTP/1.1" 200 285 0.011106
+2025-03-16 16:37:32,950 - INFO - 127.0.0.1 - - [2025-03-16 16:37:32] "POST /game HTTP/1.1" 200 215 1.189552
+2025-03-16 16:37:32,968 - INFO - 127.0.0.1 - - [2025-03-16 16:37:32] "GET /game HTTP/1.1" 200 290 0.003555
+2025-03-16 16:37:41,598 - INFO - 127.0.0.1 - - [2025-03-16 16:37:41] "POST /game/actions HTTP/1.1" 200 228 0.019380
+2025-03-16 16:38:00,138 - INFO - 127.0.0.1 - - [2025-03-16 16:38:00] "POST /game/actions HTTP/1.1" 200 227 0.020888
+2025-03-16 16:38:03,912 - INFO - 127.0.0.1 - - [2025-03-16 16:38:03] "GET /socket.io/?EIO=4&transport=polling&t=sv8xs14e HTTP/1.1" 200 328 0.000498
+2025-03-16 16:38:04,003 - INFO - 127.0.0.1 - - [2025-03-16 16:38:04] "POST /socket.io/?EIO=4&transport=polling&t=sv90bett&sid=GJYrAPwqqEByZ9L_AAAI HTTP/1.1" 200 195 0.002500
+2025-03-16 16:38:04,007 - INFO - 127.0.0.1 - - [2025-03-16 16:38:04] "GET /socket.io/?EIO=4&transport=polling&t=sv90ejky&sid=GJYrAPwqqEByZ9L_AAAI HTTP/1.1" 200 241 0.000507
+2025-03-16 16:38:04,348 - INFO - 127.0.0.1 - - [2025-03-16 16:38:04] "GET /socket.io/?EIO=4&transport=polling&t=sv91df0g&sid=GJYrAPwqqEByZ9L_AAAI HTTP/1.1" 200 209 0.306108
+2025-03-16 16:38:05,162 - INFO - 127.0.0.1 - - [2025-03-16 16:38:05] "GET /game HTTP/1.1" 200 290 0.004504
+2025-03-16 16:39:20,508 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=swvsef8n HTTP/1.1" 200 328 0.003080
+2025-03-16 16:39:20,511 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=swvsfncn HTTP/1.1" 200 328 0.000508
+2025-03-16 16:39:20,514 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=swvshh54 HTTP/1.1" 200 328 0.001018
+2025-03-16 16:39:20,531 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "POST /socket.io/?EIO=4&transport=polling&t=sww1smer&sid=-pPk3ceIZo5wCozrAAAA HTTP/1.1" 200 195 0.007154
+2025-03-16 16:39:20,535 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=sww1xwry&sid=-pPk3ceIZo5wCozrAAAA HTTP/1.1" 200 241 0.000487
+2025-03-16 16:39:20,541 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "POST /socket.io/?EIO=4&transport=polling&t=sww20h78&sid=mhPlN9JRBoeqXA7gAAAB HTTP/1.1" 200 195 0.003000
+2025-03-16 16:39:20,546 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "POST /socket.io/?EIO=4&transport=polling&t=sww23m1g&sid=J2JAQWLoHmvLnOJjAAAC HTTP/1.1" 200 195 0.002554
+2025-03-16 16:39:20,550 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=sww254zp&sid=mhPlN9JRBoeqXA7gAAAB HTTP/1.1" 200 241 0.000999
+2025-03-16 16:39:20,554 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=sww2761v&sid=J2JAQWLoHmvLnOJjAAAC HTTP/1.1" 200 241 0.000499
+2025-03-16 16:39:20,854 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=sww2xi3d&sid=-pPk3ceIZo5wCozrAAAA HTTP/1.1" 200 209 0.290367
+2025-03-16 16:39:20,863 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=sww33y7k&sid=mhPlN9JRBoeqXA7gAAAB HTTP/1.1" 200 209 0.294890
+2025-03-16 16:39:20,877 - INFO - 127.0.0.1 - - [2025-03-16 16:39:20] "GET /socket.io/?EIO=4&transport=polling&t=sww37vvu&sid=J2JAQWLoHmvLnOJjAAAC HTTP/1.1" 200 209 0.306524
+2025-03-16 16:39:23,280 - INFO - 127.0.0.1 - - [2025-03-16 16:39:23] "GET /socket.io/?EIO=4&transport=polling&t=swy6iqv9 HTTP/1.1" 200 328 0.000521
+2025-03-16 16:39:23,293 - INFO - 127.0.0.1 - - [2025-03-16 16:39:23] "POST /socket.io/?EIO=4&transport=polling&t=swy6qfh0&sid=gGsdGH6-oCQbQqNcAAAG HTTP/1.1" 200 195 0.002997
+2025-03-16 16:39:23,296 - INFO - 127.0.0.1 - - [2025-03-16 16:39:23] "GET /socket.io/?EIO=4&transport=polling&t=swy6t98n&sid=gGsdGH6-oCQbQqNcAAAG HTTP/1.1" 200 241 0.000000
+2025-03-16 16:39:23,626 - INFO - 127.0.0.1 - - [2025-03-16 16:39:23] "GET /socket.io/?EIO=4&transport=polling&t=swy79b6k&sid=gGsdGH6-oCQbQqNcAAAG HTTP/1.1" 200 209 0.320476
+2025-03-16 16:40:01,829 - INFO - 127.0.0.1 - - [2025-03-16 16:40:01] "GET /game HTTP/1.1" 404 182 0.011996
+2025-03-16 16:40:01,856 - INFO - 127.0.0.1 - - [2025-03-16 16:40:01] "GET /game HTTP/1.1" 404 182 0.004500
+2025-03-16 16:40:08,067 - INFO - 127.0.0.1 - - [2025-03-16 16:40:08] "GET /table HTTP/1.1" 200 285 0.034936
+2025-03-16 16:40:08,136 - INFO - 127.0.0.1 - - [2025-03-16 16:40:08] "GET /ruleset HTTP/1.1" 200 285 0.010627
+2025-03-16 16:40:12,168 - INFO - 127.0.0.1 - - [2025-03-16 16:40:12] "POST /game HTTP/1.1" 200 215 1.276699
+2025-03-16 16:40:12,186 - INFO - 127.0.0.1 - - [2025-03-16 16:40:12] "GET /game HTTP/1.1" 200 290 0.002495
+2025-03-16 16:40:19,670 - INFO - 127.0.0.1 - - [2025-03-16 16:40:19] "POST /game/actions HTTP/1.1" 200 227 0.020743
+2025-03-16 16:40:20,674 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:20,678 - INFO - Remaining time: 58.98399999999674
+2025-03-16 16:40:21,686 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:21,688 - INFO - Remaining time: 57.98399999999674
+2025-03-16 16:40:22,694 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:22,698 - INFO - Remaining time: 56.98399999999674
+2025-03-16 16:40:23,706 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:23,710 - INFO - Remaining time: 55.96899999999732
+2025-03-16 16:40:24,717 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:24,720 - INFO - Remaining time: 54.96899999999732
+2025-03-16 16:40:25,727 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:25,731 - INFO - Remaining time: 53.96899999999732
+2025-03-16 16:40:26,737 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:26,741 - INFO - Remaining time: 52.95299999999406
+2025-03-16 16:40:27,748 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:27,749 - INFO - Remaining time: 51.95299999999406
+2025-03-16 16:40:28,676 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:28,680 - INFO - 127.0.0.1 - - [2025-03-16 16:40:28] "POST /game/actions HTTP/1.1" 200 227 0.019566
+2025-03-16 16:40:28,755 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:40:28,758 - INFO - Remaining time: 50.95299999999406
+2025-03-16 16:41:25,514 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szk8svyy HTTP/1.1" 200 328 0.003498
+2025-03-16 16:41:25,520 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szk8wq08 HTTP/1.1" 200 328 0.000992
+2025-03-16 16:41:25,559 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "POST /socket.io/?EIO=4&transport=polling&t=szki9jg0&sid=w94bxhI4EPaQe04FAAAA HTTP/1.1" 200 195 0.015843
+2025-03-16 16:41:25,571 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szkihkyu&sid=w94bxhI4EPaQe04FAAAA HTTP/1.1" 200 241 0.001500
+2025-03-16 16:41:25,587 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "POST /socket.io/?EIO=4&transport=polling&t=szkirhfg&sid=lBBzatvYuAM_3rRCAAAB HTTP/1.1" 200 195 0.006640
+2025-03-16 16:41:25,595 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szkipqgu HTTP/1.1" 200 328 0.001534
+2025-03-16 16:41:25,608 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szkj967l&sid=lBBzatvYuAM_3rRCAAAB HTTP/1.1" 200 241 0.002646
+2025-03-16 16:41:25,645 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "POST /socket.io/?EIO=4&transport=polling&t=szkkx6v2&sid=iFhHmCTJQRAg7rzMAAAE HTTP/1.1" 200 195 0.005997
+2025-03-16 16:41:25,655 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szkl5ro2&sid=iFhHmCTJQRAg7rzMAAAE HTTP/1.1" 200 241 0.001007
+2025-03-16 16:41:25,866 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szkkf4rh&sid=w94bxhI4EPaQe04FAAAA HTTP/1.1" 200 209 0.236633
+2025-03-16 16:41:25,914 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /table HTTP/1.1" 200 285 0.044599
+2025-03-16 16:41:25,923 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szklak73&sid=lBBzatvYuAM_3rRCAAAB HTTP/1.1" 200 209 0.257174
+2025-03-16 16:41:25,961 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /ruleset HTTP/1.1" 200 285 0.009055
+2025-03-16 16:41:25,967 - INFO - 127.0.0.1 - - [2025-03-16 16:41:25] "GET /socket.io/?EIO=4&transport=polling&t=szkmir1o&sid=iFhHmCTJQRAg7rzMAAAE HTTP/1.1" 200 209 0.210785
+2025-03-16 16:41:26,189 - INFO - 127.0.0.1 - - [2025-03-16 16:41:26] "GET /socket.io/?EIO=4&transport=polling&t=szl0mqxr HTTP/1.1" 200 328 0.000502
+2025-03-16 16:41:26,206 - INFO - 127.0.0.1 - - [2025-03-16 16:41:26] "POST /socket.io/?EIO=4&transport=polling&t=szl0zlej&sid=A4uF2F2gVDiZFAokAAAG HTTP/1.1" 200 195 0.004096
+2025-03-16 16:41:26,208 - INFO - 127.0.0.1 - - [2025-03-16 16:41:26] "GET /socket.io/?EIO=4&transport=polling&t=szl12fy0&sid=A4uF2F2gVDiZFAokAAAG HTTP/1.1" 200 241 0.000000
+2025-03-16 16:41:26,541 - INFO - 127.0.0.1 - - [2025-03-16 16:41:26] "GET /socket.io/?EIO=4&transport=polling&t=szl1ijhu&sid=A4uF2F2gVDiZFAokAAAG HTTP/1.1" 200 209 0.319211
+2025-03-16 16:41:30,373 - INFO - 127.0.0.1 - - [2025-03-16 16:41:30] "POST /game HTTP/1.1" 200 215 1.337104
+2025-03-16 16:41:30,391 - INFO - 127.0.0.1 - - [2025-03-16 16:41:30] "GET /game HTTP/1.1" 200 290 0.002498
+2025-03-16 16:42:05,309 - INFO - 127.0.0.1 - - [2025-03-16 16:42:05] "POST /game/actions HTTP/1.1" 200 191 0.025419
+2025-03-16 16:43:41,547 - INFO - 127.0.0.1 - - [2025-03-16 16:43:41] "GET /game HTTP/1.1" 404 182 0.006089
+2025-03-16 16:43:41,596 - INFO - 127.0.0.1 - - [2025-03-16 16:43:41] "GET /game HTTP/1.1" 404 182 0.004558
+2025-03-16 16:44:02,850 - INFO - 127.0.0.1 - - [2025-03-16 16:44:02] "GET /game HTTP/1.1" 404 182 0.003050
+2025-03-16 16:44:02,869 - INFO - 127.0.0.1 - - [2025-03-16 16:44:02] "GET /game HTTP/1.1" 404 182 0.004549
+2025-03-16 16:44:58,787 - INFO - 127.0.0.1 - - [2025-03-16 16:44:58] "GET /game HTTP/1.1" 404 182 0.004074
+2025-03-16 16:44:58,812 - INFO - 127.0.0.1 - - [2025-03-16 16:44:58] "GET /game HTTP/1.1" 404 182 0.002497
+2025-03-16 16:45:07,040 - INFO - 127.0.0.1 - - [2025-03-16 16:45:07] "GET /socket.io/?EIO=4&transport=polling&t=t4bfeobb HTTP/1.1" 200 328 0.000515
+2025-03-16 16:45:07,149 - INFO - 127.0.0.1 - - [2025-03-16 16:45:07] "POST /socket.io/?EIO=4&transport=polling&t=t4bi8m09&sid=0-XScJ3YEhNAybuPAAAI HTTP/1.1" 200 195 0.003005
+2025-03-16 16:45:07,154 - INFO - 127.0.0.1 - - [2025-03-16 16:45:07] "GET /socket.io/?EIO=4&transport=polling&t=t4bic41g&sid=0-XScJ3YEhNAybuPAAAI HTTP/1.1" 200 241 0.000506
+2025-03-16 16:45:07,508 - INFO - 127.0.0.1 - - [2025-03-16 16:45:07] "GET /socket.io/?EIO=4&transport=polling&t=t4bjf1lb&sid=0-XScJ3YEhNAybuPAAAI HTTP/1.1" 200 209 0.319405
+2025-03-16 16:45:08,376 - INFO - 127.0.0.1 - - [2025-03-16 16:45:08] "GET /game HTTP/1.1" 404 182 0.007539
+2025-03-16 16:45:09,249 - INFO - 127.0.0.1 - - [2025-03-16 16:45:09] "GET /table HTTP/1.1" 200 285 0.007999
+2025-03-16 16:45:09,380 - INFO - 127.0.0.1 - - [2025-03-16 16:45:09] "GET /ruleset HTTP/1.1" 200 285 0.010485
+2025-03-16 16:45:13,346 - INFO - 127.0.0.1 - - [2025-03-16 16:45:13] "POST /game HTTP/1.1" 200 215 0.026376
+2025-03-16 16:45:13,363 - INFO - 127.0.0.1 - - [2025-03-16 16:45:13] "GET /game HTTP/1.1" 200 290 0.003495
+2025-03-16 16:46:09,180 - INFO - 127.0.0.1 - - [2025-03-16 16:46:09] "POST /game/actions HTTP/1.1" 200 225 0.022843
+2025-03-16 16:46:09,188 - INFO - 127.0.0.1 - - [2025-03-16 16:46:09] "GET /game HTTP/1.1" 404 182 0.003078
+2025-03-16 16:46:12,307 - INFO - 127.0.0.1 - - [2025-03-16 16:46:12] "GET /table HTTP/1.1" 200 285 0.003953
+2025-03-16 16:46:12,387 - INFO - 127.0.0.1 - - [2025-03-16 16:46:12] "GET /ruleset HTTP/1.1" 200 285 0.007334
+2025-03-16 16:46:15,020 - INFO - 127.0.0.1 - - [2025-03-16 16:46:15] "POST /game HTTP/1.1" 200 215 0.031355
+2025-03-16 16:46:15,037 - INFO - 127.0.0.1 - - [2025-03-16 16:46:15] "GET /game HTTP/1.1" 200 290 0.002489
+2025-03-16 16:46:16,672 - INFO - 127.0.0.1 - - [2025-03-16 16:46:16] "POST /game/actions HTTP/1.1" 200 227 0.029265
+2025-03-16 16:46:17,674 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:46:17,678 - INFO - Remaining time: 58.98399999999674
+2025-03-16 16:46:18,685 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:46:18,689 - INFO - Remaining time: 57.98399999999674
+2025-03-16 16:46:19,013 - INFO - 127.0.0.1 - - [2025-03-16 16:46:19] "POST /game/actions HTTP/1.1" 200 225 0.020203
+2025-03-16 16:46:19,023 - INFO - 127.0.0.1 - - [2025-03-16 16:46:19] "GET /game HTTP/1.1" 404 182 0.007035
+2025-03-16 16:46:27,902 - INFO - 127.0.0.1 - - [2025-03-16 16:46:27] "GET /table HTTP/1.1" 200 285 0.006661
+2025-03-16 16:46:27,963 - INFO - 127.0.0.1 - - [2025-03-16 16:46:27] "GET /ruleset HTTP/1.1" 200 285 0.006509
+2025-03-16 16:46:34,559 - INFO - 127.0.0.1 - - [2025-03-16 16:46:34] "POST /game HTTP/1.1" 200 215 0.025921
+2025-03-16 16:46:34,582 - INFO - 127.0.0.1 - - [2025-03-16 16:46:34] "GET /game HTTP/1.1" 200 279 0.003499
+2025-03-16 16:46:41,834 - INFO - 127.0.0.1 - - [2025-03-16 16:46:41] "POST /game/actions HTTP/1.1" 200 225 0.027213
+2025-03-16 16:46:41,845 - INFO - 127.0.0.1 - - [2025-03-16 16:46:41] "GET /game HTTP/1.1" 404 182 0.007041
+2025-03-16 16:47:10,522 - INFO - 127.0.0.1 - - [2025-03-16 16:47:10] "GET /game HTTP/1.1" 404 182 0.002501
+2025-03-16 16:47:10,538 - INFO - 127.0.0.1 - - [2025-03-16 16:47:10] "GET /game HTTP/1.1" 404 182 0.003091
+2025-03-16 16:47:13,946 - INFO - 127.0.0.1 - - [2025-03-16 16:47:13] "GET /table HTTP/1.1" 200 285 0.003499
+2025-03-16 16:47:14,004 - INFO - 127.0.0.1 - - [2025-03-16 16:47:14] "GET /ruleset HTTP/1.1" 200 285 0.006140
+2025-03-16 16:47:16,664 - INFO - 127.0.0.1 - - [2025-03-16 16:47:16] "POST /game HTTP/1.1" 200 215 0.025100
+2025-03-16 16:47:16,678 - INFO - 127.0.0.1 - - [2025-03-16 16:47:16] "GET /game HTTP/1.1" 200 290 0.001624
+2025-03-16 16:47:19,772 - INFO - 127.0.0.1 - - [2025-03-16 16:47:19] "POST /game/actions HTTP/1.1" 200 225 0.018639
+2025-03-16 16:47:19,780 - INFO - 127.0.0.1 - - [2025-03-16 16:47:19] "GET /game HTTP/1.1" 404 182 0.005018
+2025-03-16 16:47:20,372 - INFO - 127.0.0.1 - - [2025-03-16 16:47:20] "GET /table HTTP/1.1" 200 285 0.007143
+2025-03-16 16:47:20,429 - INFO - 127.0.0.1 - - [2025-03-16 16:47:20] "GET /ruleset HTTP/1.1" 200 285 0.006537
+2025-03-16 16:47:22,836 - INFO - 127.0.0.1 - - [2025-03-16 16:47:22] "POST /game HTTP/1.1" 200 215 0.030075
+2025-03-16 16:47:22,855 - INFO - 127.0.0.1 - - [2025-03-16 16:47:22] "GET /game HTTP/1.1" 200 290 0.003560
+2025-03-16 16:47:57,856 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /socket.io/?EIO=4&transport=polling&t=t7z879qh HTTP/1.1" 200 328 0.000503
+2025-03-16 16:47:57,871 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /socket.io/?EIO=4&transport=polling&t=t7z8lzfi HTTP/1.1" 200 328 0.000000
+2025-03-16 16:47:57,880 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "POST /socket.io/?EIO=4&transport=polling&t=t7z8o8fj&sid=jS94JPiZIjh9BkCtAAAK HTTP/1.1" 200 195 0.003004
+2025-03-16 16:47:57,886 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /socket.io/?EIO=4&transport=polling&t=t7z8zu5k&sid=jS94JPiZIjh9BkCtAAAK HTTP/1.1" 200 241 0.000503
+2025-03-16 16:47:57,931 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /game HTTP/1.1" 200 290 0.004024
+2025-03-16 16:47:57,943 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /game HTTP/1.1" 200 290 0.004076
+2025-03-16 16:47:57,972 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /game HTTP/1.1" 200 290 0.002999
+2025-03-16 16:47:57,982 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "POST /socket.io/?EIO=4&transport=polling&t=t7zbmsky&sid=7E6jLFpDJr3ETHacAAAL HTTP/1.1" 200 195 0.002581
+2025-03-16 16:47:57,988 - INFO - 127.0.0.1 - - [2025-03-16 16:47:57] "GET /socket.io/?EIO=4&transport=polling&t=t7zbs2wq&sid=7E6jLFpDJr3ETHacAAAL HTTP/1.1" 200 241 0.000495
+2025-03-16 16:47:58,007 - INFO - 127.0.0.1 - - [2025-03-16 16:47:58] "GET /game HTTP/1.1" 200 290 0.004552
+2025-03-16 16:47:58,022 - INFO - 127.0.0.1 - - [2025-03-16 16:47:58] "POST /socket.io/?EIO=4&transport=polling&t=t7zcgix7&sid=jS94JPiZIjh9BkCtAAAK HTTP/1.1" 200 195 0.010582
+2025-03-16 16:47:58,031 - INFO - 127.0.0.1 - - [2025-03-16 16:47:58] "GET /socket.io/?EIO=4&transport=polling&t=t7zcn4m6&sid=jS94JPiZIjh9BkCtAAAK HTTP/1.1" 200 230 0.000490
+2025-03-16 16:47:58,332 - INFO - 127.0.0.1 - - [2025-03-16 16:47:58] "POST /socket.io/?EIO=4&transport=polling&t=t7ze5nx1&sid=jS94JPiZIjh9BkCtAAAK HTTP/1.1" 200 195 0.001554
+2025-03-16 16:47:58,333 - INFO - 127.0.0.1 - - [2025-03-16 16:47:58] "GET /socket.io/?EIO=4&transport=polling&t=t7ze2p44&sid=jS94JPiZIjh9BkCtAAAK HTTP/1.1" 200 208 0.268107
+2025-03-16 16:48:02,764 - INFO - 127.0.0.1 - - [2025-03-16 16:48:02] "GET /game HTTP/1.1" 200 290 0.002506
+2025-03-16 16:48:02,779 - INFO - 127.0.0.1 - - [2025-03-16 16:48:02] "GET /game HTTP/1.1" 200 290 0.002506
+2025-03-16 16:48:06,977 - INFO - 127.0.0.1 - - [2025-03-16 16:48:06] "POST /game/actions HTTP/1.1" 200 225 0.020778
+2025-03-16 16:48:06,986 - INFO - 127.0.0.1 - - [2025-03-16 16:48:06] "GET /game HTTP/1.1" 404 182 0.005628
+2025-03-16 16:48:14,288 - INFO - 127.0.0.1 - - [2025-03-16 16:48:14] "GET /socket.io/?EIO=4&transport=polling&t=t8bnzy38 HTTP/1.1" 200 328 0.001528
+2025-03-16 16:48:14,778 - INFO - 127.0.0.1 - - [2025-03-16 16:48:14] "POST /socket.io/?EIO=4&transport=polling&t=t8c9r264&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 195 0.004074
+2025-03-16 16:48:14,785 - INFO - 127.0.0.1 - - [2025-03-16 16:48:14] "GET /socket.io/?EIO=4&transport=polling&t=t8c9vgtl&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 241 0.002054
+2025-03-16 16:48:15,460 - INFO - 127.0.0.1 - - [2025-03-16 16:48:15] "GET /game HTTP/1.1" 404 182 0.005052
+2025-03-16 16:48:16,311 - INFO - 127.0.0.1 - - [2025-03-16 16:48:16] "GET /table HTTP/1.1" 200 285 0.005575
+2025-03-16 16:48:16,398 - INFO - 127.0.0.1 - - [2025-03-16 16:48:16] "GET /ruleset HTTP/1.1" 200 285 0.006170
+2025-03-16 16:48:18,553 - INFO - 127.0.0.1 - - [2025-03-16 16:48:18] "POST /game HTTP/1.1" 200 215 0.031200
+2025-03-16 16:48:18,572 - INFO - 127.0.0.1 - - [2025-03-16 16:48:18] "GET /game HTTP/1.1" 200 290 0.004524
+2025-03-16 16:48:21,228 - INFO - 127.0.0.1 - - [2025-03-16 16:48:21] "POST /game/actions HTTP/1.1" 200 225 0.022542
+2025-03-16 16:48:21,235 - INFO - 127.0.0.1 - - [2025-03-16 16:48:21] "GET /game HTTP/1.1" 404 182 0.003531
+2025-03-16 16:48:22,890 - INFO - 127.0.0.1 - - [2025-03-16 16:48:22] "GET /socket.io/?EIO=4&transport=polling&t=t7zcji5t&sid=7E6jLFpDJr3ETHacAAAL HTTP/1.1" 200 208 24.861651
+2025-03-16 16:48:22,938 - INFO - 127.0.0.1 - - [2025-03-16 16:48:22] "GET /table HTTP/1.1" 200 285 0.006541
+2025-03-16 16:48:22,997 - INFO - 127.0.0.1 - - [2025-03-16 16:48:22] "GET /ruleset HTTP/1.1" 200 285 0.005992
+2025-03-16 16:48:25,485 - INFO - 127.0.0.1 - - [2025-03-16 16:48:25] "POST /game HTTP/1.1" 200 215 0.030551
+2025-03-16 16:48:25,503 - INFO - 127.0.0.1 - - [2025-03-16 16:48:25] "GET /game HTTP/1.1" 200 290 0.004457
+2025-03-16 16:48:39,313 - INFO - 127.0.0.1 - - [2025-03-16 16:48:39] "GET /socket.io/?EIO=4&transport=polling&t=t8cmdzw5&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 209 24.063475
+2025-03-16 16:48:39,328 - INFO - 127.0.0.1 - - [2025-03-16 16:48:39] "POST /socket.io/?EIO=4&transport=polling&t=t8v87cfq&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 195 0.001536
+2025-03-16 16:49:04,341 - INFO - 127.0.0.1 - - [2025-03-16 16:49:04] "GET /socket.io/?EIO=4&transport=polling&t=t8v89tlj&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 209 25.010749
+2025-03-16 16:49:04,365 - INFO - 127.0.0.1 - - [2025-03-16 16:49:04] "POST /socket.io/?EIO=4&transport=polling&t=t9ejgqjk&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 195 0.003007
+2025-03-16 16:49:29,369 - INFO - 127.0.0.1 - - [2025-03-16 16:49:29] "GET /socket.io/?EIO=4&transport=polling&t=t9ejj18a&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 209 24.997117
+2025-03-16 16:49:29,382 - INFO - 127.0.0.1 - - [2025-03-16 16:49:29] "POST /socket.io/?EIO=4&transport=polling&t=t9xukll4&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 195 0.001997
+2025-03-16 16:49:54,386 - INFO - 127.0.0.1 - - [2025-03-16 16:49:54] "GET /socket.io/?EIO=4&transport=polling&t=t9xumjsz&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 209 25.001185
+2025-03-16 16:49:54,414 - INFO - 127.0.0.1 - - [2025-03-16 16:49:54] "POST /socket.io/?EIO=4&transport=polling&t=tah5lco7&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 195 0.003595
+2025-03-16 16:50:16,550 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /socket.io/?EIO=4&transport=polling&t=tay8vsf9 HTTP/1.1" 200 328 0.001014
+2025-03-16 16:50:16,560 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /socket.io/?EIO=4&transport=polling&t=tay940pr HTTP/1.1" 200 328 0.001021
+2025-03-16 16:50:16,617 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /game HTTP/1.1" 200 290 0.003046
+2025-03-16 16:50:16,650 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /game HTTP/1.1" 200 290 0.003500
+2025-03-16 16:50:16,659 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "POST /socket.io/?EIO=4&transport=polling&t=taybrdux&sid=SXs1cqxu2KWZEXISAAAR HTTP/1.1" 200 195 0.003500
+2025-03-16 16:50:16,665 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /socket.io/?EIO=4&transport=polling&t=taybxxyu&sid=SXs1cqxu2KWZEXISAAAR HTTP/1.1" 200 241 0.000489
+2025-03-16 16:50:16,688 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /game HTTP/1.1" 200 290 0.002530
+2025-03-16 16:50:16,753 - INFO - 127.0.0.1 - - [2025-03-16 16:50:16] "GET /game HTTP/1.1" 200 290 0.003019
+2025-03-16 16:50:17,081 - INFO - 127.0.0.1 - - [2025-03-16 16:50:17] "POST /socket.io/?EIO=4&transport=polling&t=tayeutgc&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 195 0.001546
+2025-03-16 16:50:17,084 - INFO - 127.0.0.1 - - [2025-03-16 16:50:17] "GET /socket.io/?EIO=4&transport=polling&t=tayewt3r&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 241 0.001011
+2025-03-16 16:50:19,421 - INFO - 127.0.0.1 - - [2025-03-16 16:50:19] "GET /socket.io/?EIO=4&transport=polling&t=tah5orb2&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 209 25.001507
+2025-03-16 16:50:19,445 - INFO - 127.0.0.1 - - [2025-03-16 16:50:19] "POST /socket.io/?EIO=4&transport=polling&t=tb0h1m5f&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 195 0.002558
+2025-03-16 16:50:26,579 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /socket.io/?EIO=4&transport=polling&t=tb5ygh4k HTTP/1.1" 200 328 0.001498
+2025-03-16 16:50:26,589 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /socket.io/?EIO=4&transport=polling&t=tb5zf8ob HTTP/1.1" 200 328 0.001012
+2025-03-16 16:50:26,660 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /game HTTP/1.1" 200 290 0.003546
+2025-03-16 16:50:26,672 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /game HTTP/1.1" 200 290 0.004501
+2025-03-16 16:50:26,734 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /game HTTP/1.1" 200 290 0.003515
+2025-03-16 16:50:26,747 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "POST /socket.io/?EIO=4&transport=polling&t=tb63k1sl&sid=2xydCOywTKnOX1ZZAAAW HTTP/1.1" 200 195 0.002537
+2025-03-16 16:50:26,755 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /socket.io/?EIO=4&transport=polling&t=tb643ys0&sid=2xydCOywTKnOX1ZZAAAW HTTP/1.1" 200 241 0.000988
+2025-03-16 16:50:26,763 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /game HTTP/1.1" 200 290 0.004563
+2025-03-16 16:50:26,783 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "POST /socket.io/?EIO=4&transport=polling&t=tb64u3ty&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 195 0.002513
+2025-03-16 16:50:26,898 - INFO - 127.0.0.1 - - [2025-03-16 16:50:26] "GET /socket.io/?EIO=4&transport=polling&t=tb6573ec&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 241 0.000000
+2025-03-16 16:50:36,646 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /socket.io/?EIO=4&transport=polling&t=tbdr0dqa HTTP/1.1" 200 328 0.001019
+2025-03-16 16:50:36,650 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /socket.io/?EIO=4&transport=polling&t=tbdr0rov HTTP/1.1" 200 328 0.001011
+2025-03-16 16:50:36,832 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /game HTTP/1.1" 200 290 0.003497
+2025-03-16 16:50:36,847 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /game HTTP/1.1" 200 290 0.003000
+2025-03-16 16:50:36,904 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /game HTTP/1.1" 200 290 0.003999
+2025-03-16 16:50:36,909 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "POST /socket.io/?EIO=4&transport=polling&t=tbdy6fuq&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 195 0.002548
+2025-03-16 16:50:36,917 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /game HTTP/1.1" 200 290 0.004034
+2025-03-16 16:50:36,922 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "POST /socket.io/?EIO=4&transport=polling&t=tbdyhpxd&sid=2T6U4LH3gOsRjtyXAAAZ HTTP/1.1" 200 195 0.002538
+2025-03-16 16:50:36,929 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /socket.io/?EIO=4&transport=polling&t=tbdyk5p7&sid=2T6U4LH3gOsRjtyXAAAZ HTTP/1.1" 200 241 0.000490
+2025-03-16 16:50:36,945 - INFO - 127.0.0.1 - - [2025-03-16 16:50:36] "GET /socket.io/?EIO=4&transport=polling&t=tbdzd1ze&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 241 0.000489
+2025-03-16 16:50:41,568 - INFO - 127.0.0.1 - - [2025-03-16 16:50:41] "GET /socket.io/?EIO=4&transport=polling&t=tayce6d5&sid=SXs1cqxu2KWZEXISAAAR HTTP/1.1" 200 209 24.889694
+2025-03-16 16:50:41,572 - INFO - 127.0.0.1 - - [2025-03-16 16:50:41] "GET /socket.io/?EIO=4&transport=polling&t=taynz6t7&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 209 24.475595
+2025-03-16 16:50:41,600 - INFO - 127.0.0.1 - - [2025-03-16 16:50:41] "POST /socket.io/?EIO=4&transport=polling&t=tbhk8vjz&sid=SXs1cqxu2KWZEXISAAAR HTTP/1.1" 200 195 0.003992
+2025-03-16 16:50:43,186 - INFO - 127.0.0.1 - - [2025-03-16 16:50:43] "POST /socket.io/?EIO=4&transport=polling&t=tbhkf7le&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 195 0.001041
+2025-03-16 16:50:43,441 - INFO - 127.0.0.1 - - [2025-03-16 16:50:43] "GET /socket.io/?EIO=4&transport=polling&t=tbizverf HTTP/1.1" 200 328 0.001185
+2025-03-16 16:50:43,529 - INFO - 127.0.0.1 - - [2025-03-16 16:50:43] "POST /socket.io/?EIO=4&transport=polling&t=tbj284c6&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 195 0.002499
+2025-03-16 16:50:43,534 - INFO - 127.0.0.1 - - [2025-03-16 16:50:43] "GET /socket.io/?EIO=4&transport=polling&t=tbj2bepp&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 241 0.000497
+2025-03-16 16:50:44,462 - INFO - 127.0.0.1 - - [2025-03-16 16:50:44] "GET /socket.io/?EIO=4&transport=polling&t=tb0h4pc6&sid=V4F3RJmi1qAGEk5eAAAP HTTP/1.1" 200 208 25.012019
+2025-03-16 16:50:44,717 - INFO - 127.0.0.1 - - [2025-03-16 16:50:44] "GET /game HTTP/1.1" 200 290 0.006503
+2025-03-16 16:50:46,153 - INFO - 127.0.0.1 - - [2025-03-16 16:50:46] "POST /game/actions HTTP/1.1" 200 225 0.025831
+2025-03-16 16:50:46,168 - INFO - 127.0.0.1 - - [2025-03-16 16:50:46] "GET /game HTTP/1.1" 404 182 0.007152
+2025-03-16 16:50:48,733 - INFO - 127.0.0.1 - - [2025-03-16 16:50:48] "GET /table HTTP/1.1" 200 285 0.006231
+2025-03-16 16:50:48,816 - INFO - 127.0.0.1 - - [2025-03-16 16:50:48] "GET /ruleset HTTP/1.1" 200 285 0.004572
+2025-03-16 16:50:51,587 - INFO - 127.0.0.1 - - [2025-03-16 16:50:51] "POST /game HTTP/1.1" 200 215 0.038218
+2025-03-16 16:50:51,592 - INFO - 127.0.0.1 - - [2025-03-16 16:50:51] "GET /socket.io/?EIO=4&transport=polling&t=tb68mgub&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 209 24.683769
+2025-03-16 16:50:51,598 - INFO - 127.0.0.1 - - [2025-03-16 16:50:51] "GET /socket.io/?EIO=4&transport=polling&t=tb65a4ei&sid=2xydCOywTKnOX1ZZAAAW HTTP/1.1" 200 208 24.803635
+2025-03-16 16:50:51,613 - INFO - 127.0.0.1 - - [2025-03-16 16:50:51] "GET /game HTTP/1.1" 200 290 0.003499
+2025-03-16 16:50:51,623 - INFO - 127.0.0.1 - - [2025-03-16 16:50:51] "POST /socket.io/?EIO=4&transport=polling&t=tbpaxy11&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 195 0.003114
+2025-03-16 16:50:54,062 - INFO - 127.0.0.1 - - [2025-03-16 16:50:54] "POST /game/actions HTTP/1.1" 200 225 0.025990
+2025-03-16 16:50:54,072 - INFO - 127.0.0.1 - - [2025-03-16 16:50:54] "GET /game HTTP/1.1" 404 182 0.005006
+2025-03-16 16:50:54,606 - INFO - 127.0.0.1 - - [2025-03-16 16:50:54] "GET /table HTTP/1.1" 200 285 0.006057
+2025-03-16 16:50:54,676 - INFO - 127.0.0.1 - - [2025-03-16 16:50:54] "GET /ruleset HTTP/1.1" 200 285 0.005545
+2025-03-16 16:50:57,847 - INFO - 127.0.0.1 - - [2025-03-16 16:50:57] "POST /game HTTP/1.1" 200 215 0.025620
+2025-03-16 16:50:57,868 - INFO - 127.0.0.1 - - [2025-03-16 16:50:57] "GET /game HTTP/1.1" 200 290 0.004010
+2025-03-16 16:51:00,852 - INFO - 127.0.0.1 - - [2025-03-16 16:51:00] "POST /game/actions HTTP/1.1" 200 227 0.026367
+2025-03-16 16:51:01,665 - INFO - 127.0.0.1 - - [2025-03-16 16:51:01] "GET /socket.io/?EIO=4&transport=polling&t=tbdzik3a&sid=2T6U4LH3gOsRjtyXAAAZ HTTP/1.1" 200 208 24.714513
+2025-03-16 16:51:01,668 - INFO - 127.0.0.1 - - [2025-03-16 16:51:01] "GET /socket.io/?EIO=4&transport=polling&t=tbdzwnch&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 209 20.088550
+2025-03-16 16:51:01,694 - INFO - 127.0.0.1 - - [2025-03-16 16:51:01] "POST /socket.io/?EIO=4&transport=polling&t=tbx2k61w&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 195 0.003647
+2025-03-16 16:51:01,854 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:01,858 - INFO - Remaining time: 59.0
+2025-03-16 16:51:02,006 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbhkba0h&sid=SXs1cqxu2KWZEXISAAAR HTTP/1.1" 200 209 20.394196
+2025-03-16 16:51:02,010 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbhkjgpx&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 294 18.820053
+2025-03-16 16:51:02,015 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbpb1q8x&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 294 10.386378
+2025-03-16 16:51:02,020 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbx2n2ck&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 294 0.318258
+2025-03-16 16:51:02,026 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbj38c52&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 294 18.463594
+2025-03-16 16:51:02,866 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:02,869 - INFO - Remaining time: 57.98399999999674
+2025-03-16 16:51:02,968 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbxc4oo9&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.916846
+2025-03-16 16:51:02,973 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbxcqxok&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.914685
+2025-03-16 16:51:02,983 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbxd6l1d&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.906635
+2025-03-16 16:51:02,989 - INFO - 127.0.0.1 - - [2025-03-16 16:51:02] "GET /socket.io/?EIO=4&transport=polling&t=tbxci1ow&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.934024
+2025-03-16 16:51:03,877 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:03,880 - INFO - Remaining time: 56.96899999999732
+2025-03-16 16:51:03,918 - INFO - 127.0.0.1 - - [2025-03-16 16:51:03] "GET /socket.io/?EIO=4&transport=polling&t=tby3i9t2&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.897763
+2025-03-16 16:51:03,922 - INFO - 127.0.0.1 - - [2025-03-16 16:51:03] "GET /socket.io/?EIO=4&transport=polling&t=tby3rrqt&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.893661
+2025-03-16 16:51:03,928 - INFO - 127.0.0.1 - - [2025-03-16 16:51:03] "GET /socket.io/?EIO=4&transport=polling&t=tby41v4s&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.890124
+2025-03-16 16:51:03,933 - INFO - 127.0.0.1 - - [2025-03-16 16:51:03] "GET /socket.io/?EIO=4&transport=polling&t=tby39538&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.923989
+2025-03-16 16:51:04,890 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:04,895 - INFO - Remaining time: 55.96899999999732
+2025-03-16 16:51:05,172 - INFO - 127.0.0.1 - - [2025-03-16 16:51:05] "GET /socket.io/?EIO=4&transport=polling&t=tbytgfw4&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 1.214931
+2025-03-16 16:51:05,177 - INFO - 127.0.0.1 - - [2025-03-16 16:51:05] "GET /socket.io/?EIO=4&transport=polling&t=tbytrzw5&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 1.209807
+2025-03-16 16:51:05,180 - INFO - 127.0.0.1 - - [2025-03-16 16:51:05] "GET /socket.io/?EIO=4&transport=polling&t=tbyu6wsl&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 1.197380
+2025-03-16 16:51:05,196 - INFO - 127.0.0.1 - - [2025-03-16 16:51:05] "GET /socket.io/?EIO=4&transport=polling&t=tbythdii&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 1.230748
+2025-03-16 16:51:05,916 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:05,922 - INFO - Remaining time: 54.953999999997905
+2025-03-16 16:51:06,127 - INFO - 127.0.0.1 - - [2025-03-16 16:51:06] "GET /socket.io/?EIO=4&transport=polling&t=tbzs55sk&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.889054
+2025-03-16 16:51:06,129 - INFO - 127.0.0.1 - - [2025-03-16 16:51:06] "GET /socket.io/?EIO=4&transport=polling&t=tbzuwg57&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.815947
+2025-03-16 16:51:06,131 - INFO - 127.0.0.1 - - [2025-03-16 16:51:06] "GET /socket.io/?EIO=4&transport=polling&t=tbzvroy6&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.794015
+2025-03-16 16:51:06,133 - INFO - 127.0.0.1 - - [2025-03-16 16:51:06] "GET /socket.io/?EIO=4&transport=polling&t=tbzsjsjx&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.900618
+2025-03-16 16:51:06,932 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:06,935 - INFO - Remaining time: 53.953999999997905
+2025-03-16 16:51:07,072 - INFO - 127.0.0.1 - - [2025-03-16 16:51:07] "GET /socket.io/?EIO=4&transport=polling&t=tc0icb67&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 308 0.928980
+2025-03-16 16:51:07,077 - INFO - 127.0.0.1 - - [2025-03-16 16:51:07] "GET /socket.io/?EIO=4&transport=polling&t=tc0ii26j&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 308 0.930033
+2025-03-16 16:51:07,083 - INFO - 127.0.0.1 - - [2025-03-16 16:51:07] "GET /socket.io/?EIO=4&transport=polling&t=tc0ivg7t&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 308 0.874753
+2025-03-16 16:51:07,088 - INFO - 127.0.0.1 - - [2025-03-16 16:51:07] "GET /socket.io/?EIO=4&transport=polling&t=tc0ilkda&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 308 0.937267
+2025-03-16 16:51:07,942 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:07,945 - INFO - Remaining time: 52.9380000000092
+2025-03-16 16:51:08,018 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc18wej9&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 306 0.916356
+2025-03-16 16:51:08,022 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc1987q6&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 306 0.909730
+2025-03-16 16:51:08,027 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc19i1i1&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 306 0.909377
+2025-03-16 16:51:08,035 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc195tvj&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 306 0.926970
+2025-03-16 16:51:08,201 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc204c8e&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 209 0.119293
+2025-03-16 16:51:08,228 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "POST /socket.io/?EIO=4&transport=polling&t=tc241fcr&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 195 0.003501
+2025-03-16 16:51:08,449 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc1zurp8&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 209 0.378324
+2025-03-16 16:51:08,475 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "POST /socket.io/?EIO=4&transport=polling&t=tc2aysis&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 195 0.002872
+2025-03-16 16:51:08,953 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:08,956 - INFO - Remaining time: 51.9380000000092
+2025-03-16 16:51:08,977 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc245wk3&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 305 0.742884
+2025-03-16 16:51:08,985 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc20cazs&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 305 0.893976
+2025-03-16 16:51:08,992 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc20oqqa&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 305 0.890093
+2025-03-16 16:51:08,997 - INFO - 127.0.0.1 - - [2025-03-16 16:51:08] "GET /socket.io/?EIO=4&transport=polling&t=tc2b1kmv&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 305 0.515028
+2025-03-16 16:51:09,963 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:09,964 - INFO - Remaining time: 50.9380000000092
+2025-03-16 16:51:10,238 - INFO - 127.0.0.1 - - [2025-03-16 16:51:10] "GET /socket.io/?EIO=4&transport=polling&t=tc2qa1fc&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 306 1.202789
+2025-03-16 16:51:10,242 - INFO - 127.0.0.1 - - [2025-03-16 16:51:10] "GET /socket.io/?EIO=4&transport=polling&t=tc2qljd8&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 306 1.203202
+2025-03-16 16:51:10,245 - INFO - 127.0.0.1 - - [2025-03-16 16:51:10] "GET /socket.io/?EIO=4&transport=polling&t=tc2r88ra&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 306 1.184708
+2025-03-16 16:51:10,250 - INFO - 127.0.0.1 - - [2025-03-16 16:51:10] "GET /socket.io/?EIO=4&transport=polling&t=tc2q9lr8&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 306 1.218347
+2025-03-16 16:51:10,971 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:10,974 - INFO - Remaining time: 49.92200000000594
+2025-03-16 16:51:11,184 - INFO - 127.0.0.1 - - [2025-03-16 16:51:11] "GET /socket.io/?EIO=4&transport=polling&t=tc3ot0uq&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.913177
+2025-03-16 16:51:11,188 - INFO - 127.0.0.1 - - [2025-03-16 16:51:11] "GET /socket.io/?EIO=4&transport=polling&t=tc3p204w&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.909096
+2025-03-16 16:51:11,192 - INFO - 127.0.0.1 - - [2025-03-16 16:51:11] "GET /socket.io/?EIO=4&transport=polling&t=tc3phwk9&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.903241
+2025-03-16 16:51:11,195 - INFO - 127.0.0.1 - - [2025-03-16 16:51:11] "GET /socket.io/?EIO=4&transport=polling&t=tc3p0m90&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.918676
+2025-03-16 16:51:11,843 - INFO - 127.0.0.1 - - [2025-03-16 16:51:11] "POST /game/actions HTTP/1.1" 200 225 0.022062
+2025-03-16 16:51:11,850 - INFO - 127.0.0.1 - - [2025-03-16 16:51:11] "GET /game HTTP/1.1" 404 182 0.003119
+2025-03-16 16:51:16,634 - INFO - 127.0.0.1 - - [2025-03-16 16:51:16] "GET /socket.io/?EIO=4&transport=polling&t=tc4flxig&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 209 5.405412
+2025-03-16 16:51:16,656 - INFO - 127.0.0.1 - - [2025-03-16 16:51:16] "POST /socket.io/?EIO=4&transport=polling&t=tc8m8ldh&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 195 0.001017
+2025-03-16 16:51:26,710 - INFO - 127.0.0.1 - - [2025-03-16 16:51:26] "GET /socket.io/?EIO=4&transport=polling&t=tc4fsjhi&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 209 15.474206
+2025-03-16 16:51:26,733 - INFO - 127.0.0.1 - - [2025-03-16 16:51:26] "POST /socket.io/?EIO=4&transport=polling&t=tcge5axf&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 195 0.002645
+2025-03-16 16:51:33,235 - INFO - 127.0.0.1 - - [2025-03-16 16:51:33] "GET /socket.io/?EIO=4&transport=polling&t=tc4fcmex&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 209 22.013212
+2025-03-16 16:51:33,240 - INFO - 127.0.0.1 - - [2025-03-16 16:51:33] "POST /socket.io/?EIO=4&transport=polling&t=tclf9tui&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 195 0.000498
+2025-03-16 16:51:33,483 - INFO - 127.0.0.1 - - [2025-03-16 16:51:33] "GET /socket.io/?EIO=4&transport=polling&t=tc4f9bpg&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 209 22.265436
+2025-03-16 16:51:33,495 - INFO - 127.0.0.1 - - [2025-03-16 16:51:33] "POST /socket.io/?EIO=4&transport=polling&t=tclm8p96&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 195 0.001528
+2025-03-16 16:51:35,909 - INFO - 127.0.0.1 - - [2025-03-16 16:51:35] "GET /table HTTP/1.1" 200 285 0.003512
+2025-03-16 16:51:35,935 - INFO - 127.0.0.1 - - [2025-03-16 16:51:35] "GET /ruleset HTTP/1.1" 200 285 0.002010
+2025-03-16 16:51:38,403 - INFO - 127.0.0.1 - - [2025-03-16 16:51:38] "POST /game HTTP/1.1" 200 215 0.012137
+2025-03-16 16:51:38,412 - INFO - 127.0.0.1 - - [2025-03-16 16:51:38] "GET /game HTTP/1.1" 200 290 0.002031
+2025-03-16 16:51:39,134 - INFO - 127.0.0.1 - - [2025-03-16 16:51:39] "POST /game/actions HTTP/1.1" 200 227 0.008528
+2025-03-16 16:51:40,139 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:40,140 - INFO - Remaining time: 59.0
+2025-03-16 16:51:40,288 - INFO - 127.0.0.1 - - [2025-03-16 16:51:40] "GET /socket.io/?EIO=4&transport=polling&t=tclfantb&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 291 7.046869
+2025-03-16 16:51:40,290 - INFO - 127.0.0.1 - - [2025-03-16 16:51:40] "GET /socket.io/?EIO=4&transport=polling&t=tc8maudp&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 291 23.630354
+2025-03-16 16:51:40,292 - INFO - 127.0.0.1 - - [2025-03-16 16:51:40] "GET /socket.io/?EIO=4&transport=polling&t=tcge7vk6&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 291 13.554111
+2025-03-16 16:51:40,293 - INFO - 127.0.0.1 - - [2025-03-16 16:51:40] "GET /socket.io/?EIO=4&transport=polling&t=tclmadwq&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 291 6.796555
+2025-03-16 16:51:41,147 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:41,147 - INFO - Remaining time: 58.0
+2025-03-16 16:51:41,220 - INFO - 127.0.0.1 - - [2025-03-16 16:51:41] "GET /socket.io/?EIO=4&transport=polling&t=tcqvbo1m&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 294 0.917893
+2025-03-16 16:51:41,225 - INFO - 127.0.0.1 - - [2025-03-16 16:51:41] "GET /socket.io/?EIO=4&transport=polling&t=tcqvf9vk&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 294 0.919940
+2025-03-16 16:51:41,227 - INFO - 127.0.0.1 - - [2025-03-16 16:51:41] "GET /socket.io/?EIO=4&transport=polling&t=tcqvj1ym&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 294 0.917428
+2025-03-16 16:51:41,228 - INFO - 127.0.0.1 - - [2025-03-16 16:51:41] "GET /socket.io/?EIO=4&transport=polling&t=tcqvf5tn&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 294 0.921480
+2025-03-16 16:51:41,667 - INFO - 127.0.0.1 - - [2025-03-16 16:51:41] "GET /socket.io/?EIO=4&transport=polling&t=tcrlbln7&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 209 0.430707
+2025-03-16 16:51:41,674 - INFO - 127.0.0.1 - - [2025-03-16 16:51:41] "POST /socket.io/?EIO=4&transport=polling&t=tcrxim6e&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 195 0.000500
+2025-03-16 16:51:42,153 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:42,154 - INFO - Remaining time: 57.0
+2025-03-16 16:51:42,166 - INFO - 127.0.0.1 - - [2025-03-16 16:51:42] "GET /socket.io/?EIO=4&transport=polling&t=tcrl8rgz&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 293 0.933968
+2025-03-16 16:51:42,168 - INFO - 127.0.0.1 - - [2025-03-16 16:51:42] "GET /socket.io/?EIO=4&transport=polling&t=tcrxjtlq&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 293 0.492989
+2025-03-16 16:51:42,170 - INFO - 127.0.0.1 - - [2025-03-16 16:51:42] "GET /socket.io/?EIO=4&transport=polling&t=tcrldfbb&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 293 0.929216
+2025-03-16 16:51:42,173 - INFO - 127.0.0.1 - - [2025-03-16 16:51:42] "GET /socket.io/?EIO=4&transport=polling&t=tcrlbngy&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 293 0.936350
+2025-03-16 16:51:43,160 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:43,161 - INFO - Remaining time: 55.98500000000058
+2025-03-16 16:51:43,420 - INFO - 127.0.0.1 - - [2025-03-16 16:51:43] "GET /socket.io/?EIO=4&transport=polling&t=tcsbhhwm&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 306 1.240224
+2025-03-16 16:51:43,422 - INFO - 127.0.0.1 - - [2025-03-16 16:51:43] "GET /socket.io/?EIO=4&transport=polling&t=tcsbmm6m&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 306 1.237665
+2025-03-16 16:51:43,423 - INFO - 127.0.0.1 - - [2025-03-16 16:51:43] "GET /socket.io/?EIO=4&transport=polling&t=tcsbrf16&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 306 1.234620
+2025-03-16 16:51:43,425 - INFO - 127.0.0.1 - - [2025-03-16 16:51:43] "GET /socket.io/?EIO=4&transport=polling&t=tcsbm3g5&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 306 1.241200
+2025-03-16 16:51:44,167 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:44,168 - INFO - Remaining time: 54.98500000000058
+2025-03-16 16:51:44,347 - INFO - 127.0.0.1 - - [2025-03-16 16:51:44] "GET /socket.io/?EIO=4&transport=polling&t=tctaakad&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.916378
+2025-03-16 16:51:44,348 - INFO - 127.0.0.1 - - [2025-03-16 16:51:44] "GET /socket.io/?EIO=4&transport=polling&t=tctadwni&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.914350
+2025-03-16 16:51:44,350 - INFO - 127.0.0.1 - - [2025-03-16 16:51:44] "GET /socket.io/?EIO=4&transport=polling&t=tctagdo1&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.912684
+2025-03-16 16:51:44,351 - INFO - 127.0.0.1 - - [2025-03-16 16:51:44] "GET /socket.io/?EIO=4&transport=polling&t=tctae05t&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.915237
+2025-03-16 16:51:45,172 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:45,173 - INFO - Remaining time: 53.98500000000058
+2025-03-16 16:51:45,276 - INFO - 127.0.0.1 - - [2025-03-16 16:51:45] "GET /socket.io/?EIO=4&transport=polling&t=tctzytcc&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.919450
+2025-03-16 16:51:45,277 - INFO - 127.0.0.1 - - [2025-03-16 16:51:45] "GET /socket.io/?EIO=4&transport=polling&t=tcu03ug6&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.916927
+2025-03-16 16:51:45,278 - INFO - 127.0.0.1 - - [2025-03-16 16:51:45] "GET /socket.io/?EIO=4&transport=polling&t=tcu06v7d&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.915926
+2025-03-16 16:51:45,280 - INFO - 127.0.0.1 - - [2025-03-16 16:51:45] "GET /socket.io/?EIO=4&transport=polling&t=tcu04l1l&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.917945
+2025-03-16 16:51:46,178 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:46,179 - INFO - Remaining time: 52.98500000000058
+2025-03-16 16:51:46,205 - INFO - 127.0.0.1 - - [2025-03-16 16:51:46] "GET /socket.io/?EIO=4&transport=polling&t=tcuprllg&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.918251
+2025-03-16 16:51:46,206 - INFO - 127.0.0.1 - - [2025-03-16 16:51:46] "GET /socket.io/?EIO=4&transport=polling&t=tcupuo85&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.912708
+2025-03-16 16:51:46,208 - INFO - 127.0.0.1 - - [2025-03-16 16:51:46] "GET /socket.io/?EIO=4&transport=polling&t=tcuq8gf5&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.907640
+2025-03-16 16:51:46,209 - INFO - 127.0.0.1 - - [2025-03-16 16:51:46] "GET /socket.io/?EIO=4&transport=polling&t=tcupw6zu&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.917239
+2025-03-16 16:51:47,185 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:47,186 - INFO - Remaining time: 51.98500000000058
+2025-03-16 16:51:47,446 - INFO - 127.0.0.1 - - [2025-03-16 16:51:47] "GET /socket.io/?EIO=4&transport=polling&t=tcvfm7d5&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 306 1.229994
+2025-03-16 16:51:47,448 - INFO - 127.0.0.1 - - [2025-03-16 16:51:47] "GET /socket.io/?EIO=4&transport=polling&t=tcvfppzv&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 306 1.225248
+2025-03-16 16:51:47,451 - INFO - 127.0.0.1 - - [2025-03-16 16:51:47] "GET /socket.io/?EIO=4&transport=polling&t=tcvftz2s&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 306 1.226330
+2025-03-16 16:51:47,454 - INFO - 127.0.0.1 - - [2025-03-16 16:51:47] "GET /socket.io/?EIO=4&transport=polling&t=tcvfonf9&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 306 1.232340
+2025-03-16 16:51:48,191 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:48,192 - INFO - Remaining time: 50.969000000011874
+2025-03-16 16:51:48,377 - INFO - 127.0.0.1 - - [2025-03-16 16:51:48] "GET /socket.io/?EIO=4&transport=polling&t=tcwe5mk8&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 308 0.913321
+2025-03-16 16:51:48,378 - INFO - 127.0.0.1 - - [2025-03-16 16:51:48] "GET /socket.io/?EIO=4&transport=polling&t=tcwedp7u&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 308 0.911322
+2025-03-16 16:51:48,380 - INFO - 127.0.0.1 - - [2025-03-16 16:51:48] "GET /socket.io/?EIO=4&transport=polling&t=tcweh9w6&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 308 0.907764
+2025-03-16 16:51:48,381 - INFO - 127.0.0.1 - - [2025-03-16 16:51:48] "GET /socket.io/?EIO=4&transport=polling&t=tcwefjwg&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 308 0.911370
+2025-03-16 16:51:57,875 - INFO - 127.0.0.1 - - [2025-03-16 16:51:57] "GET /socket.io/?EIO=4&transport=polling&t=tcx44xkc&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 209 9.481637
+2025-03-16 16:51:57,898 - INFO - 127.0.0.1 - - [2025-03-16 16:51:57] "POST /socket.io/?EIO=4&transport=polling&t=td4fs2ys&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 195 0.004490
+2025-03-16 16:51:57,905 - ERROR - Invalid session 7E6jLFpDJr3ETHacAAAL (further occurrences of this error will be logged with level INFO)
+2025-03-16 16:51:58,033 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:58,037 - INFO - Remaining time: 41.12600000000384
+2025-03-16 16:51:58,176 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "GET /socket.io/?EIO=4&transport=polling&t=tcx3x0o9&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 9.789721
+2025-03-16 16:51:58,180 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "GET /socket.io/?EIO=4&transport=polling&t=tcx40h7k&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 9.788768
+2025-03-16 16:51:58,183 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "GET /socket.io/?EIO=4&transport=polling&t=td4fto0r&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.280951
+2025-03-16 16:51:58,185 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "GET /socket.io/?EIO=4&transport=polling&t=tcx4079t&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 9.795305
+2025-03-16 16:51:58,250 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "GET /socket.io/?EIO=4&transport=polling&t=td4ofaef&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 209 0.052024
+2025-03-16 16:51:58,258 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "POST /socket.io/?EIO=4&transport=polling&t=td4q5hbn&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 195 0.001003
+2025-03-16 16:51:58,498 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "GET /socket.io/?EIO=4&transport=polling&t=td4oe93q&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 209 0.301553
+2025-03-16 16:51:58,505 - INFO - 127.0.0.1 - - [2025-03-16 16:51:58] "POST /socket.io/?EIO=4&transport=polling&t=td4x0ugb&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 195 0.000506
+2025-03-16 16:51:59,041 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:51:59,042 - INFO - Remaining time: 40.12600000000384
+2025-03-16 16:51:59,118 - INFO - 127.0.0.1 - - [2025-03-16 16:51:59] "GET /socket.io/?EIO=4&transport=polling&t=td4q666d&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 0.858186
+2025-03-16 16:51:59,119 - INFO - 127.0.0.1 - - [2025-03-16 16:51:59] "GET /socket.io/?EIO=4&transport=polling&t=td4oims1&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 0.919296
+2025-03-16 16:51:59,120 - INFO - 127.0.0.1 - - [2025-03-16 16:51:59] "GET /socket.io/?EIO=4&transport=polling&t=td4ombna&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 0.916290
+2025-03-16 16:51:59,122 - INFO - 127.0.0.1 - - [2025-03-16 16:51:59] "GET /socket.io/?EIO=4&transport=polling&t=td4x2tj3&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 0.614691
+2025-03-16 16:52:00,048 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:52:00,049 - INFO - Remaining time: 39.11000000000058
+2025-03-16 16:52:00,347 - INFO - 127.0.0.1 - - [2025-03-16 16:52:00] "GET /socket.io/?EIO=4&transport=polling&t=td5e9fcg&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 307 1.219212
+2025-03-16 16:52:00,349 - INFO - 127.0.0.1 - - [2025-03-16 16:52:00] "GET /socket.io/?EIO=4&transport=polling&t=td5eev6p&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 307 1.218223
+2025-03-16 16:52:00,352 - INFO - 127.0.0.1 - - [2025-03-16 16:52:00] "GET /socket.io/?EIO=4&transport=polling&t=td5eh50e&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 307 1.217237
+2025-03-16 16:52:00,354 - INFO - 127.0.0.1 - - [2025-03-16 16:52:00] "GET /socket.io/?EIO=4&transport=polling&t=td5egmt9&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 307 1.219277
+2025-03-16 16:52:05,464 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:52:05,466 - INFO - Remaining time: 33.704000000012456
+2025-03-16 16:52:06,741 - INFO - 127.0.0.1 - - [2025-03-16 16:52:06] "GET /socket.io/?EIO=4&transport=polling&t=td6ch48d&sid=ZG-lt62nmPdfQh_QAAAS HTTP/1.1" 200 308 6.379291
+2025-03-16 16:52:06,744 - INFO - 127.0.0.1 - - [2025-03-16 16:52:06] "GET /socket.io/?EIO=4&transport=polling&t=td6cnkb3&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 308 6.376104
+2025-03-16 16:52:06,746 - INFO - 127.0.0.1 - - [2025-03-16 16:52:06] "GET /socket.io/?EIO=4&transport=polling&t=td6ctkbl&sid=McwxZqxcQyONkpn_AAAa HTTP/1.1" 200 308 6.375118
+2025-03-16 16:52:06,747 - INFO - 127.0.0.1 - - [2025-03-16 16:52:06] "GET /socket.io/?EIO=4&transport=polling&t=td6cpai2&sid=jlUmLdhkkPBN5aBWAAAd HTTP/1.1" 200 308 6.378122
+2025-03-16 16:52:06,758 - INFO - 127.0.0.1 - - [2025-03-16 16:52:06] "GET /socket.io/?EIO=4&transport=polling&t=tdba83vf&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 209 0.001007
+2025-03-16 16:52:06,767 - INFO - 127.0.0.1 - - [2025-03-16 16:52:06] "POST /socket.io/?EIO=4&transport=polling&t=tdbah86w&sid=4SH1u_ShfwQkF2d4AAAV HTTP/1.1" 200 195 0.001497
+2025-03-16 16:52:06,906 - INFO - emitting event "timer" to all [/]
+2025-03-16 16:52:06,908 - INFO - Remaining time: 32.26600000000326
