@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, defineEmits, watch, computed, ref } from 'vue';
+import { watch, ref } from 'vue';
 import { Dialog, Select, Button, InputText, Divider } from 'primevue';
 import { useGameStore, useSettingsStore } from '../store';
 
