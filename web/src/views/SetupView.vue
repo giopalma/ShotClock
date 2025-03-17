@@ -1,16 +1,19 @@
 <script>
 import { defineComponent } from 'vue';
 import SetupTimerComponent from '../components/SetupTimerComponent.vue';
+import SettingsComponent from '../components/SettingsComponent.vue';
 
 export default defineComponent({
   components: {
-    SetupTimerComponent
+    SetupTimerComponent,
+    SettingsComponent
   }
 });
 </script>
 
 <template>
-  <div>
+  <div class="flex">
+    <SettingsComponent />
     <SetupTimerComponent />
   </div>
 </template>
