@@ -41,3 +41,18 @@ export async function endGame() {
     useTimerStore().endTimer()
     return result
 }
+
+export async function getFrameUrl() {
+    try {
+        const response = await fetch('/api/video/frame');
+        if (!response.ok) {
+            throw new Error(`Errore HTTP! Stato: ${response.status}`);
+        }
+
+        const blob = await response.blob(); // Qui era l'errore
+        return URL.createObjectURL(blob);
+    } catch (error) {
+        console.error("Errore durante il recupero del frame:", error);
+        return null; // Restituisci null in caso di errore
+    }
+}
