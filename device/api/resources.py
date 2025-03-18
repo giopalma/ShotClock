@@ -8,6 +8,8 @@ import tempfile
 from flask import send_file
 import os
 
+import numpy as np
+
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
 from device.game import game_manager
@@ -21,6 +23,41 @@ class VideoFrameResource(Resource):
         _, buffer = cv2.imencode(".jpg", frame)
         response = Response(buffer.tobytes(), mimetype="image/jpeg")
         return response
+
+    def post(self):
+        def mask(hsv, colors, points):
+            colors = [hex_to_opencv_hsv(color) for color in colors]
+            color_lower = tuple(
+                min(color[i] for color in colors) - diff
+                for i, diff in enumerate([5, 10, 5])
+            )
+            color_upper = tuple(
+                max(color[i] for color in colors) + diff
+                for i, diff in enumerate([5, 10, 5])
+            )
+            points = np.array(points, dtype=np.int32).reshape((-1, 1, 2))
+
+            rec_mask = cv2.fillPoly(
+                np.zeros(hsv.shape[:2], dtype=np.uint8), [points], 255
+            )
+            color_mask = cv2.inRange(hsv, color_lower, color_upper)
+            color_mask = cv2.dilate(color_mask, None, iterations=2)
+            color_mask = cv2.bitwise_not(color_mask)
+
+            combined_mask = cv2.bitwise_and(color_mask, rec_mask)
+            rgb = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+            return cv2.bitwise_and(rgb, rgb, mask=combined_mask)
+
+        data = request.json
+        if "colors" in data and "points" in data:
+            colors = data["colors"]
+            points = data["points"]
+            if len(points) > 2:
+                frame = VideoProducer.get_instance().get_frame()
+                hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+                _, buffer = cv2.imencode(".jpg", mask(hsv, colors, points))
+                response = Response(buffer.tobytes(), mimetype="image/jpeg")
+                return response
 
 
 class VideoStreamResource(Resource):
@@ -94,7 +131,6 @@ class GameResource(Resource):
         else:
             data_return = {
                 "player_names": game.player_names,
-                "current_player": game.current_player,
                 "last_remaining_time": game.last_remaining_time,
                 "current_increments": game.increments,
                 "game_status": game.status,
@@ -165,8 +201,10 @@ class GameActionsResource(Resource):
             game.resume()
         elif action == "end":
             error = game_manager.end_game()
-        elif action == "increment_time":
-            error = game.increment_time()
+        elif action == "increment_time_p0":
+            error = game.increment_time(0)
+        elif action == "increment_time_p1":
+            error = game.increment_time(1)
         else:
             return ({"message": "Invalid action"}, 400)
         if error:
