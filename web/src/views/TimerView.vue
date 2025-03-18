@@ -1,34 +1,33 @@
 <script setup>
-import { ref, watchEffect } from 'vue'
-const loading = ref(true);
-const error = ref(null);
-const game = ref(null);
+import { computed, onMounted } from 'vue';
+import { useTimerStore } from '../store';
+import { useGameStore } from '../store';
 
-async function fetchGame() {
-    try {
-        const response = await fetch('/api/game');
-        const _game = await response.json();
-        if (_game.message == 'No game in progress') {
-            throw new Error('Nessun gioco in corso');
-        }
-        game.value = _game;
-    } catch (e) {
-        error.value = e.toString();
-    } finally {
-        loading.value = false;
-    }
-}
-watchEffect(() => {fetchGame()});
+const gameStore = useGameStore();
+const timerStore = useTimerStore();
+
+onMounted(() => {
+    gameStore.fetchGame()
+})
+
+const integerTime = computed(() => Math.floor(timerStore.time));
+const decimalTime = computed(() => {
+    const fractional = timerStore.time - Math.floor(timerStore.time);
+    return fractional.toFixed(2).substring(1); // Ad esempio ".46"
+});
 </script>
 
 <template>
-    <div v-if="loading"><p>Caricamento...</p></div>
-    <div v-if="error"><p>{{ error }}</p></div>
-    <div v-else>
-        <h1>Timer</h1>
-        <p>Tempo rimanente: {{ game.time }}</p>
-    </div>
+    <template v-if="!gameStore.game">
+        <span>Nessun gioco in corso</span>
+    </template>
+    <template v-else>
+        <div class="flex items-center justify-center h-screen w-screen overflow-hidden">
+            <!-- Il div interno ha un max-width pari alla larghezza della viewport -->
+            <div class="text-center w-full">
+                <span class="text-[10rem] md:text-[25rem] lg:text-[30rem] font-bold">{{ integerTime }}</span>
+                <span class="text-[4rem] md:text-[10rem] lg:text-[12rem] ml-1 align-[super]">{{ decimalTime }}</span>
+            </div>
+        </div>
+    </template>
 </template>
-
-<style scoped>
-</style>
