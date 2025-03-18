@@ -4,7 +4,7 @@ import Panel from 'primevue/panel'
 import Button from 'primevue/button'
 import NewGameModal from './NewGameModal.vue'
 import { useGameStore, useTimerStore } from '../store'
-import { startGame, pauseGame, resumeGame, endGame } from '../api'
+import { startGame, pauseGame, resumeGame, endGame, incrementTime } from '../api'
 
 // Stato locale
 const dialogVisible = ref(false)
@@ -16,7 +16,6 @@ const timerStore = useTimerStore()
 // Computed properties per monitorare lo stato dello store
 const isGameCreated = computed(() => gameStore.game !== null)
 const gameStatus = computed(() => gameStore.game ? gameStore.game.game_status : 'paused')
-const currentPlayer = computed(() => gameStore.game ? gameStore.game.current_player : 0)
 const playerNames = computed(() => gameStore.game ? gameStore.game.player_names : ['Player 1', 'Player 2'])
 const currentIncrements = computed(() => gameStore.game ? gameStore.game.current_increments : [0, 0])
 
@@ -26,8 +25,8 @@ onMounted(async () => {
 })
 
 // Logica per l'incremento del tempo
-const incrementTime = () => {
-  console.log('Increment time clicked')
+const localIncrementTime = (player) => {
+  incrementTime(player)
 }
 
 // Alterna pausa/ripresa del gioco
@@ -75,8 +74,10 @@ const endGameHandler = async () => {
       <div class="buttons">
         <Button @click="togglePauseResume" :label="gameStatus === 'paused' ? 'RIPRENDI' : 'PAUSA'"
           :severity="gameStatus === 'paused' ? 'success' : 'warn'" />
-        <Button :disabled="currentIncrements[currentPlayer] <= 0" @click="incrementTime" label="INCREMENTA TEMPO"
-          severity="secondary" />
+        <Button :disabled="currentIncrements[0] <= 0" @click="localIncrementTime(0)"
+          :label="`INCREMENTA TEMPO ${playerNames[0]}`" severity="secondary" />
+        <Button :disabled="currentIncrements[1] <= 0" @click="localIncrementTime(1)"
+          :label="`INCREMENTA TEMPO ${playerNames[1]}`" severity="secondary" />
         <Button label="TERMINA" raised @click="endGameHandler" severity="danger" />
       </div>
     </template>
