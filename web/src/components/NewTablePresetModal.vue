@@ -89,7 +89,7 @@ const drawPoints = (ctx) => {
     ctx.drawImage(imageRef.value, 0, 0, canvasRef.value.width, canvasRef.value.height);
     // Disegna ogni punto
     points.value.forEach((point) => {
-        let color = point.type === "rect" ? "purple" : "red";
+        let color = point.type === "rect" ? "yellow" : "red";
         ctx.beginPath();
         ctx.arc(point.x, point.y, 8, 0, Math.PI * 2);
         ctx.fillStyle = color;
