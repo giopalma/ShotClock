@@ -27,7 +27,6 @@ class Game:
     ruleset (Ruleset): Set di regole con parametri quali durata del turno e incrementi massimi.
     table (TablePreset): Configurazione del tavolo di gioco.
     player_names (List[str]): Nomi dei due giocatori.
-    current_player (int): Indice del giocatore corrente (0 o 1).
     increments (List[int]): Numero di incrementi disponibili per ciascun giocatore.
     timer (Timer): Timer che gestisce la durata di ogni turno.
     status (Literal["ready", "running", "waiting", "ended"]): Stato attuale del gioco.
@@ -59,7 +58,6 @@ class Game:
         self._is_running_rpi = is_raspberry_pi()
         self._buzzer = Buzzer(11) if self._is_running_rpi else None
         self.player_names = [player1_name, player2_name]
-        self.current_player = 1
         self.increments = [
             ruleset.max_increment_for_match,
             ruleset.max_increment_for_match,
@@ -74,6 +72,11 @@ class Game:
         )
         self.last_remaining_time = 0
         self.socketio = socketio
+        self._emit_websocket("game", "created")
+
+    def _emit_websocket(self, event, body):
+        if os.getenv("FLASK_ENV") == "api":
+            self.socketio.emit(event, body)
 
     def start(self):
         """Avvia il gioco e inizia il turno per il primo giocatore."""
@@ -81,6 +84,7 @@ class Game:
             self.status = "running"
             self._video_consumer.start()
             self.start_turn()
+            self._emit_websocket("game", "started")
         else:
             return "Game already started."
 
@@ -91,6 +95,7 @@ class Game:
             self._timer.end()
             self._video_consumer.end()
             self.status = "ended"
+            self._emit_websocket("game", "ended")
             # TODO: Controllare bene se tutto è stato terminato
             print("Gioco terminato.")
 
@@ -108,23 +113,20 @@ class Game:
 
     """------TURN COMMANDS-----"""
 
-    def increment_time(self):
+    def increment_time(self, player):
         if self.status == "running":
-            if self.increments[self.current_player] > 0:
-                self.increments[self.current_player] -= 1
+            if self.increments[player] > 0:
+                self.increments[player] -= 1
                 # TODO: valutare se mettere in pausa il timer per l'incremento oppure no
                 self._timer.add_time(self._ruleset.increment_duration)
             else:
-                return f"Nessun incremento disponibile per il giocatore: {self.player_names[self.current_player]}"
+                return f"Nessun incremento disponibile per il giocatore: {self.player_names[player]}"
 
-    def remaining_increments(self, player=None):
-        if player is None:
-            player = self.current_player
-        return self.increments[player]
+    # def remaining_increments(self, player):
+    #    return self.increments[player]
 
     def next_turn(self):
         if self.status == "running":
-            self.current_player = self.current_player + 1 % 2
             self._timer.end()  # Termino il vecchio timer
             self._timer = self._new_timer(duration=self._ruleset.turn_duration)
             self.start_turn()

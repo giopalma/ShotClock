@@ -71,6 +71,11 @@ class Timer:
         self.thread.name = "TimerThread"
         self.thread.start()
 
+    def add_time(self, time):
+        with self._remaining_time_lock:
+            self.remaining_time = self.remaining_time + time
+        self.periodic_callback(self.remaining_time, self._is_running_event.isSet())
+
     def pause(self):
         """Metti in pausa il timer."""
         self._is_running_event.clear()
