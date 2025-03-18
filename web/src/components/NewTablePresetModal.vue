@@ -1,8 +1,8 @@
 <script setup>
 import { watch, ref, nextTick, onUnmounted } from 'vue';
-import { Dialog, Button, InputText } from 'primevue';
+import { Dialog, Button, InputText, ButtonGroup } from 'primevue';
 import { useSettingsStore } from '../store';
-import { getFrameUrl } from '../api';
+import { getFrameUrl, getFrameMaskedUrl } from '../api';
 
 const settingsStore = useSettingsStore();
 const props = defineProps({
@@ -16,11 +16,18 @@ const closeDialog = () => {
 
 const canvasRef = ref(null);
 const containerRef = ref(null);
-const imageRef = ref(null); // Memorizza l'immagine
+const imageRef = ref(null);           // Immagine attualmente visualizzata (mascherata o normale)
+const originalImageRef = ref(null);   // Frame originale per operazioni sui punti
 const listenersAttached = ref(false);
+const points = ref([]); // Array di punti { x, y, type } in pixel
+const draggingPoint = ref(null);
+const name = ref("");
 
-const loadImage = async () => {
-    const imageUrl = await getFrameUrl();
+/**
+ * Carica l'immagine e la disegna sul canvas.
+ * Se storeOriginal è true, memorizza anche l'immagine originale.
+ */
+const loadImage = async (imageUrl, storeOriginal = false) => {
     if (!imageUrl) {
         console.error("URL immagine non valido o errore nel recupero.");
         return;
@@ -45,8 +52,11 @@ const loadImage = async () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 
+        if (storeOriginal) {
+            originalImageRef.value = image;
+        }
         imageRef.value = image;
-        drawColorPoints(ctx); // Ridisegna eventuali punti presenti
+        drawPoints(ctx); // Ridisegna eventuali punti presenti
     };
     image.onerror = (err) => {
         console.error("Errore nel caricamento dell'immagine:", err);
@@ -54,35 +64,40 @@ const loadImage = async () => {
     image.src = imageUrl;
 };
 
-const points = ref([]); // Array di punti { x, y } in pixel dell'immagine
-const draggingPoint = ref(null);
-
 const addColorPoint = () => {
+    addPoint("color");
+};
+
+const addRecPoint = () => {
+    addPoint("rect");
+};
+
+const addPoint = (point_type) => {
     if (!canvasRef.value || !imageRef.value) return;
     const canvas = canvasRef.value;
     // Aggiunge il nuovo punto al centro dell'immagine
-    const newPoint = { x: canvas.width / 2, y: canvas.height / 2 };
+    const newPoint = { x: canvas.width / 2, y: canvas.height / 2, type: point_type };
     points.value.push(newPoint);
     const ctx = canvas.getContext('2d');
-    drawColorPoints(ctx);
+    drawPoints(ctx);
 };
 
-const drawColorPoints = (ctx) => {
+const drawPoints = (ctx) => {
     if (!canvasRef.value || !imageRef.value) return;
-    // Ridisegna l'immagine di sfondo
+    // Ridisegna l'immagine di sfondo (visualizzata mascherata)
     ctx.clearRect(0, 0, canvasRef.value.width, canvasRef.value.height);
     ctx.drawImage(imageRef.value, 0, 0, canvasRef.value.width, canvasRef.value.height);
     // Disegna ogni punto
     points.value.forEach((point) => {
+        let color = point.type === "rect" ? "purple" : "red";
         ctx.beginPath();
         ctx.arc(point.x, point.y, 8, 0, Math.PI * 2);
-        ctx.fillStyle = "red";
+        ctx.fillStyle = color;
         ctx.fill();
         ctx.stroke();
     });
 };
 
-// Calcola le coordinate interne del canvas (in pixel dell'immagine)
 const getCanvasCoordinates = (event) => {
     const canvas = canvasRef.value;
     const rect = canvas.getBoundingClientRect();
@@ -109,32 +124,31 @@ const startDrag = (event) => {
 const drag = (event) => {
     if (draggingPoint.value === null || !canvasRef.value) return;
     const { x, y } = getCanvasCoordinates(event);
-    points.value[draggingPoint.value] = { x, y };
+    points.value[draggingPoint.value].x = x;
+    points.value[draggingPoint.value].y = y;
     const ctx = canvasRef.value.getContext('2d');
-    drawColorPoints(ctx);
+    drawPoints(ctx);
 };
 
 const stopDrag = () => {
     draggingPoint.value = null;
 };
 
-// Gestione del clic destro per rimuovere il punto
 const handleContextMenu = (event) => {
-    event.preventDefault(); // Impedisce l'apertura del menu contestuale
+    event.preventDefault();
     const { x, y } = getCanvasCoordinates(event);
     let removed = false;
-    // Filtra i punti rimuovendo quello cliccato
     points.value = points.value.filter((point) => {
         const dx = x - point.x;
         const dy = y - point.y;
         if (!removed && Math.sqrt(dx * dx + dy * dy) < 10) {
             removed = true;
-            return false; // Rimuove il punto
+            return false;
         }
         return true;
     });
     const ctx = canvasRef.value.getContext('2d');
-    drawColorPoints(ctx);
+    drawPoints(ctx);
 };
 
 const attachCanvasListeners = () => {
@@ -161,9 +175,23 @@ const removeCanvasListeners = () => {
     }
 };
 
-watch(() => props.visible, (v) => {
+const reset = () => {
+    canvasRef.value = null;
+    containerRef.value = null;
+    imageRef.value = null;
+    originalImageRef.value = null;
+    listenersAttached.value = false;
+    points.value = [];
+    draggingPoint.value = null;
+    name.value = "";
+};
+
+watch(() => props.visible, async (v) => {
     if (v) {
-        loadImage();
+        reset();
+        const imageUrl = await getFrameUrl();
+        // Carica l'immagine normale e la memorizza come originale
+        loadImage(imageUrl, true);
         nextTick(() => {
             attachCanvasListeners();
         });
@@ -176,19 +204,19 @@ onUnmounted(() => {
     removeCanvasListeners();
 });
 
-const newTablePreset = async () => {
-    if (!canvasRef.value || !imageRef.value) return;
-
-    // Crea un canvas offscreen con l'attributo willReadFrequently per migliorare le performance
+/**
+ * getPresetPoints utilizza originalImageRef per campionare i colori,
+ * garantendo che i dati siano prelevati dal frame non mascherato.
+ */
+const getPresetPoints = () => {
     const offscreenCanvas = document.createElement('canvas', { willReadFrequently: true });
     offscreenCanvas.width = canvasRef.value.width;
     offscreenCanvas.height = canvasRef.value.height;
     const offscreenCtx = offscreenCanvas.getContext('2d');
 
-    // Disegna l'immagine originale sul canvas offscreen
-    offscreenCtx.drawImage(imageRef.value, 0, 0, offscreenCanvas.width, offscreenCanvas.height);
+    // Disegna l'immagine originale (non mascherata)
+    offscreenCtx.drawImage(originalImageRef.value, 0, 0, offscreenCanvas.width, offscreenCanvas.height);
 
-    // Funzione helper per convertire RGB in HEX
     const rgbToHex = (r, g, b) =>
         '#' +
         [r, g, b]
@@ -198,20 +226,47 @@ const newTablePreset = async () => {
             })
             .join('');
 
-    // Per ogni punto, ottieni le coordinate (in pixel dell'immagine) e il colore corrispondente
-    const presetPoints = points.value.map((point) => {
+    const colors = [];
+    const presetPoints = [];
+    points.value.forEach((point) => {
         const x = Math.floor(point.x);
         const y = Math.floor(point.y);
-        const pixelData = offscreenCtx.getImageData(x, y, 1, 1).data; // [r, g, b, a]
-        const hexColor = rgbToHex(pixelData[0], pixelData[1], pixelData[2]);
-        return { x, y, color: hexColor };
-    });
+        if (point.type == "color") {
+            const pixelData = offscreenCtx.getImageData(x, y, 1, 1).data;
+            const hexColor = rgbToHex(pixelData[0], pixelData[1], pixelData[2]);
+            colors.push(hexColor);
+        } else {
+            presetPoints.push([x, y]);
+        }
 
-    console.log("Preset points with color:", presetPoints);
-    // Qui puoi procedere con ulteriori logiche (salvataggio, invio, ecc.) usando presetPoints
+    });
+    return {
+        "colors": colors,
+        "points": presetPoints
+    };
 };
 
-const name = ref("");
+/**
+ * updateWithMask aggiorna il canvas con il frame mascherato,
+ * ma i punti continueranno a utilizzare l'immagine originale.
+ */
+const updateWithMask = async () => {
+    const data = getPresetPoints();
+    const imageMaskedUrl = await getFrameMaskedUrl(data.points, data.colors);
+    const imageUrl = await getFrameUrl()
+    // Carica l'immagine mascherata senza aggiornare originalImageRef
+    loadImage(imageUrl, true)
+    loadImage(imageMaskedUrl, false);
+};
+
+const newTablePreset = async () => {
+    if (!canvasRef.value || !imageRef.value || name.value.trim() === "") return;
+
+    const data = getPresetPoints();
+    console.log(data);
+    settingsStore.addTablePreset(name.value.trim(), data.points, data.colors);
+    closeDialog();
+};
 </script>
 
 <template>
@@ -221,19 +276,20 @@ const name = ref("");
             Aggiungi una nuova configurazione per il tavolo da gioco.
         </span>
         <div class="flex items-center gap-4 mb-4">
-            <label for="tableprest" class="font-semibold w-24">Nome</label>
-            <InputText type="text" v-model="name" class="flex-auto" />
+            <label for="name" class="font-semibold w-24">Nome</label>
+            <InputText type="text" v-model="name" class="flex-auto" :invalid="!name" />
         </div>
+        <ButtonGroup>
+            <Button @click="addColorPoint" severity="secondary" label="Colore" icon="pi pi-plus" size="small" />
+            <Button @click="addRecPoint" severity="secondary" icon="pi pi-plus" label="Vertici" size="small" />
+            <Button @click="updateWithMask" severity="secondary" icon="pi pi-refresh" label="Aggiorna" size="small" />
+        </ButtonGroup>
         <div ref="containerRef" class="relative w-full mb-8">
             <canvas ref="canvasRef" class="absolute top-0 left-0 w-full h-full"></canvas>
-            <button @click="addColorPoint"
-                class="absolute top-2 right-2 bg-blue-500 text-white p-2 rounded-full text-xs shadow-lg">
-                +
-            </button>
         </div>
         <div class="flex justify-end gap-2">
             <Button type="button" label="Annulla" severity="secondary" @click="closeDialog"></Button>
-            <Button type="button" label="Crea" @click="newTablePreset"></Button>
+            <Button type="button" label="Crea" @click="newTablePreset" :disabled="!name"></Button>
         </div>
     </Dialog>
 </template>
