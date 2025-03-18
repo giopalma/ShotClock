@@ -19,6 +19,91 @@ export const useSettingsStore = defineStore('settings', {
             } catch (error) {
                 this.error = error
             }
+        },
+        async addTablePreset(name, points, colors) {
+            try {
+                const data = {
+                    'name': name,
+                    'points': points,
+                    'colors': colors
+                }
+                console.log(data)
+                const response = await fetch('/api/table', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                if (response.status === 200) {
+                    return this.fetchTablePresetsRulesets();
+                } else {
+                    console.error('Error:', response.statusText);
+                    return false;
+                }
+            } catch (error) {
+                this.error = error
+            }
+        },
+        async deleteTablePreset(id) {
+            try {
+                const response = await fetch(`/api/table/${id}`, {
+                    method: 'DELETE'
+                })
+                if (response.status === 200) {
+                    this.fetchTablePresetsRulesets()
+                    return true
+                } else {
+                    console.error('Error:', response.statusText);
+                    return false;
+                }
+            } catch (error) {
+                this.error = error
+            }
+        },
+        async addRuleset(name, initial_duration, turn_duration, allarm_time, increment_duration, max_increment_for_match) {
+            try {
+                const data = {
+                    'name': name,
+                    'initial_duration': initial_duration,
+                    'turn_duration': turn_duration,
+                    'allarm_time': allarm_time,
+                    'increment_duration': increment_duration,
+                    'max_increment_for_match': max_increment_for_match
+                }
+                console.log(data)
+                const response = await fetch('/api/ruleset', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                if (response.status === 200) {
+                    return this.fetchTablePresetsRulesets();
+                } else {
+                    console.error('Error:', response.statusText);
+                    return false;
+                }
+            } catch (error) {
+                this.error = error
+            }
+        },
+        async deleteRuleset(id) {
+            try {
+                const response = await fetch(`/api/ruleset/${id}`, {
+                    method: 'DELETE'
+                })
+                if (response.status === 200) {
+                    this.fetchTablePresetsRulesets()
+                    return true
+                } else {
+                    console.error('Error:', response.statusText);
+                    return false;
+                }
+            } catch (error) {
+                this.error = error
+            }
         }
     }
 })
@@ -105,15 +190,8 @@ export const useTimerStore = defineStore('timer', {
             this.interval = null;
         },
 
-        resetTimer() {
-            this.time = 0;
-            if (this.interval) {
-                clearInterval(this.interval);
-                this.interval = null;
-            }
-        },
-
         endTimer() {
+            clearInterval(this.interval)
             this.interval = null;
             this.status = null;
             this.time = 60;
@@ -125,7 +203,7 @@ export const useTimerStore = defineStore('timer', {
 
             if (oldStatus !== status) {
                 this.status = status;
-                if (status == 'pause') {
+                if (status == 'paused') {
                     this.stopTimer();
                 } else {
                     this.startTimer();
