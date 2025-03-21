@@ -29,7 +29,7 @@ app = Flask(__name__, static_folder="", template_folder="")
 # Configura l'app Flask
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///shotclock.db"
 app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET_KEY")
-app.config["GEVENT_SUPPORT"] = True
+# app.config["GEVENT_SUPPORT"] = True
 
 # Inizializza il database con il contesto dell'app
 db.init_app(app)
@@ -39,7 +39,8 @@ with app.app_context():
 # Inizializza le estensioni Flask
 api = Api(app)
 CORS(app)
-socketio = SocketIO(app, cors_allowed_origins="*", logger=True)
+
+socketio = SocketIO(app, cors_allowed_origins="*", logger=True, async_mode="threading")
 websocket.register(socketio)
 # Aggiungi le risorse API
 api.add_resource(resources.GameResource, "/game")
@@ -48,10 +49,10 @@ api.add_resource(resources.TablePresetResource, "/table")
 api.add_resource(resources.TablePresetResource2, "/table/<int:id>")
 api.add_resource(resources.RulesetResource, "/ruleset")
 api.add_resource(resources.RulesetResource2, "/ruleset/<int:id>")
-api.add_resource(resources.VideoStreamPageResource, "/video")
 api.add_resource(resources.VideoFrameResource, "/video/frame")
 api.add_resource(resources.VideoRecordResource, "/video/record")
 api.add_resource(resources.VideoStreamResource, "/video/stream")
+api.add_resource(resources.VideoStreamControlResource, "/video/stream/control")
 
 
 def start(debug=False):

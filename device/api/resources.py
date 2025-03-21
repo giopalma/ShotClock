@@ -1,14 +1,15 @@
+import queue
 from flask import jsonify, request, Response
 from flask_restful import Resource
 import json
 import logging
 import cv2
 import time
-import tempfile
 from flask import send_file
 import os
-
+import threading
 import numpy as np
+import uuid
 
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
@@ -55,71 +56,174 @@ class VideoFrameResource(Resource):
             if len(points) > 2:
                 frame = VideoProducer.get_instance().get_frame()
                 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-                _, buffer = cv2.imencode(".jpg", mask(hsv, colors, points))
+                hsv = cv2.GaussianBlur(hsv, (5, 5), 0)
+                masked = mask(hsv, colors, points)
+                blurred = cv2.GaussianBlur(masked, (5, 5), 0)
+                _, buffer = cv2.imencode(".jpg", blurred)
                 response = Response(buffer.tobytes(), mimetype="image/jpeg")
                 return response
 
 
-class VideoStreamResource(Resource):
-    def get(self):
-        def generate():
-            video_producer = VideoProducer.get_instance()
-            while True:
-                frame = video_producer.get_frame()
-                frame = frame.tobytes()
-                yield (
-                    b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n"
-                )
-
-        return Response(
-            generate(), mimetype="multipart/x-mixed-replace; boundary=frame"
-        )
-
-
-class VideoStreamPageResource(Resource):
-    def get(self):
-        html = """
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Video Stream</title>
-        </head>
-        <body>
-            <img src="/video/stream" alt="Video Stream">
-        </body>
-        </html>
-        """
-        return Response(html, mimetype="text/html")
-
-
 class VideoRecordResource(Resource):
     def get(self):
-        logging.info("Video Recording Started")
-        video_producer = VideoProducer.get_instance()
-        frames = []
-        start_time = time.time()
+        recording_id = str(uuid.uuid4())
+        video_path = os.path.join(os.getcwd(), f"output_{recording_id}.avi")
 
-        while time.time() - start_time < 50:
-            frame = video_producer.get_frame()
-            frames.append(frame)
-            time.sleep(1 / 30)  # Assuming 30 FPS
+        def record_video(video_path):
+            logging.info(f"Video Recording Started: {video_path}")
+            video_producer = VideoProducer.get_instance()
+            start_time = time.time()
 
-        video_path = os.path.join(os.getcwd(), "output.avi")
+            try:
+                # Crea subito il VideoWriter
+                dummy_frame = video_producer.get_frame()
+                height, width = dummy_frame.shape[:2]
 
-        temp_video = tempfile.NamedTemporaryFile(delete=False, suffix=".avi")
-        out = cv2.VideoWriter(
-            video_path,
-            cv2.VideoWriter_fourcc(*"XVID"),
-            30,
-            (frames[0].shape[1], frames[0].shape[0]),
+                # Assicurati che la directory esista
+                os.makedirs(os.path.dirname(video_path), exist_ok=True)
+
+                out = cv2.VideoWriter(
+                    video_path, cv2.VideoWriter_fourcc(*"XVID"), 30, (width, height)
+                )
+
+                while time.time() - start_time < 50:
+                    frame = video_producer.get_frame()
+                    # Scrive direttamente il frame invece di tenerlo in memoria
+                    out.write(frame)
+                    # Usa una pausa standard invece di eventlet.sleep
+                    time.sleep(0.01)  # Pausa più breve per una migliore framerate
+
+                out.release()
+                logging.info(f"Video salvato con successo: {video_path}")
+
+            except Exception as e:
+                logging.error(f"Errore durante la registrazione: {e}")
+
+        # Avvia la funzione di registrazione in un thread standard Python
+        thread = threading.Thread(target=record_video, args=(video_path,), daemon=True)
+        thread.start()
+
+        return jsonify(
+            {
+                "message": "Video recording started in background",
+                "recording_id": recording_id,
+                "file_path": video_path,
+            }
         )
 
-        for frame in frames:
-            out.write(frame)
-        out.release()
 
-        return send_file(video_path, mimetype="video/x-msvideo")
+class VideoStreamResource(Resource):
+    # Coda condivisa per i frame
+    frame_queue = queue.Queue(maxsize=10)
+    # Variabile per tenere traccia se il thread di acquisizione è attivo
+    is_capturing = False
+    # Lock per accesso sicuro alle variabili condivise
+    lock = threading.Lock()
+    # Riferimento al thread di acquisizione
+    capture_thread = None
+
+    @classmethod
+    def start_capture_thread(cls):
+        """Avvia il thread di acquisizione frame se non è già in esecuzione"""
+        with cls.lock:
+            if not cls.is_capturing:
+                cls.is_capturing = True
+                cls.capture_thread = threading.Thread(
+                    target=cls.capture_frames, daemon=True
+                )
+                cls.capture_thread.start()
+                return True
+            return False
+
+    @classmethod
+    def stop_capture_thread(cls):
+        """Ferma il thread di acquisizione in modo sicuro"""
+        with cls.lock:
+            was_capturing = cls.is_capturing
+            cls.is_capturing = False
+            # Svuota la coda
+            while not cls.frame_queue.empty():
+                try:
+                    cls.frame_queue.get_nowait()
+                except:
+                    pass
+        return was_capturing
+
+    @classmethod
+    def capture_frames(cls):
+        """Thread che acquisisce continuamente i frame e li mette in coda"""
+        video_producer = VideoProducer.get_instance()
+        try:
+            while cls.is_capturing:
+                frame = video_producer.get_frame()
+                if frame is not None:
+                    # Se la coda è piena, rimuovi il frame più vecchio
+                    if cls.frame_queue.full():
+                        try:
+                            cls.frame_queue.get_nowait()
+                        except queue.Empty:
+                            pass
+                    # Aggiungi il nuovo frame
+                    cls.frame_queue.put(frame)
+                time.sleep(0.03)  # Piccola pausa
+        except Exception as e:
+            print(f"Errore nel thread di acquisizione: {e}")
+        finally:
+            with cls.lock:
+                cls.is_capturing = False
+
+    def get(self):
+        # Assicurati che il thread di acquisizione sia in esecuzione
+        self.start_capture_thread()
+
+        def generate_frames():
+            while self.is_capturing:
+                try:
+                    # Attendi un frame dalla coda (timeout di 1 secondo)
+                    frame = self.frame_queue.get(timeout=1.0)
+
+                    # Converti il frame in formato JPEG
+                    ret, buffer = cv2.imencode(".jpg", frame)
+                    frame_bytes = buffer.tobytes()
+
+                    # Formato per il multipart/x-mixed-replace
+                    yield (
+                        b"--frame\r\n"
+                        b"Content-Type: image/jpeg\r\n\r\n" + frame_bytes + b"\r\n"
+                    )
+
+                except queue.Empty:
+                    # Se non ci sono frame disponibili, manda un frame vuoto o continua
+                    continue
+                except Exception as e:
+                    print(f"Errore nel generatore: {e}")
+                    break
+
+        return Response(
+            generate_frames(), mimetype="multipart/x-mixed-replace; boundary=frame"
+        )
+
+
+# Aggiungi una nuova risorsa per controllare lo streaming
+class VideoStreamControlResource(Resource):
+    def post(self):
+        # Avvia lo streaming
+        if VideoStreamResource.start_capture_thread():
+            return jsonify({"status": "success", "message": "Streaming avviato"})
+        else:
+            return jsonify({"status": "info", "message": "Streaming già in corso"})
+
+    def delete(self):
+        # Ferma lo streaming
+        if VideoStreamResource.stop_capture_thread():
+            return jsonify({"status": "success", "message": "Streaming interrotto"})
+        else:
+            return jsonify({"status": "info", "message": "Streaming non attivo"})
+
+    def get(self):
+        # Controlla lo stato dello streaming
+        is_active = VideoStreamResource.is_capturing
+        return jsonify({"status": "success", "streaming_active": is_active})
 
 
 class GameResource(Resource):

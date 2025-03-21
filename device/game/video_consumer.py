@@ -53,6 +53,8 @@ class VideoConsumer:
         self._thread.start()
 
         self._last_state_change_time = 0  # Tempo dell'ultimo cambio di stato
+        self._prev_frame_time = 0
+        self._current_fps = 0
 
     def start(self):
         """Avvia il ciclo di elaborazione del video."""
@@ -93,6 +95,7 @@ class VideoConsumer:
                 motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
                 continue
 
+            self._last_state_change_time = time.time()
             blurred = self._video_producer.get_frame_blurred()
             cv2.imshow("Blurred", blurred)
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)

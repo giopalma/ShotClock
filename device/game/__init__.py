@@ -96,6 +96,8 @@ class Game:
             self._video_consumer.end()
             self.status = "ended"
             self._emit_websocket("game", "ended")
+            if self._buzzer:
+                self._buzzer.off()
             # TODO: Controllare bene se tutto è stato terminato
             print("Gioco terminato.")
 
@@ -181,12 +183,12 @@ class Game:
         self.next_turn()
 
     """------BUZZER / SUONO-----"""
-    TIME_SOUND_BUZZER = 1
+    TIME_SOUND_BUZZER = 0.8
 
     def _buzzer(self):
-        self._buzzer.on()
-        time.sleep(self.TIME_SOUND_BUZZER)
-        self._buzzer.off()
+        self._buzzer.beep(
+            on_time=self.TIME_SOUND_BUZZER, off_time=self.TIME_SOUND_BUZZER, n=2
+        )
 
     def _allarm(self):
         if self._is_running_rpi:

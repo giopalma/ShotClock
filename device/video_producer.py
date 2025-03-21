@@ -27,8 +27,7 @@ class VideoProducer:
                 cls._instance.picam = Picamera2()
                 # Configurazione base della camera
                 config = cls._instance.picam.create_preview_configuration(
-                    # TODO: Prendere il config dal file di configurazione
-                    main={"size": (640, 480), "format": "BGR888"},
+                    main={"size": (640, 480), "format": "XRGB8888"},
                 )
                 cls._instance.picam.configure(config)
                 cls._instance.picam.start()
