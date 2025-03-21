@@ -52,7 +52,7 @@ def test_api(static=False):
     api.start(debug=True)
 
 
-def test(is_video=False, static=False):
+def test(is_video=True, static=False):
     if is_video:
         os.environ["FLASK_ENV"] = "video"
         test_video()

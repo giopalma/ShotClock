@@ -7496,3 +7496,89 @@ ValueError: min() iterable argument is empty
 2025-03-21 18:10:21,246 - INFO - 127.0.0.1 - - [21/Mar/2025 18:10:21] "GET /table HTTP/1.1" 200 -
 2025-03-21 18:10:21,291 - INFO - 127.0.0.1 - - [21/Mar/2025 18:10:21] "GET /ruleset HTTP/1.1" 200 -
 2025-03-21 18:10:37,288 - INFO - 127.0.0.1 - - [21/Mar/2025 18:10:37] "GET /table HTTP/1.1" 200 -
+2025-03-21 18:23:28,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 18:23:28,111 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:23:32,576 - INFO - 127.0.0.1 - - [21/Mar/2025 18:23:32] "GET /socket.io/?EIO=4&transport=polling&t=1u5884h4 HTTP/1.1" 200 -
+2025-03-21 18:23:32,818 - INFO - 127.0.0.1 - - [21/Mar/2025 18:23:32] "POST /socket.io/?EIO=4&transport=polling&t=1u5ij8ni&sid=ts1LgsGe7N5C2AU8AAAA HTTP/1.1" 200 -
+2025-03-21 18:23:32,905 - INFO - 127.0.0.1 - - [21/Mar/2025 18:23:32] "GET /socket.io/?EIO=4&transport=polling&t=1u5itc57&sid=ts1LgsGe7N5C2AU8AAAA HTTP/1.1" 200 -
+2025-03-21 18:23:32,959 - INFO - 127.0.0.1 - - [21/Mar/2025 18:23:32] "GET /socket.io/?EIO=4&transport=polling&t=1u5rtawg&sid=ts1LgsGe7N5C2AU8AAAA HTTP/1.1" 200 -
+2025-03-21 18:24:00,213 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:26:58,202 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:29:06,205 - INFO - Remaining time: 58.98500000000058
+2025-03-21 18:29:07,215 - INFO - Remaining time: 57.98500000000058
+2025-03-21 18:29:08,223 - INFO - Remaining time: 56.9690000000046
+2025-03-21 18:29:09,231 - INFO - Remaining time: 55.9690000000046
+2025-03-21 18:29:10,243 - INFO - Remaining time: 54.95300000000134
+2025-03-21 18:29:11,252 - INFO - Remaining time: 53.93800000000192
+2025-03-21 18:29:12,260 - INFO - Remaining time: 52.93800000000192
+2025-03-21 18:29:13,266 - INFO - Remaining time: 51.92199999999866
+2025-03-21 18:29:14,315 - INFO - Remaining time: 50.875
+2025-03-21 18:29:15,325 - INFO - Remaining time: 49.875
+2025-03-21 18:29:16,332 - INFO - Remaining time: 48.86000000000058
+2025-03-21 18:29:17,339 - INFO - Remaining time: 47.86000000000058
+2025-03-21 18:29:18,346 - INFO - Remaining time: 46.8440000000046
+2025-03-21 18:29:19,361 - INFO - Remaining time: 45.82800000000134
+2025-03-21 18:29:20,370 - INFO - Remaining time: 44.82800000000134
+2025-03-21 18:29:21,377 - INFO - Remaining time: 43.81300000000192
+2025-03-21 18:29:22,385 - INFO - Remaining time: 42.81300000000192
+2025-03-21 18:29:23,391 - INFO - Remaining time: 41.79699999999866
+2025-03-21 18:29:24,401 - INFO - Remaining time: 40.79699999999866
+2025-03-21 18:29:25,415 - INFO - Remaining time: 39.78199999999924
+2025-03-21 18:29:26,426 - INFO - Remaining time: 38.76600000000326
+2025-03-21 18:29:27,435 - INFO - Remaining time: 37.76600000000326
+2025-03-21 18:29:28,441 - INFO - Remaining time: 36.75
+2025-03-21 18:29:29,449 - INFO - Remaining time: 35.75
+2025-03-21 18:29:30,459 - INFO - Remaining time: 34.73500000000058
+2025-03-21 18:29:31,467 - INFO - Remaining time: 33.73500000000058
+2025-03-21 18:29:32,476 - INFO - Remaining time: 32.7190000000046
+2025-03-21 18:29:33,485 - INFO - Remaining time: 31.7190000000046
+2025-03-21 18:29:34,493 - INFO - Remaining time: 30.7190000000046
+2025-03-21 18:29:35,522 - INFO - Remaining time: 29.68800000000192
+2025-03-21 18:29:36,558 - INFO - Remaining time: 28.65700000000652
+2025-03-21 18:29:37,567 - INFO - Remaining time: 27.64100000000326
+2025-03-21 18:29:38,577 - INFO - Remaining time: 26.64100000000326
+2025-03-21 18:29:39,585 - INFO - Remaining time: 25.64100000000326
+2025-03-21 18:29:40,591 - INFO - Remaining time: 24.64100000000326
+2025-03-21 18:29:41,600 - INFO - Remaining time: 23.625000000007276
+2025-03-21 18:29:42,607 - INFO - Remaining time: 22.625000000007276
+2025-03-21 18:29:43,641 - INFO - Remaining time: 21.610000000007858
+2025-03-21 18:29:44,649 - INFO - Remaining time: 20.610000000007858
+2025-03-21 18:29:44,718 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:29:45,519 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:29:48,535 - INFO - Remaining time: 33.98500000000058
+2025-03-21 18:29:49,544 - INFO - Remaining time: 32.98500000000058
+2025-03-21 18:29:49,566 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:29:50,457 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:29:51,381 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:29:52,207 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:29:55,218 - INFO - Remaining time: 34.0
+2025-03-21 18:29:56,246 - INFO - Remaining time: 32.96800000000076
+2025-03-21 18:29:57,252 - INFO - Remaining time: 31.95300000000134
+2025-03-21 18:29:58,258 - INFO - Remaining time: 30.95300000000134
+2025-03-21 18:29:58,324 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:29:59,402 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:30:00,259 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:30:01,145 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:30:01,966 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:30:03,194 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:15,519 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:16,128 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:16,811 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:17,428 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:18,053 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:18,659 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:19,277 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:19,912 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:20,554 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:21,192 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:21,854 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:22,487 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:23,124 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:23,743 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:24,357 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:24,968 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:25,621 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:26,242 - INFO - Movimento terminato (Kalman)
+2025-03-21 18:32:27,022 - INFO - Movimento rilevato (Kalman)
+2025-03-21 18:32:27,668 - INFO - Movimento terminato (Kalman)
