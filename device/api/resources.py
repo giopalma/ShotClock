@@ -328,12 +328,21 @@ class TablePresetResource(Resource):
         if not request.is_json:
             return ({"message": "Missing JSON in request"}, 400)
         data = request.json
-        if not all(field in data for field in ("name", "points", "colors")):
-            return ({"message": "Missing required fields: name, points, colors"}, 400)
+        if not all(
+            field in data
+            for field in ("name", "points", "colors", "min_area_threshold")
+        ):
+            return (
+                {
+                    "message": "Missing required fields: name, points, colors, min_area_threshold"
+                },
+                400,
+            )
         tablepreset = models_dao.TablePresetDao.create(
             name=data["name"],
             points=data["points"],
             colors=data["colors"],
+            min_area_threshold=data["min_area_threshold"],
         )
         return jsonify(tablepreset)
 
