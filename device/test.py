@@ -1,6 +1,6 @@
 import json
 import os
-
+import cv2
 from device.video_producer import VideoProducer
 
 
@@ -42,16 +42,20 @@ def test_video():
     game.start()
 
 
-def test_api():
+def test_api(static=False):
     import device.api as api
+
+    if static:
+        frame = cv2.imread("./device/test_data/images/esempio_1.png")
+        VideoProducer.get_instance(frame=frame)
 
     api.start(debug=True)
 
 
-def test(is_video=True):
+def test(is_video=False, static=False):
     if is_video:
         os.environ["FLASK_ENV"] = "video"
         test_video()
     else:
         os.environ["FLASK_ENV"] = "api"
-        test_api()
+        test_api(static=static)
