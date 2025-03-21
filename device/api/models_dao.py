@@ -84,11 +84,17 @@ class TablePresetDao:
         return True
 
     @staticmethod
-    def create(name: str, points: List[Tuple[int, int]], colors: List[Tuple[int, int]]):
+    def create(
+        name: str,
+        points: List[Tuple[int, int]],
+        colors: List[Tuple[int, int]],
+        min_area_threshold: int,
+    ):
         new_tablepreset = TablePreset(
             name=name,
             points=json.dumps(points),
             colors=json.dumps(colors),
+            min_area_threshold=min_area_threshold,
         )
         db.session.add(new_tablepreset)
         db.session.commit()

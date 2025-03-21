@@ -20,12 +20,13 @@ export const useSettingsStore = defineStore('settings', {
                 this.error = error
             }
         },
-        async addTablePreset(name, points, colors) {
+        async addTablePreset(name, points, colors, min_area_threshold) {
             try {
                 const data = {
                     'name': name,
                     'points': points,
-                    'colors': colors
+                    'colors': colors,
+                    'min_area_threshold': min_area_threshold
                 }
                 console.log(data)
                 const response = await fetch('/api/table', {

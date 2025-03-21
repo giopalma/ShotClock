@@ -27,6 +27,17 @@ class VideoFrameResource(Resource):
 
     def post(self):
         def mask(hsv, colors, points):
+            # Funzione per mascherare l'immagine HSV
+            # Se non ci sono colori, applica solo la maschera del poligono
+            if not colors:
+                # Crea una maschera con il poligono
+                points = np.array(points, dtype=np.int32).reshape((-1, 1, 2))
+                rec_mask = cv2.fillPoly(
+                    np.zeros(hsv.shape[:2], dtype=np.uint8), [points], 255
+                )
+                rgb = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+                return cv2.bitwise_and(rgb, rgb, mask=rec_mask)
+
             colors = [hex_to_opencv_hsv(color) for color in colors]
             color_lower = tuple(
                 min(color[i] for color in colors) - diff
