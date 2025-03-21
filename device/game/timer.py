@@ -38,6 +38,7 @@ class Timer:
         Esegue il conto alla rovescia del timer. Se il timer è scaduto oppure viene formato il termine del timer,
         allora viene eseguita la funzione di callback.
         """
+        time.sleep(2)
         _last_time_check = time.monotonic()
         while (not self._end_event.is_set()) and (self.remaining_time > 0):
             start_time = time.monotonic()
@@ -45,6 +46,8 @@ class Timer:
                 self._is_running_event.wait()  # Attende che il timer venga ripreso
                 start_time = time.monotonic()
 
+            if self._end_event.is_set():
+                break
             time.sleep(max(0.001, min(self.remaining_time / 10, 0.1)))
 
             elapsed = time.monotonic() - start_time
@@ -93,3 +96,4 @@ class Timer:
         """
         if self.thread and self.thread.is_alive():
             self._end_event.set()
+            self._is_running_event.set()  # Sblocca il thread se è in attesa

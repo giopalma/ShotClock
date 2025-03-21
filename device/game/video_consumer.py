@@ -19,7 +19,7 @@ class VideoConsumer:
     CURRENT_MOTION_THRESHOLD = 100  # Soglia per considerare che vi sia movimento
     CIRCULARITY_THRESHOLD = 0.7  # Soglia per filtrare contorni non circolari
     H_DIFF, S_DIFF, V_DIFF = 5, 10, 5  # Differenze per il filtro colore in HSV
-
+    MIN_AREA_THRESHOLD = 200
     # Tempo minimo (in secondi) tra cambi di stato
     MIN_STATE_CHANGE_INTERVAL = 0.5
 
@@ -223,6 +223,9 @@ class VideoConsumer:
         circularity_mask = np.zeros_like(combined_mask)
         for c in contours:
             area = cv2.contourArea(c)
+            # Controllo sulla dimensione dell'area del contorno
+            if area < self.table.min_area_threshold:
+                continue
             perimeter = cv2.arcLength(c, True)
             if perimeter == 0:
                 continue

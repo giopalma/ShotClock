@@ -25,6 +25,7 @@ def test_video():
         data = json.load(f)
 
     points = data["points"]
+    min_area_threshold = data["min_area_threshold"]
     colors = [hex_to_opencv_hsv(color) for color in data["colors"]]
 
     table = TablePreset(
@@ -32,6 +33,7 @@ def test_video():
         "test_table",
         points=points,
         colors=colors,
+        min_area_threshold=min_area_threshold,
     )
     video_test = "./device/test_data/video/esempio_2.mp4"
     video_producer = VideoProducer.get_instance(video_source=video_test, loop=False)
