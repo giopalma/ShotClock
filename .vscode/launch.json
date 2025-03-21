@@ -16,6 +16,13 @@
             "request": "launch",
             "module": "device",
             "args": ["-t"]
+        },
+        {
+            "name": "Module Test Static | Python Debugger",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "device",
+            "args": ["-t", "-s"]
         }
     ]
 }

@@ -15,11 +15,12 @@ class VideoProducer:
     def __init__(self):
         raise RuntimeError("VideoProcessor instance cannot be instantiated")
 
-    def __new__(cls, video_source, loop):
+    def __new__(cls, frame, video_source, loop):
         if not cls._instance:
             cls._instance = super(VideoProducer, cls).__new__(cls)
 
-            cls._instance.frame = None
+            cls._instance.frame = frame
+            cls._instance.fixed_frame = frame is not None
             cls._instance.is_picamera = is_raspberry_pi()
             if cls._instance.is_picamera:
                 from picamera2 import Picamera2
@@ -42,12 +43,15 @@ class VideoProducer:
         return cls._instance
 
     @classmethod
-    def get_instance(cls, video_source=0, loop=False):
+    def get_instance(cls, frame=None, video_source=0, loop=False):
         if not cls._instance:
-            cls._instance = cls.__new__(cls, video_source, loop)
+            cls._instance = cls.__new__(cls, frame, video_source, loop)
         return cls._instance
 
     def _capture_loop(self):
+        if self.fixed_frame:
+            while self.is_running:
+                time.sleep(1 / 30)
         if self.is_picamera:
             while self.is_running:
                 self.frame = self.picam.capture_array()

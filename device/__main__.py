@@ -16,6 +16,9 @@ parser.add_argument(
 parser.add_argument(
     "-t", "--test", action="store_true", help="Avvia il dispositivo in modalità test"
 )
+parser.add_argument(
+    "-s", "--static", action="store_true", help="Avvia il dispositivo con frame fisso"
+)
 
 
 def main():
@@ -33,6 +36,6 @@ if __name__ == "__main__":
     load_config()
     logging_setup()
     if args.test:
-        test()
+        test(static=args.static)
     else:
         main()
