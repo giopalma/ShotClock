@@ -62,6 +62,7 @@ class TablePreset(db.Model):
     name: Mapped[str] = mapped_column(unique=True)
     points: Mapped[str] = mapped_column()
     colors: Mapped[str] = mapped_column()
+    min_area_threshold: Mapped[int] = mapped_column(default=100)
 
 
 class TablePresetDao:
