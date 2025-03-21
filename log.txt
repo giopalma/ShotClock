@@ -7138,3 +7138,208 @@ ValueError: min() arg is an empty sequence
 2025-03-21 16:18:15,072 - INFO - Remaining time: 34.0
 2025-03-21 16:18:16,078 - INFO - Remaining time: 33.0
 2025-03-21 16:18:17,084 - INFO - Remaining time: 32.0
+2025-03-21 16:47:15,489 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 16:47:15,495 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 16:48:08,156 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 16:48:08,159 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 16:50:00,998 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 16:50:01,004 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 16:50:03,631 - INFO - 127.0.0.1 - - [21/Mar/2025 16:50:03] "GET /table HTTP/1.1" 200 -
+2025-03-21 16:50:35,875 - INFO - 127.0.0.1 - - [21/Mar/2025 16:50:35] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 16:51:42,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 16:51:42,896 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 16:52:13,410 - INFO - 127.0.0.1 - - [21/Mar/2025 16:52:13] "GET /table HTTP/1.1" 200 -
+2025-03-21 16:52:24,457 - INFO - 127.0.0.1 - - [21/Mar/2025 16:52:24] "POST /table HTTP/1.1" 200 -
+2025-03-21 16:52:33,938 - INFO - 127.0.0.1 - - [21/Mar/2025 16:52:33] "POST /ruleset HTTP/1.1" 200 -
+2025-03-21 16:52:41,920 - INFO - 127.0.0.1 - - [21/Mar/2025 16:52:41] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 16:53:27,004 - INFO - 127.0.0.1 - - [21/Mar/2025 16:53:27] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 16:53:30,413 - INFO - 127.0.0.1 - - [21/Mar/2025 16:53:30] "GET /table HTTP/1.1" 200 -
+2025-03-21 16:55:51,983 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:51] "GET /socket.io/?EIO=4&transport=polling&t=ype39b7f HTTP/1.1" 200 -
+2025-03-21 16:55:52,167 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:52] "POST /socket.io/?EIO=4&transport=polling&t=ypehxzme&sid=e3pSxaIobfD_F92KAAAA HTTP/1.1" 200 -
+2025-03-21 16:55:52,246 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:52] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 16:55:52,418 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:52] "GET /socket.io/?EIO=4&transport=polling&t=ypei1tmt&sid=e3pSxaIobfD_F92KAAAA HTTP/1.1" 200 -
+2025-03-21 16:55:52,618 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:52] "GET /socket.io/?EIO=4&transport=polling&t=ypew122e&sid=e3pSxaIobfD_F92KAAAA HTTP/1.1" 200 -
+2025-03-21 16:55:52,957 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:52] "GET /socket.io/?EIO=4&transport=polling&t=ypeww986&sid=e3pSxaIobfD_F92KAAAA HTTP/1.1" 200 -
+2025-03-21 16:55:56,257 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:56] "GET /socket.io/?EIO=4&transport=websocket&sid=e3pSxaIobfD_F92KAAAA HTTP/1.1" 200 -
+2025-03-21 16:55:56,431 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:56] "GET /socket.io/?EIO=4&transport=polling&t=yphsg1it HTTP/1.1" 200 -
+2025-03-21 16:55:56,887 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:56] "POST /socket.io/?EIO=4&transport=polling&t=yphx3x2z&sid=lmnLkx8j4dEmV3YmAAAC HTTP/1.1" 200 -
+2025-03-21 16:55:56,937 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:56] "GET /socket.io/?EIO=4&transport=polling&t=yphx5e0n&sid=lmnLkx8j4dEmV3YmAAAC HTTP/1.1" 200 -
+2025-03-21 16:55:57,110 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:57] "GET /socket.io/?EIO=4&transport=polling&t=ypiay8y5&sid=lmnLkx8j4dEmV3YmAAAC HTTP/1.1" 200 -
+2025-03-21 16:55:57,805 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:57] "GET /table HTTP/1.1" 200 -
+2025-03-21 16:55:57,818 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:57] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 16:55:57,956 - INFO - 127.0.0.1 - - [21/Mar/2025 16:55:57] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 16:56:35,912 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 16:56:35,919 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 16:56:36,044 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:36] "GET /socket.io/?EIO=4&transport=polling&t=yqbqqz9i HTTP/1.1" 200 -
+2025-03-21 16:56:36,266 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:36] "POST /socket.io/?EIO=4&transport=polling&t=yqcf71o8&sid=h63v5wjGDLqipG1mAAAA HTTP/1.1" 200 -
+2025-03-21 16:56:36,390 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:36] "GET /socket.io/?EIO=4&transport=polling&t=yqcfgmnu&sid=h63v5wjGDLqipG1mAAAA HTTP/1.1" 200 -
+2025-03-21 16:56:36,431 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:36] "GET /socket.io/?EIO=4&transport=polling&t=yqcoexrh&sid=h63v5wjGDLqipG1mAAAA HTTP/1.1" 200 -
+2025-03-21 16:56:43,385 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 16:56:45,412 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:45] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 16:56:45,451 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:45] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 16:56:46,867 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:46] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 16:56:46,906 - INFO - 127.0.0.1 - - [21/Mar/2025 16:56:46] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:02:04,909 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:04] "GET /socket.io/?EIO=4&transport=polling&t=yxdwh6xy HTTP/1.1" 200 -
+2025-03-21 17:02:05,420 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:05] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 17:02:05,479 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:05] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:02:06,114 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:06] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 17:02:06,147 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:06] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:02:06,222 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:06] "POST /socket.io/?EIO=4&transport=polling&t=yxf5t8h7&sid=U1iFBMpCmh7hJrteAAAC HTTP/1.1" 200 -
+2025-03-21 17:02:06,284 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:06] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:02:06,363 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:06] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:02:06,540 - INFO - 127.0.0.1 - - [21/Mar/2025 17:02:06] "GET /socket.io/?EIO=4&transport=polling&t=yxf5wgiw&sid=U1iFBMpCmh7hJrteAAAC HTTP/1.1" 200 -
+2025-03-21 17:05:07,936 - INFO - 127.0.0.1 - - [21/Mar/2025 17:05:07] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:45,566 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:45] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:45,608 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:45] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:50,169 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:50] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:50,208 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:50] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:53,726 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:53] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:53,769 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:53] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:59,342 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:59] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:09:59,382 - INFO - 127.0.0.1 - - [21/Mar/2025 17:09:59] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:10:03,883 - INFO - 127.0.0.1 - - [21/Mar/2025 17:10:03] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:10:03,925 - INFO - 127.0.0.1 - - [21/Mar/2025 17:10:03] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:10:10,053 - INFO - 127.0.0.1 - - [21/Mar/2025 17:10:10] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:23:54,557 - INFO - Remaining time: 59.0
+2025-03-21 17:23:55,566 - INFO - Remaining time: 57.98399999999674
+2025-03-21 17:23:56,574 - INFO - Remaining time: 56.98399999999674
+2025-03-21 17:23:57,581 - INFO - Remaining time: 55.96899999999732
+2025-03-21 17:23:58,588 - INFO - Remaining time: 54.96899999999732
+2025-03-21 17:25:09,575 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:25:09,578 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:25:10,570 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:10] "GET /socket.io/?EIO=4&transport=polling&t=zr32hlx5 HTTP/1.1" 200 -
+2025-03-21 17:25:10,572 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:10] "GET /socket.io/?EIO=4&transport=polling&t=zr32ge8m HTTP/1.1" 200 -
+2025-03-21 17:25:10,794 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:10] "POST /socket.io/?EIO=4&transport=polling&t=zr3dtm67&sid=sddbE4wSXxogQDk1AAAA HTTP/1.1" 200 -
+2025-03-21 17:25:10,962 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:10] "GET /socket.io/?EIO=4&transport=polling&t=zr3e9e8r&sid=sddbE4wSXxogQDk1AAAA HTTP/1.1" 200 -
+2025-03-21 17:25:11,036 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:11] "POST /socket.io/?EIO=4&transport=polling&t=zr3emvdk&sid=xOppvhQxQqQjChmeAAAB HTTP/1.1" 200 -
+2025-03-21 17:25:11,093 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:11] "GET /socket.io/?EIO=4&transport=polling&t=zr3eq2cv&sid=xOppvhQxQqQjChmeAAAB HTTP/1.1" 200 -
+2025-03-21 17:25:11,099 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:11] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:25:11,109 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:11] "GET /socket.io/?EIO=4&transport=polling&t=zr3ocw1m&sid=sddbE4wSXxogQDk1AAAA HTTP/1.1" 200 -
+2025-03-21 17:25:11,581 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:11] "GET /socket.io/?EIO=4&transport=polling&t=zr3sl8vq&sid=xOppvhQxQqQjChmeAAAB HTTP/1.1" 200 -
+2025-03-21 17:25:14,728 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:14] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:25:33,070 - INFO - 127.0.0.1 - - [21/Mar/2025 17:25:33] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:26:43,296 - INFO - 127.0.0.1 - - [21/Mar/2025 17:26:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:28:45,200 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:28:45,204 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:28:50,476 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:50] "GET /socket.io/?EIO=4&transport=polling&t=zvsuwdoh HTTP/1.1" 200 -
+2025-03-21 17:28:50,736 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:50] "GET /socket.io/?EIO=4&transport=polling&t=zvsv4fo7 HTTP/1.1" 200 -
+2025-03-21 17:28:50,893 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:50] "POST /socket.io/?EIO=4&transport=polling&t=zvt1mxje&sid=grlLqOQEBJCZQqnyAAAA HTTP/1.1" 200 -
+2025-03-21 17:28:50,928 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:50] "GET /socket.io/?EIO=4&transport=polling&t=zvt2p32c&sid=grlLqOQEBJCZQqnyAAAA HTTP/1.1" 200 -
+2025-03-21 17:28:51,074 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:51] "POST /socket.io/?EIO=4&transport=polling&t=zvt8elzv&sid=wweVwGyPdQ5b6AvFAAAB HTTP/1.1" 200 -
+2025-03-21 17:28:51,103 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:51] "GET /socket.io/?EIO=4&transport=polling&t=zvt8jh02&sid=wweVwGyPdQ5b6AvFAAAB HTTP/1.1" 200 -
+2025-03-21 17:29:07,950 - INFO - 127.0.0.1 - - [21/Mar/2025 17:29:07] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:32:12,270 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:12] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:41,910 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:41] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:41,978 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:41] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:45,465 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:45] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:45,544 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:45] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:48,216 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:48] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:48,265 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:48] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:51,846 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:51] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:51,887 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:51] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:58,359 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:58] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:33:58,409 - INFO - 127.0.0.1 - - [21/Mar/2025 17:33:58] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:34:04,229 - INFO - 127.0.0.1 - - [21/Mar/2025 17:34:04] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:34:04,273 - INFO - 127.0.0.1 - - [21/Mar/2025 17:34:04] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:35:14,649 - INFO - 127.0.0.1 - - [21/Mar/2025 17:35:14] "POST /table HTTP/1.1" 200 -
+2025-03-21 17:35:14,712 - INFO - 127.0.0.1 - - [21/Mar/2025 17:35:14] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:35:14,764 - INFO - 127.0.0.1 - - [21/Mar/2025 17:35:14] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:35:27,297 - INFO - 127.0.0.1 - - [21/Mar/2025 17:35:27] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:36:12,120 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:12] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:36:36,929 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:36] "GET /socket.io/?EIO=4&transport=polling&t=05so0ljv HTTP/1.1" 200 -
+2025-03-21 17:36:37,653 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:37] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:36:37,672 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:37] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 17:36:37,964 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:37] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 17:36:37,997 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:37] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:36:38,046 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:38] "POST /socket.io/?EIO=4&transport=polling&t=05tsj976&sid=HXLyiV-cXgqusKJbAAAE HTTP/1.1" 200 -
+2025-03-21 17:36:38,091 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:38] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:36:38,158 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:38] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:36:38,371 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:38] "GET /socket.io/?EIO=4&transport=polling&t=05tsntc4&sid=HXLyiV-cXgqusKJbAAAE HTTP/1.1" 200 -
+2025-03-21 17:36:38,793 - INFO - 127.0.0.1 - - [21/Mar/2025 17:36:38] "GET /socket.io/?EIO=4&transport=polling&t=05u4tw43&sid=HXLyiV-cXgqusKJbAAAE HTTP/1.1" 200 -
+2025-03-21 17:37:43,299 - INFO - 127.0.0.1 - - [21/Mar/2025 17:37:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:40:09,865 - INFO - 127.0.0.1 - - [21/Mar/2025 17:40:09] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:40:18,732 - INFO - 127.0.0.1 - - [21/Mar/2025 17:40:18] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:40:27,163 - INFO - 127.0.0.1 - - [21/Mar/2025 17:40:27] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:40:38,637 - INFO - 127.0.0.1 - - [21/Mar/2025 17:40:38] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:40:57,767 - INFO - 127.0.0.1 - - [21/Mar/2025 17:40:57] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:40:57,807 - INFO - 127.0.0.1 - - [21/Mar/2025 17:40:57] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:02,643 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:02] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:02,686 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:02] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:05,642 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:05] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:05,679 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:05] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:08,562 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:08] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:08,605 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:08] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:11,649 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:11] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:11,692 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:11] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:15,539 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:15] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:15,580 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:15] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:17,140 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:17] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:17,185 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:17] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:21,972 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:21] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:41:22,009 - INFO - 127.0.0.1 - - [21/Mar/2025 17:41:22] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:43:03,992 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:03] "POST /table HTTP/1.1" 200 -
+2025-03-21 17:43:04,072 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:04] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:43:04,149 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:04] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:43:25,655 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:25] "DELETE /table/3 HTTP/1.1" 200 -
+2025-03-21 17:43:25,748 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:25] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:43:25,801 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:25] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:43:27,220 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:27] "DELETE /table/2 HTTP/1.1" 200 -
+2025-03-21 17:43:27,272 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:27] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:43:27,339 - INFO - 127.0.0.1 - - [21/Mar/2025 17:43:27] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:45:49,640 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:45:49,643 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:45:50,248 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:50] "GET /socket.io/?EIO=4&transport=polling&t=0hnuwb6o HTTP/1.1" 200 -
+2025-03-21 17:45:50,594 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:50] "POST /socket.io/?EIO=4&transport=polling&t=0hnwauaw&sid=lY7ppKQXiCFXbBfZAAAA HTTP/1.1" 200 -
+2025-03-21 17:45:50,622 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:50] "GET /socket.io/?EIO=4&transport=polling&t=0hnwelmh&sid=lY7ppKQXiCFXbBfZAAAA HTTP/1.1" 200 -
+2025-03-21 17:45:50,837 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:50] "GET /socket.io/?EIO=4&transport=polling&t=0ho6fpn0&sid=lY7ppKQXiCFXbBfZAAAA HTTP/1.1" 200 -
+2025-03-21 17:45:51,988 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:51] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:45:54,142 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:54] "GET /socket.io/?EIO=4&transport=polling&t=0hqvmz2f HTTP/1.1" 200 -
+2025-03-21 17:45:54,468 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:54] "POST /socket.io/?EIO=4&transport=polling&t=0hqw4b07&sid=Y09zLrLpJaV14sTlAAAC HTTP/1.1" 200 -
+2025-03-21 17:45:54,496 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:54] "GET /socket.io/?EIO=4&transport=polling&t=0hqw6kvd&sid=Y09zLrLpJaV14sTlAAAC HTTP/1.1" 200 -
+2025-03-21 17:45:54,699 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:54] "GET /socket.io/?EIO=4&transport=polling&t=0hr2eolx HTTP/1.1" 200 -
+2025-03-21 17:45:54,724 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:54] "POST /socket.io/?EIO=4&transport=polling&t=0hrbktgt&sid=Ksqgt8yDy7oKikhHAAAE HTTP/1.1" 200 -
+2025-03-21 17:45:55,038 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:55] "GET /socket.io/?EIO=4&transport=polling&t=0hrblmid&sid=Ksqgt8yDy7oKikhHAAAE HTTP/1.1" 200 -
+2025-03-21 17:45:55,366 - INFO - 127.0.0.1 - - [21/Mar/2025 17:45:55] "GET /socket.io/?EIO=4&transport=polling&t=0hrl4z74&sid=Ksqgt8yDy7oKikhHAAAE HTTP/1.1" 200 -
+2025-03-21 17:47:22,780 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:22] "GET /socket.io/?EIO=4&transport=websocket&sid=Y09zLrLpJaV14sTlAAAC HTTP/1.1" 200 -
+2025-03-21 17:47:22,782 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:22] "GET /socket.io/?EIO=4&transport=websocket&sid=lY7ppKQXiCFXbBfZAAAA HTTP/1.1" 200 -
+2025-03-21 17:47:22,784 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:22] "GET /socket.io/?EIO=4&transport=websocket&sid=Ksqgt8yDy7oKikhHAAAE HTTP/1.1" 200 -
+2025-03-21 17:47:23,707 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:23] "GET /socket.io/?EIO=4&transport=polling&t=0jnqtlu0 HTTP/1.1" 200 -
+2025-03-21 17:47:23,963 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:23] "POST /socket.io/?EIO=4&transport=polling&t=0jo3oz2z&sid=xm-XIBSdZpVb5DVAAAAG HTTP/1.1" 200 -
+2025-03-21 17:47:24,185 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:24] "GET /socket.io/?EIO=4&transport=polling&t=0jo3qr3q&sid=xm-XIBSdZpVb5DVAAAAG HTTP/1.1" 200 -
+2025-03-21 17:47:25,612 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:25] "GET /socket.io/?EIO=4&transport=polling&t=0jpgleec&sid=xm-XIBSdZpVb5DVAAAAG HTTP/1.1" 200 -
+2025-03-21 17:47:26,066 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:26] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-21 17:47:26,083 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:26] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:47:26,093 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:26] "GET /socket.io/?EIO=4&transport=polling&t=0jphzjoe&sid=xm-XIBSdZpVb5DVAAAAG HTTP/1.1" 200 -
+2025-03-21 17:47:26,163 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:26] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:47:27,270 - INFO - 127.0.0.1 - - [21/Mar/2025 17:47:27] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:16,858 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:16] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:16,918 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:16] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:20,216 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:20] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:20,280 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:20] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:23,421 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:23] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:23,478 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:23] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:26,771 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:26] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:26,818 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:26] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:30,895 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:30] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:30,935 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:30] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:37,439 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:37] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:37,494 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:37] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:48,799 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:48] "POST /video/frame HTTP/1.1" 200 -
+2025-03-21 17:48:48,849 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:48] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:49:00,185 - INFO - 127.0.0.1 - - [21/Mar/2025 17:49:00] "POST /table HTTP/1.1" 200 -
+2025-03-21 17:49:00,252 - INFO - 127.0.0.1 - - [21/Mar/2025 17:49:00] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:49:00,334 - INFO - 127.0.0.1 - - [21/Mar/2025 17:49:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:49:13,392 - INFO - 127.0.0.1 - - [21/Mar/2025 17:49:13] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:49:40,500 - INFO - 127.0.0.1 - - [21/Mar/2025 17:49:40] "GET /video/frame HTTP/1.1" 200 -
+2025-03-21 17:50:32,315 - INFO - 127.0.0.1 - - [21/Mar/2025 17:50:32] "POST /table HTTP/1.1" 200 -
+2025-03-21 17:50:32,381 - INFO - 127.0.0.1 - - [21/Mar/2025 17:50:32] "GET /table HTTP/1.1" 200 -
+2025-03-21 17:50:32,441 - INFO - 127.0.0.1 - - [21/Mar/2025 17:50:32] "GET /ruleset HTTP/1.1" 200 -
+2025-03-21 17:50:38,887 - INFO - 127.0.0.1 - - [21/Mar/2025 17:50:38] "GET /table HTTP/1.1" 200 -
