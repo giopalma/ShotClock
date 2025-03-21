@@ -5034,3 +5034,1573 @@ ValueError: min() arg is an empty sequence
 2025-03-21 11:42:13,552 - INFO - emitting event "timer" to all [/]
 2025-03-21 11:42:13,553 - INFO - Remaining time: 23.98538964900763
 2025-03-21 11:42:13,716 - INFO - Camera closed successfully.
+2025-03-21 14:20:31,635 - INFO - Remaining time: 59.0
+2025-03-21 14:20:32,643 - INFO - Remaining time: 57.98400000000038
+2025-03-21 14:20:33,650 - INFO - Remaining time: 56.98400000000038
+2025-03-21 14:20:34,656 - INFO - Remaining time: 55.98400000000038
+2025-03-21 14:20:35,661 - INFO - Remaining time: 54.98400000000038
+2025-03-21 14:20:36,667 - INFO - Remaining time: 53.98400000000038
+2025-03-21 14:20:37,673 - INFO - Remaining time: 52.96799999999712
+2025-03-21 14:20:38,681 - INFO - Remaining time: 51.96799999999712
+2025-03-21 14:20:39,687 - INFO - Remaining time: 50.96799999999712
+2025-03-21 14:20:40,692 - INFO - Remaining time: 49.9519999999975
+2025-03-21 14:20:41,712 - INFO - Remaining time: 49.74899999999616
+2025-03-21 14:20:42,719 - INFO - Remaining time: 48.73299999999654
+2025-03-21 14:20:43,725 - INFO - Remaining time: 47.73299999999654
+2025-03-21 14:20:44,730 - INFO - Remaining time: 46.73299999999654
+2025-03-21 14:20:45,735 - INFO - Remaining time: 45.716999999996915
+2025-03-21 14:20:46,743 - INFO - Remaining time: 44.716999999996915
+2025-03-21 14:20:47,749 - INFO - Remaining time: 43.716999999996915
+2025-03-21 14:20:48,757 - INFO - Remaining time: 42.716999999996915
+2025-03-21 14:20:49,763 - INFO - Remaining time: 41.716999999996915
+2025-03-21 14:20:50,770 - INFO - Remaining time: 40.70099999999729
+2025-03-21 14:20:51,775 - INFO - Remaining time: 39.70099999999729
+2025-03-21 14:20:52,783 - INFO - Remaining time: 38.685999999997875
+2025-03-21 14:20:53,788 - INFO - Remaining time: 37.685999999997875
+2025-03-21 14:20:54,793 - INFO - Remaining time: 36.685999999997875
+2025-03-21 14:20:55,799 - INFO - Remaining time: 35.669999999994616
+2025-03-21 14:23:41,158 - INFO - Remaining time: 58.98500000000058
+2025-03-21 14:23:42,167 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:23:43,173 - INFO - Remaining time: 56.96899999999732
+2025-03-21 14:23:44,180 - INFO - Remaining time: 55.96899999999732
+2025-03-21 14:23:45,185 - INFO - Remaining time: 54.96899999999732
+2025-03-21 14:23:46,194 - INFO - Remaining time: 53.9529999999977
+2025-03-21 14:23:47,199 - INFO - Remaining time: 52.9529999999977
+2025-03-21 14:23:48,204 - INFO - Remaining time: 51.93799999999828
+2025-03-21 14:23:49,210 - INFO - Remaining time: 50.93799999999828
+2025-03-21 14:23:50,216 - INFO - Remaining time: 49.93799999999828
+2025-03-21 14:23:51,228 - INFO - Remaining time: 49.734999999996944
+2025-03-21 14:23:52,235 - INFO - Remaining time: 48.71899999999732
+2025-03-21 14:23:53,242 - INFO - Remaining time: 47.71899999999732
+2025-03-21 14:23:54,248 - INFO - Remaining time: 46.71899999999732
+2025-03-21 14:23:55,255 - INFO - Remaining time: 45.703999999997905
+2025-03-21 14:24:42,696 - INFO - Remaining time: 59.0
+2025-03-21 14:24:43,701 - INFO - Remaining time: 58.0
+2025-03-21 14:24:44,706 - INFO - Remaining time: 56.98500000000058
+2025-03-21 14:24:45,712 - INFO - Remaining time: 55.98500000000058
+2025-03-21 14:24:46,717 - INFO - Remaining time: 54.98500000000058
+2025-03-21 14:24:47,722 - INFO - Remaining time: 53.96900000000096
+2025-03-21 14:24:48,728 - INFO - Remaining time: 52.96900000000096
+2025-03-21 14:24:49,734 - INFO - Remaining time: 51.96900000000096
+2025-03-21 14:24:50,739 - INFO - Remaining time: 50.95300000000134
+2025-03-21 14:24:51,744 - INFO - Remaining time: 49.95300000000134
+2025-03-21 14:24:52,758 - INFO - Remaining time: 49.75000000000364
+2025-03-21 14:24:53,765 - INFO - Remaining time: 48.75000000000364
+2025-03-21 14:24:54,773 - INFO - Remaining time: 47.734000000004016
+2025-03-21 14:24:55,779 - INFO - Remaining time: 46.734000000004016
+2025-03-21 14:24:56,785 - INFO - Remaining time: 45.7190000000046
+2025-03-21 14:24:57,790 - INFO - Remaining time: 44.7190000000046
+2025-03-21 14:24:58,797 - INFO - Remaining time: 43.7190000000046
+2025-03-21 14:24:59,803 - INFO - Remaining time: 42.7190000000046
+2025-03-21 14:25:45,919 - INFO - Remaining time: 59.0
+2025-03-21 14:25:46,927 - INFO - Remaining time: 57.98399999999674
+2025-03-21 14:25:47,932 - INFO - Remaining time: 56.98399999999674
+2025-03-21 14:25:48,939 - INFO - Remaining time: 55.96799999999712
+2025-03-21 14:25:49,944 - INFO - Remaining time: 54.96799999999712
+2025-03-21 14:25:50,950 - INFO - Remaining time: 53.96799999999712
+2025-03-21 14:25:51,955 - INFO - Remaining time: 52.9529999999977
+2025-03-21 14:25:52,962 - INFO - Remaining time: 51.9529999999977
+2025-03-21 14:25:53,969 - INFO - Remaining time: 50.9529999999977
+2025-03-21 14:25:54,976 - INFO - Remaining time: 49.93699999999808
+2025-03-21 14:25:55,988 - INFO - Remaining time: 49.73299999999654
+2025-03-21 14:25:56,994 - INFO - Remaining time: 48.73299999999654
+2025-03-21 14:26:24,542 - INFO - Remaining time: 21.18699999999808
+2025-03-21 14:28:20,122 - INFO - Remaining time: 0
+2025-03-21 14:28:25,664 - INFO - Remaining time: 29.46900000000096
+2025-03-21 14:28:27,870 - INFO - Remaining time: 28.2970000000023
+2025-03-21 14:28:30,608 - INFO - Remaining time: 25.56300000000192
+2025-03-21 14:28:33,402 - INFO - Remaining time: 22.76600000000326
+2025-03-21 14:28:34,556 - INFO - Remaining time: 21.610000000000582
+2025-03-21 14:28:36,795 - INFO - Remaining time: 19.37600000000384
+2025-03-21 14:28:38,769 - INFO - Remaining time: 18.23500000000422
+2025-03-21 14:28:40,493 - INFO - Remaining time: 17.7190000000046
+2025-03-21 14:28:40,500 - INFO - Movimento rilevato
+2025-03-21 14:28:41,486 - INFO - Remaining time: 16.7190000000046
+2025-03-21 14:29:03,642 - INFO - Remaining time: 58.98400000000038
+2025-03-21 14:29:04,647 - INFO - Remaining time: 57.98400000000038
+2025-03-21 14:29:05,652 - INFO - Remaining time: 56.98400000000038
+2025-03-21 14:29:06,657 - INFO - Remaining time: 55.96900000000096
+2025-03-21 14:29:07,662 - INFO - Remaining time: 54.96900000000096
+2025-03-21 14:29:08,667 - INFO - Remaining time: 53.96900000000096
+2025-03-21 14:29:09,672 - INFO - Remaining time: 52.96900000000096
+2025-03-21 14:29:10,676 - INFO - Remaining time: 51.9529999999977
+2025-03-21 14:29:11,682 - INFO - Remaining time: 50.9529999999977
+2025-03-21 14:29:12,687 - INFO - Remaining time: 49.9529999999977
+2025-03-21 14:29:13,701 - INFO - Remaining time: 49.74999999999636
+2025-03-21 14:29:14,706 - INFO - Remaining time: 48.734999999996944
+2025-03-21 14:29:19,298 - INFO - Remaining time: 44.15699999999924
+2025-03-21 14:29:27,194 - INFO - Remaining time: 36.26599999999962
+2025-03-21 14:29:29,729 - INFO - Remaining time: 33.73500000000058
+2025-03-21 14:29:31,181 - INFO - Remaining time: 32.28199999999924
+2025-03-21 14:29:33,356 - INFO - Remaining time: 30.110000000000582
+2025-03-21 14:29:36,614 - INFO - Remaining time: 26.84400000000096
+2025-03-21 14:29:38,763 - INFO - Remaining time: 26.06300000000192
+2025-03-21 14:29:40,891 - INFO - Remaining time: 23.9220000000023
+2025-03-21 14:29:41,716 - INFO - Movimento rilevato
+2025-03-21 14:29:55,083 - INFO - Remaining time: 59.0
+2025-03-21 14:29:56,089 - INFO - Remaining time: 58.0
+2025-03-21 14:29:57,095 - INFO - Remaining time: 56.98400000000038
+2025-03-21 14:29:58,100 - INFO - Remaining time: 55.98400000000038
+2025-03-21 14:29:59,106 - INFO - Remaining time: 54.98400000000038
+2025-03-21 14:30:00,110 - INFO - Remaining time: 53.96800000000076
+2025-03-21 14:30:01,115 - INFO - Remaining time: 52.96800000000076
+2025-03-21 14:30:02,121 - INFO - Remaining time: 51.96800000000076
+2025-03-21 14:30:03,126 - INFO - Remaining time: 50.95300000000134
+2025-03-21 14:30:04,132 - INFO - Remaining time: 49.95300000000134
+2025-03-21 14:30:05,141 - INFO - Remaining time: 49.76600000000326
+2025-03-21 14:30:06,148 - INFO - Remaining time: 48.76600000000326
+2025-03-21 14:30:07,153 - INFO - Remaining time: 47.76600000000326
+2025-03-21 14:30:08,159 - INFO - Remaining time: 46.75100000000384
+2025-03-21 14:30:09,164 - INFO - Remaining time: 45.75100000000384
+2025-03-21 14:30:10,169 - INFO - Remaining time: 44.75100000000384
+2025-03-21 14:30:11,176 - INFO - Remaining time: 43.73500000000058
+2025-03-21 14:30:12,183 - INFO - Remaining time: 42.73500000000058
+2025-03-21 14:30:13,190 - INFO - Remaining time: 41.71900000000096
+2025-03-21 14:30:14,197 - INFO - Remaining time: 40.71900000000096
+2025-03-21 14:30:15,204 - INFO - Remaining time: 39.70400000000154
+2025-03-21 14:30:16,212 - INFO - Remaining time: 38.70400000000154
+2025-03-21 14:30:17,217 - INFO - Remaining time: 37.70400000000154
+2025-03-21 14:30:38,541 - INFO - Remaining time: 59.0
+2025-03-21 14:30:39,547 - INFO - Remaining time: 58.0
+2025-03-21 14:30:40,551 - INFO - Remaining time: 57.0
+2025-03-21 14:30:41,556 - INFO - Remaining time: 56.0
+2025-03-21 14:30:42,561 - INFO - Remaining time: 55.0
+2025-03-21 14:30:43,566 - INFO - Remaining time: 53.98400000000038
+2025-03-21 14:30:44,570 - INFO - Remaining time: 52.98400000000038
+2025-03-21 14:30:45,576 - INFO - Remaining time: 51.98400000000038
+2025-03-21 14:30:46,582 - INFO - Remaining time: 50.96900000000096
+2025-03-21 14:30:47,587 - INFO - Remaining time: 49.96900000000096
+2025-03-21 14:30:48,604 - INFO - Remaining time: 49.76599999999962
+2025-03-21 14:30:49,609 - INFO - Remaining time: 48.76599999999962
+2025-03-21 14:30:50,613 - INFO - Remaining time: 47.75
+2025-03-21 14:30:51,619 - INFO - Remaining time: 46.75
+2025-03-21 14:30:52,624 - INFO - Remaining time: 45.75
+2025-03-21 14:30:53,629 - INFO - Remaining time: 44.73500000000058
+2025-03-21 14:30:54,634 - INFO - Remaining time: 43.73500000000058
+2025-03-21 14:30:55,639 - INFO - Remaining time: 42.73500000000058
+2025-03-21 14:30:56,644 - INFO - Remaining time: 41.71900000000096
+2025-03-21 14:31:34,206 - INFO - Remaining time: 58.98500000000058
+2025-03-21 14:31:35,213 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:31:36,218 - INFO - Remaining time: 56.98500000000058
+2025-03-21 14:31:37,224 - INFO - Remaining time: 55.98500000000058
+2025-03-21 14:31:38,232 - INFO - Remaining time: 54.98500000000058
+2025-03-21 14:31:39,239 - INFO - Remaining time: 53.96900000000096
+2025-03-21 14:31:40,245 - INFO - Remaining time: 52.96900000000096
+2025-03-21 14:31:41,252 - INFO - Remaining time: 51.95400000000154
+2025-03-21 14:31:42,257 - INFO - Remaining time: 50.95400000000154
+2025-03-21 14:31:43,263 - INFO - Remaining time: 49.95400000000154
+2025-03-21 14:31:44,278 - INFO - Remaining time: 49.75100000000384
+2025-03-21 14:31:45,284 - INFO - Remaining time: 48.736000000004424
+2025-03-21 14:31:46,290 - INFO - Remaining time: 47.736000000004424
+2025-03-21 14:31:47,296 - INFO - Remaining time: 46.736000000004424
+2025-03-21 14:31:48,301 - INFO - Remaining time: 45.720000000001164
+2025-03-21 14:31:49,308 - INFO - Remaining time: 44.720000000001164
+2025-03-21 14:31:50,315 - INFO - Remaining time: 43.70400000000154
+2025-03-21 14:31:51,322 - INFO - Remaining time: 42.70400000000154
+2025-03-21 14:31:52,329 - INFO - Remaining time: 41.689000000002125
+2025-03-21 14:31:53,334 - INFO - Remaining time: 40.689000000002125
+2025-03-21 14:31:54,341 - INFO - Remaining time: 39.689000000002125
+2025-03-21 14:31:55,348 - INFO - Remaining time: 38.6730000000025
+2025-03-21 14:32:43,230 - INFO - Remaining time: 59.0
+2025-03-21 14:32:44,235 - INFO - Remaining time: 57.98400000000038
+2025-03-21 14:32:45,243 - INFO - Remaining time: 56.98400000000038
+2025-03-21 14:32:46,252 - INFO - Remaining time: 55.96900000000096
+2025-03-21 14:32:47,257 - INFO - Remaining time: 54.96900000000096
+2025-03-21 14:32:48,264 - INFO - Remaining time: 53.96900000000096
+2025-03-21 14:32:49,270 - INFO - Remaining time: 52.95300000000134
+2025-03-21 14:32:50,277 - INFO - Remaining time: 51.95300000000134
+2025-03-21 14:32:51,283 - INFO - Remaining time: 50.93800000000192
+2025-03-21 14:32:52,289 - INFO - Remaining time: 49.93800000000192
+2025-03-21 14:32:53,297 - INFO - Remaining time: 49.75100000000384
+2025-03-21 14:32:54,303 - INFO - Remaining time: 48.75100000000384
+2025-03-21 14:32:59,056 - INFO - Remaining time: 44.00100000000384
+2025-03-21 14:33:00,259 - INFO - Remaining time: 42.79800000000614
+2025-03-21 14:33:01,594 - INFO - Remaining time: 41.4700000000048
+2025-03-21 14:33:02,993 - INFO - Remaining time: 40.07900000000518
+2025-03-21 14:33:04,839 - INFO - Remaining time: 38.236000000004424
+2025-03-21 14:33:06,407 - INFO - Remaining time: 37.25200000000768
+2025-03-21 14:33:06,999 - INFO - Movimento rilevato
+2025-03-21 14:33:07,766 - INFO - Remaining time: 35.90800000000672
+2025-03-21 14:33:59,953 - INFO - Remaining time: 59.0
+2025-03-21 14:34:00,959 - INFO - Remaining time: 58.0
+2025-03-21 14:34:01,964 - INFO - Remaining time: 57.0
+2025-03-21 14:34:02,969 - INFO - Remaining time: 56.0
+2025-03-21 14:34:03,975 - INFO - Remaining time: 55.0
+2025-03-21 14:34:04,981 - INFO - Remaining time: 54.0
+2025-03-21 14:34:05,989 - INFO - Remaining time: 52.98400000000038
+2025-03-21 14:34:06,995 - INFO - Remaining time: 51.98400000000038
+2025-03-21 14:34:08,000 - INFO - Remaining time: 50.98400000000038
+2025-03-21 14:34:09,005 - INFO - Remaining time: 49.98400000000038
+2025-03-21 14:34:10,019 - INFO - Remaining time: 49.78100000000268
+2025-03-21 14:34:11,024 - INFO - Remaining time: 48.78100000000268
+2025-03-21 14:34:15,586 - INFO - Movimento rilevato
+2025-03-21 14:34:15,587 - INFO - Remaining time: 44.21900000000096
+2025-03-21 14:34:39,278 - INFO - Remaining time: 59.0
+2025-03-21 14:34:40,284 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:34:41,290 - INFO - Remaining time: 56.98500000000058
+2025-03-21 14:34:42,295 - INFO - Remaining time: 55.98500000000058
+2025-03-21 14:34:43,301 - INFO - Remaining time: 54.96899999999732
+2025-03-21 14:34:44,306 - INFO - Remaining time: 53.96899999999732
+2025-03-21 14:34:45,311 - INFO - Remaining time: 52.96899999999732
+2025-03-21 14:34:46,316 - INFO - Remaining time: 51.9529999999977
+2025-03-21 14:34:47,320 - INFO - Remaining time: 50.9529999999977
+2025-03-21 14:34:48,326 - INFO - Remaining time: 49.9529999999977
+2025-03-21 14:34:49,342 - INFO - Remaining time: 49.765999999995984
+2025-03-21 14:34:50,349 - INFO - Remaining time: 48.74999999999636
+2025-03-21 14:34:51,354 - INFO - Remaining time: 47.74999999999636
+2025-03-21 14:34:52,360 - INFO - Remaining time: 46.73399999999674
+2025-03-21 14:34:53,365 - INFO - Remaining time: 45.73399999999674
+2025-03-21 14:36:11,139 - INFO - Remaining time: 59.0
+2025-03-21 14:36:12,146 - INFO - Remaining time: 58.0
+2025-03-21 14:36:13,153 - INFO - Remaining time: 57.0
+2025-03-21 14:36:14,158 - INFO - Remaining time: 55.98500000000058
+2025-03-21 14:36:15,165 - INFO - Remaining time: 54.98500000000058
+2025-03-21 14:36:16,170 - INFO - Remaining time: 53.98500000000058
+2025-03-21 14:36:17,178 - INFO - Remaining time: 52.96899999999732
+2025-03-21 14:36:18,184 - INFO - Remaining time: 51.96899999999732
+2025-03-21 14:36:19,192 - INFO - Remaining time: 50.9529999999977
+2025-03-21 14:36:20,198 - INFO - Remaining time: 49.9529999999977
+2025-03-21 14:36:21,213 - INFO - Remaining time: 49.74999999999636
+2025-03-21 14:36:22,218 - INFO - Remaining time: 48.74999999999636
+2025-03-21 14:36:23,223 - INFO - Remaining time: 47.73399999999674
+2025-03-21 14:36:24,228 - INFO - Remaining time: 46.73399999999674
+2025-03-21 14:36:25,234 - INFO - Remaining time: 45.73399999999674
+2025-03-21 14:36:26,241 - INFO - Remaining time: 44.73399999999674
+2025-03-21 14:36:27,246 - INFO - Remaining time: 43.73399999999674
+2025-03-21 14:37:08,748 - INFO - Remaining time: 59.0
+2025-03-21 14:37:09,755 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:37:10,760 - INFO - Remaining time: 56.98500000000058
+2025-03-21 14:37:11,766 - INFO - Remaining time: 55.98500000000058
+2025-03-21 14:37:12,772 - INFO - Remaining time: 54.98500000000058
+2025-03-21 14:37:13,777 - INFO - Remaining time: 53.98500000000058
+2025-03-21 14:37:14,781 - INFO - Remaining time: 52.98500000000058
+2025-03-21 14:37:15,786 - INFO - Remaining time: 51.98500000000058
+2025-03-21 14:37:16,792 - INFO - Remaining time: 50.98500000000058
+2025-03-21 14:37:17,798 - INFO - Remaining time: 49.96899999999732
+2025-03-21 14:37:18,805 - INFO - Remaining time: 49.765999999995984
+2025-03-21 14:37:19,809 - INFO - Remaining time: 48.765999999995984
+2025-03-21 14:37:35,026 - INFO - Remaining time: 33.54699999999866
+2025-03-21 14:37:45,830 - INFO - Remaining time: 22.734999999996944
+2025-03-21 14:37:47,082 - INFO - Remaining time: 21.484999999996944
+2025-03-21 14:37:48,349 - INFO - Movimento rilevato
+2025-03-21 14:37:48,358 - INFO - Remaining time: 20.218999999997322
+2025-03-21 14:38:50,847 - INFO - Remaining time: 58.98400000000038
+2025-03-21 14:38:51,853 - INFO - Remaining time: 57.98400000000038
+2025-03-21 14:38:52,860 - INFO - Remaining time: 56.96800000000076
+2025-03-21 14:38:53,864 - INFO - Remaining time: 55.96800000000076
+2025-03-21 14:38:54,871 - INFO - Remaining time: 54.96800000000076
+2025-03-21 14:38:55,876 - INFO - Remaining time: 53.95300000000134
+2025-03-21 14:38:56,881 - INFO - Remaining time: 52.95300000000134
+2025-03-21 14:38:57,888 - INFO - Remaining time: 51.95300000000134
+2025-03-21 14:38:58,894 - INFO - Remaining time: 50.93700000000172
+2025-03-21 14:38:59,900 - INFO - Remaining time: 49.93700000000172
+2025-03-21 14:39:00,908 - INFO - Remaining time: 49.734000000004016
+2025-03-21 14:39:01,913 - INFO - Remaining time: 48.734000000004016
+2025-03-21 14:39:06,489 - INFO - Remaining time: 44.155000000002474
+2025-03-21 14:39:07,494 - INFO - Remaining time: 43.155000000002474
+2025-03-21 14:39:08,500 - INFO - Remaining time: 42.155000000002474
+2025-03-21 14:39:09,507 - INFO - Remaining time: 41.155000000002474
+2025-03-21 14:39:10,513 - INFO - Remaining time: 40.155000000002474
+2025-03-21 14:39:11,518 - INFO - Remaining time: 39.13900000000285
+2025-03-21 14:39:12,526 - INFO - Remaining time: 38.13900000000285
+2025-03-21 14:39:13,532 - INFO - Remaining time: 37.124000000003434
+2025-03-21 14:39:28,333 - INFO - Remaining time: 58.98500000000058
+2025-03-21 14:39:29,340 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:39:30,348 - INFO - Remaining time: 56.96900000000096
+2025-03-21 14:39:31,355 - INFO - Remaining time: 55.96900000000096
+2025-03-21 14:39:32,361 - INFO - Remaining time: 54.95300000000134
+2025-03-21 14:39:33,368 - INFO - Remaining time: 53.95300000000134
+2025-03-21 14:39:34,374 - INFO - Remaining time: 52.95300000000134
+2025-03-21 14:39:35,379 - INFO - Remaining time: 51.93800000000192
+2025-03-21 14:39:36,387 - INFO - Remaining time: 50.93800000000192
+2025-03-21 14:39:37,394 - INFO - Remaining time: 49.9220000000023
+2025-03-21 14:39:38,408 - INFO - Remaining time: 49.7190000000046
+2025-03-21 14:39:39,414 - INFO - Remaining time: 48.7190000000046
+2025-03-21 14:39:40,421 - INFO - Remaining time: 47.7190000000046
+2025-03-21 14:39:41,428 - INFO - Remaining time: 46.70300000000134
+2025-03-21 14:42:40,476 - INFO - Remaining time: 58.98400000000038
+2025-03-21 14:42:41,486 - INFO - Remaining time: 57.96800000000076
+2025-03-21 14:42:42,491 - INFO - Remaining time: 56.96800000000076
+2025-03-21 14:42:43,497 - INFO - Remaining time: 55.96800000000076
+2025-03-21 14:42:44,502 - INFO - Remaining time: 54.95300000000134
+2025-03-21 14:42:45,508 - INFO - Remaining time: 53.95300000000134
+2025-03-21 14:42:46,512 - INFO - Remaining time: 52.95300000000134
+2025-03-21 14:42:47,518 - INFO - Remaining time: 51.93700000000172
+2025-03-21 14:42:48,523 - INFO - Remaining time: 50.93700000000172
+2025-03-21 14:42:49,530 - INFO - Remaining time: 49.93700000000172
+2025-03-21 14:42:52,761 - INFO - Motion detected: False, Motion history: [False]
+2025-03-21 14:42:52,887 - INFO - Motion detected: False, Motion history: [False, False]
+2025-03-21 14:42:52,953 - INFO - Motion detected: False, Motion history: [False, False, False]
+2025-03-21 14:42:53,020 - INFO - Motion detected: False, Motion history: [False, False, False, False]
+2025-03-21 14:42:53,087 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,156 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,224 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,299 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,368 - INFO - Remaining time: 59.0
+2025-03-21 14:42:53,373 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,452 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,521 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,589 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,661 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,734 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,803 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,873 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:53,942 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,010 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,076 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,144 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,211 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,283 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,364 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,374 - INFO - Remaining time: 58.0
+2025-03-21 14:42:54,442 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,514 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,602 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,691 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,761 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,826 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,892 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:54,960 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,040 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,109 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,176 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,242 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,309 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,374 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,381 - INFO - Remaining time: 56.98500000000058
+2025-03-21 14:42:55,443 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,509 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,576 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,644 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,713 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,781 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,851 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,920 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:55,989 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,059 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,126 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,193 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,259 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,329 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,389 - INFO - Remaining time: 55.98500000000058
+2025-03-21 14:42:56,395 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,460 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,527 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,595 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,663 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,728 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,793 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,860 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,928 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:56,994 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,060 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,126 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,192 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,258 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,325 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,394 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,395 - INFO - Remaining time: 54.96900000000096
+2025-03-21 14:42:57,462 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,531 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,598 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,664 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,731 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,798 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,865 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:57,932 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,001 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,066 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,135 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,203 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,268 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,335 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,401 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,401 - INFO - Remaining time: 53.96900000000096
+2025-03-21 14:42:58,468 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,534 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,600 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,666 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,731 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,797 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,863 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,931 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:58,996 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,063 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,129 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,197 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,262 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,331 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,396 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,407 - INFO - Remaining time: 52.95400000000154
+2025-03-21 14:42:59,464 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,533 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,601 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,670 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,739 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,808 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,876 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:42:59,941 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,007 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,073 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,139 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,203 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,273 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,342 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,410 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,412 - INFO - Remaining time: 51.95400000000154
+2025-03-21 14:43:00,478 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,542 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,609 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,675 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,743 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,810 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,880 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:00,947 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,017 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,084 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,151 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,216 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,284 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,349 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,414 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,418 - INFO - Remaining time: 50.95400000000154
+2025-03-21 14:43:01,483 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,560 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,628 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,698 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,766 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,835 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,901 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:01,966 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,031 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,095 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,164 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,232 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,296 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,361 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,423 - INFO - Remaining time: 49.93799999999828
+2025-03-21 14:43:02,429 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,499 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,568 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,645 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,715 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,781 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,847 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,919 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:02,990 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,056 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,125 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,193 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,257 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,322 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,388 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,441 - INFO - Remaining time: 49.734999999996944
+2025-03-21 14:43:03,451 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,517 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,582 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,649 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,714 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,779 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,847 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,914 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:03,983 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,050 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,115 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,181 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,246 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,313 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,381 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,448 - INFO - Remaining time: 48.734999999996944
+2025-03-21 14:43:04,451 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:43:04,520 - INFO - Motion detected: True, Motion history: [False, False, False, False, True]
+2025-03-21 14:43:04,590 - INFO - Motion detected: True, Motion history: [False, False, False, True, True]
+2025-03-21 14:43:04,655 - INFO - Motion detected: True, Motion history: [False, False, True, True, True]
+2025-03-21 14:43:04,721 - INFO - Motion detected: True, Motion history: [False, True, True, True, True]
+2025-03-21 14:43:04,788 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:43:04,858 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:43:04,936 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:09,370 - INFO - Motion detected: False, Motion history: [False]
+2025-03-21 14:46:09,491 - INFO - Motion detected: False, Motion history: [False, False]
+2025-03-21 14:46:09,555 - INFO - Motion detected: False, Motion history: [False, False, False]
+2025-03-21 14:46:09,622 - INFO - Motion detected: False, Motion history: [False, False, False, False]
+2025-03-21 14:46:09,691 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:09,758 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:09,821 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:09,884 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:09,949 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,013 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,034 - INFO - Remaining time: 58.98500000000058
+2025-03-21 14:46:10,078 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,142 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,205 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,271 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,341 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,406 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,475 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,546 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,615 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,690 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,781 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,859 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,933 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:10,999 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,039 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:46:11,062 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,128 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,193 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,257 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,322 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,388 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,454 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,519 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,586 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,653 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,719 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,784 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,848 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,912 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:11,978 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,044 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,045 - INFO - Remaining time: 56.98500000000058
+2025-03-21 14:46:12,110 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,177 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,243 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,309 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,373 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,437 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,502 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,566 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,632 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,697 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,764 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,830 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,898 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:12,963 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,028 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,050 - INFO - Remaining time: 55.96899999999732
+2025-03-21 14:46:13,092 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,156 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,221 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,287 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,352 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,418 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,483 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,550 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,618 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,686 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,754 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,821 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,888 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:13,952 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,018 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,056 - INFO - Remaining time: 54.96899999999732
+2025-03-21 14:46:14,085 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,151 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,220 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,286 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,351 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,416 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,481 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,546 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,613 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,684 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,752 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,822 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,900 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:14,968 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,035 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,064 - INFO - Remaining time: 53.9529999999977
+2025-03-21 14:46:15,105 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,173 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,238 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,307 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,375 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,442 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,507 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,574 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,642 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,710 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,775 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,840 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,905 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:15,971 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,036 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,069 - INFO - Remaining time: 52.9529999999977
+2025-03-21 14:46:16,103 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,169 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,234 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,301 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,366 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,432 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,499 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,563 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,628 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,717 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,783 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,850 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,917 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:16,986 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,053 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,076 - INFO - Remaining time: 51.9529999999977
+2025-03-21 14:46:17,120 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,187 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,253 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,319 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,382 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,445 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,510 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,577 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,648 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,718 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,785 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,852 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,921 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:17,987 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,053 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,081 - INFO - Remaining time: 50.93799999999828
+2025-03-21 14:46:18,119 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,186 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,253 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,318 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,381 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,446 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,510 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,577 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,641 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,707 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,774 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,843 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,910 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:18,977 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,043 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,087 - INFO - Remaining time: 49.93799999999828
+2025-03-21 14:46:19,108 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,187 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,264 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,333 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,400 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,466 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,538 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,608 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,672 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,739 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,805 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,878 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:19,948 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,018 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,084 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,105 - INFO - Remaining time: 49.734999999996944
+2025-03-21 14:46:20,150 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,213 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,286 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,356 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,428 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,498 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,564 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,633 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,701 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,770 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,842 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,915 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:20,986 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:21,052 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:21,113 - INFO - Remaining time: 48.71899999999732
+2025-03-21 14:46:21,117 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:21,186 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:21,265 - INFO - Motion detected: True, Motion history: [False, False, False, False, True]
+2025-03-21 14:46:21,334 - INFO - Motion detected: True, Motion history: [False, False, False, True, True]
+2025-03-21 14:46:21,419 - INFO - Motion detected: True, Motion history: [False, False, True, True, True]
+2025-03-21 14:46:21,510 - INFO - Motion detected: True, Motion history: [False, True, True, True, True]
+2025-03-21 14:46:21,522 - INFO - Movimento rilevato
+2025-03-21 14:46:21,595 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:21,613 - INFO - Movimento rilevato
+2025-03-21 14:46:21,688 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:21,716 - INFO - Movimento rilevato
+2025-03-21 14:46:21,794 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:21,819 - INFO - Movimento rilevato
+2025-03-21 14:46:21,902 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:21,932 - INFO - Movimento rilevato
+2025-03-21 14:46:22,006 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,035 - INFO - Movimento rilevato
+2025-03-21 14:46:22,112 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,138 - INFO - Movimento rilevato
+2025-03-21 14:46:22,209 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,229 - INFO - Movimento rilevato
+2025-03-21 14:46:22,291 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,307 - INFO - Movimento rilevato
+2025-03-21 14:46:22,375 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,396 - INFO - Movimento rilevato
+2025-03-21 14:46:22,456 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,466 - INFO - Movimento rilevato
+2025-03-21 14:46:22,523 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,532 - INFO - Movimento rilevato
+2025-03-21 14:46:22,591 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,598 - INFO - Movimento rilevato
+2025-03-21 14:46:22,656 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,665 - INFO - Movimento rilevato
+2025-03-21 14:46:22,724 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,735 - INFO - Movimento rilevato
+2025-03-21 14:46:22,797 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,813 - INFO - Movimento rilevato
+2025-03-21 14:46:22,871 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,881 - INFO - Movimento rilevato
+2025-03-21 14:46:22,973 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:22,981 - INFO - Movimento rilevato
+2025-03-21 14:46:23,048 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,056 - INFO - Movimento rilevato
+2025-03-21 14:46:23,117 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,124 - INFO - Movimento rilevato
+2025-03-21 14:46:23,183 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,191 - INFO - Movimento rilevato
+2025-03-21 14:46:23,249 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,256 - INFO - Movimento rilevato
+2025-03-21 14:46:23,314 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,321 - INFO - Movimento rilevato
+2025-03-21 14:46:23,380 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,386 - INFO - Movimento rilevato
+2025-03-21 14:46:23,448 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,459 - INFO - Movimento rilevato
+2025-03-21 14:46:23,518 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,525 - INFO - Movimento rilevato
+2025-03-21 14:46:23,584 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:23,590 - INFO - Movimento rilevato
+2025-03-21 14:46:23,650 - INFO - Motion detected: False, Motion history: [True, True, True, True, False]
+2025-03-21 14:46:23,657 - INFO - Movimento rilevato
+2025-03-21 14:46:23,718 - INFO - Motion detected: False, Motion history: [True, True, True, False, False]
+2025-03-21 14:46:23,788 - INFO - Motion detected: True, Motion history: [True, True, False, False, True]
+2025-03-21 14:46:23,854 - INFO - Motion detected: True, Motion history: [True, False, False, True, True]
+2025-03-21 14:46:23,920 - INFO - Motion detected: True, Motion history: [False, False, True, True, True]
+2025-03-21 14:46:23,986 - INFO - Motion detected: True, Motion history: [False, True, True, True, True]
+2025-03-21 14:46:23,995 - INFO - Movimento rilevato
+2025-03-21 14:46:24,052 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,059 - INFO - Movimento rilevato
+2025-03-21 14:46:24,118 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,126 - INFO - Movimento rilevato
+2025-03-21 14:46:24,185 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,193 - INFO - Movimento rilevato
+2025-03-21 14:46:24,251 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,259 - INFO - Movimento rilevato
+2025-03-21 14:46:24,317 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,324 - INFO - Movimento rilevato
+2025-03-21 14:46:24,383 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,390 - INFO - Movimento rilevato
+2025-03-21 14:46:24,449 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,456 - INFO - Movimento rilevato
+2025-03-21 14:46:24,515 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,522 - INFO - Movimento rilevato
+2025-03-21 14:46:24,581 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,589 - INFO - Movimento rilevato
+2025-03-21 14:46:24,649 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,656 - INFO - Movimento rilevato
+2025-03-21 14:46:24,717 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,724 - INFO - Movimento rilevato
+2025-03-21 14:46:24,786 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,797 - INFO - Movimento rilevato
+2025-03-21 14:46:24,856 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,866 - INFO - Movimento rilevato
+2025-03-21 14:46:24,927 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:24,936 - INFO - Movimento rilevato
+2025-03-21 14:46:24,996 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:25,005 - INFO - Movimento rilevato
+2025-03-21 14:46:44,416 - INFO - Motion detected: False, Motion history: [False]
+2025-03-21 14:46:44,543 - INFO - Motion detected: False, Motion history: [False, False]
+2025-03-21 14:46:44,615 - INFO - Motion detected: False, Motion history: [False, False, False]
+2025-03-21 14:46:44,688 - INFO - Motion detected: False, Motion history: [False, False, False, False]
+2025-03-21 14:46:44,761 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:44,828 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:44,893 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:44,961 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,033 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,046 - INFO - Remaining time: 58.96900000000096
+2025-03-21 14:46:45,106 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,173 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,239 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,305 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,374 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,441 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,508 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,575 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,643 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,708 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,774 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,841 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,912 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:45,981 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,044 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,051 - INFO - Remaining time: 57.96900000000096
+2025-03-21 14:46:46,109 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,173 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,239 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,306 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,373 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,441 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,506 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,573 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,641 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,709 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,776 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,842 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,909 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:46,975 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,040 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,056 - INFO - Remaining time: 56.96900000000096
+2025-03-21 14:46:47,107 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,178 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,252 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,324 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,393 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,461 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,532 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,614 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,698 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,775 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,856 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:47,930 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,002 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,061 - INFO - Remaining time: 55.96900000000096
+2025-03-21 14:46:48,075 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,149 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,215 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,282 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,349 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,416 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,485 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,553 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,621 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,687 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,753 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,821 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,889 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:48,955 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,022 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,066 - INFO - Remaining time: 54.95300000000134
+2025-03-21 14:46:49,091 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,158 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,224 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,290 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,356 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,422 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,489 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,557 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,632 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,706 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,777 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,847 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,913 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:49,980 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,045 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,072 - INFO - Remaining time: 53.95300000000134
+2025-03-21 14:46:50,111 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,178 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,243 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,310 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,378 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,442 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,509 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,576 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,643 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,709 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,774 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,841 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,912 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:50,980 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,044 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,079 - INFO - Remaining time: 52.93800000000192
+2025-03-21 14:46:51,111 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,176 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,242 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,308 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,374 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,443 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,509 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,576 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,642 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,708 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,775 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,841 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,908 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:51,975 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,041 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,085 - INFO - Remaining time: 51.93800000000192
+2025-03-21 14:46:52,111 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,177 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,242 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,308 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,373 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,441 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,513 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,584 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,657 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,756 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,852 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:52,954 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,051 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,091 - INFO - Remaining time: 50.93800000000192
+2025-03-21 14:46:53,158 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,264 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,374 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,471 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,550 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,621 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,689 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,758 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,825 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,902 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:53,987 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,076 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,099 - INFO - Remaining time: 49.9220000000023
+2025-03-21 14:46:54,147 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,212 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,281 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,348 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,413 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,480 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,551 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,621 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,686 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,754 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,829 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,906 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:54,981 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,060 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,108 - INFO - Remaining time: 49.73400000000038
+2025-03-21 14:46:55,130 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,193 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,262 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,335 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,416 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,490 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,564 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,637 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,709 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,782 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,852 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,918 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:55,984 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:56,050 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:56,114 - INFO - Remaining time: 48.71800000000076
+2025-03-21 14:46:56,119 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:56,189 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:56,255 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:46:56,322 - INFO - Motion detected: True, Motion history: [False, False, False, False, True]
+2025-03-21 14:46:56,394 - INFO - Motion detected: True, Motion history: [False, False, False, True, True]
+2025-03-21 14:46:56,472 - INFO - Motion detected: True, Motion history: [False, False, True, True, True]
+2025-03-21 14:46:56,544 - INFO - Motion detected: True, Motion history: [False, True, True, True, True]
+2025-03-21 14:46:56,558 - INFO - Movimento rilevato
+2025-03-21 14:46:56,621 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:56,693 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:56,765 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:56,838 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:56,925 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,004 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,076 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,157 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,239 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,314 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,392 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,474 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,568 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,641 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,706 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,783 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,859 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:57,929 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,000 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,069 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,135 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,202 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,270 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,344 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,419 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,493 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,572 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,647 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,720 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,800 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,880 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:58,955 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,026 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,093 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,159 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,228 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,308 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,381 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,450 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,530 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,606 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,675 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,753 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,824 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,892 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:46:59,965 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,040 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,130 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,200 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,270 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,341 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,407 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,474 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,543 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,608 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,680 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,792 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,862 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:00,933 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,019 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,126 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,233 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,337 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,440 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,543 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,649 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,746 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,852 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:01,962 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,071 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,165 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,238 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,310 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,375 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,442 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,511 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,578 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,643 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,712 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,780 - INFO - Motion detected: True, Motion history: [True, True, True, True, True]
+2025-03-21 14:47:02,849 - INFO - Motion detected: False, Motion history: [True, True, True, True, False]
+2025-03-21 14:47:02,915 - INFO - Motion detected: False, Motion history: [True, True, True, False, False]
+2025-03-21 14:47:02,925 - INFO - Movimento terminato
+2025-03-21 14:47:02,987 - INFO - Motion detected: False, Motion history: [True, True, False, False, False]
+2025-03-21 14:47:03,054 - INFO - Motion detected: False, Motion history: [True, False, False, False, False]
+2025-03-21 14:47:03,118 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,188 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,261 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,329 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,396 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,466 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,535 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,600 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,671 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,741 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,813 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,887 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:03,938 - INFO - Remaining time: 34.81200000000172
+2025-03-21 14:47:03,958 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,025 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,093 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,158 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,231 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,315 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,396 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,465 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,541 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,622 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,693 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,758 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,823 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,889 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:04,945 - INFO - Remaining time: 33.81200000000172
+2025-03-21 14:47:04,958 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,034 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,112 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,187 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,257 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,331 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,407 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,483 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,568 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,647 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,724 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,799 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,877 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:05,952 - INFO - Remaining time: 32.81200000000172
+2025-03-21 14:47:05,955 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,025 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,092 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,161 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,235 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,312 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,387 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,463 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,536 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,605 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,674 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,742 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,820 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,891 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,957 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:06,958 - INFO - Remaining time: 31.7970000000023
+2025-03-21 14:47:07,023 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,088 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,155 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,228 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,304 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,382 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,454 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,522 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,591 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,657 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,723 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,789 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,854 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,919 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:07,963 - INFO - Remaining time: 30.7970000000023
+2025-03-21 14:47:07,984 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:08,049 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:08,113 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:08,180 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:08,248 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:47:08,317 - INFO - Motion detected: False, Motion history: [False, False, False, False, False]
+2025-03-21 14:48:32,312 - INFO - Remaining time: 59.0
+2025-03-21 14:48:33,320 - INFO - Remaining time: 58.0
+2025-03-21 14:48:34,328 - INFO - Remaining time: 57.0
+2025-03-21 14:48:35,335 - INFO - Remaining time: 56.0
+2025-03-21 14:48:36,342 - INFO - Remaining time: 55.0
+2025-03-21 14:48:37,347 - INFO - Remaining time: 53.98400000000038
+2025-03-21 14:48:38,353 - INFO - Remaining time: 52.98400000000038
+2025-03-21 14:48:39,359 - INFO - Remaining time: 51.98400000000038
+2025-03-21 14:48:40,363 - INFO - Remaining time: 50.96800000000076
+2025-03-21 14:48:41,370 - INFO - Remaining time: 49.96800000000076
+2025-03-21 14:48:42,382 - INFO - Remaining time: 49.765000000003056
+2025-03-21 14:48:43,389 - INFO - Remaining time: 48.765000000003056
+2025-03-21 14:48:43,722 - INFO - Movimento rilevato
+2025-03-21 14:48:46,081 - INFO - Movimento terminato
+2025-03-21 14:48:46,345 - INFO - Movimento rilevato
+2025-03-21 14:48:48,246 - INFO - Movimento terminato
+2025-03-21 14:48:48,513 - INFO - Movimento rilevato
+2025-03-21 14:48:49,308 - INFO - Movimento terminato
+2025-03-21 14:48:49,578 - INFO - Movimento rilevato
+2025-03-21 14:48:49,779 - INFO - Movimento terminato
+2025-03-21 14:48:50,789 - INFO - Remaining time: 34.81300000000192
+2025-03-21 14:48:51,795 - INFO - Remaining time: 33.81300000000192
+2025-03-21 14:48:52,801 - INFO - Remaining time: 32.79699999999866
+2025-03-21 14:48:53,808 - INFO - Remaining time: 31.79699999999866
+2025-03-21 14:48:54,813 - INFO - Remaining time: 30.78099999999904
+2025-03-21 14:48:55,818 - INFO - Remaining time: 29.78099999999904
+2025-03-21 14:49:27,513 - INFO - Remaining time: 59.0
+2025-03-21 14:49:28,521 - INFO - Remaining time: 57.98400000000038
+2025-03-21 14:49:29,527 - INFO - Remaining time: 56.98400000000038
+2025-03-21 14:49:30,533 - INFO - Remaining time: 55.96900000000096
+2025-03-21 14:49:31,538 - INFO - Remaining time: 54.96900000000096
+2025-03-21 14:49:32,545 - INFO - Remaining time: 53.96900000000096
+2025-03-21 14:49:33,551 - INFO - Remaining time: 52.9529999999977
+2025-03-21 14:49:34,558 - INFO - Remaining time: 51.9529999999977
+2025-03-21 14:49:35,564 - INFO - Remaining time: 50.93699999999808
+2025-03-21 14:49:36,569 - INFO - Remaining time: 49.93699999999808
+2025-03-21 14:49:37,581 - INFO - Remaining time: 49.73399999999674
+2025-03-21 14:49:38,586 - INFO - Remaining time: 48.73399999999674
+2025-03-21 14:49:39,050 - INFO - Movimento rilevato
+2025-03-21 14:49:44,979 - INFO - Movimento terminato
+2025-03-21 14:49:45,997 - INFO - Remaining time: 34.79699999999866
+2025-03-21 14:49:47,003 - INFO - Remaining time: 33.78199999999924
+2025-03-21 14:49:48,009 - INFO - Remaining time: 32.78199999999924
+2025-03-21 14:49:49,014 - INFO - Remaining time: 31.781999999999243
+2025-03-21 14:49:50,020 - INFO - Remaining time: 30.76599999999962
+2025-03-21 14:49:51,026 - INFO - Remaining time: 29.76599999999962
+2025-03-21 14:49:52,031 - INFO - Remaining time: 28.76599999999962
+2025-03-21 14:49:53,038 - INFO - Remaining time: 27.76599999999962
+2025-03-21 14:49:54,044 - INFO - Remaining time: 26.76599999999962
+2025-03-21 14:49:55,050 - INFO - Remaining time: 25.749999999996362
+2025-03-21 14:49:56,058 - INFO - Remaining time: 24.749999999996362
+2025-03-21 14:49:57,065 - INFO - Remaining time: 23.73399999999674
+2025-03-21 14:49:58,071 - INFO - Remaining time: 22.73399999999674
+2025-03-21 14:55:14,786 - INFO - Remaining time: 58.98500000000058
+2025-03-21 14:55:15,793 - INFO - Remaining time: 57.98500000000058
+2025-03-21 14:55:16,799 - INFO - Remaining time: 56.96899999999732
+2025-03-21 14:55:17,805 - INFO - Remaining time: 55.96899999999732
+2025-03-21 14:55:18,810 - INFO - Remaining time: 54.96899999999732
+2025-03-21 14:55:19,815 - INFO - Remaining time: 53.9529999999977
+2025-03-21 14:55:20,821 - INFO - Remaining time: 52.9529999999977
+2025-03-21 14:55:21,827 - INFO - Remaining time: 51.9529999999977
+2025-03-21 14:55:22,834 - INFO - Remaining time: 50.93799999999828
+2025-03-21 14:55:23,841 - INFO - Remaining time: 49.93799999999828
+2025-03-21 14:55:24,849 - INFO - Remaining time: 49.734999999996944
+2025-03-21 14:55:25,855 - INFO - Remaining time: 48.734999999996944
+2025-03-21 14:55:26,460 - INFO - Movimento rilevato
+2025-03-21 14:55:32,392 - INFO - Movimento terminato
+2025-03-21 14:55:33,398 - INFO - Remaining time: 34.79599999999846
+2025-03-21 14:55:34,403 - INFO - Remaining time: 33.79599999999846
+2025-03-21 14:55:35,409 - INFO - Remaining time: 32.78099999999904
+2025-03-21 14:55:36,415 - INFO - Remaining time: 31.78099999999904
+2025-03-21 15:19:45,831 - INFO - Remaining time: 58.98500000000058
+2025-03-21 15:19:46,838 - INFO - Remaining time: 57.98500000000058
+2025-03-21 15:19:47,843 - INFO - Remaining time: 56.98500000000058
+2025-03-21 15:19:48,848 - INFO - Remaining time: 55.96900000000096
+2025-03-21 15:19:49,854 - INFO - Remaining time: 54.96900000000096
+2025-03-21 15:19:50,860 - INFO - Remaining time: 53.95300000000134
+2025-03-21 15:19:51,867 - INFO - Remaining time: 52.95300000000134
+2025-03-21 15:19:52,873 - INFO - Remaining time: 51.95300000000134
+2025-03-21 15:19:53,878 - INFO - Remaining time: 50.93800000000192
+2025-03-21 15:19:54,884 - INFO - Remaining time: 49.93800000000192
+2025-03-21 15:19:55,896 - INFO - Remaining time: 49.73500000000422
+2025-03-21 15:19:56,822 - INFO - Movimento rilevato
+2025-03-21 15:19:56,903 - INFO - Remaining time: 48.73500000000422
+2025-03-21 15:19:57,091 - INFO - Movimento terminato
+2025-03-21 15:19:58,107 - INFO - Remaining time: 34.81199999999808
+2025-03-21 15:19:59,114 - INFO - Remaining time: 33.79599999999846
+2025-03-21 15:20:00,044 - INFO - Movimento rilevato
+2025-03-21 15:20:00,121 - INFO - Remaining time: 32.79599999999846
+2025-03-21 15:20:04,017 - INFO - Movimento terminato
+2025-03-21 15:20:05,022 - INFO - Remaining time: 34.79599999999846
+2025-03-21 15:20:06,029 - INFO - Remaining time: 33.79599999999846
+2025-03-21 15:20:07,034 - INFO - Remaining time: 32.78099999999904
+2025-03-21 15:20:08,041 - INFO - Remaining time: 31.78099999999904
+2025-03-21 15:20:09,048 - INFO - Remaining time: 30.76499999999578
+2025-03-21 15:20:10,054 - INFO - Remaining time: 29.76499999999578
+2025-03-21 15:20:11,061 - INFO - Remaining time: 28.76499999999578
+2025-03-21 15:20:11,358 - INFO - Movimento rilevato
+2025-03-21 15:20:15,096 - INFO - Movimento terminato
+2025-03-21 15:20:16,107 - INFO - Remaining time: 34.81199999999808
+2025-03-21 15:20:17,113 - INFO - Remaining time: 33.79599999999846
+2025-03-21 15:20:18,118 - INFO - Remaining time: 32.79599999999846
+2025-03-21 15:20:19,125 - INFO - Remaining time: 31.795999999998457
+2025-03-21 15:20:20,132 - INFO - Remaining time: 30.795999999998457
+2025-03-21 15:20:43,038 - INFO - Remaining time: 59.0
+2025-03-21 15:20:44,043 - INFO - Remaining time: 58.0
+2025-03-21 15:20:45,048 - INFO - Remaining time: 56.98399999999674
+2025-03-21 15:20:46,053 - INFO - Remaining time: 55.98399999999674
+2025-03-21 15:20:47,057 - INFO - Remaining time: 54.98399999999674
+2025-03-21 15:20:48,062 - INFO - Remaining time: 53.98399999999674
+2025-03-21 15:20:49,066 - INFO - Remaining time: 52.96799999999712
+2025-03-21 15:20:50,072 - INFO - Remaining time: 51.96799999999712
+2025-03-21 15:20:51,077 - INFO - Remaining time: 50.96799999999712
+2025-03-21 15:20:52,083 - INFO - Remaining time: 49.9529999999977
+2025-03-21 15:20:53,098 - INFO - Remaining time: 49.74999999999636
+2025-03-21 15:20:54,105 - INFO - Remaining time: 48.74999999999636
+2025-03-21 15:20:55,110 - INFO - Remaining time: 47.73399999999674
+2025-03-21 15:20:56,116 - INFO - Remaining time: 46.73399999999674
+2025-03-21 15:20:57,066 - INFO - Movimento rilevato
+2025-03-21 15:20:57,121 - INFO - Remaining time: 45.73399999999674
+2025-03-21 15:21:01,246 - INFO - Movimento terminato
+2025-03-21 15:21:02,263 - INFO - Remaining time: 34.79699999999866
+2025-03-21 15:21:03,268 - INFO - Remaining time: 33.78099999999904
+2025-03-21 15:21:04,276 - INFO - Remaining time: 32.78099999999904
+2025-03-21 15:21:05,282 - INFO - Remaining time: 31.76599999999962
+2025-03-21 15:21:06,287 - INFO - Remaining time: 30.76599999999962
+2025-03-21 15:21:59,538 - INFO - Remaining time: 59.0
+2025-03-21 15:22:00,544 - INFO - Remaining time: 58.0
+2025-03-21 15:22:01,549 - INFO - Remaining time: 56.98399999999674
+2025-03-21 15:22:02,554 - INFO - Remaining time: 55.98399999999674
+2025-03-21 15:22:03,559 - INFO - Remaining time: 54.98399999999674
+2025-03-21 15:22:04,563 - INFO - Remaining time: 53.96799999999712
+2025-03-21 15:22:05,569 - INFO - Remaining time: 52.96799999999712
+2025-03-21 15:22:06,575 - INFO - Remaining time: 51.96799999999712
+2025-03-21 15:22:07,581 - INFO - Remaining time: 50.9529999999977
+2025-03-21 15:22:08,586 - INFO - Remaining time: 49.9529999999977
+2025-03-21 15:22:09,605 - INFO - Remaining time: 49.74999999999636
+2025-03-21 15:22:10,610 - INFO - Remaining time: 48.73399999999674
+2025-03-21 15:22:11,616 - INFO - Remaining time: 47.73399999999674
+2025-03-21 15:22:12,622 - INFO - Remaining time: 46.73399999999674
+2025-03-21 15:22:13,628 - INFO - Remaining time: 45.71899999999732
+2025-03-21 15:22:13,792 - INFO - Movimento rilevato
+2025-03-21 15:22:17,732 - INFO - Movimento terminato
+2025-03-21 15:22:18,737 - INFO - Remaining time: 34.79699999999866
+2025-03-21 15:22:19,743 - INFO - Remaining time: 33.79699999999866
+2025-03-21 15:22:20,748 - INFO - Remaining time: 32.79699999999866
+2025-03-21 15:22:35,634 - INFO - Remaining time: 59.0
+2025-03-21 15:22:36,640 - INFO - Remaining time: 58.0
+2025-03-21 15:22:37,644 - INFO - Remaining time: 56.98400000000038
+2025-03-21 15:22:38,651 - INFO - Remaining time: 55.98400000000038
+2025-03-21 15:22:39,655 - INFO - Remaining time: 54.98400000000038
+2025-03-21 15:22:40,660 - INFO - Remaining time: 53.96900000000096
+2025-03-21 15:22:41,666 - INFO - Remaining time: 52.96900000000096
+2025-03-21 15:22:42,670 - INFO - Remaining time: 51.96900000000096
+2025-03-21 15:22:43,674 - INFO - Remaining time: 50.9529999999977
+2025-03-21 15:23:01,408 - INFO - Remaining time: 58.98500000000058
+2025-03-21 15:23:02,417 - INFO - Remaining time: 57.98500000000058
+2025-03-21 15:23:03,422 - INFO - Remaining time: 56.96899999999732
+2025-03-21 15:23:04,427 - INFO - Remaining time: 55.96899999999732
+2025-03-21 15:23:05,432 - INFO - Remaining time: 54.96899999999732
+2025-03-21 15:23:06,438 - INFO - Remaining time: 53.9529999999977
+2025-03-21 15:23:07,443 - INFO - Remaining time: 52.9529999999977
+2025-03-21 15:23:08,448 - INFO - Remaining time: 51.9529999999977
+2025-03-21 15:23:09,453 - INFO - Remaining time: 50.9529999999977
+2025-03-21 15:23:10,459 - INFO - Remaining time: 49.9529999999977
+2025-03-21 15:23:11,466 - INFO - Remaining time: 48.9529999999977
+2025-03-21 15:23:12,472 - INFO - Remaining time: 47.93699999999808
+2025-03-21 15:23:13,476 - INFO - Remaining time: 46.93699999999808
+2025-03-21 15:23:14,481 - INFO - Remaining time: 45.93699999999808
+2025-03-21 15:23:15,485 - INFO - Remaining time: 44.92099999999846
+2025-03-21 15:23:15,585 - INFO - Movimento rilevato
+2025-03-21 15:23:19,726 - INFO - Movimento terminato
+2025-03-21 15:23:20,735 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:23:21,740 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:23:22,745 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:23:32,989 - INFO - Remaining time: 58.98400000000038
+2025-03-21 15:23:33,995 - INFO - Remaining time: 57.98400000000038
+2025-03-21 15:23:35,000 - INFO - Remaining time: 56.96900000000096
+2025-03-21 15:23:36,005 - INFO - Remaining time: 55.96900000000096
+2025-03-21 15:23:37,010 - INFO - Remaining time: 54.96900000000096
+2025-03-21 15:23:38,015 - INFO - Remaining time: 53.96900000000096
+2025-03-21 15:23:39,020 - INFO - Remaining time: 52.95300000000134
+2025-03-21 15:23:40,024 - INFO - Remaining time: 51.95300000000134
+2025-03-21 15:23:41,029 - INFO - Remaining time: 50.95300000000134
+2025-03-21 15:23:42,034 - INFO - Remaining time: 49.93800000000192
+2025-03-21 15:23:43,038 - INFO - Remaining time: 48.93800000000192
+2025-03-21 15:23:44,044 - INFO - Remaining time: 47.93800000000192
+2025-03-21 15:23:45,048 - INFO - Remaining time: 46.92199999999866
+2025-03-21 15:23:46,053 - INFO - Remaining time: 45.92199999999866
+2025-03-21 15:23:47,058 - INFO - Remaining time: 44.92199999999866
+2025-03-21 15:23:47,176 - INFO - Movimento rilevato
+2025-03-21 15:23:51,204 - INFO - Movimento terminato
+2025-03-21 15:23:52,211 - INFO - Remaining time: 34.0
+2025-03-21 15:23:53,216 - INFO - Remaining time: 33.0
+2025-03-21 15:23:54,222 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:23:55,227 - INFO - Remaining time: 30.98400000000038
+2025-03-21 15:23:56,232 - INFO - Remaining time: 29.98400000000038
+2025-03-21 15:23:57,236 - INFO - Remaining time: 28.968000000000757
+2025-03-21 15:23:58,241 - INFO - Remaining time: 27.968000000000757
+2025-03-21 15:23:58,423 - INFO - Movimento rilevato
+2025-03-21 15:24:02,725 - INFO - Movimento terminato
+2025-03-21 15:24:03,732 - INFO - Remaining time: 34.0
+2025-03-21 15:24:04,737 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:24:05,742 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:24:06,747 - INFO - Remaining time: 30.98400000000038
+2025-03-21 15:24:07,752 - INFO - Remaining time: 29.96900000000096
+2025-03-21 15:24:08,757 - INFO - Remaining time: 28.96900000000096
+2025-03-21 15:24:09,762 - INFO - Remaining time: 27.96900000000096
+2025-03-21 15:24:10,129 - INFO - Movimento rilevato
+2025-03-21 15:24:12,167 - INFO - Movimento terminato
+2025-03-21 15:24:13,175 - INFO - Remaining time: 33.98399999999674
+2025-03-21 15:24:14,180 - INFO - Remaining time: 32.98399999999674
+2025-03-21 15:24:15,184 - INFO - Remaining time: 31.98399999999674
+2025-03-21 15:24:16,190 - INFO - Remaining time: 30.96799999999712
+2025-03-21 15:24:17,194 - INFO - Remaining time: 29.96799999999712
+2025-03-21 15:24:18,200 - INFO - Remaining time: 28.96799999999712
+2025-03-21 15:24:19,205 - INFO - Remaining time: 27.9529999999977
+2025-03-21 15:24:19,657 - INFO - Movimento rilevato
+2025-03-21 15:24:20,666 - INFO - Movimento terminato
+2025-03-21 15:24:21,675 - INFO - Remaining time: 33.98399999999674
+2025-03-21 15:24:22,681 - INFO - Remaining time: 32.98399999999674
+2025-03-21 15:24:23,687 - INFO - Remaining time: 31.98399999999674
+2025-03-21 15:24:24,693 - INFO - Remaining time: 30.96799999999712
+2025-03-21 15:24:25,699 - INFO - Remaining time: 29.96799999999712
+2025-03-21 15:24:26,342 - INFO - Movimento rilevato
+2025-03-21 15:24:30,805 - INFO - Movimento terminato
+2025-03-21 15:24:31,812 - INFO - Remaining time: 34.0
+2025-03-21 15:24:32,816 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:24:33,819 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:24:34,822 - INFO - Movimento rilevato
+2025-03-21 15:24:34,824 - INFO - Remaining time: 30.98400000000038
+2025-03-21 15:24:35,091 - INFO - Movimento terminato
+2025-03-21 15:24:36,099 - INFO - Remaining time: 34.0
+2025-03-21 15:24:37,104 - INFO - Remaining time: 33.0
+2025-03-21 15:24:37,318 - INFO - Movimento rilevato
+2025-03-21 15:24:43,255 - INFO - Movimento terminato
+2025-03-21 15:24:44,262 - INFO - Remaining time: 34.0
+2025-03-21 15:24:45,267 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:24:46,273 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:24:47,278 - INFO - Remaining time: 30.98400000000038
+2025-03-21 15:24:48,283 - INFO - Remaining time: 29.96900000000096
+2025-03-21 15:24:49,290 - INFO - Remaining time: 28.96900000000096
+2025-03-21 15:24:49,851 - INFO - Movimento rilevato
+2025-03-21 15:24:54,070 - INFO - Movimento terminato
+2025-03-21 15:24:55,078 - INFO - Remaining time: 34.0
+2025-03-21 15:24:56,082 - INFO - Remaining time: 33.0
+2025-03-21 15:24:57,087 - INFO - Remaining time: 32.0
+2025-03-21 15:24:58,091 - INFO - Remaining time: 31.0
+2025-03-21 15:24:59,096 - INFO - Remaining time: 29.98400000000038
+2025-03-21 15:25:00,102 - INFO - Remaining time: 28.98400000000038
+2025-03-21 15:25:00,386 - INFO - Movimento rilevato
+2025-03-21 15:25:04,193 - INFO - Movimento terminato
+2025-03-21 15:25:05,200 - INFO - Remaining time: 34.0
+2025-03-21 15:25:06,209 - INFO - Remaining time: 32.98500000000058
+2025-03-21 15:25:07,217 - INFO - Remaining time: 31.985000000000582
+2025-03-21 15:25:08,225 - INFO - Remaining time: 30.96900000000096
+2025-03-21 15:25:09,230 - INFO - Remaining time: 29.96900000000096
+2025-03-21 15:25:10,236 - INFO - Remaining time: 28.95300000000134
+2025-03-21 15:25:10,591 - INFO - Movimento rilevato
+2025-03-21 15:25:16,872 - INFO - Movimento terminato
+2025-03-21 15:25:17,880 - INFO - Remaining time: 34.0
+2025-03-21 15:25:18,886 - INFO - Remaining time: 33.0
+2025-03-21 15:25:19,890 - INFO - Remaining time: 32.0
+2025-03-21 15:25:20,895 - INFO - Remaining time: 31.0
+2025-03-21 15:25:21,796 - INFO - Movimento rilevato
+2025-03-21 15:25:27,806 - INFO - Remaining time: 59.0
+2025-03-21 15:25:28,813 - INFO - Remaining time: 58.0
+2025-03-21 15:25:29,819 - INFO - Remaining time: 57.0
+2025-03-21 15:25:30,825 - INFO - Remaining time: 56.0
+2025-03-21 15:25:31,832 - INFO - Remaining time: 54.98500000000058
+2025-03-21 15:25:32,838 - INFO - Remaining time: 53.98500000000058
+2025-03-21 15:25:33,845 - INFO - Remaining time: 52.96900000000096
+2025-03-21 15:25:34,851 - INFO - Remaining time: 51.96900000000096
+2025-03-21 15:25:35,858 - INFO - Remaining time: 50.96900000000096
+2025-03-21 15:25:36,863 - INFO - Remaining time: 49.95300000000134
+2025-03-21 15:25:37,874 - INFO - Remaining time: 48.95300000000134
+2025-03-21 15:25:38,880 - INFO - Remaining time: 47.93800000000192
+2025-03-21 15:25:39,886 - INFO - Remaining time: 46.93800000000192
+2025-03-21 15:25:39,953 - INFO - Movimento rilevato
+2025-03-21 15:25:40,506 - INFO - Movimento terminato
+2025-03-21 15:25:41,517 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:25:42,398 - INFO - Movimento rilevato
+2025-03-21 15:25:46,899 - INFO - Movimento terminato
+2025-03-21 15:25:47,913 - INFO - Remaining time: 33.98500000000058
+2025-03-21 15:25:48,919 - INFO - Remaining time: 32.98500000000058
+2025-03-21 15:25:49,925 - INFO - Remaining time: 31.968999999997322
+2025-03-21 15:25:50,933 - INFO - Remaining time: 30.968999999997322
+2025-03-21 15:25:51,939 - INFO - Remaining time: 29.9529999999977
+2025-03-21 15:25:52,947 - INFO - Remaining time: 28.9529999999977
+2025-03-21 15:25:53,953 - INFO - Remaining time: 27.9529999999977
+2025-03-21 15:25:54,053 - INFO - Movimento rilevato
+2025-03-21 15:25:59,403 - INFO - Movimento terminato
+2025-03-21 15:26:00,413 - INFO - Remaining time: 34.0
+2025-03-21 15:26:01,419 - INFO - Remaining time: 33.0
+2025-03-21 15:26:01,449 - INFO - Movimento rilevato
+2025-03-21 15:26:01,791 - INFO - Movimento terminato
+2025-03-21 15:26:01,967 - INFO - Movimento rilevato
+2025-03-21 15:26:02,049 - INFO - Movimento terminato
+2025-03-21 15:26:03,061 - INFO - Remaining time: 34.0
+2025-03-21 15:26:04,068 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:26:05,080 - INFO - Remaining time: 31.96900000000096
+2025-03-21 15:26:06,087 - INFO - Remaining time: 30.96900000000096
+2025-03-21 15:26:06,483 - INFO - Movimento rilevato
+2025-03-21 15:26:08,584 - INFO - Movimento terminato
+2025-03-21 15:26:09,276 - INFO - Movimento rilevato
+2025-03-21 15:26:09,676 - INFO - Movimento terminato
+2025-03-21 15:26:10,690 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:26:11,705 - INFO - Remaining time: 32.96900000000096
+2025-03-21 15:26:12,721 - INFO - Remaining time: 31.95300000000134
+2025-03-21 15:26:13,727 - INFO - Remaining time: 30.95300000000134
+2025-03-21 15:26:14,757 - INFO - Remaining time: 29.9220000000023
+2025-03-21 15:26:15,763 - INFO - Remaining time: 28.9220000000023
+2025-03-21 15:26:16,666 - INFO - Movimento rilevato
+2025-03-21 15:26:23,843 - INFO - Remaining time: 59.0
+2025-03-21 15:26:24,850 - INFO - Remaining time: 58.0
+2025-03-21 15:26:25,856 - INFO - Remaining time: 57.0
+2025-03-21 15:26:26,863 - INFO - Remaining time: 55.98400000000038
+2025-03-21 15:26:27,870 - INFO - Remaining time: 54.98400000000038
+2025-03-21 15:26:28,878 - INFO - Remaining time: 53.96900000000096
+2025-03-21 15:26:29,256 - INFO - Movimento rilevato
+2025-03-21 15:26:29,335 - INFO - Movimento terminato
+2025-03-21 15:26:30,346 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:26:31,352 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:26:32,358 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:26:33,365 - INFO - Remaining time: 30.968000000000757
+2025-03-21 15:26:34,373 - INFO - Remaining time: 29.968000000000757
+2025-03-21 15:26:34,822 - INFO - Movimento rilevato
+2025-03-21 15:26:36,591 - INFO - Movimento terminato
+2025-03-21 15:26:37,599 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:26:38,513 - INFO - Movimento rilevato
+2025-03-21 15:26:38,605 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:26:42,969 - INFO - Movimento terminato
+2025-03-21 15:26:43,978 - INFO - Remaining time: 34.0
+2025-03-21 15:26:44,984 - INFO - Remaining time: 33.0
+2025-03-21 15:26:45,989 - INFO - Remaining time: 32.0
+2025-03-21 15:26:46,562 - INFO - Movimento rilevato
+2025-03-21 15:26:46,722 - INFO - Movimento terminato
+2025-03-21 15:26:47,731 - INFO - Remaining time: 34.0
+2025-03-21 15:26:48,739 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:26:49,746 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:26:50,080 - INFO - Movimento rilevato
+2025-03-21 15:26:54,623 - INFO - Movimento terminato
+2025-03-21 15:26:55,631 - INFO - Remaining time: 34.0
+2025-03-21 15:26:56,638 - INFO - Remaining time: 33.0
+2025-03-21 15:26:57,644 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:26:57,801 - INFO - Movimento rilevato
+2025-03-21 15:26:58,114 - INFO - Movimento terminato
+2025-03-21 15:26:58,195 - INFO - Movimento rilevato
+2025-03-21 15:26:58,584 - INFO - Movimento terminato
+2025-03-21 15:26:59,592 - INFO - Remaining time: 34.0
+2025-03-21 15:27:00,599 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:27:01,605 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:27:02,115 - INFO - Movimento rilevato
+2025-03-21 15:27:04,422 - INFO - Movimento terminato
+2025-03-21 15:27:05,432 - INFO - Remaining time: 34.0
+2025-03-21 15:27:06,437 - INFO - Remaining time: 33.0
+2025-03-21 15:27:07,442 - INFO - Remaining time: 32.0
+2025-03-21 15:27:08,447 - INFO - Remaining time: 31.0
+2025-03-21 15:27:09,454 - INFO - Remaining time: 29.985000000000582
+2025-03-21 15:27:10,460 - INFO - Remaining time: 28.985000000000582
+2025-03-21 15:27:11,466 - INFO - Remaining time: 27.985000000000582
+2025-03-21 15:27:11,913 - INFO - Movimento rilevato
+2025-03-21 15:27:13,004 - INFO - Movimento terminato
+2025-03-21 15:27:14,014 - INFO - Remaining time: 34.0
+2025-03-21 15:27:15,020 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:27:16,026 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:27:17,034 - INFO - Remaining time: 30.96900000000096
+2025-03-21 15:27:18,039 - INFO - Remaining time: 29.96900000000096
+2025-03-21 15:27:18,742 - INFO - Movimento rilevato
+2025-03-21 15:27:23,347 - INFO - Movimento terminato
+2025-03-21 15:27:24,357 - INFO - Remaining time: 34.0
+2025-03-21 15:27:25,364 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:27:26,369 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:27:27,375 - INFO - Remaining time: 30.98400000000038
+2025-03-21 15:27:28,383 - INFO - Remaining time: 29.96900000000096
+2025-03-21 15:27:29,390 - INFO - Remaining time: 28.96900000000096
+2025-03-21 15:27:30,027 - INFO - Movimento rilevato
+2025-03-21 15:27:36,744 - INFO - Movimento terminato
+2025-03-21 15:27:37,047 - INFO - Movimento rilevato
+2025-03-21 15:27:37,204 - INFO - Movimento terminato
+2025-03-21 15:27:38,215 - INFO - Remaining time: 34.0
+2025-03-21 15:27:39,222 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:27:40,229 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:28:02,128 - INFO - Remaining time: 58.98500000000058
+2025-03-21 15:28:03,137 - INFO - Remaining time: 57.98500000000058
+2025-03-21 15:28:04,145 - INFO - Remaining time: 56.96900000000096
+2025-03-21 15:28:05,150 - INFO - Remaining time: 55.96900000000096
+2025-03-21 15:28:06,157 - INFO - Remaining time: 54.96900000000096
+2025-03-21 15:28:07,162 - INFO - Remaining time: 53.96900000000096
+2025-03-21 15:28:08,168 - INFO - Remaining time: 52.96900000000096
+2025-03-21 15:28:09,175 - INFO - Remaining time: 51.9529999999977
+2025-03-21 15:28:09,692 - INFO - Movimento rilevato
+2025-03-21 15:28:10,182 - INFO - Movimento terminato
+2025-03-21 15:28:11,192 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:28:12,197 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:28:13,204 - INFO - Remaining time: 31.96900000000096
+2025-03-21 15:28:13,492 - INFO - Movimento rilevato
+2025-03-21 15:28:13,726 - INFO - Movimento terminato
+2025-03-21 15:28:14,735 - INFO - Remaining time: 34.0
+2025-03-21 15:28:14,775 - INFO - Movimento rilevato
+2025-03-21 15:28:15,548 - INFO - Movimento terminato
+2025-03-21 15:28:16,373 - INFO - Movimento rilevato
+2025-03-21 15:28:20,835 - INFO - Movimento terminato
+2025-03-21 15:28:21,845 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:28:22,852 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:28:23,857 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:28:24,864 - INFO - Remaining time: 30.968000000000757
+2025-03-21 15:28:25,871 - INFO - Remaining time: 29.968000000000757
+2025-03-21 15:28:26,876 - INFO - Remaining time: 28.95300000000134
+2025-03-21 15:28:27,881 - INFO - Remaining time: 27.95300000000134
+2025-03-21 15:28:28,321 - INFO - Movimento rilevato
+2025-03-21 15:29:13,758 - INFO - Remaining time: 59.0
+2025-03-21 15:29:14,766 - INFO - Remaining time: 58.0
+2025-03-21 15:29:15,773 - INFO - Remaining time: 57.0
+2025-03-21 15:29:16,778 - INFO - Remaining time: 56.0
+2025-03-21 15:29:17,785 - INFO - Remaining time: 54.98500000000058
+2025-03-21 15:29:18,791 - INFO - Remaining time: 53.98500000000058
+2025-03-21 15:29:19,797 - INFO - Remaining time: 52.96899999999732
+2025-03-21 15:29:20,803 - INFO - Remaining time: 51.96899999999732
+2025-03-21 15:29:21,334 - INFO - Movimento rilevato
+2025-03-21 15:29:21,803 - INFO - Movimento terminato
+2025-03-21 15:29:22,814 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:29:23,820 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:29:24,826 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:29:25,165 - INFO - Movimento rilevato
+2025-03-21 15:29:25,407 - INFO - Movimento terminato
+2025-03-21 15:29:26,197 - INFO - Movimento rilevato
+2025-03-21 15:29:28,122 - INFO - Movimento terminato
+2025-03-21 15:29:28,481 - INFO - Movimento rilevato
+2025-03-21 15:29:32,462 - INFO - Movimento terminato
+2025-03-21 15:29:33,471 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:29:34,477 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:29:35,482 - INFO - Remaining time: 31.98400000000038
+2025-03-21 15:29:36,488 - INFO - Remaining time: 30.968000000000757
+2025-03-21 15:29:51,202 - INFO - Remaining time: 59.0
+2025-03-21 15:29:52,209 - INFO - Remaining time: 58.0
+2025-03-21 15:29:53,216 - INFO - Remaining time: 57.0
+2025-03-21 15:29:54,222 - INFO - Remaining time: 55.98400000000038
+2025-03-21 15:29:55,229 - INFO - Remaining time: 54.98400000000038
+2025-03-21 15:29:56,236 - INFO - Remaining time: 53.96800000000076
+2025-03-21 15:29:56,521 - INFO - Movimento rilevato
+2025-03-21 15:29:56,604 - INFO - Movimento terminato
+2025-03-21 15:29:57,614 - INFO - Remaining time: 33.98400000000038
+2025-03-21 15:29:58,620 - INFO - Remaining time: 32.98400000000038
+2025-03-21 15:29:59,627 - INFO - Remaining time: 31.96900000000096
+2025-03-21 15:30:00,634 - INFO - Remaining time: 30.96900000000096
+2025-03-21 15:30:01,639 - INFO - Remaining time: 29.96900000000096
+2025-03-21 15:30:02,570 - INFO - Movimento rilevato
+2025-03-21 15:30:02,646 - INFO - Remaining time: 28.95300000000134
+2025-03-21 15:30:03,040 - INFO - Movimento terminato
+2025-03-21 15:30:04,050 - INFO - Remaining time: 33.98399999999674
+2025-03-21 15:30:05,055 - INFO - Remaining time: 32.98399999999674
+2025-03-21 15:30:05,828 - INFO - Movimento rilevato

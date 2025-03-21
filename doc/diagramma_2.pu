@@ -19,16 +19,10 @@ repeat
                             :new_motion_state = False;
                         endif
                         if (new_motion_state diverso da old_motion_state?) then (Si)
-                            :Calcola timestamp corrente: current_time;
-                            if ((current_time - last_state_change_time) > MIN_STATE_CHANGE_INTERVAL) then (Si)
-                                :last_state_change_time = current_time;
-                                :old_motion_state = new_motion_state;
-                                if (old_motion_state è True?) then (Si)
-                                    :Richiama start_movement_callback;
-                                else (No)
-                                    :Richiama stop_movement_callback;
-                                endif
+                            if (old_motion_state è True?) then (Si)
+                                :Richiama start_movement_callback;
                             else (No)
+                                :Richiama stop_movement_callback;
                             endif
                         else (No)
                         endif

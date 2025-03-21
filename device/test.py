@@ -15,13 +15,13 @@ def test_video():
         name="wpa_rules",
         initial_duration=60,
         turn_duration=35,
-        allarm_time=50,
+        allarm_time=10,
         increment_duration=25,
         max_increment_for_match=1,
     )
 
     # Leggi i dati dal file JSON
-    with open("./device/test_data/video/example_edited.json", "r") as f:
+    with open("./device/test_data/video/esempio_2.json", "r") as f:
         data = json.load(f)
 
     points = data["points"]
@@ -33,7 +33,7 @@ def test_video():
         points=points,
         colors=colors,
     )
-    video_test = "./device/test_data/video/example_edited.mp4"
+    video_test = "./device/test_data/video/esempio_2.mp4"
     video_producer = VideoProducer.get_instance(video_source=video_test, loop=False)
 
     game = Game(ruleset, table, "Player 1", "Player 2", video_producer)

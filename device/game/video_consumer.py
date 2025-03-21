@@ -2,7 +2,7 @@ from threading import Event, Thread
 import time
 import cv2
 import numpy as np
-
+import logging
 from device.video_producer import VideoProducer
 from device.table import TablePreset
 from device.utils import CircularArray
@@ -15,8 +15,8 @@ class VideoConsumer:
     per evitare falsi positivi dovuti a variazioni troppo rapide.
     """
 
-    NUMBER_OF_MOTION_COUNT = 5
-    CURRENT_MOTION_THRESHOLD = 130  # Soglia per considerare che vi sia movimento
+    NUMBER_OF_MOTION_COUNT = 10
+    CURRENT_MOTION_THRESHOLD = 100  # Soglia per considerare che vi sia movimento
     CIRCULARITY_THRESHOLD = 0.7  # Soglia per filtrare contorni non circolari
     H_DIFF, S_DIFF, V_DIFF = 5, 10, 5  # Differenze per il filtro colore in HSV
 
@@ -86,9 +86,7 @@ class VideoConsumer:
         isMoving = False
 
         while self._video_producer.is_opened() and not self._end_event.is_set():
-            # Se non inserisci time.sleep, il ciclo va ad alta frequenza
-            # La finestra temporale minima gestirà il cambio di stato
-            time.sleep(0.1)  # Ad esempio, aggiungere un ritardo di 100ms
+            time.sleep(0.05)
 
             if not self._is_running.is_set():
                 balls_mask_history = CircularArray(3)
@@ -109,19 +107,6 @@ class VideoConsumer:
                 motion_history.add(current_motion)
 
                 # Visualizza il risultato corrente sul frame
-                test_image = blurred.copy()
-                text = "MOVIMENTO" if current_motion else "FERMO"
-                cv2.putText(
-                    test_image,
-                    text,
-                    (10, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    1,
-                    (255, 255, 255),
-                    2,
-                    cv2.LINE_AA,
-                )
-                cv2.imshow("Blurred with movement", test_image)
 
                 # Controlla se un tasto è premuto
                 key = cv2.waitKey(1)
@@ -132,30 +117,32 @@ class VideoConsumer:
                 if motion_history.get_len() == self.NUMBER_OF_MOTION_COUNT:
                     history = motion_history.get_array()
                     motion_count = sum(history)
-                    if (
-                        motion_count > self.NUMBER_OF_MOTION_COUNT * 0.7
-                    ):  # Ad esempio, 70%
+                    if motion_count > self.NUMBER_OF_MOTION_COUNT * 0.7:
                         new_motion_state = True
-                    elif (
-                        motion_count < self.NUMBER_OF_MOTION_COUNT * 0.3
-                    ):  # Ad esempio, 30%
-                        new_motion_state = False
                     else:
-                        new_motion_state = isMoving
-
-                    # Verifica se è trascorso il tempo minimo dall'ultimo cambio di stato
-                    current_time = time.time()
-                    if (
-                        new_motion_state != isMoving
-                        and (current_time - self._last_state_change_time)
-                        >= self.MIN_STATE_CHANGE_INTERVAL
-                    ):
+                        new_motion_state = False
+                    if new_motion_state != isMoving:
                         isMoving = new_motion_state
-                        self._last_state_change_time = current_time
-                        if isMoving:
+                        if new_motion_state:
+                            logging.info("Movimento rilevato")
                             self.start_movement_callback()
                         else:
+                            logging.info("Movimento terminato")
                             self.stop_movement_callback()
+
+                    test_image = blurred.copy()
+                    text = "MOVIMENTO" if isMoving else "FERMO"
+                    cv2.putText(
+                        test_image,
+                        text,
+                        (10, 30),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        1,
+                        (255, 255, 255),
+                        2,
+                        cv2.LINE_AA,
+                    )
+                    cv2.imshow("Blurred with movement", test_image)
 
     def _motion_count(self, balls_mask_history):
         """
