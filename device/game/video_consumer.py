@@ -98,7 +98,7 @@ class VideoConsumer:
             cv2.imshow("Blurred", blurred)
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
             current_balls_mask = self._create_mask(
-                hsv, self.table.points, self.table.colors
+                hsv, self.table.points, self.table.colors, self.table.min_area_threshold
             )
             balls_mask_history.add(current_balls_mask)
 
@@ -182,7 +182,7 @@ class VideoConsumer:
 
         return max_white_pixel > self.CURRENT_MOTION_THRESHOLD
 
-    def _create_mask(self, hsv, points, colors):
+    def _create_mask(self, hsv, points, colors, min_area_threshold):
         """
         Crea una maschera per rilevare le biglie da gioco basata sui colori e sulla forma del tavolo.
 
@@ -224,7 +224,7 @@ class VideoConsumer:
         for c in contours:
             area = cv2.contourArea(c)
             # Controllo sulla dimensione dell'area del contorno
-            if area < self.table.min_area_threshold:
+            if area < min_area_threshold:
                 continue
             perimeter = cv2.arcLength(c, True)
             if perimeter == 0:
