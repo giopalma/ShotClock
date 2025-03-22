@@ -19,9 +19,6 @@ class VideoConsumer:
     CURRENT_MOTION_THRESHOLD = 100  # Soglia per considerare che vi sia movimento
     CIRCULARITY_THRESHOLD = 0.7  # Soglia per filtrare contorni non circolari
     H_DIFF, S_DIFF, V_DIFF = 5, 10, 5  # Differenze per il filtro colore in HSV
-    MIN_AREA_THRESHOLD = 200
-    # Tempo minimo (in secondi) tra cambi di stato
-    MIN_STATE_CHANGE_INTERVAL = 0.5
 
     def __init__(
         self,
@@ -215,7 +212,9 @@ class VideoConsumer:
 
         # Combina la maschera di colore con quella del tavolo
         combined_mask = cv2.bitwise_and(color_mask, rec_mask)
-
+        # kernel = np.ones((5, 5), np.uint8)
+        # combined_mask = cv2.erode(combined_mask, kernel, iterations=1)
+        # combined_mask = cv2.dilate(combined_mask, kernel, iterations=1)
         # Trova i contorni e filtra per circolarità
         contours, _ = cv2.findContours(
             combined_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
