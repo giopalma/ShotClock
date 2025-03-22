@@ -6,6 +6,7 @@ import logging
 from device.video_producer import VideoProducer
 from device.table import TablePreset
 from device.utils import CircularArray
+from device.utils import is_raspberry_pi
 
 
 class VideoConsumer:
@@ -52,6 +53,7 @@ class VideoConsumer:
         self._last_state_change_time = 0  # Tempo dell'ultimo cambio di stato
         self._prev_frame_time = 0
         self._current_fps = 0
+        self._is_raspberry_pi = is_raspberry_pi()
 
     def start(self):
         """Avvia il ciclo di elaborazione del video."""
@@ -70,6 +72,44 @@ class VideoConsumer:
         if self._thread and self._thread.is_alive():
             self._end_event.set()
 
+    def _show_blurred_image(self, image):
+        """Visualizza l'immagine sfocata."""
+        if self._is_raspberry_pi:
+            return
+        cv2.imshow("Blurred", image)
+
+    def _show_movement_status(self, image, is_moving):
+        """Visualizza lo stato del movimento sull'immagine."""
+        if self._is_raspberry_pi:
+            return
+        test_image = image.copy()
+        text = "MOVIMENTO" if is_moving else "FERMO"
+        cv2.putText(
+            test_image,
+            text,
+            (10, 30),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            1,
+            (255, 255, 255),
+            2,
+            cv2.LINE_AA,
+        )
+        cv2.imshow("Blurred with movement", test_image)
+
+    def _show_difference_frames(self, diff1, diff2):
+        """Visualizza i frame di differenza per il debug."""
+        if self._is_raspberry_pi:
+            return
+        cv2.imshow("Diff1", diff1)
+        cv2.imshow("Diff2", diff2)
+
+    def _show_mask_images(self, combined_mask, circularity_mask):
+        """Visualizza le maschere intermedie per il debug."""
+        if self._is_raspberry_pi:
+            return
+        cv2.imshow("Combined Mask", combined_mask)
+        cv2.imshow("Circularity Mask", circularity_mask)
+
     def run(self):
         """
         Ciclo principale del VideoConsumer.
@@ -81,9 +121,21 @@ class VideoConsumer:
         balls_mask_history = CircularArray(3)
         motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
         isMoving = False
+        frame_count = 0
+        fps_update_interval = 10
 
         while self._video_producer.is_opened() and not self._end_event.is_set():
             time.sleep(0.05)
+
+            # Calcola gli FPS
+            current_time = time.time()
+            if self._prev_frame_time != 0:
+                self._current_fps = 1 / (current_time - self._prev_frame_time)
+                frame_count += 1
+                if frame_count >= fps_update_interval:
+                    logging.info(f"FPS: {self._current_fps:.2f}")
+                    frame_count = 0
+            self._prev_frame_time = current_time
 
             if not self._is_running.is_set():
                 balls_mask_history = CircularArray(3)
@@ -92,7 +144,7 @@ class VideoConsumer:
 
             self._last_state_change_time = time.time()
             blurred = self._video_producer.get_frame_blurred()
-            cv2.imshow("Blurred", blurred)
+            self._show_blurred_image(blurred)
             hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
             current_balls_mask = self._create_mask(
                 hsv, self.table.points, self.table.colors, self.table.min_area_threshold
@@ -102,8 +154,6 @@ class VideoConsumer:
             if balls_mask_history.get_len() == 3:
                 current_motion = self._motion_count(balls_mask_history.get_array())
                 motion_history.add(current_motion)
-
-                # Visualizza il risultato corrente sul frame
 
                 # Controlla se un tasto è premuto
                 key = cv2.waitKey(1)
@@ -127,19 +177,7 @@ class VideoConsumer:
                             logging.info("Movimento terminato")
                             self.stop_movement_callback()
 
-                    test_image = blurred.copy()
-                    text = "MOVIMENTO" if isMoving else "FERMO"
-                    cv2.putText(
-                        test_image,
-                        text,
-                        (10, 30),
-                        cv2.FONT_HERSHEY_SIMPLEX,
-                        1,
-                        (255, 255, 255),
-                        2,
-                        cv2.LINE_AA,
-                    )
-                    cv2.imshow("Blurred with movement", test_image)
+                    self._show_movement_status(blurred, isMoving)
 
     def _motion_count(self, balls_mask_history):
         """
@@ -174,8 +212,7 @@ class VideoConsumer:
         max_white_pixel = max(white_pixel_frame_d1, white_pixel_frame_d2)
 
         # Visualizza i frame differenza per debugging
-        cv2.imshow("Diff1", diff1)
-        cv2.imshow("Diff2", diff2)
+        self._show_difference_frames(diff1, diff2)
 
         return max_white_pixel > self.CURRENT_MOTION_THRESHOLD
 
@@ -233,6 +270,5 @@ class VideoConsumer:
                 cv2.drawContours(circularity_mask, [c], -1, 255, thickness=cv2.FILLED)
 
         # Visualizza le maschere intermedie per debugging
-        cv2.imshow("Combined Mask", combined_mask)
-        cv2.imshow("Circularity Mask", circularity_mask)
+        self._show_mask_images(combined_mask, circularity_mask)
         return circularity_mask

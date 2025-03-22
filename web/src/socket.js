@@ -7,9 +7,9 @@ export const state = reactive({
 });
 
 // "undefined" means the URL will be computed from the `window.location` object
-const URL = "http://localhost:5000";
+const URL = "";
 
-export const socket = io(URL);
+export const socket = io("/socket.io");
 
 socket.on("connect", () => {
     state.connected = true;

@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   server: {
+    allowedHosts: ['shotclock.local'],
     proxy: {
       '/api': {
         target: 'http://localhost:5000',
