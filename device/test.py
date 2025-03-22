@@ -19,9 +19,12 @@ def test_video():
         increment_duration=25,
         max_increment_for_match=1,
     )
+    video_name = "esempio_2"
+    json_path = f"./device/test_data/video/{video_name}.json"
+    video_test = f"./device/test_data/video/{video_name}.mp4"
 
     # Leggi i dati dal file JSON
-    with open("./device/test_data/video/esempio_2.json", "r") as f:
+    with open(json_path, "r") as f:
         data = json.load(f)
 
     points = data["points"]
@@ -35,7 +38,7 @@ def test_video():
         colors=colors,
         min_area_threshold=min_area_threshold,
     )
-    video_test = "./device/test_data/video/esempio_2.mp4"
+
     video_producer = VideoProducer.get_instance(video_source=video_test, loop=False)
 
     game = Game(ruleset, table, "Player 1", "Player 2", video_producer)
@@ -46,7 +49,7 @@ def test_api(static=False):
     import device.api as api
 
     if static:
-        frame = cv2.imread("./device/test_data/images/esempio_1.png")
+        frame = cv2.imread("./device/test_data/images/esempio_3.png")
         VideoProducer.get_instance(frame=frame)
 
     api.start(debug=True)
