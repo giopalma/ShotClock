@@ -125,7 +125,7 @@ class VideoConsumer:
         fps_update_interval = 10
 
         while self._video_producer.is_opened() and not self._end_event.is_set():
-            time.sleep(0.05)
+            time.sleep(1 / 20)
 
             # Calcola gli FPS
             current_time = time.time()
@@ -133,7 +133,7 @@ class VideoConsumer:
                 self._current_fps = 1 / (current_time - self._prev_frame_time)
                 frame_count += 1
                 if frame_count >= fps_update_interval:
-                    logging.info(f"FPS: {self._current_fps:.2f}")
+                    # logging.info(f"FPS: {self._current_fps:.2f}")
                     frame_count = 0
             self._prev_frame_time = current_time
 
