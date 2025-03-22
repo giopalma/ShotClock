@@ -22,8 +22,12 @@ class VideoProducer:
             cls._instance.frame = frame
             cls._instance.fixed_frame = frame is not None
             cls._instance.is_picamera = is_raspberry_pi()
-            if cls._instance.is_picamera:
+            cls._instance.is_running_picamera = False
+
+            if cls._instance.is_picamera and not isinstance(video_source, str):
                 from picamera2 import Picamera2
+
+                cls._instance.is_running_picamera = True
 
                 cls._instance.picam = Picamera2()
                 # Configurazione base della camera
@@ -52,7 +56,7 @@ class VideoProducer:
         if self.fixed_frame:
             while self.is_running:
                 time.sleep(1 / 30)
-        if self.is_picamera:
+        if self.is_running_picamera:
             while self.is_running:
                 self.frame = self.picam.capture_array()
                 time.sleep(1 / 30)
