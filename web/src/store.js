@@ -152,6 +152,7 @@ export const useGameStore = defineStore('game', {
                     return this.fetchGame();
                 } else {
                     console.error('Error:', response.statusText);
+                    console.log(response)
                     return false;
                 }
             } catch (error) {

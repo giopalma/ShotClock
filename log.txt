@@ -556,3 +556,1108 @@
 2025-03-23 17:11:05,859 - INFO - Remaining time: 30.968000000000757
 2025-03-23 17:11:06,614 - INFO - Movimento rilevato
 2025-03-23 17:11:11,548 - INFO - Movimento terminato
+2025-03-24 09:09:13,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:09:13,530 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:09:41,875 - INFO - 127.0.0.1 - - [24/Mar/2025 09:09:41] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:10:26,532 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:10:26,535 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:10:49,597 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:49] "GET /socket.io/?EIO=4&transport=polling&t=seqcnltc HTTP/1.1" 200 -
+2025-03-24 09:10:49,654 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:49] "POST /socket.io/?EIO=4&transport=polling&t=seqfu5jh&sid=9e91uZbiOexWxnBhAAAA HTTP/1.1" 200 -
+2025-03-24 09:10:49,703 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:49] "GET /socket.io/?EIO=4&transport=polling&t=seqfwl9s&sid=9e91uZbiOexWxnBhAAAA HTTP/1.1" 200 -
+2025-03-24 09:10:49,843 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:49] "GET /socket.io/?EIO=4&transport=polling&t=seqkx31x&sid=9e91uZbiOexWxnBhAAAA HTTP/1.1" 200 -
+2025-03-24 09:10:50,046 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:50] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:10:50,061 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:50] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:10:50,277 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:50] "GET /socket.io/?EIO=4&transport=websocket&sid=9e91uZbiOexWxnBhAAAA HTTP/1.1" 200 -
+2025-03-24 09:10:51,196 - INFO - 127.0.0.1 - - [24/Mar/2025 09:10:51] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:11:00,495 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "GET /socket.io/?EIO=4&transport=polling&t=seyt351h HTTP/1.1" 200 -
+2025-03-24 09:11:00,633 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "POST /socket.io/?EIO=4&transport=polling&t=seywxfau&sid=zkhMIUu7wljiQfLIAAAB HTTP/1.1" 200 -
+2025-03-24 09:11:00,642 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "GET /socket.io/?EIO=4&transport=polling&t=seyx1p76&sid=zkhMIUu7wljiQfLIAAAB HTTP/1.1" 200 -
+2025-03-24 09:11:00,805 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:11:00,818 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:11:00,944 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "GET /socket.io/?EIO=4&transport=polling&t=sez5f4ou&sid=zkhMIUu7wljiQfLIAAAB HTTP/1.1" 200 -
+2025-03-24 09:11:00,955 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "POST /socket.io/?EIO=4&transport=polling&t=sez5hx8h&sid=zkhMIUu7wljiQfLIAAAB HTTP/1.1" 200 -
+2025-03-24 09:11:00,963 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:00] "GET /socket.io/?EIO=4&transport=websocket&sid=zkhMIUu7wljiQfLIAAAB HTTP/1.1" 200 -
+2025-03-24 09:11:01,047 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:01] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:11:14,954 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:14] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:11:15,025 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:15] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:11:22,397 - INFO - Initialization successful.
+2025-03-24 09:11:22,400 - INFO - Camera now open.
+2025-03-24 09:11:22,427 - INFO - Camera configuration has been adjusted!
+2025-03-24 09:11:22,435 - INFO - Configuration successful!
+2025-03-24 09:11:22,618 - INFO - Camera started
+2025-03-24 09:11:22,633 - INFO - emitting event "game" to all [/]
+2025-03-24 09:11:22,641 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:22] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:11:22,662 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:22] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:11:26,711 - INFO - emitting event "game" to all [/]
+2025-03-24 09:11:26,719 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:26] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:11:29,718 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:29,720 - INFO - Remaining time: 58.99583223399998
+2025-03-24 09:11:30,727 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:30,728 - INFO - Remaining time: 57.99060678699982
+2025-03-24 09:11:31,732 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:31,732 - INFO - Remaining time: 56.98900158499987
+2025-03-24 09:11:32,737 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:32,739 - INFO - Remaining time: 55.98611775500012
+2025-03-24 09:11:33,744 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:33,744 - INFO - Remaining time: 54.985013580999976
+2025-03-24 09:11:34,748 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:34,749 - INFO - Remaining time: 53.98332734500025
+2025-03-24 09:11:34,836 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:34,841 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:34] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:11:35,925 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:35,928 - INFO - emitting event "game" to all [/]
+2025-03-24 09:11:35,934 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:35] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:11:35,939 - INFO - 127.0.0.1 - - [24/Mar/2025 09:11:35] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:11:36,027 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:11:36,029 - INFO - Remaining time: 53.78191573800029
+2025-03-24 09:12:46,810 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:12:46,813 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:15:49,753 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:49] "GET /socket.io/?EIO=4&transport=polling&t=sl5x4f2a HTTP/1.1" 200 -
+2025-03-24 09:15:49,860 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:49] "POST /socket.io/?EIO=4&transport=polling&t=sl60k93t&sid=91wxI-S-Bm5Fbw5nAAAA HTTP/1.1" 200 -
+2025-03-24 09:15:49,885 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:49] "GET /socket.io/?EIO=4&transport=polling&t=sl60my85&sid=91wxI-S-Bm5Fbw5nAAAA HTTP/1.1" 200 -
+2025-03-24 09:15:50,054 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:50] "GET /socket.io/?EIO=4&transport=websocket&sid=91wxI-S-Bm5Fbw5nAAAA HTTP/1.1" 200 -
+2025-03-24 09:15:50,068 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:50] "POST /socket.io/?EIO=4&transport=polling&t=sl65pk31&sid=91wxI-S-Bm5Fbw5nAAAA HTTP/1.1" 200 -
+2025-03-24 09:15:50,069 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:50] "GET /socket.io/?EIO=4&transport=polling&t=sl65odso&sid=91wxI-S-Bm5Fbw5nAAAA HTTP/1.1" 200 -
+2025-03-24 09:15:50,305 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:50] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:15:50,308 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:50] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:15:50,532 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:50] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:15:54,325 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:54] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:15:54,364 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:15:58,905 - INFO - Initialization successful.
+2025-03-24 09:15:58,907 - INFO - Camera now open.
+2025-03-24 09:15:58,933 - INFO - Camera configuration has been adjusted!
+2025-03-24 09:15:58,937 - INFO - Configuration successful!
+2025-03-24 09:15:59,133 - INFO - Camera started
+2025-03-24 09:15:59,150 - INFO - emitting event "game" to all [/]
+2025-03-24 09:15:59,158 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:59] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:15:59,184 - INFO - 127.0.0.1 - - [24/Mar/2025 09:15:59] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:16:00,846 - INFO - emitting event "game" to all [/]
+2025-03-24 09:16:00,851 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:00] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:16:03,850 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:03,853 - INFO - Remaining time: 58.99732708800002
+2025-03-24 09:16:04,856 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:04,858 - INFO - Remaining time: 57.99575678100018
+2025-03-24 09:16:05,862 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:05,863 - INFO - Remaining time: 56.994071411000505
+2025-03-24 09:16:06,866 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:06,869 - INFO - Remaining time: 55.992858180000326
+2025-03-24 09:16:07,874 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:07,875 - INFO - Remaining time: 54.991812921000246
+2025-03-24 09:16:08,878 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:08,880 - INFO - Remaining time: 53.9907434080003
+2025-03-24 09:16:09,883 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:09,884 - INFO - Remaining time: 52.98980683500031
+2025-03-24 09:16:10,892 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:10,893 - INFO - Remaining time: 51.98370779000027
+2025-03-24 09:16:11,897 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:11,903 - INFO - Remaining time: 50.98187890900033
+2025-03-24 09:16:12,829 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:12,836 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:12] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:16:12,912 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:16:12,914 - INFO - Remaining time: 49.97554419500034
+2025-03-24 09:16:53,486 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "GET /socket.io/?EIO=4&transport=polling&t=smj2lnl0 HTTP/1.1" 200 -
+2025-03-24 09:16:53,622 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "POST /socket.io/?EIO=4&transport=polling&t=smj6uo08&sid=zt9YcHFs10Z7BYRQAAAB HTTP/1.1" 200 -
+2025-03-24 09:16:53,633 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "GET /socket.io/?EIO=4&transport=polling&t=smj6xj93&sid=zt9YcHFs10Z7BYRQAAAB HTTP/1.1" 200 -
+2025-03-24 09:16:53,804 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:16:53,811 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:16:53,858 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "POST /socket.io/?EIO=4&transport=polling&t=smjdijzs&sid=zt9YcHFs10Z7BYRQAAAB HTTP/1.1" 200 -
+2025-03-24 09:16:53,872 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "GET /socket.io/?EIO=4&transport=websocket&sid=zt9YcHFs10Z7BYRQAAAB HTTP/1.1" 200 -
+2025-03-24 09:16:53,906 - ERROR - Invalid session zt9YcHFs10Z7BYRQAAAB (further occurrences of this error will be logged with level INFO)
+2025-03-24 09:16:53,908 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:53] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=smjdgoeg&sid=zt9YcHFs10Z7BYRQAAAB HTTP/1.1[0m" 400 -
+2025-03-24 09:16:54,205 - INFO - 127.0.0.1 - - [24/Mar/2025 09:16:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:17:04,380 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:17:04,382 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:17:11,097 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "GET /socket.io/?EIO=4&transport=polling&t=smwnqz0v HTTP/1.1" 200 -
+2025-03-24 09:17:11,170 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "POST /socket.io/?EIO=4&transport=polling&t=smwq8dr8&sid=W-B7RK3JO0pY15JsAAAA HTTP/1.1" 200 -
+2025-03-24 09:17:11,179 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "GET /socket.io/?EIO=4&transport=polling&t=smwqaqaw&sid=W-B7RK3JO0pY15JsAAAA HTTP/1.1" 200 -
+2025-03-24 09:17:11,322 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:17:11,365 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:17:11,401 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "GET /socket.io/?EIO=4&transport=polling&t=smwwrq5p&sid=W-B7RK3JO0pY15JsAAAA HTTP/1.1" 200 -
+2025-03-24 09:17:11,410 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "POST /socket.io/?EIO=4&transport=polling&t=smwwsseb&sid=W-B7RK3JO0pY15JsAAAA HTTP/1.1" 200 -
+2025-03-24 09:17:11,421 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "GET /socket.io/?EIO=4&transport=websocket&sid=W-B7RK3JO0pY15JsAAAA HTTP/1.1" 200 -
+2025-03-24 09:17:11,475 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:11] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:17:16,097 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:16] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:17:16,151 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:16] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:17:20,264 - INFO - Initialization successful.
+2025-03-24 09:17:20,266 - INFO - Camera now open.
+2025-03-24 09:17:20,290 - INFO - Camera configuration has been adjusted!
+2025-03-24 09:17:20,294 - INFO - Configuration successful!
+2025-03-24 09:17:20,484 - INFO - Camera started
+2025-03-24 09:17:20,498 - INFO - emitting event "game" to all [/]
+2025-03-24 09:17:20,505 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:20] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:17:20,547 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:20] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:17:26,387 - INFO - emitting event "game" to all [/]
+2025-03-24 09:17:26,395 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:26] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:17:29,399 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:29,401 - INFO - Remaining time: 58.99589046999995
+2025-03-24 09:17:30,420 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:30,421 - INFO - Remaining time: 57.979974359999915
+2025-03-24 09:17:31,424 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:31,426 - INFO - Remaining time: 56.978853716999765
+2025-03-24 09:17:32,431 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:32,434 - INFO - Remaining time: 55.975523499000246
+2025-03-24 09:17:33,436 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:33,438 - INFO - Remaining time: 54.97458492199985
+2025-03-24 09:17:34,442 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:34,446 - INFO - Remaining time: 53.97191433099988
+2025-03-24 09:17:35,452 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:35,454 - INFO - Remaining time: 52.96913112900006
+2025-03-24 09:17:36,456 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:36,457 - INFO - Remaining time: 51.96832244899997
+2025-03-24 09:17:37,460 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:37,463 - INFO - Remaining time: 50.96721964800008
+2025-03-24 09:17:38,470 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:17:38,475 - INFO - Remaining time: 49.965828077999504
+2025-03-24 09:17:38,679 - INFO - emitting event "game" to all [/]
+2025-03-24 09:17:38,691 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:38] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:17:38,704 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:38] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:17:45,618 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:45] "GET /socket.io/?EIO=4&transport=polling&t=snnd868q HTTP/1.1" 200 -
+2025-03-24 09:17:45,739 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:45] "POST /socket.io/?EIO=4&transport=polling&t=snngjx7j&sid=UwOkFs5u3JV_ZBMyAAAB HTTP/1.1" 200 -
+2025-03-24 09:17:45,800 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:45] "GET /socket.io/?EIO=4&transport=polling&t=snngnseg&sid=UwOkFs5u3JV_ZBMyAAAB HTTP/1.1" 200 -
+2025-03-24 09:17:45,929 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:45] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:17:45,947 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:45] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:17:46,090 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:46] "GET /socket.io/?EIO=4&transport=polling&t=snnqdvt4&sid=UwOkFs5u3JV_ZBMyAAAB HTTP/1.1" 200 -
+2025-03-24 09:17:46,151 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:46] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:17:46,347 - INFO - 127.0.0.1 - - [24/Mar/2025 09:17:46] "GET /socket.io/?EIO=4&transport=websocket&sid=UwOkFs5u3JV_ZBMyAAAB HTTP/1.1" 200 -
+2025-03-24 09:20:06,707 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:06] "GET /socket.io/?EIO=4&transport=polling&t=sqoaovud HTTP/1.1" 200 -
+2025-03-24 09:20:06,839 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:06] "POST /socket.io/?EIO=4&transport=polling&t=sqoeha8m&sid=nFtD7sOwEI6utCuYAAAC HTTP/1.1" 200 -
+2025-03-24 09:20:06,859 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:06] "GET /socket.io/?EIO=4&transport=polling&t=sqoejsjn&sid=nFtD7sOwEI6utCuYAAAC HTTP/1.1" 200 -
+2025-03-24 09:20:06,972 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:06] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:20:06,988 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:06] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:20:07,170 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:07] "POST /socket.io/?EIO=4&transport=polling&t=sqoni6si&sid=nFtD7sOwEI6utCuYAAAC HTTP/1.1" 200 -
+2025-03-24 09:20:07,179 - ERROR - 'Session is disconnected' nFtD7sOwEI6utCuYAAAC (further occurrences of this error will be logged with level INFO)
+2025-03-24 09:20:07,181 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:07] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=sqondmtu&sid=nFtD7sOwEI6utCuYAAAC HTTP/1.1[0m" 400 -
+2025-03-24 09:20:07,195 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:07] "GET /socket.io/?EIO=4&transport=websocket&sid=nFtD7sOwEI6utCuYAAAC HTTP/1.1" 200 -
+2025-03-24 09:20:07,229 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:07] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:20:17,955 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:17] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:20:17,997 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:17] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:20:22,773 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:22] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:20:22,824 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:22] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:20:24,487 - INFO - emitting event "game" to all [/]
+2025-03-24 09:20:24,499 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:24] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:20:24,531 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:24] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:20:26,434 - INFO - emitting event "game" to all [/]
+2025-03-24 09:20:26,438 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:26] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:20:29,436 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:29,437 - INFO - Remaining time: 58.999010712999734
+2025-03-24 09:20:30,440 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:30,442 - INFO - Remaining time: 57.99711920999948
+2025-03-24 09:20:31,448 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:31,450 - INFO - Remaining time: 56.99373758099932
+2025-03-24 09:20:32,455 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:32,456 - INFO - Remaining time: 55.99166410999942
+2025-03-24 09:20:33,459 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:33,464 - INFO - Remaining time: 54.99050971899942
+2025-03-24 09:20:34,469 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:34,470 - INFO - Remaining time: 53.98929099799989
+2025-03-24 09:20:35,477 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:35,487 - INFO - Remaining time: 52.98408385399944
+2025-03-24 09:20:36,494 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:36,496 - INFO - Remaining time: 51.980635049999364
+2025-03-24 09:20:37,505 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:37,508 - INFO - Remaining time: 50.973213430999294
+2025-03-24 09:20:38,512 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:38,513 - INFO - Remaining time: 49.97178450399974
+2025-03-24 09:20:39,516 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:20:39,517 - INFO - Remaining time: 48.97073936000038
+2025-03-24 09:20:39,636 - INFO - emitting event "game" to all [/]
+2025-03-24 09:20:39,640 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:39] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:20:39,682 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:39] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:20:49,019 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "GET /socket.io/?EIO=4&transport=polling&t=srkxd3fo HTTP/1.1" 200 -
+2025-03-24 09:20:49,141 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "POST /socket.io/?EIO=4&transport=polling&t=srl12w0f&sid=vB7LJmEXWQ_uL6c0AAAD HTTP/1.1" 200 -
+2025-03-24 09:20:49,154 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "GET /socket.io/?EIO=4&transport=polling&t=srl15d1i&sid=vB7LJmEXWQ_uL6c0AAAD HTTP/1.1" 200 -
+2025-03-24 09:20:49,322 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:20:49,332 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:20:49,433 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "GET /socket.io/?EIO=4&transport=polling&t=srl9bygd&sid=vB7LJmEXWQ_uL6c0AAAD HTTP/1.1" 200 -
+2025-03-24 09:20:49,488 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "GET /socket.io/?EIO=4&transport=websocket&sid=vB7LJmEXWQ_uL6c0AAAD HTTP/1.1" 200 -
+2025-03-24 09:20:49,495 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "POST /socket.io/?EIO=4&transport=polling&t=srl9ck38&sid=vB7LJmEXWQ_uL6c0AAAD HTTP/1.1" 200 -
+2025-03-24 09:20:49,563 - INFO - 127.0.0.1 - - [24/Mar/2025 09:20:49] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:21:25,713 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:25] "GET /socket.io/?EIO=4&transport=polling&t=ssd82ykk HTTP/1.1" 200 -
+2025-03-24 09:21:25,866 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:25] "POST /socket.io/?EIO=4&transport=polling&t=ssdapv1f&sid=H0xkNqwZSR5Uov_-AAAE HTTP/1.1" 200 -
+2025-03-24 09:21:25,879 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:25] "GET /socket.io/?EIO=4&transport=polling&t=ssdarwpd&sid=H0xkNqwZSR5Uov_-AAAE HTTP/1.1" 200 -
+2025-03-24 09:21:25,971 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:25] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:21:26,086 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:26] "GET /socket.io/?EIO=4&transport=websocket&sid=H0xkNqwZSR5Uov_-AAAE HTTP/1.1" 200 -
+2025-03-24 09:21:26,100 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:26] "POST /socket.io/?EIO=4&transport=polling&t=ssdk2338&sid=H0xkNqwZSR5Uov_-AAAE HTTP/1.1" 200 -
+2025-03-24 09:21:26,112 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:26] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=ssdk1fvf&sid=H0xkNqwZSR5Uov_-AAAE HTTP/1.1[0m" 400 -
+2025-03-24 09:21:29,425 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:29] "GET /socket.io/?EIO=4&transport=polling&t=ssg42v0o HTTP/1.1" 200 -
+2025-03-24 09:21:30,023 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:30] "POST /socket.io/?EIO=4&transport=polling&t=ssgao40m&sid=f8k-afpn-E0i0MxHAAAF HTTP/1.1" 200 -
+2025-03-24 09:21:30,036 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:30] "GET /socket.io/?EIO=4&transport=polling&t=ssgaqze8&sid=f8k-afpn-E0i0MxHAAAF HTTP/1.1" 200 -
+2025-03-24 09:21:30,292 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:30] "[35m[1mGET /socket.io/?EIO=4&transport=websocket&sid=f8k-afpn-E0i0MxHAAAF HTTP/1.1[0m" 500 -
+2025-03-24 09:21:30,332 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:30] "GET /socket.io/?EIO=4&transport=polling&t=ssgpdfoz&sid=f8k-afpn-E0i0MxHAAAF HTTP/1.1" 200 -
+2025-03-24 09:21:30,339 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:30] "POST /socket.io/?EIO=4&transport=polling&t=ssgpfprg&sid=f8k-afpn-E0i0MxHAAAF HTTP/1.1" 200 -
+2025-03-24 09:21:30,369 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/async_drivers/_websocket_wsgi.py", line 26, in send
+    return self.ws.send(message)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/simple_websocket/ws.py", line 78, in send
+    raise ConnectionClosed(self.close_reason, self.close_message)
+simple_websocket.errors.ConnectionClosed: Connection closed: 1005 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/flask_socketio/__init__.py", line 42, in __call__
+    return super().__call__(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/socketio/server.py", line 434, in handle_request
+    return self.eio.handle_request(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/server.py", line 286, in handle_request
+    packets = socket.handle_get_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/socket.py", line 92, in handle_get_request
+    return getattr(self, '_upgrade_' + transport)(environ,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/socket.py", line 151, in _upgrade_websocket
+    return ws(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/async_drivers/_websocket_wsgi.py", line 15, in __call__
+    ret = self.app(self)
+          ^^^^^^^^^^^^^^
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/socket.py", line 180, in _websocket_handler
+    ws.send(packet.Packet(packet.PONG, data='probe').encode())
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/engineio/async_drivers/_websocket_wsgi.py", line 28, in send
+    raise OSError()
+OSError
+2025-03-24 09:21:31,037 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:31] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:21:31,044 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:31] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:21:31,089 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:31] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:21:39,622 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:39] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:21:39,724 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:39] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:21:42,612 - ERROR - pin GPIO11 is already in use by <gpiozero.Buzzer object on pin GPIO11, active_high=True, is_active=False>
+2025-03-24 09:21:42,620 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:42] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-24 09:21:53,591 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:53] "GET /socket.io/?EIO=4&transport=polling&t=ssyri7e0 HTTP/1.1" 200 -
+2025-03-24 09:21:53,666 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:53] "POST /socket.io/?EIO=4&transport=polling&t=ssytu8ig&sid=FkZPt2TDX1K6bUQ1AAAG HTTP/1.1" 200 -
+2025-03-24 09:21:53,679 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:53] "GET /socket.io/?EIO=4&transport=polling&t=ssytvrk0&sid=FkZPt2TDX1K6bUQ1AAAG HTTP/1.1" 200 -
+2025-03-24 09:21:53,831 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:53] "GET /socket.io/?EIO=4&transport=websocket&sid=FkZPt2TDX1K6bUQ1AAAG HTTP/1.1" 200 -
+2025-03-24 09:21:53,869 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:53] "POST /socket.io/?EIO=4&transport=polling&t=ssyylwjn&sid=FkZPt2TDX1K6bUQ1AAAG HTTP/1.1" 200 -
+2025-03-24 09:21:53,871 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:53] "GET /socket.io/?EIO=4&transport=polling&t=ssyyjcjv&sid=FkZPt2TDX1K6bUQ1AAAG HTTP/1.1" 200 -
+2025-03-24 09:21:54,534 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:54] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:21:54,555 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:54] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:21:54,634 - INFO - 127.0.0.1 - - [24/Mar/2025 09:21:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:22:03,878 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:03] "GET /socket.io/?EIO=4&transport=polling&t=st6p9ocd HTTP/1.1" 200 -
+2025-03-24 09:22:03,993 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:03] "POST /socket.io/?EIO=4&transport=polling&t=st6sc2bo&sid=G44E4dTzr1SxSdt0AAAH HTTP/1.1" 200 -
+2025-03-24 09:22:04,000 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:04] "GET /socket.io/?EIO=4&transport=polling&t=st6sfhx4&sid=G44E4dTzr1SxSdt0AAAH HTTP/1.1" 200 -
+2025-03-24 09:22:04,196 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:04] "POST /socket.io/?EIO=4&transport=polling&t=st6x9cvl&sid=G44E4dTzr1SxSdt0AAAH HTTP/1.1" 200 -
+2025-03-24 09:22:04,198 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:04] "GET /socket.io/?EIO=4&transport=polling&t=st6x7wwe&sid=G44E4dTzr1SxSdt0AAAH HTTP/1.1" 200 -
+2025-03-24 09:22:04,338 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:04] "[31m[1mGET /socket.io/?EIO=4&transport=websocket&sid=G44E4dTzr1SxSdt0AAAH HTTP/1.1[0m" 400 -
+2025-03-24 09:22:05,332 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:05] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:22:05,334 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:05] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:22:05,401 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:05] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:22:23,529 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:23] "GET /socket.io/?EIO=4&transport=polling&t=stlumhr7 HTTP/1.1" 200 -
+2025-03-24 09:22:23,862 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:23] "POST /socket.io/?EIO=4&transport=polling&t=stlyp466&sid=V-9KR4gR8H7qWnm5AAAI HTTP/1.1" 200 -
+2025-03-24 09:22:23,866 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:23] "GET /socket.io/?EIO=4&transport=polling&t=stlyrhqi&sid=V-9KR4gR8H7qWnm5AAAI HTTP/1.1" 200 -
+2025-03-24 09:22:24,363 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:24] "POST /socket.io/?EIO=4&transport=polling&t=stmdyv9f&sid=V-9KR4gR8H7qWnm5AAAI HTTP/1.1" 200 -
+2025-03-24 09:22:24,364 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:24] "GET /socket.io/?EIO=4&transport=polling&t=stmdw18l&sid=V-9KR4gR8H7qWnm5AAAI HTTP/1.1" 200 -
+2025-03-24 09:22:24,652 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:24] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:22:24,669 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:24] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:22:24,698 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:24] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:22:47,186 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:47] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:22:47,421 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:47] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:22:49,717 - ERROR - pin GPIO11 is already in use by <gpiozero.Buzzer object on pin GPIO11, active_high=True, is_active=False>
+2025-03-24 09:22:49,722 - INFO - 127.0.0.1 - - [24/Mar/2025 09:22:49] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-24 09:23:21,850 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:21] "GET /socket.io/?EIO=4&transport=polling&t=suuvbnc7 HTTP/1.1" 200 -
+2025-03-24 09:23:21,979 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:21] "POST /socket.io/?EIO=4&transport=polling&t=suuyapvu&sid=UwOHAUaYpBoWO5KTAAAJ HTTP/1.1" 200 -
+2025-03-24 09:23:21,987 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:21] "GET /socket.io/?EIO=4&transport=polling&t=suuyc3sc&sid=UwOHAUaYpBoWO5KTAAAJ HTTP/1.1" 200 -
+2025-03-24 09:23:22,113 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:22] "GET /socket.io/?EIO=4&transport=websocket&sid=UwOHAUaYpBoWO5KTAAAJ HTTP/1.1" 200 -
+2025-03-24 09:23:22,165 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:22] "POST /socket.io/?EIO=4&transport=polling&t=suv3azyz&sid=UwOHAUaYpBoWO5KTAAAJ HTTP/1.1" 200 -
+2025-03-24 09:23:22,175 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:22] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=suv39vhr&sid=UwOHAUaYpBoWO5KTAAAJ HTTP/1.1[0m" 400 -
+2025-03-24 09:23:22,188 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:22] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:23:25,032 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "GET /socket.io/?EIO=4&transport=polling&t=suxb5odf HTTP/1.1" 200 -
+2025-03-24 09:23:25,089 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "POST /socket.io/?EIO=4&transport=polling&t=suxdediu&sid=v7yfLAVjZeMW7Vw6AAAK HTTP/1.1" 200 -
+2025-03-24 09:23:25,100 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "GET /socket.io/?EIO=4&transport=polling&t=suxdeku5&sid=v7yfLAVjZeMW7Vw6AAAK HTTP/1.1" 200 -
+2025-03-24 09:23:25,155 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "POST /socket.io/?EIO=4&transport=polling&t=suxfb8tc&sid=v7yfLAVjZeMW7Vw6AAAK HTTP/1.1" 200 -
+2025-03-24 09:23:25,165 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=suxfatkx&sid=v7yfLAVjZeMW7Vw6AAAK HTTP/1.1[0m" 400 -
+2025-03-24 09:23:25,932 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:23:25,938 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:23:25,975 - INFO - 127.0.0.1 - - [24/Mar/2025 09:23:25] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:23:42,511 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:23:42,513 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:24:16,637 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:16] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:24:16,687 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:16] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:24:21,837 - INFO - Initialization successful.
+2025-03-24 09:24:21,839 - INFO - Camera now open.
+2025-03-24 09:24:21,863 - INFO - Camera configuration has been adjusted!
+2025-03-24 09:24:21,866 - INFO - Configuration successful!
+2025-03-24 09:24:22,057 - INFO - Camera started
+2025-03-24 09:24:22,071 - INFO - emitting event "game" to all [/]
+2025-03-24 09:24:22,080 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:22] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:24:22,111 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:22] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:24:39,475 - INFO - emitting event "game" to all [/]
+2025-03-24 09:24:39,482 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:39] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:24:42,478 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:42,479 - INFO - Remaining time: 58.997289504000264
+2025-03-24 09:24:43,482 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:43,483 - INFO - Remaining time: 57.996273791000704
+2025-03-24 09:24:44,485 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:44,486 - INFO - Remaining time: 56.995293382
+2025-03-24 09:24:45,491 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:45,493 - INFO - Remaining time: 55.992350344000215
+2025-03-24 09:24:46,497 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:46,499 - INFO - Remaining time: 54.99016450000022
+2025-03-24 09:24:47,503 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:47,504 - INFO - Remaining time: 53.98821456800101
+2025-03-24 09:24:48,507 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:48,508 - INFO - Remaining time: 52.98684071900129
+2025-03-24 09:24:49,511 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:49,512 - INFO - Remaining time: 51.98542590300144
+2025-03-24 09:24:50,516 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:50,518 - INFO - Remaining time: 50.98379743900114
+2025-03-24 09:24:51,521 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:51,523 - INFO - Remaining time: 49.982447375000675
+2025-03-24 09:24:52,534 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:24:52,554 - INFO - Remaining time: 48.97364639300076
+2025-03-24 09:24:52,552 - INFO - emitting event "game" to all [/]
+2025-03-24 09:24:52,569 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:52] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:24:52,576 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:52] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:24:54,717 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:54] "[31m[1mPOST /game/actions HTTP/1.1[0m" 400 -
+2025-03-24 09:24:54,728 - INFO - 127.0.0.1 - - [24/Mar/2025 09:24:54] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:25:33,653 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "GET /socket.io/?EIO=4&transport=polling&t=sxojrojy HTTP/1.1" 200 -
+2025-03-24 09:25:33,736 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:25:33,759 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:25:33,806 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "POST /socket.io/?EIO=4&transport=polling&t=sxon9gj0&sid=W6M7k3R_ffD2HTIOAAAA HTTP/1.1" 200 -
+2025-03-24 09:25:33,816 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "GET /socket.io/?EIO=4&transport=polling&t=sxonatmp&sid=W6M7k3R_ffD2HTIOAAAA HTTP/1.1" 200 -
+2025-03-24 09:25:33,867 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:25:33,931 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "POST /socket.io/?EIO=4&transport=polling&t=sxoqq63j&sid=W6M7k3R_ffD2HTIOAAAA HTTP/1.1" 200 -
+2025-03-24 09:25:33,932 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:33] "GET /socket.io/?EIO=4&transport=polling&t=sxoqpryz&sid=W6M7k3R_ffD2HTIOAAAA HTTP/1.1" 200 -
+2025-03-24 09:25:37,687 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:37] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:25:37,757 - INFO - 127.0.0.1 - - [24/Mar/2025 09:25:37] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:26:10,858 - ERROR - Invalid session V-9KR4gR8H7qWnm5AAAI (further occurrences of this error will be logged with level INFO)
+2025-03-24 09:26:10,862 - INFO - 127.0.0.1 - - [24/Mar/2025 09:26:10] "[31m[1mGET /socket.io/?EIO=4&transport=websocket&sid=V-9KR4gR8H7qWnm5AAAI HTTP/1.1[0m" 400 -
+2025-03-24 09:27:25,094 - INFO - 127.0.0.1 - - [24/Mar/2025 09:27:25] "[31m[1mGET /socket.io/?EIO=4&transport=websocket&sid=W6M7k3R_ffD2HTIOAAAA HTTP/1.1[0m" 400 -
+2025-03-24 09:28:34,312 - INFO - Camera stopped
+2025-03-24 09:28:34,525 - INFO - Camera closed successfully.
+2025-03-24 09:31:33,263 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:31:33,263 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:31:39,777 - INFO - 127.0.0.1 - - [24/Mar/2025 09:31:39] "GET /socket.io/?EIO=4&transport=polling&t=t5j3h43t HTTP/1.1" 200 -
+2025-03-24 09:31:39,824 - INFO - 127.0.0.1 - - [24/Mar/2025 09:31:39] "POST /socket.io/?EIO=4&transport=polling&t=t5j48i1n&sid=xy_l0vli8wDzw66KAAAA HTTP/1.1" 200 -
+2025-03-24 09:31:39,825 - INFO - 127.0.0.1 - - [24/Mar/2025 09:31:39] "GET /socket.io/?EIO=4&transport=polling&t=t5j4bfjh&sid=xy_l0vli8wDzw66KAAAA HTTP/1.1" 200 -
+2025-03-24 09:31:39,840 - INFO - 127.0.0.1 - - [24/Mar/2025 09:31:39] "GET /socket.io/?EIO=4&transport=websocket&sid=xy_l0vli8wDzw66KAAAA HTTP/1.1" 200 -
+2025-03-24 09:32:00,555 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:00] "GET /socket.io/?EIO=4&transport=polling&t=t5z4aifk HTTP/1.1" 200 -
+2025-03-24 09:32:00,679 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:00] "POST /socket.io/?EIO=4&transport=polling&t=t5z89hgh&sid=XLKsR51P4XEN42pgAAAB HTTP/1.1" 200 -
+2025-03-24 09:32:00,728 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:00] "GET /socket.io/?EIO=4&transport=polling&t=t5z8gqzt&sid=XLKsR51P4XEN42pgAAAB HTTP/1.1" 200 -
+2025-03-24 09:32:00,858 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:00] "GET /socket.io/?EIO=4&transport=polling&t=t5zd97yl&sid=XLKsR51P4XEN42pgAAAB HTTP/1.1" 200 -
+2025-03-24 09:32:00,897 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:00] "GET /socket.io/?EIO=4&transport=polling&t=t5zehgp5&sid=XLKsR51P4XEN42pgAAAB HTTP/1.1" 200 -
+2025-03-24 09:32:01,020 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:01] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:32:01,036 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:01] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:32:01,120 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:01] "GET /socket.io/?EIO=4&transport=websocket&sid=XLKsR51P4XEN42pgAAAB HTTP/1.1" 200 -
+2025-03-24 09:32:01,217 - INFO - 127.0.0.1 - - [24/Mar/2025 09:32:01] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:46:00,060 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "GET /socket.io/?EIO=4&transport=polling&t=tnytzxqu HTTP/1.1" 200 -
+2025-03-24 09:46:00,135 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "POST /socket.io/?EIO=4&transport=polling&t=tnywp200&sid=1BPL8lqIA9WI-ERQAAAC HTTP/1.1" 200 -
+2025-03-24 09:46:00,153 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "GET /socket.io/?EIO=4&transport=polling&t=tnywrw8s&sid=1BPL8lqIA9WI-ERQAAAC HTTP/1.1" 200 -
+2025-03-24 09:46:00,262 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "GET /socket.io/?EIO=4&transport=websocket&sid=1BPL8lqIA9WI-ERQAAAC HTTP/1.1" 200 -
+2025-03-24 09:46:00,268 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "POST /socket.io/?EIO=4&transport=polling&t=tnz02jwi&sid=1BPL8lqIA9WI-ERQAAAC HTTP/1.1" 200 -
+2025-03-24 09:46:00,273 - ERROR - 'Session is disconnected' 1BPL8lqIA9WI-ERQAAAC (further occurrences of this error will be logged with level INFO)
+2025-03-24 09:46:00,274 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=tnz00v0r&sid=1BPL8lqIA9WI-ERQAAAC HTTP/1.1[0m" 400 -
+2025-03-24 09:46:00,412 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:46:00,415 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:46:00,453 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:46:15,549 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "GET /socket.io/?EIO=4&transport=polling&t=toaspixk HTTP/1.1" 200 -
+2025-03-24 09:46:15,639 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "POST /socket.io/?EIO=4&transport=polling&t=toav6li8&sid=z_FE7QWQtatZP5GNAAAD HTTP/1.1" 200 -
+2025-03-24 09:46:15,643 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "GET /socket.io/?EIO=4&transport=polling&t=toava2a8&sid=z_FE7QWQtatZP5GNAAAD HTTP/1.1" 200 -
+2025-03-24 09:46:15,785 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:46:15,791 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:46:15,892 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "GET /socket.io/?EIO=4&transport=polling&t=tob2caw9&sid=z_FE7QWQtatZP5GNAAAD HTTP/1.1" 200 -
+2025-03-24 09:46:15,896 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "POST /socket.io/?EIO=4&transport=polling&t=tob2d6td&sid=z_FE7QWQtatZP5GNAAAD HTTP/1.1" 200 -
+2025-03-24 09:46:15,903 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "GET /socket.io/?EIO=4&transport=websocket&sid=z_FE7QWQtatZP5GNAAAD HTTP/1.1" 200 -
+2025-03-24 09:46:15,948 - INFO - 127.0.0.1 - - [24/Mar/2025 09:46:15] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:47:11,966 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:11] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:47:12,010 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:12] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:47:15,620 - INFO - Initialization successful.
+2025-03-24 09:47:15,621 - INFO - Camera now open.
+2025-03-24 09:47:15,629 - INFO - Camera configuration has been adjusted!
+2025-03-24 09:47:15,632 - INFO - Configuration successful!
+2025-03-24 09:47:15,784 - INFO - Camera started
+2025-03-24 09:47:15,786 - INFO - emitting event "game" to all [/]
+2025-03-24 09:47:15,789 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:15] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:47:15,802 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:15] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:47:18,647 - INFO - emitting event "game" to all [/]
+2025-03-24 09:47:18,651 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:18] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:47:21,651 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:21,652 - INFO - Remaining time: 58.997060897001575
+2025-03-24 09:47:22,654 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:22,656 - INFO - Remaining time: 57.99586837500192
+2025-03-24 09:47:23,659 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:23,661 - INFO - Remaining time: 56.99400844100137
+2025-03-24 09:47:24,662 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:24,663 - INFO - Remaining time: 55.993160444001205
+2025-03-24 09:47:25,665 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:25,665 - INFO - Remaining time: 54.99226730800092
+2025-03-24 09:47:26,667 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:26,668 - INFO - Remaining time: 53.99143646100083
+2025-03-24 09:47:27,670 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:27,671 - INFO - Remaining time: 52.99059771000202
+2025-03-24 09:47:28,673 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:28,674 - INFO - Remaining time: 51.98939353500191
+2025-03-24 09:47:29,676 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:29,677 - INFO - Remaining time: 50.9877896790008
+2025-03-24 09:47:30,682 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:30,683 - INFO - Remaining time: 49.98455346000037
+2025-03-24 09:47:31,685 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:47:31,686 - INFO - Remaining time: 48.98340153800018
+2025-03-24 09:47:31,832 - INFO - emitting event "game" to all [/]
+2025-03-24 09:47:31,835 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:31] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:47:31,851 - INFO - 127.0.0.1 - - [24/Mar/2025 09:47:31] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:49:44,557 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:44] "GET /socket.io/?EIO=4&transport=polling&t=tss22wy5 HTTP/1.1" 200 -
+2025-03-24 09:49:44,619 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:44] "POST /socket.io/?EIO=4&transport=polling&t=tss3xq95&sid=AgX0c_G-_ZD_Tiv2AAAE HTTP/1.1" 200 -
+2025-03-24 09:49:44,631 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:44] "GET /socket.io/?EIO=4&transport=polling&t=tss42wor&sid=AgX0c_G-_ZD_Tiv2AAAE HTTP/1.1" 200 -
+2025-03-24 09:49:44,763 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:44] "POST /socket.io/?EIO=4&transport=polling&t=tss7x6sq&sid=AgX0c_G-_ZD_Tiv2AAAE HTTP/1.1" 200 -
+2025-03-24 09:49:44,776 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:44] "GET /socket.io/?EIO=4&transport=websocket&sid=AgX0c_G-_ZD_Tiv2AAAE HTTP/1.1" 200 -
+2025-03-24 09:49:44,828 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:44] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=tss7vpxu&sid=AgX0c_G-_ZD_Tiv2AAAE HTTP/1.1[0m" 400 -
+2025-03-24 09:49:45,333 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:45] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:49:45,743 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:45] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:49:45,793 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:45] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:49:51,960 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:51] "GET /socket.io/?EIO=4&transport=polling&t=tsxrzasy HTTP/1.1" 200 -
+2025-03-24 09:49:52,036 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "POST /socket.io/?EIO=4&transport=polling&t=tsxu50t3&sid=QmIoAsWsprkMcYjdAAAF HTTP/1.1" 200 -
+2025-03-24 09:49:52,040 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "GET /socket.io/?EIO=4&transport=polling&t=tsxu8ohy&sid=QmIoAsWsprkMcYjdAAAF HTTP/1.1" 200 -
+2025-03-24 09:49:52,134 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:49:52,137 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:49:52,226 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "GET /socket.io/?EIO=4&transport=polling&t=tsxzg7w9&sid=QmIoAsWsprkMcYjdAAAF HTTP/1.1" 200 -
+2025-03-24 09:49:52,231 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "POST /socket.io/?EIO=4&transport=polling&t=tsxzikjv&sid=QmIoAsWsprkMcYjdAAAF HTTP/1.1" 200 -
+2025-03-24 09:49:52,235 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "GET /socket.io/?EIO=4&transport=websocket&sid=QmIoAsWsprkMcYjdAAAF HTTP/1.1" 200 -
+2025-03-24 09:49:52,262 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:52] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:49:53,938 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:53] "GET /socket.io/?EIO=4&transport=polling&t=tszb1elc HTTP/1.1" 200 -
+2025-03-24 09:49:54,019 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "POST /socket.io/?EIO=4&transport=polling&t=tszdbl56&sid=tkD2V_DLDbRReCZjAAAG HTTP/1.1" 200 -
+2025-03-24 09:49:54,024 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "GET /socket.io/?EIO=4&transport=polling&t=tszdfj6j&sid=tkD2V_DLDbRReCZjAAAG HTTP/1.1" 200 -
+2025-03-24 09:49:54,124 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:49:54,128 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:49:54,237 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "GET /socket.io/?EIO=4&transport=polling&t=tszj8mb1&sid=tkD2V_DLDbRReCZjAAAG HTTP/1.1" 200 -
+2025-03-24 09:49:54,240 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "POST /socket.io/?EIO=4&transport=polling&t=tszjb495&sid=tkD2V_DLDbRReCZjAAAG HTTP/1.1" 200 -
+2025-03-24 09:49:54,248 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "GET /socket.io/?EIO=4&transport=websocket&sid=tkD2V_DLDbRReCZjAAAG HTTP/1.1" 200 -
+2025-03-24 09:49:54,278 - INFO - 127.0.0.1 - - [24/Mar/2025 09:49:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:50:00,123 - INFO - 127.0.0.1 - - [24/Mar/2025 09:50:00] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:50:00,172 - INFO - 127.0.0.1 - - [24/Mar/2025 09:50:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:50:02,495 - ERROR - pin GPIO11 is already in use by <gpiozero.Buzzer object on pin GPIO11, active_high=True, is_active=False>
+2025-03-24 09:50:02,498 - INFO - 127.0.0.1 - - [24/Mar/2025 09:50:02] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-24 09:50:12,705 - INFO - 127.0.0.1 - - [24/Mar/2025 09:50:12] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:50:12,740 - INFO - 127.0.0.1 - - [24/Mar/2025 09:50:12] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:50:14,808 - ERROR - pin GPIO11 is already in use by <gpiozero.Buzzer object on pin GPIO11, active_high=True, is_active=False>
+2025-03-24 09:50:14,811 - INFO - 127.0.0.1 - - [24/Mar/2025 09:50:14] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-24 09:51:31,181 - INFO - 127.0.0.1 - - [24/Mar/2025 09:51:31] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:51:31,204 - INFO - 127.0.0.1 - - [24/Mar/2025 09:51:31] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:51:34,493 - INFO - 127.0.0.1 - - [24/Mar/2025 09:51:34] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:51:34,527 - INFO - 127.0.0.1 - - [24/Mar/2025 09:51:34] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:51:39,969 - ERROR - pin GPIO11 is already in use by <gpiozero.Buzzer object on pin GPIO11, active_high=True, is_active=False>
+2025-03-24 09:51:39,972 - INFO - 127.0.0.1 - - [24/Mar/2025 09:51:39] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-24 09:52:31,258 - INFO - Camera stopped
+2025-03-24 09:52:39,826 - INFO - Camera closed successfully.
+2025-03-24 09:52:59,168 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:52:59,168 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 09:53:03,087 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "GET /socket.io/?EIO=4&transport=polling&t=tx19ir4q HTTP/1.1" 200 -
+2025-03-24 09:53:03,234 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "POST /socket.io/?EIO=4&transport=polling&t=tx1dikwe&sid=bM7UtdgtxBZuk6BLAAAA HTTP/1.1" 200 -
+2025-03-24 09:53:03,242 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "GET /socket.io/?EIO=4&transport=polling&t=tx1dlr7q&sid=bM7UtdgtxBZuk6BLAAAA HTTP/1.1" 200 -
+2025-03-24 09:53:03,397 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "GET /socket.io/?EIO=4&transport=websocket&sid=bM7UtdgtxBZuk6BLAAAA HTTP/1.1" 200 -
+2025-03-24 09:53:03,417 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "POST /socket.io/?EIO=4&transport=polling&t=tx1hualo&sid=bM7UtdgtxBZuk6BLAAAA HTTP/1.1" 200 -
+2025-03-24 09:53:03,417 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "GET /socket.io/?EIO=4&transport=polling&t=tx1ht96g&sid=bM7UtdgtxBZuk6BLAAAA HTTP/1.1" 200 -
+2025-03-24 09:53:03,564 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:53:03,572 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:53:03,612 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:03] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:53:06,782 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:06] "GET /table HTTP/1.1" 200 -
+2025-03-24 09:53:06,828 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:06] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 09:53:11,775 - INFO - Initialization successful.
+2025-03-24 09:53:11,777 - INFO - Camera now open.
+2025-03-24 09:53:11,786 - INFO - Camera configuration has been adjusted!
+2025-03-24 09:53:11,790 - INFO - Configuration successful!
+2025-03-24 09:53:11,944 - INFO - Camera started
+2025-03-24 09:53:11,947 - INFO - emitting event "game" to all [/]
+2025-03-24 09:53:11,950 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:11] "POST /game HTTP/1.1" 200 -
+2025-03-24 09:53:11,966 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:11] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:53:15,748 - INFO - emitting event "game" to all [/]
+2025-03-24 09:53:17,427 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:17] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:53:18,749 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:53:18,750 - INFO - Remaining time: 58.9991401780012
+2025-03-24 09:53:19,751 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:53:19,752 - INFO - Remaining time: 57.9983169190009
+2025-03-24 09:53:20,754 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:53:20,755 - INFO - Remaining time: 56.997375879000174
+2025-03-24 09:53:21,763 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:53:21,764 - INFO - Remaining time: 55.99147989199946
+2025-03-24 09:53:22,766 - INFO - emitting event "timer" to all [/]
+2025-03-24 09:53:22,766 - INFO - Remaining time: 54.99047467199762
+2025-03-24 09:53:23,536 - INFO - emitting event "game" to all [/]
+2025-03-24 09:53:23,540 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:23] "GET /game HTTP/1.1" 200 -
+2025-03-24 09:53:23,543 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:23] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 09:53:25,524 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:25] "[31m[1mPOST /game/actions HTTP/1.1[0m" 400 -
+2025-03-24 09:53:25,529 - INFO - 127.0.0.1 - - [24/Mar/2025 09:53:25] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 09:59:47,112 - INFO - Camera stopped
+2025-03-24 09:59:47,318 - INFO - Camera closed successfully.
+2025-03-24 09:59:51,227 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 09:59:51,228 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:00:03,633 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:03] "GET /socket.io/?EIO=4&transport=polling&t=u61rggz4 HTTP/1.1" 200 -
+2025-03-24 10:00:03,718 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:03] "POST /socket.io/?EIO=4&transport=polling&t=u61tn7rh&sid=LuiEqeDFveHjxKXEAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:03,730 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:03] "GET /socket.io/?EIO=4&transport=polling&t=u61tq552&sid=LuiEqeDFveHjxKXEAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:03,860 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:03] "GET /socket.io/?EIO=4&transport=polling&t=u61xi1ol&sid=LuiEqeDFveHjxKXEAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:04,009 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:04] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:00:04,013 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:04] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:00:04,028 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:04] "GET /socket.io/?EIO=4&transport=websocket&sid=LuiEqeDFveHjxKXEAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:04,243 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:04] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:00:24,131 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:00:24,131 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:00:27,887 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:27] "GET /socket.io/?EIO=4&transport=polling&t=u6kgzvnh HTTP/1.1" 200 -
+2025-03-24 10:00:27,955 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:27] "POST /socket.io/?EIO=4&transport=polling&t=u6kiw8ex&sid=QQKixrU7SRvSpE7HAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:27,962 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:27] "GET /socket.io/?EIO=4&transport=polling&t=u6kixxlx&sid=QQKixrU7SRvSpE7HAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:28,094 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:28] "GET /socket.io/?EIO=4&transport=websocket&sid=QQKixrU7SRvSpE7HAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:28,100 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:28] "POST /socket.io/?EIO=4&transport=polling&t=u6kmoms6&sid=QQKixrU7SRvSpE7HAAAA HTTP/1.1" 200 -
+2025-03-24 10:00:28,105 - ERROR - 'Session is disconnected' QQKixrU7SRvSpE7HAAAA (further occurrences of this error will be logged with level INFO)
+2025-03-24 10:00:28,108 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:28] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=u6kmn3pd&sid=QQKixrU7SRvSpE7HAAAA HTTP/1.1[0m" 400 -
+2025-03-24 10:00:28,262 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:28] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:00:28,292 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:28] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:00:28,486 - INFO - 127.0.0.1 - - [24/Mar/2025 10:00:28] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:02:08,941 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:02:08,942 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:02:13,194 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "GET /socket.io/?EIO=4&transport=polling&t=u8tqa1bc HTTP/1.1" 200 -
+2025-03-24 10:02:13,275 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "POST /socket.io/?EIO=4&transport=polling&t=u8tsk2fs&sid=-Q50IRaEhMx60dcIAAAA HTTP/1.1" 200 -
+2025-03-24 10:02:13,287 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "GET /socket.io/?EIO=4&transport=polling&t=u8tsm38g&sid=-Q50IRaEhMx60dcIAAAA HTTP/1.1" 200 -
+2025-03-24 10:02:13,428 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "GET /socket.io/?EIO=4&transport=polling&t=u8twgglo&sid=-Q50IRaEhMx60dcIAAAA HTTP/1.1" 200 -
+2025-03-24 10:02:13,431 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "POST /socket.io/?EIO=4&transport=polling&t=u8twidh2&sid=-Q50IRaEhMx60dcIAAAA HTTP/1.1" 200 -
+2025-03-24 10:02:13,432 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "GET /socket.io/?EIO=4&transport=websocket&sid=-Q50IRaEhMx60dcIAAAA HTTP/1.1" 200 -
+2025-03-24 10:02:13,605 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:02:13,612 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:02:13,840 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:13] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:02:15,836 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:15] "GET /socket.io/?EIO=4&transport=polling&t=u8vrgk1x HTTP/1.1" 200 -
+2025-03-24 10:02:15,941 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:15] "POST /socket.io/?EIO=4&transport=polling&t=u8vukag4&sid=cTVHknf9SkiEkgtmAAAB HTTP/1.1" 200 -
+2025-03-24 10:02:15,947 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:15] "GET /socket.io/?EIO=4&transport=polling&t=u8vum8ty&sid=cTVHknf9SkiEkgtmAAAB HTTP/1.1" 200 -
+2025-03-24 10:02:16,081 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:16] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:02:16,085 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:16] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:02:16,232 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:16] "GET /socket.io/?EIO=4&transport=polling&t=u8w2jca7&sid=cTVHknf9SkiEkgtmAAAB HTTP/1.1" 200 -
+2025-03-24 10:02:16,234 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:16] "POST /socket.io/?EIO=4&transport=polling&t=u8w2l6yw&sid=cTVHknf9SkiEkgtmAAAB HTTP/1.1" 200 -
+2025-03-24 10:02:16,249 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:16] "GET /socket.io/?EIO=4&transport=websocket&sid=cTVHknf9SkiEkgtmAAAB HTTP/1.1" 200 -
+2025-03-24 10:02:16,306 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:16] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:02:20,435 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:20] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:02:20,488 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:20] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:02:24,507 - INFO - Initialization successful.
+2025-03-24 10:02:24,508 - INFO - Camera now open.
+2025-03-24 10:02:24,516 - INFO - Camera configuration has been adjusted!
+2025-03-24 10:02:24,519 - INFO - Configuration successful!
+2025-03-24 10:02:24,669 - INFO - Camera started
+2025-03-24 10:02:24,672 - INFO - emitting event "game" to all [/]
+2025-03-24 10:02:24,675 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:24] "POST /game HTTP/1.1" 200 -
+2025-03-24 10:02:24,688 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:24] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:02:25,952 - INFO - emitting event "game" to all [/]
+2025-03-24 10:02:25,954 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:25] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:02:28,553 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:28] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:02:28,565 - INFO - emitting event "game" to all [/]
+2025-03-24 10:02:28,569 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:28] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:02:31,581 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:31] "[31m[1mPOST /game/actions HTTP/1.1[0m" 400 -
+2025-03-24 10:02:31,584 - INFO - 127.0.0.1 - - [24/Mar/2025 10:02:31] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:08:01,785 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:01] "GET /socket.io/?EIO=4&transport=polling&t=ugalwvao HTTP/1.1" 200 -
+2025-03-24 10:08:01,840 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:01] "POST /socket.io/?EIO=4&transport=polling&t=ugaqnb31&sid=tfEDDpXq7OBj0ndEAAAC HTTP/1.1" 200 -
+2025-03-24 10:08:01,876 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:01] "GET /socket.io/?EIO=4&transport=polling&t=ugaqpv44&sid=tfEDDpXq7OBj0ndEAAAC HTTP/1.1" 200 -
+2025-03-24 10:08:02,050 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:02] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:08:02,088 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:02] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:08:02,094 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:02] "GET /socket.io/?EIO=4&transport=polling&t=ugaxjqnd&sid=tfEDDpXq7OBj0ndEAAAC HTTP/1.1" 200 -
+2025-03-24 10:08:02,103 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:02] "GET /socket.io/?EIO=4&transport=websocket&sid=tfEDDpXq7OBj0ndEAAAC HTTP/1.1" 200 -
+2025-03-24 10:08:02,107 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:02] "POST /socket.io/?EIO=4&transport=polling&t=ugaxkuz1&sid=tfEDDpXq7OBj0ndEAAAC HTTP/1.1" 200 -
+2025-03-24 10:08:02,328 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:02] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:08:11,581 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:11] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:08:11,637 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:11] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:08:14,337 - ERROR - pin GPIO11 is already in use by <gpiozero.Buzzer object on pin GPIO11, active_high=True, is_active=False>
+2025-03-24 10:08:14,341 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:14] "[35m[1mPOST /game HTTP/1.1[0m" 500 -
+2025-03-24 10:08:18,429 - INFO - Camera stopped
+2025-03-24 10:08:18,657 - INFO - Camera closed successfully.
+2025-03-24 10:08:27,172 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:08:27,173 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:08:30,172 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "GET /socket.io/?EIO=4&transport=polling&t=ugwlkumg HTTP/1.1" 200 -
+2025-03-24 10:08:30,267 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "POST /socket.io/?EIO=4&transport=polling&t=ugwo9njm&sid=vSrV6NQzRpHIcYY1AAAA HTTP/1.1" 200 -
+2025-03-24 10:08:30,285 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "GET /socket.io/?EIO=4&transport=polling&t=ugwobwwn&sid=vSrV6NQzRpHIcYY1AAAA HTTP/1.1" 200 -
+2025-03-24 10:08:30,418 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "GET /socket.io/?EIO=4&transport=polling&t=ugws8mlq&sid=vSrV6NQzRpHIcYY1AAAA HTTP/1.1" 200 -
+2025-03-24 10:08:30,419 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "GET /socket.io/?EIO=4&transport=websocket&sid=vSrV6NQzRpHIcYY1AAAA HTTP/1.1" 200 -
+2025-03-24 10:08:30,421 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "POST /socket.io/?EIO=4&transport=polling&t=ugws9la2&sid=vSrV6NQzRpHIcYY1AAAA HTTP/1.1" 200 -
+2025-03-24 10:08:30,581 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:08:30,585 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:08:30,623 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:30] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:08:31,945 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:31] "GET /socket.io/?EIO=4&transport=polling&t=ugxyubjz HTTP/1.1" 200 -
+2025-03-24 10:08:32,040 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "POST /socket.io/?EIO=4&transport=polling&t=ugy1k845&sid=LlBWMwpeLzFSiphOAAAB HTTP/1.1" 200 -
+2025-03-24 10:08:32,046 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "GET /socket.io/?EIO=4&transport=polling&t=ugy1mkxo&sid=LlBWMwpeLzFSiphOAAAB HTTP/1.1" 200 -
+2025-03-24 10:08:32,162 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:08:32,165 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:08:32,295 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "GET /socket.io/?EIO=4&transport=polling&t=ugy8jwo5&sid=LlBWMwpeLzFSiphOAAAB HTTP/1.1" 200 -
+2025-03-24 10:08:32,298 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "POST /socket.io/?EIO=4&transport=polling&t=ugy8l9s9&sid=LlBWMwpeLzFSiphOAAAB HTTP/1.1" 200 -
+2025-03-24 10:08:32,307 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "GET /socket.io/?EIO=4&transport=websocket&sid=LlBWMwpeLzFSiphOAAAB HTTP/1.1" 200 -
+2025-03-24 10:08:32,337 - INFO - 127.0.0.1 - - [24/Mar/2025 10:08:32] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:10:01,209 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:10:01,210 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:10:12,985 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:12] "GET /socket.io/?EIO=4&transport=polling&t=uj3x00bg HTTP/1.1" 200 -
+2025-03-24 10:10:13,071 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "POST /socket.io/?EIO=4&transport=polling&t=uj3zoxl2&sid=lj4OswARCBzdvwelAAAA HTTP/1.1" 200 -
+2025-03-24 10:10:13,092 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "GET /socket.io/?EIO=4&transport=polling&t=uj3zrvsk&sid=lj4OswARCBzdvwelAAAA HTTP/1.1" 200 -
+2025-03-24 10:10:13,227 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "GET /socket.io/?EIO=4&transport=websocket&sid=lj4OswARCBzdvwelAAAA HTTP/1.1" 200 -
+2025-03-24 10:10:13,236 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "POST /socket.io/?EIO=4&transport=polling&t=uj43orj9&sid=lj4OswARCBzdvwelAAAA HTTP/1.1" 200 -
+2025-03-24 10:10:13,238 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "GET /socket.io/?EIO=4&transport=polling&t=uj43mc0c&sid=lj4OswARCBzdvwelAAAA HTTP/1.1" 200 -
+2025-03-24 10:10:13,372 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:10:13,385 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:10:13,579 - INFO - 127.0.0.1 - - [24/Mar/2025 10:10:13] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:10:43,556 - INFO - Client connesso
+2025-03-24 10:11:00,482 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:00] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:11:00,525 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:11:06,352 - INFO - Initialization successful.
+2025-03-24 10:11:06,353 - INFO - Camera now open.
+2025-03-24 10:11:06,361 - INFO - Camera configuration has been adjusted!
+2025-03-24 10:11:06,364 - INFO - Configuration successful!
+2025-03-24 10:11:06,518 - INFO - Camera started
+2025-03-24 10:11:06,521 - INFO - emitting event "game" to all [/]
+2025-03-24 10:11:06,526 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:06] "POST /game HTTP/1.1" 200 -
+2025-03-24 10:11:06,542 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:06] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:11:09,477 - INFO - emitting event "game" to all [/]
+2025-03-24 10:11:09,480 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:09] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:11:12,478 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:12,479 - INFO - Remaining time: 58.99913470300089
+2025-03-24 10:11:13,481 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:13,483 - INFO - Remaining time: 57.9981470369994
+2025-03-24 10:11:14,486 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:14,487 - INFO - Remaining time: 56.9959279170007
+2025-03-24 10:11:15,490 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:15,491 - INFO - Remaining time: 55.99467412500053
+2025-03-24 10:11:16,493 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:16,494 - INFO - Remaining time: 54.99380815800123
+2025-03-24 10:11:17,496 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:17,498 - INFO - Remaining time: 53.99240567000106
+2025-03-24 10:11:18,500 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:11:18,501 - INFO - Remaining time: 52.991250301002765
+2025-03-24 10:11:19,168 - INFO - emitting event "game" to all [/]
+2025-03-24 10:11:19,172 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:19] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:11:19,177 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:19] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:11:22,368 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:22] "[31m[1mPOST /game/actions HTTP/1.1[0m" 400 -
+2025-03-24 10:11:22,372 - INFO - 127.0.0.1 - - [24/Mar/2025 10:11:22] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:12:31,519 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:12:31,519 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:15:44,861 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:44] "GET /socket.io/?EIO=4&transport=polling&t=uq7vsg8y HTTP/1.1" 200 -
+2025-03-24 10:15:45,023 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:15:45,039 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "POST /socket.io/?EIO=4&transport=polling&t=uq841rqx&sid=D4Hh-r3dQxB1KfBVAAAA HTTP/1.1" 200 -
+2025-03-24 10:15:45,060 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "GET /socket.io/?EIO=4&transport=polling&t=uq844hvp&sid=D4Hh-r3dQxB1KfBVAAAA HTTP/1.1" 200 -
+2025-03-24 10:15:45,088 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:15:45,119 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "GET /socket.io/?EIO=4&transport=polling&t=uq875lrt&sid=D4Hh-r3dQxB1KfBVAAAA HTTP/1.1" 200 -
+2025-03-24 10:15:45,124 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "POST /socket.io/?EIO=4&transport=polling&t=uq877hx9&sid=D4Hh-r3dQxB1KfBVAAAA HTTP/1.1" 200 -
+2025-03-24 10:15:45,202 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "GET /socket.io/?EIO=4&transport=websocket&sid=D4Hh-r3dQxB1KfBVAAAA HTTP/1.1" 200 -
+2025-03-24 10:15:45,227 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:45] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:15:46,397 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "GET /socket.io/?EIO=4&transport=polling&t=uq96mv0p HTTP/1.1" 200 -
+2025-03-24 10:15:46,490 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "POST /socket.io/?EIO=4&transport=polling&t=uq9992qn&sid=auQ3i3kCXHjKms4jAAAB HTTP/1.1" 200 -
+2025-03-24 10:15:46,494 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "GET /socket.io/?EIO=4&transport=polling&t=uq99bs5x&sid=auQ3i3kCXHjKms4jAAAB HTTP/1.1" 200 -
+2025-03-24 10:15:46,602 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:15:46,605 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:15:46,701 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "GET /socket.io/?EIO=4&transport=polling&t=uq9f4esa&sid=auQ3i3kCXHjKms4jAAAB HTTP/1.1" 200 -
+2025-03-24 10:15:46,705 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "POST /socket.io/?EIO=4&transport=polling&t=uq9f6nek&sid=auQ3i3kCXHjKms4jAAAB HTTP/1.1" 200 -
+2025-03-24 10:15:46,719 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "GET /socket.io/?EIO=4&transport=websocket&sid=auQ3i3kCXHjKms4jAAAB HTTP/1.1" 200 -
+2025-03-24 10:15:46,742 - INFO - 127.0.0.1 - - [24/Mar/2025 10:15:46] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:16:15,710 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:15] "GET /socket.io/?EIO=4&transport=polling&t=uqvstu8m HTTP/1.1" 200 -
+2025-03-24 10:16:15,802 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:15] "POST /socket.io/?EIO=4&transport=polling&t=uqvve7xl&sid=-yuXFkXRS3cg4IYOAAAC HTTP/1.1" 200 -
+2025-03-24 10:16:15,806 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:15] "GET /socket.io/?EIO=4&transport=polling&t=uqvvgxzq&sid=-yuXFkXRS3cg4IYOAAAC HTTP/1.1" 200 -
+2025-03-24 10:16:15,898 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:15] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:16:15,904 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:15] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:16:16,036 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:16] "GET /socket.io/?EIO=4&transport=polling&t=uqw1kp4l&sid=-yuXFkXRS3cg4IYOAAAC HTTP/1.1" 200 -
+2025-03-24 10:16:16,039 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:16] "GET /socket.io/?EIO=4&transport=websocket&sid=-yuXFkXRS3cg4IYOAAAC HTTP/1.1" 200 -
+2025-03-24 10:16:16,045 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:16] "POST /socket.io/?EIO=4&transport=polling&t=uqw1mkwn&sid=-yuXFkXRS3cg4IYOAAAC HTTP/1.1" 200 -
+2025-03-24 10:16:16,060 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:16] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:16:18,355 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "GET /socket.io/?EIO=4&transport=polling&t=uqxuc8kc HTTP/1.1" 200 -
+2025-03-24 10:16:18,439 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "POST /socket.io/?EIO=4&transport=polling&t=uqxwlzmw&sid=oiFE20wP_RiDb-ldAAAD HTTP/1.1" 200 -
+2025-03-24 10:16:18,448 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "GET /socket.io/?EIO=4&transport=polling&t=uqxwnkw3&sid=oiFE20wP_RiDb-ldAAAD HTTP/1.1" 200 -
+2025-03-24 10:16:18,565 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:16:18,568 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:16:18,673 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "GET /socket.io/?EIO=4&transport=polling&t=uqy3734i&sid=oiFE20wP_RiDb-ldAAAD HTTP/1.1" 200 -
+2025-03-24 10:16:18,676 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "POST /socket.io/?EIO=4&transport=polling&t=uqy38r6e&sid=oiFE20wP_RiDb-ldAAAD HTTP/1.1" 200 -
+2025-03-24 10:16:18,686 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "GET /socket.io/?EIO=4&transport=websocket&sid=oiFE20wP_RiDb-ldAAAD HTTP/1.1" 200 -
+2025-03-24 10:16:18,710 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:18] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:16:23,303 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "GET /socket.io/?EIO=4&transport=polling&t=ur1nwwsc HTTP/1.1" 200 -
+2025-03-24 10:16:23,380 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "POST /socket.io/?EIO=4&transport=polling&t=ur1pwczo&sid=VYHXpthzcTup9ROjAAAE HTTP/1.1" 200 -
+2025-03-24 10:16:23,411 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "GET /socket.io/?EIO=4&transport=polling&t=ur1q0oys&sid=VYHXpthzcTup9ROjAAAE HTTP/1.1" 200 -
+2025-03-24 10:16:23,445 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "GET /socket.io/?EIO=4&transport=polling&t=ur1rfeht&sid=VYHXpthzcTup9ROjAAAE HTTP/1.1" 200 -
+2025-03-24 10:16:23,482 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "GET /socket.io/?EIO=4&transport=websocket&sid=VYHXpthzcTup9ROjAAAE HTTP/1.1" 200 -
+2025-03-24 10:16:23,559 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:16:23,561 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:16:23,600 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:23] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:16:33,412 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "GET /socket.io/?EIO=4&transport=polling&t=ur9gmjts HTTP/1.1" 200 -
+2025-03-24 10:16:33,493 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "POST /socket.io/?EIO=4&transport=polling&t=ur9iwpfa&sid=v6GBny5PxjFoWiNbAAAF HTTP/1.1" 200 -
+2025-03-24 10:16:33,497 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "GET /socket.io/?EIO=4&transport=polling&t=ur9iyii1&sid=v6GBny5PxjFoWiNbAAAF HTTP/1.1" 200 -
+2025-03-24 10:16:33,597 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:16:33,600 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:16:33,708 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "GET /socket.io/?EIO=4&transport=polling&t=ur9owpky&sid=v6GBny5PxjFoWiNbAAAF HTTP/1.1" 200 -
+2025-03-24 10:16:33,713 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "POST /socket.io/?EIO=4&transport=polling&t=ur9oxauq&sid=v6GBny5PxjFoWiNbAAAF HTTP/1.1" 200 -
+2025-03-24 10:16:33,736 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "GET /socket.io/?EIO=4&transport=websocket&sid=v6GBny5PxjFoWiNbAAAF HTTP/1.1" 200 -
+2025-03-24 10:16:33,760 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:33] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:16:34,430 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "GET /socket.io/?EIO=4&transport=polling&t=ura8vdop HTTP/1.1" 200 -
+2025-03-24 10:16:34,510 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "POST /socket.io/?EIO=4&transport=polling&t=urab3w7u&sid=EwW-COKaeQa3rXi4AAAG HTTP/1.1" 200 -
+2025-03-24 10:16:34,516 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "GET /socket.io/?EIO=4&transport=polling&t=urab5tnf&sid=EwW-COKaeQa3rXi4AAAG HTTP/1.1" 200 -
+2025-03-24 10:16:34,609 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:16:34,611 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:16:34,705 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "GET /socket.io/?EIO=4&transport=polling&t=uragf3vg&sid=EwW-COKaeQa3rXi4AAAG HTTP/1.1" 200 -
+2025-03-24 10:16:34,709 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "POST /socket.io/?EIO=4&transport=polling&t=uragg51u&sid=EwW-COKaeQa3rXi4AAAG HTTP/1.1" 200 -
+2025-03-24 10:16:34,718 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "GET /socket.io/?EIO=4&transport=websocket&sid=EwW-COKaeQa3rXi4AAAG HTTP/1.1" 200 -
+2025-03-24 10:16:34,747 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:34] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:16:36,679 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "GET /socket.io/?EIO=4&transport=polling&t=urbz95v7 HTTP/1.1" 200 -
+2025-03-24 10:16:36,764 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "POST /socket.io/?EIO=4&transport=polling&t=urc1j5fu&sid=gafH4SNCDyevfHjjAAAH HTTP/1.1" 200 -
+2025-03-24 10:16:36,768 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "GET /socket.io/?EIO=4&transport=polling&t=urc1l2pc&sid=gafH4SNCDyevfHjjAAAH HTTP/1.1" 200 -
+2025-03-24 10:16:36,865 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:16:36,868 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:16:36,975 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "GET /socket.io/?EIO=4&transport=polling&t=urc7m4j0&sid=gafH4SNCDyevfHjjAAAH HTTP/1.1" 200 -
+2025-03-24 10:16:36,979 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "POST /socket.io/?EIO=4&transport=polling&t=urc7ngh3&sid=gafH4SNCDyevfHjjAAAH HTTP/1.1" 200 -
+2025-03-24 10:16:36,986 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:36] "GET /socket.io/?EIO=4&transport=websocket&sid=gafH4SNCDyevfHjjAAAH HTTP/1.1" 200 -
+2025-03-24 10:16:37,022 - INFO - 127.0.0.1 - - [24/Mar/2025 10:16:37] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:17:50,611 - INFO - Client connesso
+2025-03-24 10:17:50,742 - INFO - 127.0.0.1 - - [24/Mar/2025 10:17:50] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:17:50,775 - INFO - 127.0.0.1 - - [24/Mar/2025 10:17:50] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:17:50,956 - INFO - 127.0.0.1 - - [24/Mar/2025 10:17:50] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:18:27,425 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:27] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:18:27,514 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:27] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:18:35,390 - INFO - Initialization successful.
+2025-03-24 10:18:35,392 - INFO - Camera now open.
+2025-03-24 10:18:35,400 - INFO - Camera configuration has been adjusted!
+2025-03-24 10:18:35,403 - INFO - Configuration successful!
+2025-03-24 10:18:35,559 - INFO - Camera started
+2025-03-24 10:18:35,563 - INFO - emitting event "game" to all [/]
+2025-03-24 10:18:35,565 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:35] "POST /game HTTP/1.1" 200 -
+2025-03-24 10:18:35,586 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:35] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:18:35,594 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:35] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:18:45,048 - INFO - emitting event "game" to all [/]
+2025-03-24 10:18:45,051 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:45] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:18:45,066 - INFO - 127.0.0.1 - - [24/Mar/2025 10:18:45] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:18:48,049 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:48,050 - INFO - Remaining time: 58.99917934700079
+2025-03-24 10:18:49,053 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:49,053 - INFO - Remaining time: 57.99815658300031
+2025-03-24 10:18:50,056 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:50,056 - INFO - Remaining time: 56.99728656299976
+2025-03-24 10:18:51,059 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:51,060 - INFO - Remaining time: 55.99554608999915
+2025-03-24 10:18:52,062 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:52,064 - INFO - Remaining time: 54.994498104998456
+2025-03-24 10:18:53,068 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:53,069 - INFO - Remaining time: 53.99254648799797
+2025-03-24 10:18:54,072 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:54,073 - INFO - Remaining time: 52.990962022999156
+2025-03-24 10:18:55,078 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:55,085 - INFO - Remaining time: 51.98770450600023
+2025-03-24 10:18:56,088 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:56,089 - INFO - Remaining time: 50.986420970001745
+2025-03-24 10:18:57,092 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:57,094 - INFO - Remaining time: 49.98444959700282
+2025-03-24 10:18:58,099 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:58,101 - INFO - Remaining time: 48.98269841200454
+2025-03-24 10:18:59,105 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:18:59,107 - INFO - Remaining time: 47.98037520800608
+2025-03-24 10:19:00,111 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:00,114 - INFO - Remaining time: 46.97864997200486
+2025-03-24 10:19:01,118 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:01,121 - INFO - Remaining time: 45.976866773006805
+2025-03-24 10:19:02,125 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:02,126 - INFO - Remaining time: 44.97448159300711
+2025-03-24 10:19:03,129 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:03,130 - INFO - Remaining time: 43.97322338500544
+2025-03-24 10:19:04,133 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:04,134 - INFO - Remaining time: 42.9709255420039
+2025-03-24 10:19:05,136 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:05,136 - INFO - Remaining time: 41.96994150500268
+2025-03-24 10:19:05,154 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:05,156 - INFO - 127.0.0.1 - - [24/Mar/2025 10:19:05] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:19:09,374 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:09,377 - INFO - 127.0.0.1 - - [24/Mar/2025 10:19:09] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:19:09,474 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:09,475 - INFO - Remaining time: 41.76974550700288
+2025-03-24 10:19:10,478 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:10,479 - INFO - Remaining time: 40.76854188600282
+2025-03-24 10:19:11,483 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:11,484 - INFO - Remaining time: 39.76650694400087
+2025-03-24 10:19:12,486 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:12,486 - INFO - Remaining time: 38.765631313000085
+2025-03-24 10:19:13,488 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:13,489 - INFO - Remaining time: 37.76483684900086
+2025-03-24 10:19:13,987 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:19:13,989 - INFO - 127.0.0.1 - - [24/Mar/2025 10:19:13] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:20:49,381 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:20:49,382 - INFO - emitting event "game" to all [/]
+2025-03-24 10:20:49,386 - INFO - 127.0.0.1 - - [24/Mar/2025 10:20:49] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:20:49,391 - INFO - 127.0.0.1 - - [24/Mar/2025 10:20:49] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:20:49,448 - INFO - 127.0.0.1 - - [24/Mar/2025 10:20:49] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:20:49,482 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:20:49,483 - INFO - Remaining time: 37.16313195500061
+2025-03-24 10:21:03,446 - INFO - 127.0.0.1 - - [24/Mar/2025 10:21:03] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:21:03,484 - INFO - 127.0.0.1 - - [24/Mar/2025 10:21:03] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:21:04,270 - INFO - Client disconnesso
+2025-03-24 10:21:04,837 - INFO - Client connesso
+2025-03-24 10:21:04,995 - INFO - 127.0.0.1 - - [24/Mar/2025 10:21:04] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:21:05,026 - INFO - 127.0.0.1 - - [24/Mar/2025 10:21:05] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:21:05,083 - INFO - 127.0.0.1 - - [24/Mar/2025 10:21:05] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:26:49,130 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:26:49,132 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:26:53,316 - INFO - Client connesso
+2025-03-24 10:26:53,617 - INFO - 127.0.0.1 - - [24/Mar/2025 10:26:53] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:26:53,625 - INFO - 127.0.0.1 - - [24/Mar/2025 10:26:53] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:26:53,725 - INFO - 127.0.0.1 - - [24/Mar/2025 10:26:53] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:27:07,019 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:07] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:27:07,058 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:07] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:27:14,092 - INFO - Initialization successful.
+2025-03-24 10:27:14,094 - INFO - Camera now open.
+2025-03-24 10:27:14,104 - INFO - Camera configuration has been adjusted!
+2025-03-24 10:27:14,114 - INFO - Configuration successful!
+2025-03-24 10:27:14,279 - INFO - Camera started
+2025-03-24 10:27:14,283 - INFO - emitting event "game" to all [/]
+2025-03-24 10:27:14,287 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:14] "POST /game HTTP/1.1" 200 -
+2025-03-24 10:27:14,302 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:14] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:27:14,312 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:14] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:27:19,731 - INFO - emitting event "game" to all [/]
+2025-03-24 10:27:19,734 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:19] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:27:19,758 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:19] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:27:22,733 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:22,734 - INFO - Remaining time: 58.998313486
+2025-03-24 10:27:23,736 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:23,737 - INFO - Remaining time: 57.99744976899996
+2025-03-24 10:27:24,739 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:24,740 - INFO - Remaining time: 56.99654853499996
+2025-03-24 10:27:25,743 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:25,744 - INFO - Remaining time: 55.99506549299994
+2025-03-24 10:27:26,747 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:26,751 - INFO - Remaining time: 54.99362487899995
+2025-03-24 10:27:27,756 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:27,757 - INFO - Remaining time: 53.99208011199994
+2025-03-24 10:27:28,761 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:28,762 - INFO - Remaining time: 52.99016643999997
+2025-03-24 10:27:29,765 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:29,765 - INFO - Remaining time: 51.98932686499998
+2025-03-24 10:27:30,768 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:30,768 - INFO - Remaining time: 50.98829241399997
+2025-03-24 10:27:31,771 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:31,773 - INFO - Remaining time: 49.986831319999965
+2025-03-24 10:27:32,777 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:32,777 - INFO - Remaining time: 48.98523581499995
+2025-03-24 10:27:33,779 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:33,780 - INFO - Remaining time: 47.984138947999924
+2025-03-24 10:27:34,784 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:34,786 - INFO - Remaining time: 46.98303311299995
+2025-03-24 10:27:35,790 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:35,791 - INFO - Remaining time: 45.982003408
+2025-03-24 10:27:36,794 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:36,795 - INFO - Remaining time: 44.98056832799995
+2025-03-24 10:27:37,798 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:37,799 - INFO - Remaining time: 43.97930528099991
+2025-03-24 10:27:38,802 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:38,803 - INFO - Remaining time: 42.978363596999856
+2025-03-24 10:27:39,806 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:39,808 - INFO - Remaining time: 41.976870284999904
+2025-03-24 10:27:40,813 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:40,815 - INFO - Remaining time: 40.97435249599988
+2025-03-24 10:27:41,818 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:41,819 - INFO - Remaining time: 39.97269813199986
+2025-03-24 10:27:42,821 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:27:42,822 - INFO - Remaining time: 38.971819362999895
+2025-03-24 10:27:43,528 - INFO - emitting event "game" to all [/]
+2025-03-24 10:27:43,531 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:43] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:27:43,534 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:43] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:27:43,582 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:43] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:27:45,646 - INFO - Client disconnesso
+2025-03-24 10:27:45,649 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:45] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-24 10:27:45,654 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-24 10:27:46,185 - INFO - Client connesso
+2025-03-24 10:27:46,392 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:46] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:27:46,397 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:46] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:27:46,718 - INFO - 127.0.0.1 - - [24/Mar/2025 10:27:46] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:27:55,838 - INFO - Camera stopped
+2025-03-24 10:27:56,048 - INFO - Camera closed successfully.
+2025-03-24 10:37:22,103 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:37:22,105 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:38:40,029 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:38:40,029 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:38:50,612 - INFO - Client connesso
+2025-03-24 10:38:50,619 - INFO - received event "sync_time" from AdHCVlSR2bUj0BpBAAAB [/]
+2025-03-24 10:38:51,973 - INFO - Client disconnesso
+2025-03-24 10:38:51,976 - INFO - 127.0.0.1 - - [24/Mar/2025 10:38:51] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-24 10:38:51,981 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+  File "/home/shotclock/ShotClock/.venv/lib/python3.11/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-24 10:38:52,363 - INFO - Client connesso
+2025-03-24 10:38:52,482 - INFO - 127.0.0.1 - - [24/Mar/2025 10:38:52] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:38:52,491 - INFO - received event "sync_time" from bpBy4CI2gbp18-QJAAAD [/]
+2025-03-24 10:38:52,538 - INFO - 127.0.0.1 - - [24/Mar/2025 10:38:52] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:39:36,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:39:36,379 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:39:47,024 - INFO - Client connesso
+2025-03-24 10:39:47,032 - INFO - received event "sync_time" from DueDAHGQJ90dZDzOAAAB [/]
+2025-03-24 10:39:47,038 - INFO - emitting event "time_sync" to DueDAHGQJ90dZDzOAAAB [/]
+2025-03-24 10:40:00,345 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:00] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:40:00,380 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:40:07,518 - INFO - Initialization successful.
+2025-03-24 10:40:07,520 - INFO - Camera now open.
+2025-03-24 10:40:07,528 - INFO - Camera configuration has been adjusted!
+2025-03-24 10:40:07,532 - INFO - Configuration successful!
+2025-03-24 10:40:07,710 - INFO - Camera started
+2025-03-24 10:40:07,712 - INFO - emitting event "game" to all [/]
+2025-03-24 10:40:07,716 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:07] "POST /game HTTP/1.1" 200 -
+2025-03-24 10:40:07,731 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:07] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:40:07,742 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:07] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:40:13,798 - INFO - emitting event "game" to all [/]
+2025-03-24 10:40:13,801 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:13] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:40:13,814 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:13] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:40:16,800 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:16,801 - INFO - Remaining time: 58.9981058530002
+2025-03-24 10:40:17,807 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:17,809 - INFO - Remaining time: 57.99451401300041
+2025-03-24 10:40:18,813 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:18,814 - INFO - Remaining time: 56.99329365600033
+2025-03-24 10:40:19,819 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:19,820 - INFO - Remaining time: 55.99077645500029
+2025-03-24 10:40:20,823 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:20,824 - INFO - Remaining time: 54.98976785800039
+2025-03-24 10:40:21,827 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:21,828 - INFO - Remaining time: 53.98727600700033
+2025-03-24 10:40:22,830 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:22,831 - INFO - Remaining time: 52.98642211600031
+2025-03-24 10:40:23,832 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:23,833 - INFO - Remaining time: 51.98558997600037
+2025-03-24 10:40:24,836 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:24,836 - INFO - Remaining time: 50.98474947300042
+2025-03-24 10:40:25,838 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:25,839 - INFO - Remaining time: 49.98335083400036
+2025-03-24 10:40:26,841 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:26,843 - INFO - Remaining time: 48.9823770310004
+2025-03-24 10:40:27,849 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:27,850 - INFO - Remaining time: 47.9780532350004
+2025-03-24 10:40:28,853 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:28,855 - INFO - Remaining time: 46.976510470000335
+2025-03-24 10:40:29,862 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:29,863 - INFO - Remaining time: 45.97570308900026
+2025-03-24 10:40:30,865 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:30,867 - INFO - Remaining time: 44.97484962300018
+2025-03-24 10:40:31,870 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:31,871 - INFO - Remaining time: 43.972642498000255
+2025-03-24 10:40:32,873 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:32,875 - INFO - Remaining time: 42.971802921000176
+2025-03-24 10:40:33,878 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:33,880 - INFO - Remaining time: 41.97020594600008
+2025-03-24 10:40:34,883 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:34,884 - INFO - Remaining time: 40.96923336900022
+2025-03-24 10:40:35,887 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:35,889 - INFO - Remaining time: 39.967784604000144
+2025-03-24 10:40:36,893 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:36,894 - INFO - Remaining time: 38.96490019800024
+2025-03-24 10:40:37,896 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:37,897 - INFO - Remaining time: 37.9640571570003
+2025-03-24 10:40:38,900 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:38,905 - INFO - Remaining time: 36.96242840100024
+2025-03-24 10:40:39,908 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:39,911 - INFO - Remaining time: 35.96024829100031
+2025-03-24 10:40:40,913 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:40,914 - INFO - Remaining time: 34.959344545000135
+2025-03-24 10:40:41,917 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:41,919 - INFO - Remaining time: 33.958412917999794
+2025-03-24 10:40:42,922 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:42,924 - INFO - Remaining time: 32.957207964999725
+2025-03-24 10:40:43,928 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:43,929 - INFO - Remaining time: 31.955155867999565
+2025-03-24 10:40:44,934 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:44,935 - INFO - Remaining time: 30.954035828999622
+2025-03-24 10:40:45,939 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:45,941 - INFO - Remaining time: 29.952007796999624
+2025-03-24 10:40:46,943 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:46,944 - INFO - Remaining time: 28.95080739499963
+2025-03-24 10:40:47,946 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:47,947 - INFO - Remaining time: 27.94999625699961
+2025-03-24 10:40:48,949 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:48,950 - INFO - Remaining time: 26.949177335999366
+2025-03-24 10:40:49,953 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:49,954 - INFO - Remaining time: 25.947062444999347
+2025-03-24 10:40:50,956 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:50,956 - INFO - Remaining time: 24.946244940999122
+2025-03-24 10:40:51,961 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:51,963 - INFO - Remaining time: 23.942642367999156
+2025-03-24 10:40:52,511 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:52,514 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:52] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:40:55,307 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:55,312 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:55] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:40:55,313 - INFO - emitting event "game" to all [/]
+2025-03-24 10:40:55,318 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:55] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:40:55,342 - INFO - 127.0.0.1 - - [24/Mar/2025 10:40:55] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-24 10:40:55,412 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:40:55,414 - INFO - Remaining time: 23.241696762999254
+2025-03-24 10:44:35,606 - INFO - Camera stopped
+2025-03-24 10:44:35,816 - INFO - Camera closed successfully.
+2025-03-24 10:45:44,579 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 10:45:44,584 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 10:45:54,444 - INFO - emitting event "time_sync" to wDI41WxJVXPoSoUIAAAB [/]
+2025-03-24 10:45:54,445 - INFO - Client connesso
+2025-03-24 10:45:54,598 - INFO - 127.0.0.1 - - [24/Mar/2025 10:45:54] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:45:54,651 - INFO - 127.0.0.1 - - [24/Mar/2025 10:45:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:45:58,307 - INFO - 127.0.0.1 - - [24/Mar/2025 10:45:58] "GET /table HTTP/1.1" 200 -
+2025-03-24 10:45:58,343 - INFO - 127.0.0.1 - - [24/Mar/2025 10:45:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-24 10:46:03,188 - INFO - Initialization successful.
+2025-03-24 10:46:03,189 - INFO - Camera now open.
+2025-03-24 10:46:03,198 - INFO - Camera configuration has been adjusted!
+2025-03-24 10:46:03,202 - INFO - Configuration successful!
+2025-03-24 10:46:03,354 - INFO - Camera started
+2025-03-24 10:46:03,357 - INFO - emitting event "game" to all [/]
+2025-03-24 10:46:03,360 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:03] "POST /game HTTP/1.1" 200 -
+2025-03-24 10:46:03,385 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:03] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:46:03,394 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:03] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:46:05,002 - INFO - emitting event "game" to all [/]
+2025-03-24 10:46:05,004 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:05] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:46:05,017 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:05] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:46:08,004 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:08,005 - INFO - Remaining time: 58.99834681600032
+2025-03-24 10:46:09,008 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:09,009 - INFO - Remaining time: 57.99724615299988
+2025-03-24 10:46:10,013 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:10,014 - INFO - Remaining time: 56.99465938699973
+2025-03-24 10:46:11,017 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:11,018 - INFO - Remaining time: 55.99358486699953
+2025-03-24 10:46:12,020 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:12,021 - INFO - Remaining time: 54.99276956899985
+2025-03-24 10:46:13,022 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:13,023 - INFO - Remaining time: 53.99177966999969
+2025-03-24 10:46:14,025 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:14,026 - INFO - Remaining time: 52.99095601299973
+2025-03-24 10:46:15,028 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:15,028 - INFO - Remaining time: 51.99013934799973
+2025-03-24 10:46:16,031 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:16,031 - INFO - Remaining time: 50.98919638499979
+2025-03-24 10:46:17,036 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:17,042 - INFO - Remaining time: 49.98616758900039
+2025-03-24 10:46:18,044 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:18,047 - INFO - Remaining time: 48.98503430200003
+2025-03-24 10:46:19,051 - INFO - emitting event "timer" to all [/]
+2025-03-24 10:46:19,054 - INFO - Remaining time: 47.98402027400016
+2025-03-24 10:46:19,666 - INFO - emitting event "game" to all [/]
+2025-03-24 10:46:19,671 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:19] "GET /game HTTP/1.1" 200 -
+2025-03-24 10:46:19,679 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:19] "POST /game/actions HTTP/1.1" 200 -
+2025-03-24 10:46:19,698 - INFO - 127.0.0.1 - - [24/Mar/2025 10:46:19] "[33mGET /game HTTP/1.1[0m" 404 -

@@ -12,7 +12,7 @@ from device.utils import is_raspberry_pi
 class VideoConsumer:
     """
     VideoConsumer riconosce il movimento delle biglie da gioco.
-    Viene eseguito in un thread separato e utilizza un meccanismo di debounce e hysteresis temporale
+    Viene eseguito in un thread separato e utilizza un meccanismo di debounce
     per evitare falsi positivi dovuti a variazioni troppo rapide.
     """
 
@@ -232,13 +232,13 @@ class VideoConsumer:
         return circularity_mask
 
     def _show_blurred_image(self, image):
-        """Visualizza l'immagine sfocata."""
+        """Visualizza l'immagine sfocata per il debug."""
         if self._is_raspberry_pi:
             return
         cv2.imshow("Blurred", image)
 
     def _show_movement_status(self, image, is_moving):
-        """Visualizza lo stato del movimento sull'immagine."""
+        """Visualizza lo stato del movimento sull'immagine per il debug."""
         if self._is_raspberry_pi:
             return
         test_image = image.copy()

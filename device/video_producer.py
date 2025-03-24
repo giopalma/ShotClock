@@ -77,13 +77,6 @@ class VideoProducer:
             self.capture_thread.name = "VideoProducerThread"
             self.capture_thread.start()
 
-    def get_fps(self):
-        if self.is_picamera:
-            # Ritorna un valore nominale per picamera, potresti anche calcolarlo
-            return 30
-        else:
-            return self.video_capture.get(cv2.CAP_PROP_FPS)
-
     def get_frame(self):
         while self.frame is None:
             time.sleep(0.01)  # Ritardo per evitare il 100% CPU

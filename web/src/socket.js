@@ -4,20 +4,51 @@ import { useGameStore, useTimerStore } from './store';
 
 export const state = reactive({
     connected: false,
+    timeOffset: 0,
 });
 
-// "undefined" means the URL will be computed from the `window.location` object
-const URL = "";
-
-export const socket = io("/socket.io");
+export const socket = io({
+    path: '/socket.io',
+    transports: ['websocket', 'polling'],
+    reconnection: true,
+    reconnectionAttempts: 5,
+    reconnectionDelay: 1000,
+    autoConnect: true,
+    forceNew: true,
+    timeout: 10000
+});
 
 socket.on("connect", () => {
     state.connected = true;
-    console.log("Socket connected")
+    console.log("Socket connected");
+});
+
+
+socket.on("time_sync", (data) => {
+    const clientTime = Date.now() / 1000;
+    state.timeOffset = data.server_time - clientTime;
+    console.log("Time offset:", state.timeOffset);
 });
 
 socket.on("disconnect", () => {
     state.connected = false;
+    console.log("Socket disconnected");
+});
+
+socket.on("connect_error", (error) => {
+    console.error("Errore di connessione Socket.IO:", error);
+});
+
+socket.on("error", (error) => {
+    console.error("Errore Socket.IO:", error);
+});
+
+socket.on("reconnect_attempt", (attemptNumber) => {
+    console.log("Tentativo di riconnessione:", attemptNumber);
+});
+
+socket.on("reconnect", () => {
+    console.log("Socket riconnesso");
 });
 
 socket.on("game", async (data) => {
@@ -39,13 +70,17 @@ socket.on("timer", (data) => {
     }
 
     const timerStore = useTimerStore();
+    console.log("Device timestamp: " + data.timestamp)
+    console.log("Device remaining time: " + data.remaining_time)
 
     const timestamp = data.timestamp;
     const receivedTime = data.remaining_time;
     const status = data.status;
-    const currentTimestamp = (Date.now() / 1000);
-    const timeDifference = currentTimestamp - timestamp;
-    const time = receivedTime - timeDifference;
-    if (time < 0) { time = 0 }
+    const currentTimestamp = (Date.now() / 1000) + state.timeOffset; // Aggiungiamo l'offset
+    console.log("Front-end Timestamp (with offset): " + currentTimestamp)
+
+    const timeDifference = Math.max(0, currentTimestamp - timestamp);
+    let time = Math.max(0, receivedTime - timeDifference);
+
     timerStore.updateTime(time, status);
 });

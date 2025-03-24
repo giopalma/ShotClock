@@ -40,7 +40,13 @@ with app.app_context():
 api = Api(app)
 CORS(app)
 
-socketio = SocketIO(app, cors_allowed_origins="*", logger=True, async_mode="threading")
+socketio = SocketIO(
+    app,
+    cors_allowed_origins="*",
+    logger=True,
+    async_mode="threading",
+    path="/socket.io",
+)
 websocket.register(socketio)
 # Aggiungi le risorse API
 api.add_resource(resources.GameResource, "/game")
