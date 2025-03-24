@@ -49,7 +49,7 @@ def test_api(static=False):
     import device.api as api
 
     if static:
-        frame = cv2.imread("./device/test_data/images/esempio_2.png")
+        frame = cv2.imread("./device/test_data/images/esempio_720.png")
         VideoProducer.get_instance(frame=frame)
 
     api.start(debug=True)

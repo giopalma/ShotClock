@@ -72,51 +72,13 @@ class VideoConsumer:
         if self._thread and self._thread.is_alive():
             self._end_event.set()
 
-    def _show_blurred_image(self, image):
-        """Visualizza l'immagine sfocata."""
-        if self._is_raspberry_pi:
-            return
-        cv2.imshow("Blurred", image)
-
-    def _show_movement_status(self, image, is_moving):
-        """Visualizza lo stato del movimento sull'immagine."""
-        if self._is_raspberry_pi:
-            return
-        test_image = image.copy()
-        text = "MOVIMENTO" if is_moving else "FERMO"
-        cv2.putText(
-            test_image,
-            text,
-            (10, 30),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (255, 255, 255),
-            2,
-            cv2.LINE_AA,
-        )
-        cv2.imshow("Blurred with movement", test_image)
-
-    def _show_difference_frames(self, diff1, diff2):
-        """Visualizza i frame di differenza per il debug."""
-        if self._is_raspberry_pi:
-            return
-        cv2.imshow("Diff1", diff1)
-        cv2.imshow("Diff2", diff2)
-
-    def _show_mask_images(self, combined_mask, circularity_mask):
-        """Visualizza le maschere intermedie per il debug."""
-        if self._is_raspberry_pi:
-            return
-        cv2.imshow("Combined Mask", combined_mask)
-        cv2.imshow("Circularity Mask", circularity_mask)
-
     def run(self):
         """
         Ciclo principale del VideoConsumer.
         - Acquisisce il frame, applica i filtri e aggiorna il buffer dei frame.
         - Calcola il movimento tramite confronto tra 3 frame.
-        - Utilizza un buffer per il debounce e applica una finestra temporale minima per evitare
-          cambiamenti troppo rapidi tra movimento e fermo.
+        - Rileva lo stato di movimento basandosi sulla storia recente del movimento.
+        - Notifica i cambiamenti di stato attraverso i callback appropriati.
         """
         balls_mask_history = CircularArray(3)
         motion_history = CircularArray(self.NUMBER_OF_MOTION_COUNT)
@@ -125,9 +87,9 @@ class VideoConsumer:
         fps_update_interval = 10
 
         while self._video_producer.is_opened() and not self._end_event.is_set():
-            time.sleep(1 / 20)
+            time.sleep(1 / 11)
 
-            # Calcola gli FPS
+            # Calcola gli FPS per il debug
             current_time = time.time()
             if self._prev_frame_time != 0:
                 self._current_fps = 1 / (current_time - self._prev_frame_time)
@@ -155,16 +117,17 @@ class VideoConsumer:
                 current_motion = self._motion_count(balls_mask_history.get_array())
                 motion_history.add(current_motion)
 
-                # Controlla se un tasto è premuto
+                # Codice per bloccare le schermate di debug
                 key = cv2.waitKey(1)
-                if key == ord("p"):  # Usa il tasto 'p' per bloccare le schermate
+                if key == ord("p"):
                     while cv2.waitKey(1) != ord("p"):
-                        pass  # Attendi fino a quando il tasto 'p' viene premuto di nuovo
+                        pass
+                #########################################################
 
                 if motion_history.get_len() == self.NUMBER_OF_MOTION_COUNT:
                     history = motion_history.get_array()
                     motion_count = sum(history)
-                    if motion_count > self.NUMBER_OF_MOTION_COUNT * 0.7:
+                    if motion_count > self.NUMBER_OF_MOTION_COUNT * 0.9:
                         new_motion_state = True
                     else:
                         new_motion_state = False
@@ -202,11 +165,6 @@ class VideoConsumer:
         diff1 = cv2.absdiff(frame_p1, frame_p2)
         diff2 = cv2.absdiff(frame_c, frame_p1)
 
-        # Rimuovi piccoli artefatti con operazioni morfologiche
-        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        diff1 = cv2.morphologyEx(diff1, cv2.MORPH_OPEN, kernel)
-        diff2 = cv2.morphologyEx(diff2, cv2.MORPH_OPEN, kernel)
-
         white_pixel_frame_d1 = cv2.countNonZero(diff1)
         white_pixel_frame_d2 = cv2.countNonZero(diff2)
         max_white_pixel = max(white_pixel_frame_d1, white_pixel_frame_d2)
@@ -218,12 +176,14 @@ class VideoConsumer:
 
     def _create_mask(self, hsv, points, colors, min_area_threshold):
         """
-        Crea una maschera per rilevare le biglie da gioco basata sui colori e sulla forma del tavolo.
+        Crea una maschera per rilevare le biglie da gioco basata sui colori,
+        sulla forma del tavolo e sul valore minimo dell'area delle biglie.
 
         Args:
             hsv (Mat): Frame in formato HSV.
             points (list of tuple): Punti (x,y) che definiscono il poligono del tavolo.
             colors (list of tuple): Lista di colori in formato HSV per il tavolo.
+            min_area_threshold (int): Valore minimo dell'area delle biglie.
 
         Returns:
             Mat: Maschera binaria contenente i contorni delle biglie.
@@ -249,9 +209,7 @@ class VideoConsumer:
 
         # Combina la maschera di colore con quella del tavolo
         combined_mask = cv2.bitwise_and(color_mask, rec_mask)
-        # kernel = np.ones((5, 5), np.uint8)
-        # combined_mask = cv2.erode(combined_mask, kernel, iterations=1)
-        # combined_mask = cv2.dilate(combined_mask, kernel, iterations=1)
+
         # Trova i contorni e filtra per circolarità
         contours, _ = cv2.findContours(
             combined_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
@@ -272,3 +230,41 @@ class VideoConsumer:
         # Visualizza le maschere intermedie per debugging
         self._show_mask_images(combined_mask, circularity_mask)
         return circularity_mask
+
+    def _show_blurred_image(self, image):
+        """Visualizza l'immagine sfocata."""
+        if self._is_raspberry_pi:
+            return
+        cv2.imshow("Blurred", image)
+
+    def _show_movement_status(self, image, is_moving):
+        """Visualizza lo stato del movimento sull'immagine."""
+        if self._is_raspberry_pi:
+            return
+        test_image = image.copy()
+        text = "MOVIMENTO" if is_moving else "FERMO"
+        cv2.putText(
+            test_image,
+            text,
+            (10, 30),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            1,
+            (255, 255, 255),
+            2,
+            cv2.LINE_AA,
+        )
+        cv2.imshow("Blurred with movement", test_image)
+
+    def _show_difference_frames(self, diff1, diff2):
+        """Visualizza i frame di differenza per il debug."""
+        if self._is_raspberry_pi:
+            return
+        cv2.imshow("Diff1", diff1)
+        cv2.imshow("Diff2", diff2)
+
+    def _show_mask_images(self, combined_mask, circularity_mask):
+        """Visualizza le maschere intermedie per il debug."""
+        if self._is_raspberry_pi:
+            return
+        cv2.imshow("Combined Mask", combined_mask)
+        cv2.imshow("Circularity Mask", circularity_mask)

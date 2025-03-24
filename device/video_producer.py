@@ -73,9 +73,7 @@ class VideoProducer:
         if not self.is_running:
             self.is_running = True
             self.capture_thread = threading.Thread(target=self._capture_loop)
-            self.capture_thread.daemon = (
-                True  # Era False, meglio True per chiusura automatica
-            )
+            self.capture_thread.daemon = True
             self.capture_thread.name = "VideoProducerThread"
             self.capture_thread.start()
 
@@ -88,7 +86,7 @@ class VideoProducer:
 
     def get_frame(self):
         while self.frame is None:
-            time.sleep(0.01)  # Aggiungi un piccolo ritardo per evitare il 100% CPU
+            time.sleep(0.01)  # Ritardo per evitare il 100% CPU
         return self.frame
 
     def get_frame_blurred(self):

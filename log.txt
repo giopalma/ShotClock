@@ -356,3 +356,203 @@
 2025-03-22 17:52:00,277 - INFO - Movimento rilevato
 2025-03-22 17:52:01,786 - INFO - Movimento terminato
 2025-03-22 17:52:04,801 - INFO - Remaining time: 33.99360108300061
+2025-03-22 17:53:30,315 - INFO - Remaining time: 58.98399999999674
+2025-03-22 17:53:31,348 - INFO - Remaining time: 57.96800000000076
+2025-03-22 17:53:32,353 - INFO - Remaining time: 56.96800000000076
+2025-03-22 17:53:33,358 - INFO - Remaining time: 55.9519999999975
+2025-03-22 17:53:34,366 - INFO - Remaining time: 54.9519999999975
+2025-03-22 17:53:53,030 - INFO - Remaining time: 59.0
+2025-03-22 17:53:54,060 - INFO - Remaining time: 58.0
+2025-03-22 17:53:55,086 - INFO - Remaining time: 57.0
+2025-03-22 17:53:56,102 - INFO - Remaining time: 56.0
+2025-03-22 17:53:57,108 - INFO - Remaining time: 55.0
+2025-03-22 17:53:58,115 - INFO - Remaining time: 54.0
+2025-03-22 17:53:59,120 - INFO - Remaining time: 53.0
+2025-03-22 17:54:00,128 - INFO - Remaining time: 51.98500000000058
+2025-03-22 17:54:01,134 - INFO - Remaining time: 50.98500000000058
+2025-03-22 17:54:02,139 - INFO - Remaining time: 49.98500000000058
+2025-03-22 17:54:03,145 - INFO - Remaining time: 48.98500000000058
+2025-03-22 17:54:04,150 - INFO - Remaining time: 47.98500000000058
+2025-03-22 17:54:05,156 - INFO - Remaining time: 46.970000000001164
+2025-03-22 17:54:05,583 - INFO - Movimento rilevato
+2025-03-22 17:54:10,379 - INFO - Movimento terminato
+2025-03-22 17:54:13,387 - INFO - Remaining time: 34.0
+2025-03-22 17:54:14,394 - INFO - Remaining time: 32.98399999999674
+2025-03-22 17:54:15,399 - INFO - Remaining time: 31.98399999999674
+2025-03-22 17:54:16,405 - INFO - Remaining time: 30.98399999999674
+2025-03-22 17:54:16,979 - INFO - Movimento rilevato
+2025-03-22 17:54:22,047 - INFO - Movimento terminato
+2025-03-22 17:54:25,054 - INFO - Remaining time: 34.0
+2025-03-22 17:54:26,060 - INFO - Remaining time: 33.0
+2025-03-22 17:54:27,067 - INFO - Remaining time: 31.98399999999674
+2025-03-22 17:54:28,073 - INFO - Remaining time: 30.98399999999674
+2025-03-22 17:54:28,847 - INFO - Movimento rilevato
+2025-03-22 17:54:31,217 - INFO - Movimento terminato
+2025-03-22 17:54:34,224 - INFO - Remaining time: 34.0
+2025-03-22 17:55:36,603 - INFO - Remaining time: 59.0
+2025-03-22 17:55:37,608 - INFO - Remaining time: 58.0
+2025-03-22 17:55:38,614 - INFO - Remaining time: 57.0
+2025-03-22 17:55:39,620 - INFO - Remaining time: 56.0
+2025-03-22 17:55:40,626 - INFO - Remaining time: 54.98500000000058
+2025-03-22 17:55:41,631 - INFO - Remaining time: 53.98500000000058
+2025-03-22 17:55:42,638 - INFO - Remaining time: 52.98500000000058
+2025-03-22 17:55:43,643 - INFO - Remaining time: 51.96899999999732
+2025-03-22 17:55:44,650 - INFO - Remaining time: 50.96899999999732
+2025-03-22 17:55:45,658 - INFO - Remaining time: 49.953999999997905
+2025-03-22 17:55:46,663 - INFO - Remaining time: 48.953999999997905
+2025-03-22 17:55:46,671 - INFO - Movimento rilevato
+2025-03-22 17:55:46,979 - INFO - Movimento terminato
+2025-03-22 17:55:48,207 - INFO - Movimento rilevato
+2025-03-22 17:55:49,429 - INFO - Movimento terminato
+2025-03-22 17:55:50,480 - INFO - Movimento rilevato
+2025-03-22 17:55:51,941 - INFO - Movimento terminato
+2025-03-22 17:55:54,950 - INFO - Remaining time: 34.0
+2025-03-22 17:55:55,955 - INFO - Remaining time: 32.98500000000058
+2025-03-22 17:55:56,961 - INFO - Remaining time: 31.985000000000582
+2025-03-22 17:55:57,966 - INFO - Remaining time: 30.985000000000582
+2025-03-22 17:55:58,973 - INFO - Remaining time: 29.9690000000046
+2025-03-22 17:55:59,977 - INFO - Remaining time: 28.9690000000046
+2025-03-22 17:56:00,982 - INFO - Remaining time: 27.9690000000046
+2025-03-22 17:56:01,988 - INFO - Remaining time: 26.95300000000134
+2025-03-22 17:56:02,995 - INFO - Remaining time: 25.95300000000134
+2025-03-22 17:56:04,001 - INFO - Remaining time: 24.93800000000192
+2025-03-22 17:56:05,007 - INFO - Remaining time: 23.93800000000192
+2025-03-22 17:56:06,012 - INFO - Remaining time: 22.93800000000192
+2025-03-22 17:56:07,018 - INFO - Remaining time: 21.92199999999866
+2025-03-22 17:56:08,025 - INFO - Remaining time: 20.92199999999866
+2025-03-22 17:56:08,384 - INFO - Movimento rilevato
+2025-03-22 17:56:17,064 - INFO - Movimento terminato
+2025-03-22 17:56:20,070 - INFO - Remaining time: 34.0
+2025-03-22 17:56:21,077 - INFO - Remaining time: 32.98500000000058
+2025-03-22 17:56:22,082 - INFO - Remaining time: 31.985000000000582
+2025-03-22 17:56:23,087 - INFO - Remaining time: 30.985000000000582
+2025-03-22 17:56:24,094 - INFO - Remaining time: 29.9690000000046
+2025-03-22 17:56:25,099 - INFO - Remaining time: 28.9690000000046
+2025-03-22 17:56:26,105 - INFO - Remaining time: 27.9690000000046
+2025-03-22 17:56:27,113 - INFO - Remaining time: 26.95300000000134
+2025-03-22 17:56:28,119 - INFO - Remaining time: 25.95300000000134
+2025-03-22 17:56:29,125 - INFO - Remaining time: 24.93800000000192
+2025-03-22 17:56:30,129 - INFO - Remaining time: 23.93800000000192
+2025-03-22 17:56:31,135 - INFO - Remaining time: 22.93800000000192
+2025-03-22 17:56:32,142 - INFO - Remaining time: 21.92199999999866
+2025-03-22 17:56:32,801 - INFO - Movimento rilevato
+2025-03-22 18:23:09,242 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 18:23:09,244 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 18:23:19,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 18:23:19,770 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 18:23:39,928 - INFO - 127.0.0.1 - - [22/Mar/2025 18:23:39] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-22 18:23:48,008 - INFO - 127.0.0.1 - - [22/Mar/2025 18:23:48] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-22 18:23:48,014 - INFO - 127.0.0.1 - - [22/Mar/2025 18:23:48] "GET /table HTTP/1.1" 200 -
+2025-03-22 18:23:48,045 - INFO - 127.0.0.1 - - [22/Mar/2025 18:23:48] "GET /ruleset HTTP/1.1" 200 -
+2025-03-22 18:23:51,924 - INFO - 127.0.0.1 - - [22/Mar/2025 18:23:51] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:23,287 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:23] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:23,307 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:23] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:28,357 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:28] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:28,380 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:28] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:31,427 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:31] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:31,467 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:31] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:34,286 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:34] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:34,313 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:34] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:37,669 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:37] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:37,691 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:37] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:41,962 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:41] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:41,983 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:41] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:43,163 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:43] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:43,187 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:43,654 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:43] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:43,675 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:43,937 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:43] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:43,959 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:49,324 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:49] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:49,350 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:49] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:52,306 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:52] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:52,327 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:52] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:56,836 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:56] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:24:56,859 - INFO - 127.0.0.1 - - [22/Mar/2025 18:24:56] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:01,011 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:01] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:01,034 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:01] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:06,350 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:06] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:06,374 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:06] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:07,519 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:07] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:07,537 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:07] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:08,029 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:08] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:08,048 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:08] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:08,191 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:08] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:08,212 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:08] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:14,911 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:14] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:14,934 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:14] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:15,702 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:15] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:15,725 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:15] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:20,867 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:20] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:20,887 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:20] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:26,438 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:26] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:26,462 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:26] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:30,820 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:30] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:30,841 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:30] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:31,673 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:31] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:31,695 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:31] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:32,459 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:32] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:32,480 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:32] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:37,161 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:37] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:37,180 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:37] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:44,999 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:44] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:45,020 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:45] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:59,364 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:59] "POST /video/frame HTTP/1.1" 200 -
+2025-03-22 18:25:59,385 - INFO - 127.0.0.1 - - [22/Mar/2025 18:25:59] "GET /video/frame HTTP/1.1" 200 -
+2025-03-22 18:26:29,433 - INFO - 127.0.0.1 - - [22/Mar/2025 18:26:29] "POST /table HTTP/1.1" 200 -
+2025-03-22 18:26:29,456 - INFO - 127.0.0.1 - - [22/Mar/2025 18:26:29] "GET /table HTTP/1.1" 200 -
+2025-03-22 18:26:29,476 - INFO - 127.0.0.1 - - [22/Mar/2025 18:26:29] "GET /ruleset HTTP/1.1" 200 -
+2025-03-22 18:26:54,566 - INFO - 127.0.0.1 - - [22/Mar/2025 18:26:54] "GET /table HTTP/1.1" 200 -
+2025-03-22 18:28:29,571 - INFO - Movimento rilevato
+2025-03-22 18:28:39,966 - INFO - Movimento terminato
+2025-03-22 18:28:42,516 - INFO - Movimento rilevato
+2025-03-22 18:28:48,770 - INFO - Movimento terminato
+2025-03-22 18:28:49,061 - INFO - Movimento rilevato
+2025-03-22 18:28:49,472 - INFO - Movimento terminato
+2025-03-22 18:28:50,146 - INFO - Movimento rilevato
+2025-03-22 18:28:53,244 - INFO - Movimento terminato
+2025-03-22 18:28:56,253 - INFO - Remaining time: 33.98500000000058
+2025-03-22 18:28:57,260 - INFO - Remaining time: 32.98500000000058
+2025-03-22 18:28:57,574 - INFO - Movimento rilevato
+2025-03-22 18:29:01,593 - INFO - Movimento terminato
+2025-03-23 17:09:15,397 - INFO - Movimento rilevato
+2025-03-23 17:09:36,552 - INFO - Movimento rilevato
+2025-03-23 17:09:54,743 - INFO - Remaining time: 59.0
+2025-03-23 17:09:55,751 - INFO - Remaining time: 57.98500000000058
+2025-03-23 17:09:56,758 - INFO - Remaining time: 56.98500000000058
+2025-03-23 17:09:57,764 - INFO - Remaining time: 55.98500000000058
+2025-03-23 17:09:58,772 - INFO - Remaining time: 54.98500000000058
+2025-03-23 17:09:59,779 - INFO - Remaining time: 53.98500000000058
+2025-03-23 17:10:00,785 - INFO - Remaining time: 52.970000000001164
+2025-03-23 17:10:01,793 - INFO - Remaining time: 51.970000000001164
+2025-03-23 17:10:02,801 - INFO - Remaining time: 50.95400000000154
+2025-03-23 17:10:03,807 - INFO - Remaining time: 49.95400000000154
+2025-03-23 17:10:04,813 - INFO - Remaining time: 48.93800000000192
+2025-03-23 17:10:05,819 - INFO - Remaining time: 47.93800000000192
+2025-03-23 17:10:06,825 - INFO - Remaining time: 46.93800000000192
+2025-03-23 17:10:07,330 - INFO - Movimento rilevato
+2025-03-23 17:10:12,424 - INFO - Movimento terminato
+2025-03-23 17:10:15,433 - INFO - Remaining time: 34.0
+2025-03-23 17:10:42,536 - INFO - Remaining time: 59.0
+2025-03-23 17:10:43,543 - INFO - Remaining time: 58.0
+2025-03-23 17:10:44,548 - INFO - Remaining time: 56.98400000000038
+2025-03-23 17:10:45,554 - INFO - Remaining time: 55.98400000000038
+2025-03-23 17:10:46,561 - INFO - Remaining time: 54.98400000000038
+2025-03-23 17:10:47,567 - INFO - Remaining time: 53.96800000000076
+2025-03-23 17:10:48,573 - INFO - Remaining time: 52.96800000000076
+2025-03-23 17:10:49,579 - INFO - Remaining time: 51.95299999999952
+2025-03-23 17:10:50,585 - INFO - Remaining time: 50.95299999999952
+2025-03-23 17:10:51,592 - INFO - Remaining time: 49.95299999999952
+2025-03-23 17:10:52,598 - INFO - Remaining time: 48.95299999999952
+2025-03-23 17:10:53,604 - INFO - Remaining time: 47.95299999999952
+2025-03-23 17:10:54,610 - INFO - Remaining time: 46.9369999999999
+2025-03-23 17:10:55,280 - INFO - Movimento rilevato
+2025-03-23 17:10:59,829 - INFO - Movimento terminato
+2025-03-23 17:11:02,839 - INFO - Remaining time: 34.0
+2025-03-23 17:11:03,848 - INFO - Remaining time: 32.98400000000038
+2025-03-23 17:11:04,854 - INFO - Remaining time: 31.98400000000038
+2025-03-23 17:11:05,859 - INFO - Remaining time: 30.968000000000757
+2025-03-23 17:11:06,614 - INFO - Movimento rilevato
+2025-03-23 17:11:11,548 - INFO - Movimento terminato
