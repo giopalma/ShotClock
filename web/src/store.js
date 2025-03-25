@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
 
 export const useSettingsStore = defineStore('settings', {
     state: () => ({
@@ -118,13 +117,18 @@ export const useGameStore = defineStore('game', {
 
     actions: {
         async fetchGame() {
+            console.log("Fetching game")
             this.loading = true;
             try {
                 const response = await fetch('/api/game');
-                this.game = await response.json();
-                if (this.game.message == 'No game in progress') {
+                const body = await response.json();
+                if (body.message == 'No game in progress') {
                     this.game = null;
                     this.error = 'No game in progress';
+                } else {
+                    this.game = body;
+                    console.log("GIOCO FETCHATO")
+                    console.log(this.game)
                 }
             } catch (error) {
                 this.error = error;
@@ -149,6 +153,7 @@ export const useGameStore = defineStore('game', {
                     body: JSON.stringify(data)
                 })
                 if (response.status === 200) {
+                    console.log("New Game created")
                     return this.fetchGame();
                 } else {
                     console.error('Error:', response.statusText);
@@ -165,14 +170,27 @@ export const useGameStore = defineStore('game', {
 
 export const useTimerStore = defineStore('timer', {
     state: () => ({
-        time: ref(60.00),
+        time: 60.00,
+        allarmTime: 10,
         interval: null,
         status: null,
     }),
 
     actions: {
-        newTimer(time) {
-            this.time = time;
+        async newTimer() {
+            const gameStore = useGameStore();
+            const settingsStore = useSettingsStore();
+            await gameStore.fetchGame()
+            await settingsStore.fetchTablePresetsRulesets()
+            console.log("GameStore:")
+            console.log(gameStore.game)
+            if (gameStore.game && gameStore.game.ruleset_id) {
+                console.log("Received ruleset_id: " + gameStore.game.ruleset_id)
+                const ruleset = settingsStore.rulesets.find(ruleset => ruleset.id === gameStore.game.ruleset_id);
+                console.log(ruleset)
+                this.time = ruleset.initial_duration;
+                this.allarmTime = ruleset.allarm_time;
+            }
         },
 
         startTimer() {

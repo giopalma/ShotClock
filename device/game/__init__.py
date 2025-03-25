@@ -57,8 +57,8 @@ class Game:
             video_producer (VideoProducer): Oggetto che gestisce la produzione di video (Opzionale). Permette maggiore facilità di testing
             socketio (SocketIO): Oggetto per la comunicazione via WebSocket.
         """
-        self._ruleset = ruleset
-        self._table = table
+        self.ruleset = ruleset
+        self.table = table
 
         self._is_running_rpi = is_raspberry_pi()
         self._buzzer = Buzzer(11) if self._is_running_rpi else None
@@ -77,7 +77,6 @@ class Game:
         )
         self.last_remaining_time = 0
         self.socketio = socketio
-        self._emit_websocket("game", "created")
 
     def _emit_websocket(self, event, body):
         if os.getenv("FLASK_ENV") == "api":
@@ -103,7 +102,7 @@ class Game:
             self._emit_websocket("game", "ended")
             if self._buzzer:
                 self._buzzer.off()
-            # TODO: Controllare bene se tutto è stato terminato
+                self._buzzer.close()
             print("Gioco terminato.")
 
     """------MOVEMENT EVENTS CALLBACKS-----"""
@@ -124,16 +123,14 @@ class Game:
         if self.status == "running":
             if self.increments[player] > 0:
                 self.increments[player] -= 1
-                # TODO: valutare se mettere in pausa il gioco dopo l'incremento oppure no
-                # self.pause()
-                self._timer.add_time(self._ruleset.increment_duration)
+                self._timer.add_time(self.ruleset.increment_duration)
             else:
                 return f"Nessun incremento disponibile per il giocatore: {self.player_names[player]}"
 
     def next_turn(self):
         if self.status == "running":
-            self._timer.end()  # Termino il vecchio timer
-            self._timer = self._new_timer(duration=self._ruleset.turn_duration)
+            self._timer.end()
+            self._timer = self._new_timer(duration=self.ruleset.turn_duration)
             self.start_turn()
 
     def start_turn(self):
@@ -150,7 +147,6 @@ class Game:
             self._video_consumer.pause()
             if os.getenv("FLASK_ENV") == "api":
                 self.socketio.emit(
-                    # Il timestamp serve a sincronizzare il server con il client
                     "timer",
                     {
                         "timestamp": time.time(),
@@ -169,7 +165,6 @@ class Game:
             self._video_consumer.resume()
             if os.getenv("FLASK_ENV") == "api":
                 self.socketio.emit(
-                    # Il timestamp serve a sincronizzare il server con il client
                     "timer",
                     {
                         "timestamp": time.time(),
@@ -207,7 +202,7 @@ class Game:
     def _new_timer(self, duration: int):
         return Timer(
             duration=duration,
-            allarm_time=self._ruleset.allarm_time,
+            allarm_time=self.ruleset.allarm_time,
             callback=self.next_turn,
             allarm_callback=self._allarm,
             periodic_callback=self._periodic_callback,
@@ -218,7 +213,6 @@ class Game:
         self.last_remaining_time = remaining_time
         if os.getenv("FLASK_ENV") == "api":
             self.socketio.emit(
-                # Il timestamp serve a sincronizzare il server con il client
                 "timer",
                 {
                     "timestamp": time.time(),

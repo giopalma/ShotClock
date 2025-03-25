@@ -6,8 +6,9 @@ import { useGameStore } from '../store';
 const gameStore = useGameStore();
 const timerStore = useTimerStore();
 
-onMounted(() => {
-    gameStore.fetchGame()
+onMounted(async () => {
+    await gameStore.fetchGame()
+    await timerStore.newTimer()
 })
 
 const integerTime = computed(() => Math.floor(timerStore.time));

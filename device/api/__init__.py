@@ -45,6 +45,9 @@ socketio = SocketIO(
     logger=True,
     async_mode="threading",
     path="/socket.io",
+    ping_timeout=60,
+    ping_interval=25,
+    engineio_logger=False,
 )
 websocket.register(socketio)
 # Aggiungi le risorse API
@@ -67,4 +70,11 @@ def start(debug=False):
     Parametri:
     debug (bool): Se True, il server verrà eseguito in modalità debug. Il valore predefinito è False.
     """
-    socketio.run(app)
+    socketio.run(
+        app,
+        allow_unsafe_werkzeug=True,
+        host="0.0.0.0",
+        port=5000,
+        debug=debug,
+        use_reloader=False,
+    )

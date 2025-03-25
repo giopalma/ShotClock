@@ -7,15 +7,16 @@ export const state = reactive({
     timeOffset: 0,
 });
 
-export const socket = io({
+export const socket = io('', {
     path: '/socket.io',
     transports: ['websocket', 'polling'],
     reconnection: true,
-    reconnectionAttempts: 5,
+    reconnectionAttempts: Infinity,
     reconnectionDelay: 1000,
+    reconnectionDelayMax: 5000,
+    timeout: 20000,
     autoConnect: true,
-    forceNew: true,
-    timeout: 10000
+    forceNew: true
 });
 
 socket.on("connect", () => {
@@ -52,13 +53,15 @@ socket.on("reconnect", () => {
 });
 
 socket.on("game", async (data) => {
-    const gameStore = useGameStore()
     const timerStore = useTimerStore()
-    gameStore.fetchGame()
-    console.log("WebSocket: " + data)
+    const gameStore = useGameStore()
+    console.log("Websocket Game: " + data)
     if (data === "created" || data === "ended") {
-        console.log("WebSocket: " + data)
+        await gameStore.fetchGame()
         timerStore.endTimer()
+    }
+    if (data === "created") {
+        timerStore.newTimer()
     }
     console.log(gameStore.game)
 })

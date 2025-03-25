@@ -23,6 +23,7 @@ const currentIncrements = computed(() => gameStore.game ? gameStore.game.current
 // Carica il gioco al montaggio del componente
 onMounted(async () => {
   await gameStore.fetchGame()
+  await timerStore.newTimer()
 })
 
 // Logica per l'incremento del tempo
@@ -48,7 +49,7 @@ const togglePauseResume = async () => {
 // Avvio del gioco
 const startGameHandler = async () => {
   if (await startGame()) {
-    timerStore.newTimer(60)
+    timerStore.newTimer()
     timerStore.startTimer()
     gameStore.game.game_status = 'running'
   }

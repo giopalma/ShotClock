@@ -45,6 +45,7 @@ def new_game(
         video_producer=VideoProducer.get_instance(),
         socketio=socketio,
     )
+    socketio.emit("game", "created")
     return _game
 
 

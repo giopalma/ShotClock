@@ -248,6 +248,8 @@ class GameResource(Resource):
                 "last_remaining_time": game.last_remaining_time,
                 "current_increments": game.increments,
                 "game_status": game.status,
+                "ruleset_id": game.ruleset.id,
+                "tablepreset_id": game.table.id,
             }
             return jsonify(data_return)
 

@@ -44,7 +44,7 @@ export async function resumeGame() {
 
 export async function endGame() {
     const result = gameAction('end');
-    useGameStore().fetchGame()
+    await useGameStore().fetchGame()
     useTimerStore().endTimer()
     return result
 }
