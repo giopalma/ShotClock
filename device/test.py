@@ -49,13 +49,13 @@ def test_api(static=False):
     import device.api as api
 
     if static:
-        frame = cv2.imread("./device/test_data/images/esempio_720.png")
+        frame = cv2.imread("./device/test_data/images/esempio_2.png")
         VideoProducer.get_instance(frame=frame)
 
     api.start(debug=True)
 
 
-def test(is_video=True, static=False):
+def test(is_video=False, static=False):
     if is_video:
         os.environ["FLASK_ENV"] = "video"
         test_video()

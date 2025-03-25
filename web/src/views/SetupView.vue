@@ -12,8 +12,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="flex">
-    <SettingsComponent />
-    <SetupTimerComponent />
+  <div class="flex flex-col md:flex-row w-full h-full">
+    <SetupTimerComponent class="md:self-start" />
+    <SettingsComponent class="md:self-start" />
   </div>
 </template>

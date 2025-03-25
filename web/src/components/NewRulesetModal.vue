@@ -34,33 +34,33 @@ const max_increment_for_match = ref(1)
 </script>
 <template>
     <Dialog :visible="visible" @update:visible="emit('update:visible', $event)" modal header="Nuovo Ruleset"
-        class="w-md">
+        class="w-max-md">
         <span class="text-surface-500 dark:text-surface-400 block mb-8">
             Aggiungi delle nuove regole.
         </span>
-        <div class="flex items-center gap-4 mb-4">
-            <label for="name" class="font-semibold w-12">Nome</label>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-4 mb-4">
+            <label for="name" class="font-semibold md:w-12">Nome</label>
             <InputText type="text" v-model="name" class="flex-auto" :invalid="!name" />
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <label for="initial_duration" class="font-semibold flex-auto">Durata colpo di apertura</label>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-4 mb-4">
+            <label for="initial_duration" class="font-semibold md:w-1/2">Durata colpo di apertura</label>
             <InputText type="number" v-model="initial_duration" class="flex-auto" />
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <label for="turn_duration" class="font-semibold w-1/2">Durata turno</label>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-4 mb-4">
+            <label for="turn_duration" class="font-semibold md:w-1/2">Durata turno</label>
             <InputText type="number" v-model="turn_duration" class="flex-auto" :invalid="!turn_duration" />
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <label for="allarm_time" class="font-semibold w-1/2">Avviso acustico</label>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-4 mb-4">
+            <label for="allarm_time" class="font-semibold md:w-1/2">Avviso acustico</label>
             <InputText type="number" v-model="allarm_time" class="flex-auto" />
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <label for="increment_duration" class="font-semibold w-1/2">Tempo di incremento</label>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-4 mb-4">
+            <label for="increment_duration" class="font-semibold md:w-1/2">Tempo di incremento</label>
             <InputText type="number" v-model="increment_duration" class="flex-auto"
                 :invalid="!increment_duration && max_increment_for_match != 0" />
         </div>
-        <div class="flex items-center gap-4 mb-4">
-            <label for="max_increment_for_match" class="font-semibold w-1/2">Massimi incrementi per gioco</label>
+        <div class="flex flex-col gap-2 md:items-center md:flex-row md:gap-4 mb-4">
+            <label for="max_increment_for_match" class="font-semibold md:w-1/2">Massimi incrementi per gioco</label>
             <InputText type="number" v-model="max_increment_for_match" class="flex-auto"
                 :invalid="!max_increment_for_match" />
         </div>

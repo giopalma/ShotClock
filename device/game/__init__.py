@@ -20,19 +20,21 @@ class Game:
     Gestisce la logica di un gioco a turni per due giocatori basato su un set di regole e una configurazione del tavolo.
 
     Caratteristiche:
-    - Stato del gioco: "ready", "running", "waiting", "ended".
+    - Stato del gioco: "ready", "running", "waiting", "ended", "paused".
     - Coordinamento dei turni mediante un timer.
     - Gestione degli eventi di movimento tramite un video consumer.
     - Possibilità di incrementare il tempo disponibile per il turno.
 
     Attributi:
-    ruleset (Ruleset): Set di regole con parametri quali durata del turno e incrementi massimi.
-    table (TablePreset): Configurazione del tavolo di gioco.
+    _ruleset (Ruleset): Set di regole con parametri quali durata del turno e incrementi massimi.
+    _table (TablePreset): Configurazione del tavolo di gioco.
     player_names (List[str]): Nomi dei due giocatori.
     increments (List[int]): Numero di incrementi disponibili per ciascun giocatore.
-    timer (Timer): Timer che gestisce la durata di ogni turno.
-    status (Literal["ready", "running", "waiting", "ended"]): Stato attuale del gioco.
-    video_consumer (VideoConsumer): Gestore degli eventi video per il movimento.
+    _timer (Timer): Timer che gestisce la durata di ogni turno.
+    status (Literal["ready", "running", "waiting", "ended", "paused"]): Stato attuale del gioco.
+    _video_consumer (VideoConsumer): Gestore degli eventi video per il movimento.
+    last_remaining_time (int): Ultimo tempo rimanente registrato.
+    socketio: Oggetto per la comunicazione via WebSocket.
     """
 
     def __init__(
@@ -53,6 +55,7 @@ class Game:
             player1_name (str): Nome del primo giocatore.
             player2_name (str): Nome del secondo giocatore.
             video_producer (VideoProducer): Oggetto che gestisce la produzione di video (Opzionale). Permette maggiore facilità di testing
+            socketio (SocketIO): Oggetto per la comunicazione via WebSocket.
         """
         self._ruleset = ruleset
         self._table = table
@@ -121,13 +124,11 @@ class Game:
         if self.status == "running":
             if self.increments[player] > 0:
                 self.increments[player] -= 1
-                # TODO: valutare se mettere in pausa il timer per l'incremento oppure no
+                # TODO: valutare se mettere in pausa il gioco dopo l'incremento oppure no
+                # self.pause()
                 self._timer.add_time(self._ruleset.increment_duration)
             else:
                 return f"Nessun incremento disponibile per il giocatore: {self.player_names[player]}"
-
-    # def remaining_increments(self, player):
-    #    return self.increments[player]
 
     def next_turn(self):
         if self.status == "running":
@@ -180,7 +181,6 @@ class Game:
 
     def end_turn(self):
         """Termina il turno corrente e passa al giocatore successivo."""
-        # TODO: Si potrebbe aggiungere del tempo di attesa (10-15 secondi) prima di inizare il turno
         self._timer.end()
         self.next_turn()
 
@@ -197,9 +197,9 @@ class Game:
             t = threading.Thread(target=self._buzzer)
             t.start()
         else:
+            # Quando viene eseguito su Windows
             import winsound
 
-            # Quando viene eseguito su Windows
             winsound.Beep(1000, int(1000 * self.TIME_SOUND_BUZZER))
 
     """------ TIMER -----"""

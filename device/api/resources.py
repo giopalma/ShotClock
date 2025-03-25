@@ -215,7 +215,6 @@ class VideoStreamResource(Resource):
         )
 
 
-# Aggiungi una nuova risorsa per controllare lo streaming
 class VideoStreamControlResource(Resource):
     def post(self):
         # Avvia lo streaming

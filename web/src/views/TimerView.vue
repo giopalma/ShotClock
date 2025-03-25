@@ -13,7 +13,7 @@ onMounted(() => {
 const integerTime = computed(() => Math.floor(timerStore.time));
 const decimalTime = computed(() => {
     const fractional = timerStore.time - Math.floor(timerStore.time);
-    return fractional.toFixed(2).substring(1); // Ad esempio ".46"
+    return fractional.toFixed(2).substring(1);
 });
 </script>
 
@@ -23,7 +23,6 @@ const decimalTime = computed(() => {
     </template>
     <template v-else>
         <div class="flex items-center justify-center h-screen w-screen overflow-hidden">
-            <!-- Il div interno ha un max-width pari alla larghezza della viewport -->
             <div class="text-center w-full">
                 <span class="text-[10rem] md:text-[25rem] lg:text-[30rem] font-bold">{{ integerTime }}</span>
                 <span class="text-[4rem] md:text-[10rem] lg:text-[12rem] ml-1 align-[super]">{{ decimalTime }}</span>

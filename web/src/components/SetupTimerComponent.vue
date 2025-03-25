@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
+import ButtonGroup from 'primevue/buttongroup'
 import Panel from 'primevue/panel'
 import Button from 'primevue/button'
 import NewGameModal from './NewGameModal.vue'
@@ -59,32 +60,44 @@ const endGameHandler = async () => {
 </script>
 
 <template>
-  <Panel header="Game Panel" id="game-panel">
+  <Panel header="Game Panel" id="game-panel" class="w-full">
     <template v-if="isGameCreated">
-      <div class="time-display">
-        <span>
+      <div class="flex flex-col items-center">
+        <span class="text-5xl font-bold m-4">
           {{
             timerStore.time !== null
-              ? timerStore.time.toString().padStart(2, '0').slice(0, 2)
-              : '--'
+              ? `${Math.floor(timerStore.time).toString().padStart(2, '0')}.${((timerStore.time % 1) *
+                100).toFixed(0).padStart(2, '0')}`
+              : '--.--'
           }}
         </span>
-      </div>
-      <Button v-if="gameStatus === 'ready'" @click="startGameHandler" label="START" raised />
-      <div class="buttons">
-        <Button @click="togglePauseResume" :label="gameStatus === 'paused' ? 'RIPRENDI' : 'PAUSA'"
-          :severity="gameStatus === 'paused' ? 'success' : 'warn'" />
-        <Button :disabled="currentIncrements[0] <= 0" @click="localIncrementTime(0)"
-          :label="`INCREMENTA TEMPO ${playerNames[0]}`" severity="secondary" />
-        <Button :disabled="currentIncrements[1] <= 0" @click="localIncrementTime(1)"
-          :label="`INCREMENTA TEMPO ${playerNames[1]}`" severity="secondary" />
-        <Button label="TERMINA" raised @click="endGameHandler" severity="danger" />
+
+        <div class="flex flex-col w-full max-w-md">
+          <ButtonGroup class="flex w-full">
+            <Button v-if="gameStatus === 'ready'" @click="startGameHandler" label="START" class="flex-1" />
+            <Button v-if="gameStatus !== 'ready'" @click="togglePauseResume"
+              :label="gameStatus === 'paused' ? 'RIPRENDI' : 'PAUSA'"
+              :severity="gameStatus === 'paused' ? 'success' : 'warn'" class="flex-1" />
+            <Button label="TERMINA" @click="endGameHandler" severity="danger" class="flex-1" />
+          </ButtonGroup>
+          <div class="mb-2 text-center">
+            <div class="font-bold mb-1">INCREMENTA TEMPO</div>
+            <ButtonGroup class="flex w-full">
+              <Button :disabled="currentIncrements[0] <= 0" @click="localIncrementTime(0)" :label="playerNames[0]"
+                severity="secondary" class="flex-1" raised />
+              <Button :disabled="currentIncrements[1] <= 0" @click="localIncrementTime(1)" :label="playerNames[1]"
+                severity="secondary" class="flex-1" raised />
+            </ButtonGroup>
+          </div>
+        </div>
       </div>
     </template>
     <template v-else>
-      <p>Nessun gioco avviato</p>
-      <Button @click="dialogVisible = true" label="AVVIA GIOCO" raised />
-      <NewGameModal v-model:visible="dialogVisible" />
+      <div class="flex flex-col items-center">
+        <p class="text-2xl font-bold m-4">Nessun gioco avviato</p>
+        <Button @click="dialogVisible = true" label="AVVIA GIOCO" raised />
+        <NewGameModal v-model:visible="dialogVisible" />
+      </div>
     </template>
   </Panel>
 </template>

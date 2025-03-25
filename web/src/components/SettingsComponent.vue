@@ -59,11 +59,11 @@ const newTableModalVisible = ref(false)
 const newRulesetModalVisible = ref(false)
 </script>
 <template>
-    <Panel header="Settings Panel">
+    <Panel header="Settings Panel" class="w-full max-w-md" toggleable>
         <template #icons>
             <Button icon="pi pi-refresh" severity="secondary" @click="reloadSettings" rounded text />
         </template>
-        <div class=" flex flex-col w-md">
+        <div class=" flex flex-col">
             <DataTable :value="settingsStore.tableprests" tableStyle="max-width: 50rem" size="small" stripedRows>
                 <template #header>
                     <div class="flex flex-wrap items-center justify-between gap-2">

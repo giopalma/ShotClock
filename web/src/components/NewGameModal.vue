@@ -34,7 +34,7 @@ const selectedRuleset = ref(null);
 
 <template>
     <Dialog :visible="visible" @update:visible="emit('update:visible', $event)" modal header="Nuovo Gioco"
-        :style="{ width: '25rem' }">
+        class="w-full max-w-md">
         <span class="text-surface-500 dark:text-surface-400 block mb-8">
             Imposta le configurazioni per il nuovo gioco.
         </span>

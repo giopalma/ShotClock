@@ -12,7 +12,7 @@ from . import websocket
 load_dotenv()
 
 
-# Definisci la classe base del modello
+# Definisci la classe base del modello. Server per SQLAlchemy
 class Base(DeclarativeBase):
     pass
 
@@ -29,7 +29,6 @@ app = Flask(__name__, static_folder="", template_folder="")
 # Configura l'app Flask
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///shotclock.db"
 app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET_KEY")
-# app.config["GEVENT_SUPPORT"] = True
 
 # Inizializza il database con il contesto dell'app
 db.init_app(app)
