@@ -110,7 +110,16 @@ class Game:
     def _start_movement(self):
         if self.status == "running":
             self.status = "waiting"
-            self._timer.pause()
+            remaining_time = self._timer.pause()
+            if os.getenv("FLASK_ENV") == "api":
+                self.socketio.emit(
+                    "timer",
+                    {
+                        "timestamp": time.time(),
+                        "remaining_time": remaining_time,
+                        "status": "paused",
+                    },
+                )
 
     def _stop_movement(self):
         if self.status == "waiting":

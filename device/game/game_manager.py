@@ -1,11 +1,13 @@
 """
-Il modulo `game_manager` fornisce tutti i metodi necessari per gestire l'intero gioco di biliardo.
-È l'unico modulo che può essere utilizzato dall'API per controllare tutte le operazioni di gioco.
+Il modulo `game_manager` fornisce i metodi essenziali per la gestione base del gioco di biliardo.
+Il suo scopo è limitato a ottenere il riferimento al gioco corrente, creare un nuovo gioco o terminare quello esistente.
+
 Classi:
     Nessuna
 Funzioni:
     get_game() -> Game:
     new_game(ruleset: Ruleset, player1_name: str, player2_name: str) -> Game:
+    end_game() -> None:
 Variabili:
     _game: Game
         Variabile globale che mantiene il riferimento al gioco attualmente in esecuzione.

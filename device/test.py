@@ -45,20 +45,24 @@ def test_video():
     game.start()
 
 
-def test_api(static=False):
+def test_api(is_video=False, static=False):
     import device.api as api
 
     if static:
         frame = cv2.imread("./device/test_data/images/esempio_2.png")
         VideoProducer.get_instance(frame=frame)
+    elif is_video:
+        VideoProducer.get_instance(
+            video_source="./device/test_data/video/esempio_2.mp4"
+        )
 
     api.start(debug=True)
 
 
-def test(is_video=False, static=False):
-    if is_video:
+def test(is_video=True, static=False):
+    """if is_video:
         os.environ["FLASK_ENV"] = "video"
         test_video()
-    else:
-        os.environ["FLASK_ENV"] = "api"
-        test_api(static=static)
+    else:"""
+    os.environ["FLASK_ENV"] = "api"
+    test_api(is_video=is_video, static=static)

@@ -50,7 +50,7 @@ socketio = SocketIO(
     engineio_logger=False,
 )
 websocket.register(socketio)
-# Aggiungi le risorse API
+
 api.add_resource(resources.GameResource, "/game")
 api.add_resource(resources.GameActionsResource, "/game/actions")
 api.add_resource(resources.TablePresetResource, "/table")

@@ -12664,3 +12664,124 @@ AssertionError: write() before start_response
 2025-03-25 15:28:07,511 - INFO - 127.0.0.1 - - [25/Mar/2025 15:28:07] "POST /game/actions HTTP/1.1" 200 -
 2025-03-25 15:28:07,546 - INFO - 127.0.0.1 - - [25/Mar/2025 15:28:07] "[33mGET /game HTTP/1.1[0m" 404 -
 2025-03-25 15:28:07,564 - INFO - 127.0.0.1 - - [25/Mar/2025 15:28:07] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-26 10:43:21,199 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.201.226:5000
+2025-03-26 10:43:21,206 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-26 10:45:14,486 - INFO - emitting event "time_sync" to 5SMfiQ1eD_6_J14bAAAB [/]
+2025-03-26 10:45:14,488 - INFO - Client connesso
+2025-03-26 10:45:14,776 - INFO - 127.0.0.1 - - [26/Mar/2025 10:45:14] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-26 10:45:14,835 - INFO - 127.0.0.1 - - [26/Mar/2025 10:45:14] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-26 10:45:14,885 - INFO - 127.0.0.1 - - [26/Mar/2025 10:45:14] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:45:14,944 - INFO - 127.0.0.1 - - [26/Mar/2025 10:45:14] "GET /ruleset HTTP/1.1" 200 -
+2025-03-26 10:45:37,543 - INFO - 127.0.0.1 - - [26/Mar/2025 10:45:37] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:46:33,220 - INFO - 127.0.0.1 - - [26/Mar/2025 10:46:33] "POST /table HTTP/1.1" 200 -
+2025-03-26 10:48:26,734 - INFO - Client disconnesso
+2025-03-26 10:48:26,741 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:26] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-26 10:48:26,763 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-26 10:48:27,316 - INFO - emitting event "time_sync" to g8b2bZ1c3SG7ExsSAAAD [/]
+2025-03-26 10:48:27,318 - INFO - Client connesso
+2025-03-26 10:48:27,701 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:27] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-26 10:48:27,716 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:27] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:48:27,849 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:27] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-26 10:48:27,868 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:27] "GET /ruleset HTTP/1.1" 200 -
+2025-03-26 10:48:27,918 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:27] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:48:27,958 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:27] "GET /ruleset HTTP/1.1" 200 -
+2025-03-26 10:48:54,486 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.201.226:5000
+2025-03-26 10:48:54,487 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-26 10:48:55,325 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:55] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:48:55,465 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:55] "GET /ruleset HTTP/1.1" 200 -
+2025-03-26 10:48:57,805 - INFO - emitting event "time_sync" to U1HjjfJQ9tjjAPfOAAAB [/]
+2025-03-26 10:48:57,807 - INFO - Client connesso
+2025-03-26 10:48:59,845 - INFO - emitting event "game" to all [/]
+2025-03-26 10:48:59,848 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:59] "POST /game HTTP/1.1" 200 -
+2025-03-26 10:48:59,881 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:59] "GET /game HTTP/1.1" 200 -
+2025-03-26 10:48:59,919 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:59] "GET /game HTTP/1.1" 200 -
+2025-03-26 10:48:59,975 - INFO - 127.0.0.1 - - [26/Mar/2025 10:48:59] "GET /game HTTP/1.1" 200 -
+2025-03-26 10:49:00,065 - INFO - 127.0.0.1 - - [26/Mar/2025 10:49:00] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:49:00,121 - INFO - 127.0.0.1 - - [26/Mar/2025 10:49:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-26 10:49:04,014 - INFO - emitting event "game" to all [/]
+2025-03-26 10:49:04,017 - INFO - 127.0.0.1 - - [26/Mar/2025 10:49:04] "POST /game/actions HTTP/1.1" 200 -
+2025-03-26 10:49:04,040 - INFO - 127.0.0.1 - - [26/Mar/2025 10:49:04] "GET /game HTTP/1.1" 200 -
+2025-03-26 10:49:04,089 - INFO - 127.0.0.1 - - [26/Mar/2025 10:49:04] "GET /table HTTP/1.1" 200 -
+2025-03-26 10:49:04,130 - INFO - 127.0.0.1 - - [26/Mar/2025 10:49:04] "GET /ruleset HTTP/1.1" 200 -
+2025-03-26 10:49:07,020 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:07,022 - INFO - Remaining time: 58.98399999999856
+2025-03-26 10:49:08,030 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:08,032 - INFO - Remaining time: 57.98399999999856
+2025-03-26 10:49:09,038 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:09,039 - INFO - Remaining time: 56.98399999999856
+2025-03-26 10:49:09,668 - INFO - Movimento rilevato
+2025-03-26 10:49:09,670 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:14,374 - INFO - Movimento terminato
+2025-03-26 10:49:17,381 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:17,383 - INFO - Remaining time: 34.0
+2025-03-26 10:49:18,389 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:18,390 - INFO - Remaining time: 33.0
+2025-03-26 10:49:19,397 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:19,399 - INFO - Remaining time: 32.0
+2025-03-26 10:49:20,407 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:20,409 - INFO - Remaining time: 30.985000000000582
+2025-03-26 10:49:21,355 - INFO - Movimento rilevato
+2025-03-26 10:49:21,356 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:21,414 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:21,416 - INFO - Remaining time: 29.985000000000582
+2025-03-26 10:49:26,319 - INFO - Movimento terminato
+2025-03-26 10:49:29,327 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:29,329 - INFO - Remaining time: 34.0
+2025-03-26 10:49:30,334 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:30,335 - INFO - Remaining time: 33.0
+2025-03-26 10:49:31,359 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:31,361 - INFO - Remaining time: 31.98400000000038
+2025-03-26 10:49:32,369 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:32,376 - INFO - Remaining time: 30.98400000000038
+2025-03-26 10:49:33,388 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:33,390 - INFO - Remaining time: 29.98400000000038
+2025-03-26 10:49:33,541 - INFO - Movimento rilevato
+2025-03-26 10:49:33,542 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:36,274 - INFO - Movimento terminato
+2025-03-26 10:49:39,283 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:39,284 - INFO - Remaining time: 33.98500000000058
+2025-03-26 10:49:40,291 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:40,294 - INFO - Remaining time: 32.98500000000058
+2025-03-26 10:49:41,300 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:41,302 - INFO - Remaining time: 31.96900000000096
+2025-03-26 10:49:42,307 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:42,309 - INFO - Remaining time: 30.96900000000096
+2025-03-26 10:49:43,305 - INFO - Movimento rilevato
+2025-03-26 10:49:43,306 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:43,316 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:43,318 - INFO - Remaining time: 29.95300000000134
+2025-03-26 10:49:45,172 - INFO - Movimento terminato
+2025-03-26 10:49:48,181 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:48,183 - INFO - Remaining time: 34.0
+2025-03-26 10:49:49,190 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:49,192 - INFO - Remaining time: 32.98400000000038
+2025-03-26 10:49:50,197 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:50,199 - INFO - Remaining time: 31.98400000000038
+2025-03-26 10:49:50,288 - INFO - Movimento rilevato
+2025-03-26 10:49:50,290 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:55,263 - INFO - Movimento terminato
+2025-03-26 10:49:58,274 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:58,276 - INFO - Remaining time: 34.0
+2025-03-26 10:49:59,282 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:49:59,283 - INFO - Remaining time: 32.98500000000058
+2025-03-26 10:50:00,289 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:50:00,291 - INFO - Remaining time: 31.985000000000582
+2025-03-26 10:50:01,298 - INFO - emitting event "timer" to all [/]
+2025-03-26 10:50:01,300 - INFO - Remaining time: 30.96900000000096
+2025-03-26 10:50:01,475 - INFO - Movimento rilevato
+2025-03-26 10:50:01,476 - INFO - emitting event "timer" to all [/]
