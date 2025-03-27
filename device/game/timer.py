@@ -27,11 +27,9 @@ class Timer:
         self.periodic_time = periodic_time
         self._allarm_triggered = False
         self._countdown_triggered = False
-        self._last_countdown_second = 6  # Inizia da 6 per attivare l'allarme a 5
+        self._last_countdown_second = 5
         self._is_running_event = Event()
-        self._end_event = (
-            Event()
-        )  # L'end event è necessario per terminare il loop del run
+        self._end_event = Event()
         self.thread = None
 
     def _run(self):
