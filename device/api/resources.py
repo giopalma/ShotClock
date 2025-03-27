@@ -5,14 +5,14 @@ import json
 import logging
 import cv2
 import time
-from flask import send_file
+import argon2
 import os
 import threading
 import numpy as np
 import uuid
 
 from device.api.auth import auth_required, create_access_token
-from device.config import get_config
+from device.config import get_config, set_config
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
 from device.game import game_manager
@@ -401,17 +401,25 @@ class RulesetResource2(Resource):
         return ("Ruleset not found", 404)
 
 
-class Login(Resource):
-    def __init__(self, bcrypt):
-        self.bcrypt = bcrypt
+ph = argon2.PasswordHasher()
 
+
+class Login(Resource):
     def post(self):
         data = request.get_json()
         password = data.get("password")
         config = get_config()
         hashed_password = config["WEB"]["Password"]
-        if self.bcrypt.check_password_hash(hashed_password, password):
+        try:
+            ph.verify(hashed_password, password)
+            if ph.check_needs_rehash(hashed_password):
+                hashed_password = ph.hash(password)
+                config["WEB"]["Password"] = hashed_password
+                set_config(config)
             access_token = create_access_token()
             return {"message": "Login successful", "access_token": access_token}, 200
-        else:
+        except argon2.exceptions.VerifyMismatchError:
             return {"message": "Invalid password"}, 401
+        except Exception as e:
+            logging.error(e)
+            return {"message": "Internal server error"}, 500
