@@ -16,8 +16,8 @@ def get_config():
     return config
 
 
-def set_config(key, value):
+def set_config(_config):
     global config
-    config[key] = value
+    config = config
     with open("config.ini", "w") as f:
         config.write(f)
