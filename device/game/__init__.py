@@ -189,22 +189,24 @@ class Game:
         self.next_turn()
 
     """------BUZZER / SUONO-----"""
-    TIME_SOUND_BUZZER = 0.8
+    TIME_SOUND_BUZZER = 0.5
+    TIME_FINAL_BUZZER = 2.0  # Durata del suono finale (2 secondi)
 
-    def _buzzer(self):
-        self._buzzer.beep(
-            on_time=self.TIME_SOUND_BUZZER, off_time=self.TIME_SOUND_BUZZER, n=2
-        )
+    def _buzzer(self, duration=TIME_SOUND_BUZZER):
+        if duration:
+            self._buzzer.beep(on_time=duration, off_time=duration, n=1)
 
-    def _allarm(self):
+    def _allarm(self, is_final=False):
+        duration = self.TIME_FINAL_BUZZER if is_final else self.TIME_SOUND_BUZZER
+
         if self._is_running_rpi:
-            t = threading.Thread(target=self._buzzer)
+            t = threading.Thread(target=self._buzzer, args=(duration))
             t.start()
         else:
             # Quando viene eseguito su Windows
             import winsound
 
-            winsound.Beep(1000, int(1000 * self.TIME_SOUND_BUZZER))
+            winsound.Beep(1000, int(1000 * duration))
 
     """------ TIMER -----"""
 
@@ -212,11 +214,16 @@ class Game:
         return Timer(
             duration=duration,
             allarm_time=self.ruleset.allarm_time,
-            callback=self.next_turn,
+            callback=self._time_up,
             allarm_callback=self._allarm,
             periodic_callback=self._periodic_callback,
             periodic_time=1,
         )
+
+    def _time_up(self):
+        # Metodo chiamato quando il timer raggiunge 0
+        self._allarm(is_final=True)
+        self.next_turn()
 
     def _periodic_callback(self, remaining_time, is_timer_running):
         self.last_remaining_time = remaining_time

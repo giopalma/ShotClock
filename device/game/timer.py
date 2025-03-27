@@ -26,6 +26,8 @@ class Timer:
         self.periodic_callback = periodic_callback
         self.periodic_time = periodic_time
         self._allarm_triggered = False
+        self._countdown_triggered = False
+        self._last_countdown_second = 6  # Inizia da 6 per attivare l'allarme a 5
         self._is_running_event = Event()
         self._end_event = (
             Event()
@@ -63,6 +65,17 @@ class Timer:
             if self.remaining_time <= self.allarm_time and not self._allarm_triggered:
                 self.allarm_callback()
                 self._allarm_triggered = True
+
+            # Allarme per il countdown finale (5,4,3,2,1)
+            current_second = int(self.remaining_time)
+            if (
+                current_second <= 5
+                and current_second > 0
+                and current_second < self._last_countdown_second
+            ):
+                self._last_countdown_second = current_second
+                self.allarm_callback()
+
             elif self.remaining_time <= 0:
                 self.callback()
 
