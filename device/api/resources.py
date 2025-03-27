@@ -11,6 +11,8 @@ import threading
 import numpy as np
 import uuid
 
+from device.api.auth import auth_required, create_access_token
+from device.config import get_config
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
 from device.game import game_manager
@@ -253,6 +255,7 @@ class GameResource(Resource):
             }
             return jsonify(data_return)
 
+    @auth_required
     def post(self):
         from . import socketio
 
@@ -292,6 +295,7 @@ class GameResource(Resource):
 
 
 class GameActionsResource(Resource):
+    @auth_required
     def post(self):
         # Prendere il request e vedere se c'è un action
         data = None
@@ -336,6 +340,7 @@ class TablePresetResource(Resource):
             table.points = json.loads(table.points)
         return jsonify(tables)
 
+    @auth_required
     def post(self):
         if not request.is_json:
             return ({"message": "Missing JSON in request"}, 400)
@@ -360,6 +365,7 @@ class TablePresetResource(Resource):
 
 
 class TablePresetResource2(Resource):
+    @auth_required
     def delete(self, id):
         if models_dao.TablePresetDao.delete(id):
             return ("TablePreset deleted", 200)
@@ -371,6 +377,7 @@ class RulesetResource(Resource):
         rulesets = models_dao.RulesetDao.get_all()
         return jsonify(rulesets)
 
+    @auth_required
     def post(self):
         if not request.is_json:
             return ({"message": "Missing JSON in request"}, 400)
@@ -385,15 +392,26 @@ class RulesetResource(Resource):
         )
         return jsonify(ruleset)
 
-    def delete(self, id):
-        if models_dao.RulesetDao.delete(id):
-            return ("Ruleset deleted", 200)
-        return ("Ruleset not found", 404)
-
 
 class RulesetResource2(Resource):
-
+    @auth_required
     def delete(self, id):
         if models_dao.RulesetDao.delete(id):
             return ("Ruleset deleted", 200)
         return ("Ruleset not found", 404)
+
+
+class Login(Resource):
+    def __init__(self, bcrypt):
+        self.bcrypt = bcrypt
+
+    def post(self):
+        data = request.get_json()
+        password = data.get("password")
+        config = get_config()
+        hashed_password = config["WEB"]["Password"]
+        if self.bcrypt.check_password_hash(hashed_password, password):
+            access_token = create_access_token()
+            return {"message": "Login successful", "access_token": access_token}, 200
+        else:
+            return {"message": "Invalid password"}, 401

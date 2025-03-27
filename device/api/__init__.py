@@ -4,6 +4,7 @@ from flask_cors import CORS
 from flask_restful import Api
 from sqlalchemy.orm import DeclarativeBase
 from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
 from dotenv import load_dotenv
 import os
 from . import websocket
@@ -39,6 +40,8 @@ with app.app_context():
 api = Api(app)
 CORS(app)
 
+bcrypt = Bcrypt(app)
+
 socketio = SocketIO(
     app,
     cors_allowed_origins="*",
@@ -61,6 +64,7 @@ api.add_resource(resources.VideoFrameResource, "/video/frame")
 api.add_resource(resources.VideoRecordResource, "/video/record")
 api.add_resource(resources.VideoStreamResource, "/video/stream")
 api.add_resource(resources.VideoStreamControlResource, "/video/stream/control")
+api.add_resource(resources.Login, "/login", resource_class_kwargs={"bcrypt": bcrypt})
 
 
 def start(debug=False):
