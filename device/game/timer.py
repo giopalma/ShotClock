@@ -1,5 +1,6 @@
 import time
 from threading import Lock, Thread, Event
+import math
 
 
 class Timer:
@@ -27,7 +28,7 @@ class Timer:
         self.periodic_time = periodic_time
         self._allarm_triggered = False
         self._countdown_triggered = False
-        self._last_countdown_second = 5
+        self._last_countdown_second = 6
         self._is_running_event = Event()
         self._end_event = Event()
         self.thread = None
@@ -65,7 +66,8 @@ class Timer:
                 self._allarm_triggered = True
 
             # Allarme per il countdown finale (5,4,3,2,1)
-            current_second = int(self.remaining_time)
+
+            current_second = math.ceil(self.remaining_time)
             if (
                 current_second <= 5
                 and current_second > 0

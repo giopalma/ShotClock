@@ -13,17 +13,15 @@ onMounted(async () => {
     await timerStore.newTimer()
 })
 
-const integerTime = computed(() => Math.floor(timerStore.time));
-const decimalTime = computed(() => {
-    const fractional = timerStore.time - Math.floor(timerStore.time);
-    return fractional.toFixed(2).substring(1);
-});
+const integerTime = computed(() => Math.ceil(timerStore.time));
 
 const mute = ref(true)
-const allarmed = ref(false)
+const alarmTriggered = ref(false)
+const last_countdown_second = ref(6);
 let audioCtx = null;
 
-const playAlarmSound = () => {
+const playAlarmSound = (isFinal = false) => {
+    const duration = isFinal ? 2 : 0.5;
     try {
         if (!audioCtx) {
             audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -36,23 +34,36 @@ const playAlarmSound = () => {
         oscillator.connect(gainNode);
         gainNode.connect(audioCtx.destination);
         oscillator.start();
-        oscillator.stop(audioCtx.currentTime + 0.5);
+        oscillator.stop(audioCtx.currentTime + duration);
     } catch (e) {
         console.error('Errore nella riproduzione audio:', e);
     }
 }
 
-watch(() => timerStore.time, (newTime) => {
-    if (!mute.value) {
-        if (allarmed.value && newTime > timerStore.allarmTime) {
-            allarmed.value = false;
-        }
-        if (!allarmed.value && newTime <= timerStore.allarmTime && !mute.value) {
-            allarmed.value = true;
-            console.log("Allarm");
-            playAlarmSound();
-        }
+// Gestisce l'allarme principale
+const handleMainAlarm = (newTime) => {
+    if (alarmTriggered.value && newTime > timerStore.allarmTime) {
+        alarmTriggered.value = false;
+    } else if (!alarmTriggered.value && newTime <= timerStore.allarmTime) {
+        alarmTriggered.value = true;
+        playAlarmSound();
     }
+}
+
+// Gestisce il conto alla rovescia finale
+const handleCountdown = (newTime) => {
+    const roundedTime = Math.ceil(newTime);
+    if (roundedTime <= 5 && roundedTime >= 0 && roundedTime < last_countdown_second.value) {
+        last_countdown_second.value = roundedTime;
+        playAlarmSound(roundedTime === 0);
+    }
+}
+
+watch(() => timerStore.time, (newTime) => {
+    if (mute.value) return;
+
+    handleMainAlarm(newTime);
+    handleCountdown(newTime);
 });
 </script>
 
@@ -71,8 +82,6 @@ watch(() => timerStore.time, (newTime) => {
                 <div class="flex items-center justify-center h-screen w-screen overflow-hidden">
                     <div class="text-center w-full">
                         <span class="text-[10rem] md:text-[25rem] lg:text-[30rem] font-bold">{{ integerTime }}</span>
-                        <span class="text-[4rem] md:text-[10rem] lg:text-[12rem] ml-1 align-[super]">{{ decimalTime
-                            }}</span>
                     </div>
                 </div>
             </template>
