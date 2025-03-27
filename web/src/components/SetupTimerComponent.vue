@@ -67,9 +67,8 @@ const endGameHandler = async () => {
         <span class="text-5xl font-bold m-4">
           {{
             timerStore.time !== null
-              ? `${Math.floor(timerStore.time).toString().padStart(2, '0')}.${((timerStore.time % 1) *
-                100).toFixed(0).padStart(2, '0')}`
-              : '--.--'
+              ? `${Math.ceil(timerStore.time)}`
+              : '--'
           }}
         </span>
 
