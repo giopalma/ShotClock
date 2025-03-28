@@ -437,13 +437,23 @@ class Login(Resource):
             return {"message": "Internal server error"}, 500
 
 
+class Logout(Resource):
+    def post(self):
+        response = make_response({"message": "Logout successful"}, 200)
+        response.set_cookie(
+            "access_token", "", max_age=0, secure=False, httponly=True, path="/"
+        )
+        return response
+
+
 class PasswordResource(Resource):
     @auth_required
     def post(self):
         data = request.get_json()
         password = data.get("password")
         config = get_config()
-        config["WEB"]["Password"] = password
+        hashed_password = ph.hash(password)
+        config["WEB"]["Password"] = hashed_password
         set_config(config)
         return {"message": "Password updated"}, 200
 

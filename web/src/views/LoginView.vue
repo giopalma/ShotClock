@@ -7,8 +7,10 @@ import { zodResolver } from '@primevue/forms/resolvers/zod';
 import { useRoute } from 'vue-router';
 import { router } from '../router';
 import { login } from '../auth';
+import { useToast } from 'primevue/usetoast';
 
 const route = useRoute()
+const toast = useToast()
 
 const resolver = ref(zodResolver(
     z.object({
@@ -33,6 +35,9 @@ const loginHandler = async (data) => {
             console.log('No valid redirect path found, redirecting to /');
             await router.replace('/');
         }
+    } else {
+        toast.add({ severity: 'error', summary: 'Password non valida', detail: 'La password non è valida', life: 3000 })
+        data.values.password = ''
     }
 }
 </script>

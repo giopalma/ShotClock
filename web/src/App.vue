@@ -1,13 +1,13 @@
-<script>
+<script setup>
 import { socket } from "./socket"
-export default {
-  setup() {
-    socket.connect()
-  }
-}
+import { Toast } from "primevue";
+
+socket.connect()
+
 </script>
 <template>
   <main>
+    <Toast :life="3000" />
     <RouterView />
   </main>
 </template>

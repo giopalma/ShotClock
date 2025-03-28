@@ -4,6 +4,7 @@ import { router } from './router'
 import PrimeVue from 'primevue/config'
 import Aura from '@primeuix/themes/aura';
 import ConfirmationService from 'primevue/confirmationservice';
+import ToastService from 'primevue/toastservice';
 
 import App from './App.vue'
 import 'primeicons/primeicons.css'
@@ -19,5 +20,6 @@ app.use(PrimeVue, {
         preset: Aura
     }
 })
+app.use(ToastService)
 app.use(ConfirmationService)
 app.mount('#app')
