@@ -63,6 +63,7 @@ api.add_resource(resources.VideoStreamResource, "/video/stream")
 api.add_resource(resources.VideoStreamControlResource, "/video/stream/control")
 api.add_resource(resources.Login, "/login")
 api.add_resource(resources.CheckAuth, "/check-auth")
+api.add_resource(resources.PasswordResource, "/password")
 
 
 def start(debug=False):

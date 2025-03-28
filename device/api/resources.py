@@ -420,9 +420,7 @@ class Login(Resource):
                 config["WEB"]["Password"] = hashed_password
                 set_config(config)
             access_token = create_access_token()
-            response = make_response(
-                {"message": "Login successful", "access_token": access_token}, 200
-            )
+            response = make_response({"message": "Login successful"}, 200)
             response.set_cookie(
                 "access_token",
                 access_token,
@@ -439,14 +437,25 @@ class Login(Resource):
             return {"message": "Internal server error"}, 500
 
 
+class PasswordResource(Resource):
+    @auth_required
+    def post(self):
+        data = request.get_json()
+        password = data.get("password")
+        config = get_config()
+        config["WEB"]["Password"] = password
+        set_config(config)
+        return {"message": "Password updated"}, 200
+
+
 class CheckAuth(Resource):
     def get(self):
         try:
             check_auth()
             return {"message": "Authenticated"}, 200
         except jwt.ExpiredSignatureError:
-            return {"message": "Token scaduto!"}, 401
+            return {"message": "Expired token!"}, 401
         except jwt.InvalidTokenError:
-            return {"message": "Token non valido!"}, 401
+            return {"message": "Invalid token!"}, 401
         except Exception as e:
             return {"message": "Unauthenticated"}, 401
