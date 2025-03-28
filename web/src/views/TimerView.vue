@@ -68,7 +68,7 @@ watch(() => timerStore.time, (newTime) => {
 </script>
 
 <template>
-    <div class="relative min-h-screen p-4">
+    <div class="relative min-h-screen p-4 max-h-screen overflow-hidden">
         <div class="absolute top-4 right-4 z-10">
             <Button text rounded aria-label="mute" :icon="mute ? 'pi pi-bell-slash' : 'pi pi-bell'"
                 @click="mute = !mute" :label="mute ? 'ATTIVA L\'AUDIO' : 'DISATTIVA L\'AUDIO'" />
