@@ -37,7 +37,7 @@ with app.app_context():
 
 # Inizializza le estensioni Flask
 api = Api(app)
-CORS(app)
+CORS(app, supports_credentials=True)
 
 socketio = SocketIO(
     app,
@@ -62,6 +62,7 @@ api.add_resource(resources.VideoRecordResource, "/video/record")
 api.add_resource(resources.VideoStreamResource, "/video/stream")
 api.add_resource(resources.VideoStreamControlResource, "/video/stream/control")
 api.add_resource(resources.Login, "/login")
+api.add_resource(resources.CheckAuth, "/check-auth")
 
 
 def start(debug=False):

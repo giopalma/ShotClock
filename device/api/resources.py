@@ -1,5 +1,5 @@
 import queue
-from flask import jsonify, request, Response
+from flask import jsonify, request, Response, make_response
 from flask_restful import Resource
 import json
 import logging
@@ -8,10 +8,11 @@ import time
 import argon2
 import os
 import threading
+import jwt
 import numpy as np
 import uuid
 
-from device.api.auth import auth_required, create_access_token
+from device.api.auth import auth_required, check_auth, create_access_token
 from device.config import get_config, set_config
 from device.utils import hex_to_opencv_hsv
 from device.video_producer import VideoProducer
@@ -411,15 +412,41 @@ class Login(Resource):
         config = get_config()
         hashed_password = config["WEB"]["Password"]
         try:
+            if not password:
+                password = ""
             ph.verify(hashed_password, password)
             if ph.check_needs_rehash(hashed_password):
                 hashed_password = ph.hash(password)
                 config["WEB"]["Password"] = hashed_password
                 set_config(config)
             access_token = create_access_token()
-            return {"message": "Login successful", "access_token": access_token}, 200
+            response = make_response(
+                {"message": "Login successful", "access_token": access_token}, 200
+            )
+            response.set_cookie(
+                "access_token",
+                access_token,
+                max_age=(3600 * 8),
+                secure=False,
+                httponly=True,
+                path="/",
+            )
+            return response
         except argon2.exceptions.VerifyMismatchError:
             return {"message": "Invalid password"}, 401
         except Exception as e:
             logging.error(e)
             return {"message": "Internal server error"}, 500
+
+
+class CheckAuth(Resource):
+    def get(self):
+        try:
+            check_auth()
+            return {"message": "Authenticated"}, 200
+        except jwt.ExpiredSignatureError:
+            return {"message": "Token scaduto!"}, 401
+        except jwt.InvalidTokenError:
+            return {"message": "Token non valido!"}, 401
+        except Exception as e:
+            return {"message": "Unauthenticated"}, 401

@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Web",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/web"
+        },
+        {
             "name": "Module | Python Debugger",
             "type": "debugpy",
             "request": "launch",
