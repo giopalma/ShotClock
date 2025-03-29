@@ -13700,3 +13700,84 @@ Traceback (most recent call last):
     assert status_set is not None, "write() before start_response"
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: write() before start_response
+2025-03-28 17:55:15,051 - INFO - emitting event "time_sync" to BV77dCZy777N0uD6AAAP [/]
+2025-03-28 17:55:15,055 - INFO - Client connesso
+2025-03-28 17:55:22,325 - INFO - Client disconnesso
+2025-03-28 17:55:22,337 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:22] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-28 17:55:22,348 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-28 17:55:55,249 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:55] "GET /check-auth HTTP/1.1" 200 -
+2025-03-28 17:55:55,293 - INFO - emitting event "time_sync" to c03EX2NydPzekneSAAAR [/]
+2025-03-28 17:55:55,298 - INFO - Client connesso
+2025-03-28 17:55:56,531 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-28 17:55:56,620 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "GET /table HTTP/1.1" 200 -
+2025-03-28 17:55:56,674 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-28 17:55:56,733 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "GET /ruleset HTTP/1.1" 200 -
+2025-03-28 17:55:56,804 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "GET /table HTTP/1.1" 200 -
+2025-03-28 17:55:56,929 - INFO - Client disconnesso
+2025-03-28 17:55:56,940 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-28 17:55:56,955 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-28 17:55:56,974 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:56] "GET /ruleset HTTP/1.1" 200 -
+2025-03-28 17:55:57,283 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:57] "GET /check-auth HTTP/1.1" 200 -
+2025-03-28 17:55:57,291 - INFO - emitting event "time_sync" to NFnbHKWCrh0Pb5H_AAAT [/]
+2025-03-28 17:55:57,294 - INFO - Client connesso
+2025-03-28 17:55:58,774 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:58] "GET /table HTTP/1.1" 200 -
+2025-03-28 17:55:58,833 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-28 17:55:58,931 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-28 17:55:58,977 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-28 17:55:59,054 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:59] "GET /table HTTP/1.1" 200 -
+2025-03-28 17:55:59,109 - INFO - 127.0.0.1 - - [28/Mar/2025 17:55:59] "GET /ruleset HTTP/1.1" 200 -
+2025-03-28 17:56:14,781 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:14] "POST /password HTTP/1.1" 200 -
+2025-03-28 17:56:25,434 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:25] "POST /logout HTTP/1.1" 200 -
+2025-03-28 17:56:25,473 - INFO - Client disconnesso
+2025-03-28 17:56:25,479 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:25] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-28 17:56:25,484 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-28 17:56:25,671 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:25] "[31m[1mGET /check-auth HTTP/1.1[0m" 401 -
+2025-03-28 17:56:25,674 - INFO - emitting event "time_sync" to muHDMXw2jGoZVBhVAAAV [/]
+2025-03-28 17:56:25,676 - INFO - Client connesso
+2025-03-28 17:56:30,825 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:30] "POST /login HTTP/1.1" 200 -
+2025-03-28 17:56:30,838 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:30] "GET /check-auth HTTP/1.1" 200 -
+2025-03-28 17:56:30,946 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:30] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-28 17:56:30,959 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:30] "GET /table HTTP/1.1" 200 -
+2025-03-28 17:56:30,987 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:30] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-28 17:56:30,994 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:30] "GET /ruleset HTTP/1.1" 200 -
+2025-03-28 17:56:31,024 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:31] "GET /table HTTP/1.1" 200 -
+2025-03-28 17:56:31,044 - INFO - 127.0.0.1 - - [28/Mar/2025 17:56:31] "GET /ruleset HTTP/1.1" 200 -
+2025-03-28 17:57:19,050 - INFO - Client disconnesso
+2025-03-28 17:57:19,055 - INFO - 127.0.0.1 - - [28/Mar/2025 17:57:19] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-28 17:57:19,060 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
