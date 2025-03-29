@@ -13781,3 +13781,407 @@ Traceback (most recent call last):
     assert status_set is not None, "write() before start_response"
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: write() before start_response
+2025-03-29 09:09:52,130 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.201.226:5000
+2025-03-29 09:09:52,136 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 09:10:37,943 - INFO - emitting event "time_sync" to wbSNTDe6N19gHh5NAAAB [/]
+2025-03-29 09:10:37,950 - INFO - Client connesso
+2025-03-29 09:10:38,024 - INFO - 127.0.0.1 - - [29/Mar/2025 09:10:38] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:10:38,090 - INFO - 127.0.0.1 - - [29/Mar/2025 09:10:38] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:10:38,260 - INFO - 127.0.0.1 - - [29/Mar/2025 09:10:38] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:10:38,404 - INFO - 127.0.0.1 - - [29/Mar/2025 09:10:38] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:11:01,679 - INFO - Client disconnesso
+2025-03-29 09:11:01,687 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:01] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 09:11:01,720 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 09:11:02,018 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:02] "[31m[1mGET /check-auth HTTP/1.1[0m" 401 -
+2025-03-29 09:11:02,161 - INFO - emitting event "time_sync" to oxK7yMpcOzuXVXNQAAAD [/]
+2025-03-29 09:11:02,164 - INFO - Client connesso
+2025-03-29 09:11:08,743 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:08] "POST /login HTTP/1.1" 200 -
+2025-03-29 09:11:08,761 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:08] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 09:11:09,114 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:09] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:11:09,131 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:09] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:11:09,192 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:09] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:11:09,209 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:09] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:11:09,255 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:09] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:11:09,287 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:09] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:11:51,960 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:51] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:11:57,039 - INFO - 127.0.0.1 - - [29/Mar/2025 09:11:57] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:30:37,913 - INFO - Client disconnesso
+2025-03-29 09:43:30,184 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 09:43:30,187 - INFO - emitting event "time_sync" to Jzhv2a7ltDzV79V8AAAF [/]
+2025-03-29 09:43:30,191 - INFO - Client connesso
+2025-03-29 09:43:30,475 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:43:30,486 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:43:30,542 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:43:30,550 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:43:30,587 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:43:30,607 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:30] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:43:32,931 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:32] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:51,054 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:51] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:51,069 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:51] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:52,335 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:52] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:52,348 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:52] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:55,292 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:55] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:55,309 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:55] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:59,822 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:59] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:43:59,835 - INFO - 127.0.0.1 - - [29/Mar/2025 09:43:59] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:45:33,641 - INFO - Client disconnesso
+2025-03-29 09:45:36,130 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:36] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 09:45:36,136 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 09:45:36,789 - INFO - emitting event "time_sync" to fHmUaFLxH9n5V8MuAAAI [/]
+2025-03-29 09:45:36,793 - INFO - Client connesso
+2025-03-29 09:45:36,802 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:36] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 09:45:37,146 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:37] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:45:37,163 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:37] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:45:37,175 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:37] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:45:37,198 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:37] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:45:37,234 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:37] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:45:37,252 - INFO - 127.0.0.1 - - [29/Mar/2025 09:45:37] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:46:22,994 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:22] "[31m[1mGET /check-auth HTTP/1.1[0m" 401 -
+2025-03-29 09:46:23,094 - INFO - emitting event "time_sync" to WAC89Qi5G69c3Z0pAAAK [/]
+2025-03-29 09:46:23,095 - INFO - Client connesso
+2025-03-29 09:46:52,815 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:52] "POST /login HTTP/1.1" 200 -
+2025-03-29 09:46:52,905 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:52] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 09:46:54,031 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:54] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:46:54,065 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:54] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:46:54,276 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:54] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:46:54,287 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:46:54,572 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:54] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:46:54,614 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:54] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:46:57,438 - INFO - 127.0.0.1 - - [29/Mar/2025 09:46:57] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:47:55,025 - INFO - 127.0.0.1 - - [29/Mar/2025 09:47:55] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:50:15,109 - INFO - 127.0.0.1 - - [29/Mar/2025 09:50:15] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:50:58,942 - INFO - Client disconnesso
+2025-03-29 09:50:58,970 - INFO - 127.0.0.1 - - [29/Mar/2025 09:50:58] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 09:50:58,987 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 09:51:00,076 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:00] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 09:51:00,112 - INFO - emitting event "time_sync" to A7CbPauoxU8Ag4q8AAAM [/]
+2025-03-29 09:51:00,113 - INFO - Client connesso
+2025-03-29 09:51:00,802 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:00] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:51:00,812 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:00] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:51:00,841 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:00] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:51:00,863 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:00] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:51:00,977 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:00] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:51:01,044 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:01] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:51:02,754 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:02] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:51:54,061 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:54] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:51:54,096 - INFO - 127.0.0.1 - - [29/Mar/2025 09:51:54] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:52:06,103 - INFO - 127.0.0.1 - - [29/Mar/2025 09:52:06] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:52:06,367 - INFO - 127.0.0.1 - - [29/Mar/2025 09:52:06] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:54:23,351 - INFO - 127.0.0.1 - - [29/Mar/2025 09:54:23] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:55:09,015 - INFO - Client disconnesso
+2025-03-29 09:55:09,031 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:09] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 09:55:09,047 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 09:55:10,309 - INFO - emitting event "time_sync" to Q1YkM9o5K_1Z0CwZAAAO [/]
+2025-03-29 09:55:10,312 - INFO - Client connesso
+2025-03-29 09:55:10,321 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:10] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 09:55:10,868 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:55:10,886 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:10] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:55:11,005 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:11] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 09:55:11,010 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:11] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:55:11,263 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:11] "GET /table HTTP/1.1" 200 -
+2025-03-29 09:55:11,379 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:11] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 09:55:12,222 - INFO - 127.0.0.1 - - [29/Mar/2025 09:55:12] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:56:49,956 - INFO - 127.0.0.1 - - [29/Mar/2025 09:56:49] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:15,524 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:15] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:15,839 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:15] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:19,592 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:19] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:19,631 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:19] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:22,750 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:22] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:22,790 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:22] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:29,688 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:29] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:29,738 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:29] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:31,088 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:31] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:31,124 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:31] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:32,116 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:32] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:32,160 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:32] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:34,597 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:34] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:34,639 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:34] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:35,868 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:35] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:35,913 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:35] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:43,014 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:43] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:43,090 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:47,663 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:47] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:47,703 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:47] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:50,246 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:50] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:50,285 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:50] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:52,332 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:52] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 09:57:52,379 - INFO - 127.0.0.1 - - [29/Mar/2025 09:57:52] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 09:59:10,455 - INFO - 127.0.0.1 - - [29/Mar/2025 09:59:10] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:00:16,912 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:16] "[31m[1mGET /check-auth HTTP/1.1[0m" 401 -
+2025-03-29 10:00:16,921 - INFO - emitting event "time_sync" to y8jx82EIl4avzcbhAAAQ [/]
+2025-03-29 10:00:16,924 - INFO - Client connesso
+2025-03-29 10:00:20,922 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:20] "POST /login HTTP/1.1" 200 -
+2025-03-29 10:00:20,938 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:20] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:00:21,118 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:21] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:00:21,130 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:21] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:00:21,183 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:21] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:00:21,192 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:21] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:00:21,226 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:21] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:00:21,253 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:21] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:00:22,770 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:22] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:00:39,818 - INFO - 127.0.0.1 - - [29/Mar/2025 10:00:39] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:01:06,799 - INFO - 127.0.0.1 - - [29/Mar/2025 10:01:06] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:01:47,766 - INFO - Client disconnesso
+2025-03-29 10:01:47,771 - INFO - Client disconnesso
+2025-03-29 10:01:47,775 - INFO - Client disconnesso
+2025-03-29 10:03:04,807 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:04] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:03:04,811 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:03:05,803 - INFO - emitting event "time_sync" to wCyniR9fZHghRKMPAAAT [/]
+2025-03-29 10:03:05,804 - INFO - Client connesso
+2025-03-29 10:03:06,335 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:06] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:03:06,339 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:03:07,238 - INFO - emitting event "time_sync" to Q5iM2Tg-HhTDT5qDAAAW [/]
+2025-03-29 10:03:07,239 - INFO - Client connesso
+2025-03-29 10:03:10,547 - INFO - emitting event "time_sync" to ltXmRTd56QbPYKifAAAY [/]
+2025-03-29 10:03:10,548 - INFO - Client connesso
+2025-03-29 10:03:10,554 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:10] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:03:11,522 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:11] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:03:11,557 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:11] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:03:11,629 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:11] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:03:11,637 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:11] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:03:12,024 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:12] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:03:12,070 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:12] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:03:13,101 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:13] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:03:13,962 - INFO - 127.0.0.1 - - [29/Mar/2025 10:03:13] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:03:13,966 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:04:40,247 - INFO - 127.0.0.1 - - [29/Mar/2025 10:04:40] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:05:15,915 - INFO - Client disconnesso
+2025-03-29 10:05:15,920 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:15] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:05:15,926 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:05:16,531 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:16] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:05:16,542 - INFO - emitting event "time_sync" to aaog8XF4FbnxnjxiAAAb [/]
+2025-03-29 10:05:16,545 - INFO - Client connesso
+2025-03-29 10:05:17,020 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:17] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:05:17,034 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:17] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:05:17,074 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:17] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:05:17,087 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:17] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:05:17,179 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:17] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:05:17,240 - INFO - 127.0.0.1 - - [29/Mar/2025 10:05:17] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:06:09,267 - INFO - Client disconnesso
+2025-03-29 10:06:09,292 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:09] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:06:09,308 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:06:10,222 - INFO - emitting event "time_sync" to iUCl1yIbLpUE8HUnAAAd [/]
+2025-03-29 10:06:10,227 - INFO - Client connesso
+2025-03-29 10:06:10,235 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:10] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:06:10,762 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:06:10,780 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:10] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:06:10,882 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:10] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:06:10,889 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:10] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:06:11,202 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:11] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:06:11,245 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:11] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:06:11,622 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:11] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:06:47,298 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:47] "[31m[1mGET /check-auth HTTP/1.1[0m" 401 -
+2025-03-29 10:06:47,315 - INFO - emitting event "time_sync" to JFSCnj2SM2de9N7cAAAf [/]
+2025-03-29 10:06:47,316 - INFO - Client connesso
+2025-03-29 10:06:58,523 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:58] "POST /login HTTP/1.1" 200 -
+2025-03-29 10:06:58,557 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:58] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:06:59,096 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:59] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:06:59,141 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:59] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:06:59,182 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:59] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:06:59,205 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:59] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:06:59,318 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:59] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:06:59,351 - INFO - 127.0.0.1 - - [29/Mar/2025 10:06:59] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:07:00,763 - INFO - 127.0.0.1 - - [29/Mar/2025 10:07:00] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:09:01,219 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:01] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:09:51,163 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:51] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:09:57,913 - INFO - Client disconnesso
+2025-03-29 10:09:57,930 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:09:57,939 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:09:58,469 - INFO - emitting event "time_sync" to rDdAfMBO4TGv_2bNAAAh [/]
+2025-03-29 10:09:58,475 - INFO - Client connesso
+2025-03-29 10:09:58,487 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:09:58,811 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:09:58,836 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:09:58,843 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:09:58,863 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:09:58,903 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:09:58,934 - INFO - 127.0.0.1 - - [29/Mar/2025 10:09:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:10:24,040 - INFO - 127.0.0.1 - - [29/Mar/2025 10:10:24] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:10:45,200 - INFO - 127.0.0.1 - - [29/Mar/2025 10:10:45] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:11:23,714 - INFO - 127.0.0.1 - - [29/Mar/2025 10:11:23] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:11:32,204 - INFO - 127.0.0.1 - - [29/Mar/2025 10:11:32] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:11:32,240 - INFO - 127.0.0.1 - - [29/Mar/2025 10:11:32] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:13:31,887 - INFO - 127.0.0.1 - - [29/Mar/2025 10:13:31] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:13:54,503 - INFO - 127.0.0.1 - - [29/Mar/2025 10:13:54] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:13:54,535 - INFO - 127.0.0.1 - - [29/Mar/2025 10:13:54] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:16,862 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:16] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:43,886 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:43] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:43,920 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:43] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:46,325 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:46] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:46,370 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:46] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:52,074 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:52] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:52,126 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:52] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:57,812 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:57] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:14:57,864 - INFO - 127.0.0.1 - - [29/Mar/2025 10:14:57] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:07,771 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:07] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:07,808 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:07] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:16,158 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:16] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:16,200 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:16] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:17,400 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:17] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:17,449 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:17] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:18,452 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:18] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:18,557 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:18] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:19,893 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:19] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:19,943 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:19] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:28,127 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:28] "POST /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:28,161 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:28] "GET /video/frame HTTP/1.1" 200 -
+2025-03-29 10:15:56,323 - INFO - Client disconnesso
+2025-03-29 10:15:56,331 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:56] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:15:56,337 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:15:56,762 - INFO - Client disconnesso
+2025-03-29 10:15:56,774 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:56] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:15:56,780 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:15:56,832 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:56] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:15:56,837 - INFO - emitting event "time_sync" to GoCXG6yX9bg9eAwJAAAj [/]
+2025-03-29 10:15:56,839 - INFO - Client connesso
+2025-03-29 10:15:57,121 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:15:57,141 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:15:57,158 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:15:57,175 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:15:57,230 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:15:57,289 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:15:57,334 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:15:57,345 - INFO - emitting event "time_sync" to piX-qf9PihXiZ5PAAAAl [/]
+2025-03-29 10:15:57,347 - INFO - Client connesso
+2025-03-29 10:15:57,374 - INFO - Client disconnesso
+2025-03-29 10:15:57,381 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2025-03-29 10:15:57,387 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+  File "c:\Users\Giovanni\Documents\Università (LOCALE)\Billiard Timer\.venv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2025-03-29 10:15:57,745 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:15:57,765 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:15:57,842 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:15:57,858 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:15:57,961 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:57] "GET /check-auth HTTP/1.1" 200 -
+2025-03-29 10:15:58,015 - INFO - emitting event "time_sync" to Jnp52ICaWoN0oicJAAAn [/]
+2025-03-29 10:15:58,017 - INFO - Client connesso
+2025-03-29 10:15:58,211 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:15:58,255 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:15:58,281 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:15:58,294 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:15:58,332 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "[33mGET /game HTTP/1.1[0m" 404 -
+2025-03-29 10:15:58,339 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:15:58,369 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "GET /table HTTP/1.1" 200 -
+2025-03-29 10:15:58,395 - INFO - 127.0.0.1 - - [29/Mar/2025 10:15:58] "GET /ruleset HTTP/1.1" 200 -
+2025-03-29 10:16:08,340 - INFO - Client disconnesso
+2025-03-29 10:16:08,344 - INFO - Client disconnesso
+2025-03-29 10:16:08,348 - INFO - Client disconnesso
+2025-03-29 10:16:08,354 - INFO - Client disconnesso
