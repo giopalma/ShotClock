@@ -18,6 +18,6 @@ def get_config():
 
 def set_config(_config):
     global config
-    config = config
+    config = _config
     with open("config.ini", "w") as f:
         config.write(f)

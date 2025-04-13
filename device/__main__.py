@@ -4,8 +4,6 @@ from device.config import load_config
 from device.test import test
 import os
 
-# from device.video_producer import VideoProducer
-
 parser = argparse.ArgumentParser(
     prog="ShotClock",
     description="Codice sorgente del dispositivo ShotClock. Il dispositivo gestisce automaticamente il timer di gioco nel gioco del billiardo",
