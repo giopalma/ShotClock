@@ -38,7 +38,7 @@ Documento di pianificazione per il refactoring completo del progetto ShotClock s
 7. **Documentazione**
    - ✅ CLEAN_ARCHITECTURE.md - Guida completa
    - ✅ INTEGRATION_GUIDE.md - Guida di migrazione
-   - ✅ src/README.md - Quick start
+   - ✅ shotclock/README.md - Quick start
    - ✅ Esempi di codice
 
 ## Mappatura Componenti
@@ -47,28 +47,28 @@ Documento di pianificazione per il refactoring completo del progetto ShotClock s
 
 | Componente Esistente | Nuovo Layer | Nuovo Componente |
 |---------------------|-------------|------------------|
-| `device/game/ruleset.py` | Domain | `src/domain/entities/ruleset.py` |
-| `device/table.py` | Domain | `src/domain/entities/table_preset.py` |
-| `device/api/models_dao.py` (Ruleset) | Infrastructure | `src/infrastructure/persistence/sqlalchemy_ruleset_repository.py` |
-| `device/api/models_dao.py` (TablePreset) | Infrastructure | `src/infrastructure/persistence/sqlalchemy_table_preset_repository.py` |
-| `device/game/timer.py` | Infrastructure | `src/infrastructure/hardware/timer_adapter.py` |
-| `device/game/game_manager.py` | Application | `src/application/use_cases/manage_game.py` |
-| `device/game/__init__.py` (Game) | Domain + Application | `src/domain/entities/game.py` + Use Cases |
-| `device/video_producer.py` | Infrastructure | `src/infrastructure/video/video_adapter.py` |
-| `device/game/video_consumer.py` | Infrastructure | `src/infrastructure/video/video_adapter.py` |
-| `device/api/resources.py` | Infrastructure | `src/infrastructure/api/` controllers |
+| `device/game/ruleset.py` | Domain | `shotclock/domain/entities/ruleset.py` |
+| `device/table.py` | Domain | `shotclock/domain/entities/table_preset.py` |
+| `device/api/models_dao.py` (Ruleset) | Infrastructure | `shotclock/infrastructure/persistence/sqlalchemy_ruleset_repository.py` |
+| `device/api/models_dao.py` (TablePreset) | Infrastructure | `shotclock/infrastructure/persistence/sqlalchemy_table_preset_repository.py` |
+| `device/game/timer.py` | Infrastructure | `shotclock/infrastructure/hardware/timer_adapter.py` |
+| `device/game/game_manager.py` | Application | `shotclock/application/use_cases/manage_game.py` |
+| `device/game/__init__.py` (Game) | Domain + Application | `shotclock/domain/entities/game.py` + Use Cases |
+| `device/video_producer.py` | Infrastructure | `shotclock/infrastructure/video/video_adapter.py` |
+| `device/game/video_consumer.py` | Infrastructure | `shotclock/infrastructure/video/video_adapter.py` |
+| `device/api/resources.py` | Infrastructure | `shotclock/infrastructure/api/` controllers |
 
 ## Librerie Esterne - Confinamento nell'Infrastructure
 
 | Libreria | Layer | Componente |
 |----------|-------|------------|
-| Flask, Flask-RESTful | Infrastructure | `src/infrastructure/api/` |
-| Flask-SocketIO | Infrastructure | `src/infrastructure/hardware/notification_adapter.py` |
-| SQLAlchemy | Infrastructure | `src/infrastructure/persistence/` |
-| OpenCV | Infrastructure | `src/infrastructure/video/` |
-| gpiozero | Infrastructure | `src/infrastructure/hardware/` |
-| numpy | Infrastructure | `src/infrastructure/video/` |
-| argon2, jwt | Infrastructure | `src/infrastructure/api/auth/` |
+| Flask, Flask-RESTful | Infrastructure | `shotclock/infrastructure/api/` |
+| Flask-SocketIO | Infrastructure | `shotclock/infrastructure/hardware/notification_adapter.py` |
+| SQLAlchemy | Infrastructure | `shotclock/infrastructure/persistence/` |
+| OpenCV | Infrastructure | `shotclock/infrastructure/video/` |
+| gpiozero | Infrastructure | `shotclock/infrastructure/hardware/` |
+| numpy | Infrastructure | `shotclock/infrastructure/video/` |
+| argon2, jwt | Infrastructure | `shotclock/infrastructure/api/auth/` |
 
 ## Prossimi Passi Dettagliati
 
@@ -183,7 +183,7 @@ Migrare gradualmente gli endpoint esistenti per usare Clean Architecture:
 
 1. **Fase 1**: Coesistenza
    - Vecchio codice in `device/` continua a funzionare
-   - Nuovo codice in `src/` per nuove funzionalità
+   - Nuovo codice in `shotclock/` per nuove funzionalità
    - Entrambi condividono il database
 
 2. **Fase 2**: Migrazione Graduale

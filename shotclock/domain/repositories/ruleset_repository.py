@@ -4,7 +4,7 @@ This defines the contract that infrastructure adapters must implement.
 """
 from abc import ABC, abstractmethod
 from typing import List, Optional
-from src.domain.entities.ruleset import Ruleset
+from shotclock.domain.entities.ruleset import Ruleset
 
 
 class RulesetRepository(ABC):

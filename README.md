@@ -122,10 +122,10 @@ pnpm run dev
 
 ```bash
 # Dalla root del progetto
-python -m src.main
+python -m shotclock.main
 
 # Con modalità debug
-python -m src.main --debug
+python -m shotclock.main --debug
 ```
 
 **Nuovi Endpoint API:** `http://localhost:5000/api/v2/*`
@@ -156,12 +156,12 @@ device/
 └── config.py         # Configurazione
 ```
 
-### Architettura Clean (`src/`)
+### Architettura Clean (`shotclock/`)
 
 Architettura a strati con inversione delle dipendenze:
 
 ```
-src/
+shotclock/
 ├── domain/              # Logica business pura (zero dipendenze)
 │   ├── entities/       # Entità (Game, Ruleset, TablePreset)
 │   ├── repositories/   # Interfacce repository
@@ -334,7 +334,7 @@ Il database SQLite viene creato automaticamente in `device/shotclock.db` al prim
 ### Versione Clean Architecture
 
 ```python
-from src.infrastructure.di_container import DIContainer
+from shotclock.infrastructure.di_container import DIContainer
 from device.api import db, socketio
 from device.video_producer import VideoProducer
 
@@ -380,7 +380,7 @@ Per maggiori dettagli sull'architettura e l'implementazione:
 - **[INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)** - Come integrare vecchio e nuovo codice
 - **[REFACTORING_PLAN.md](REFACTORING_PLAN.md)** - Piano di refactoring e prossimi passi
 - **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - Riepilogo dell'implementazione
-- **[src/README.md](src/README.md)** - Documentazione architettura Clean
+- **[shotclock/README.md](shotclock/README.md)** - Documentazione architettura Clean
 
 ## Troubleshooting
 

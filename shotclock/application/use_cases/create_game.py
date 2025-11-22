@@ -3,9 +3,9 @@ Use case for creating a new game.
 This contains the application-specific business logic.
 """
 from typing import Optional
-from src.domain.entities.game import Game
-from src.domain.repositories.ruleset_repository import RulesetRepository
-from src.domain.repositories.table_preset_repository import TablePresetRepository
+from shotclock.domain.entities.game import Game
+from shotclock.domain.repositories.ruleset_repository import RulesetRepository
+from shotclock.domain.repositories.table_preset_repository import TablePresetRepository
 
 
 class CreateGameUseCase:

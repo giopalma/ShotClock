@@ -5,8 +5,8 @@ This is an adapter that implements the repository port using SQLAlchemy.
 from typing import List, Optional
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from flask_sqlalchemy import SQLAlchemy
-from src.domain.entities.ruleset import Ruleset
-from src.domain.repositories.ruleset_repository import RulesetRepository
+from shotclock.domain.entities.ruleset import Ruleset
+from shotclock.domain.repositories.ruleset_repository import RulesetRepository
 
 
 class RulesetModel(DeclarativeBase):

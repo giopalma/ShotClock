@@ -4,9 +4,9 @@ These tests demonstrate how to test application layer in isolation using mocks.
 """
 import unittest
 from unittest.mock import Mock
-from src.application.use_cases.create_game import CreateGameUseCase
-from src.domain.entities.ruleset import Ruleset
-from src.domain.entities.table_preset import TablePreset
+from shotclock.application.use_cases.create_game import CreateGameUseCase
+from shotclock.domain.entities.ruleset import Ruleset
+from shotclock.domain.entities.table_preset import TablePreset
 
 
 class TestCreateGameUseCase(unittest.TestCase):

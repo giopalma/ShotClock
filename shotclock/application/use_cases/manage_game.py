@@ -3,14 +3,14 @@ Use case for managing game lifecycle (start, pause, resume, end).
 This contains the application-specific business logic.
 """
 from typing import Optional
-from src.domain.entities.game import Game
-from src.domain.entities.ruleset import Ruleset
-from src.domain.entities.table_preset import TablePreset
-from src.domain.repositories.ruleset_repository import RulesetRepository
-from src.domain.repositories.table_preset_repository import TablePresetRepository
-from src.domain.services.timer_service import TimerService
-from src.domain.services.video_service import VideoService
-from src.domain.services.notification_service import NotificationService
+from shotclock.domain.entities.game import Game
+from shotclock.domain.entities.ruleset import Ruleset
+from shotclock.domain.entities.table_preset import TablePreset
+from shotclock.domain.repositories.ruleset_repository import RulesetRepository
+from shotclock.domain.repositories.table_preset_repository import TablePresetRepository
+from shotclock.domain.services.timer_service import TimerService
+from shotclock.domain.services.video_service import VideoService
+from shotclock.domain.services.notification_service import NotificationService
 
 
 class ManageGameUseCase:

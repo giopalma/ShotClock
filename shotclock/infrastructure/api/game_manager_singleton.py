@@ -3,7 +3,7 @@ Game Manager Singleton for storing current game state.
 This is a simple solution for the example. In production, use proper session management.
 """
 from typing import Optional
-from src.domain.entities.game import Game
+from shotclock.domain.entities.game import Game
 
 
 class GameManagerSingleton:

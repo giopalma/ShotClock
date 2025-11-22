@@ -7,7 +7,7 @@ Questo documento descrive la nuova architettura del progetto ShotClock, refactor
 ## Struttura del Progetto
 
 ```
-src/
+shotclock/
 ├── domain/                     # Livello Domain - Nessuna dipendenza esterna
 │   ├── entities/              # Entità di dominio
 │   │   ├── game.py
@@ -72,7 +72,7 @@ class SQLAlchemyRulesetRepository(RulesetRepository):
 ### 1. Entità di Dominio (Domain Entity)
 
 ```python
-# src/domain/entities/ruleset.py
+# shotclock/domain/entities/ruleset.py
 from dataclasses import dataclass
 
 @dataclass
@@ -90,10 +90,10 @@ class Ruleset:
 ### 2. Repository Interface (Port)
 
 ```python
-# src/domain/repositories/ruleset_repository.py
+# shotclock/domain/repositories/ruleset_repository.py
 from abc import ABC, abstractmethod
 from typing import Optional
-from src.domain.entities.ruleset import Ruleset
+from shotclock.domain.entities.ruleset import Ruleset
 
 class RulesetRepository(ABC):
     """Port - definisce il contratto, non l'implementazione"""
@@ -110,9 +110,9 @@ class RulesetRepository(ABC):
 ### 3. Use Case (Application Layer)
 
 ```python
-# src/application/use_cases/create_game.py
-from src.domain.repositories.ruleset_repository import RulesetRepository
-from src.domain.entities.game import Game
+# shotclock/application/use_cases/create_game.py
+from shotclock.domain.repositories.ruleset_repository import RulesetRepository
+from shotclock.domain.entities.game import Game
 
 class CreateGameUseCase:
     """Use Case - logica applicativa"""
@@ -134,10 +134,10 @@ class CreateGameUseCase:
 ### 4. Repository Adapter (Infrastructure Layer)
 
 ```python
-# src/infrastructure/persistence/sqlalchemy_ruleset_repository.py
+# shotclock/infrastructure/persistence/sqlalchemy_ruleset_repository.py
 from flask_sqlalchemy import SQLAlchemy
-from src.domain.repositories.ruleset_repository import RulesetRepository
-from src.domain.entities.ruleset import Ruleset
+from shotclock.domain.repositories.ruleset_repository import RulesetRepository
+from shotclock.domain.entities.ruleset import Ruleset
 
 class SQLAlchemyRulesetRepository(RulesetRepository):
     """Adapter - implementa il Port usando SQLAlchemy"""
@@ -165,7 +165,7 @@ class SQLAlchemyRulesetRepository(RulesetRepository):
 Il `DIContainer` è responsabile della creazione e gestione delle dipendenze:
 
 ```python
-# src/infrastructure/di_container.py
+# shotclock/infrastructure/di_container.py
 class DIContainer:
     def __init__(self, db: SQLAlchemy, video_producer, socketio=None):
         self.db = db
@@ -208,7 +208,7 @@ I test del domain layer sono completamente isolati:
 
 ```python
 import unittest
-from src.domain.entities.ruleset import Ruleset
+from shotclock.domain.entities.ruleset import Ruleset
 
 class TestRuleset(unittest.TestCase):
     def test_create_ruleset(self):
@@ -231,8 +231,8 @@ I test dell'application layer usano mock per le dipendenze:
 ```python
 import unittest
 from unittest.mock import Mock
-from src.application.use_cases.create_game import CreateGameUseCase
-from src.domain.entities.ruleset import Ruleset
+from shotclock.application.use_cases.create_game import CreateGameUseCase
+from shotclock.domain.entities.ruleset import Ruleset
 
 class TestCreateGameUseCase(unittest.TestCase):
     def test_execute_success(self):

@@ -3,9 +3,9 @@ Unit tests for domain entities.
 These tests demonstrate that domain entities have no external dependencies.
 """
 import unittest
-from src.domain.entities.ruleset import Ruleset
-from src.domain.entities.table_preset import TablePreset
-from src.domain.entities.game import Game
+from shotclock.domain.entities.ruleset import Ruleset
+from shotclock.domain.entities.table_preset import TablePreset
+from shotclock.domain.entities.game import Game
 
 
 class TestRulesetEntity(unittest.TestCase):

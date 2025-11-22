@@ -4,7 +4,7 @@ This defines the contract that infrastructure adapters must implement.
 """
 from abc import ABC, abstractmethod
 from typing import Any, Callable
-from src.domain.entities.table_preset import TablePreset
+from shotclock.domain.entities.table_preset import TablePreset
 
 
 class VideoService(ABC):

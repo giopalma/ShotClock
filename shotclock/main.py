@@ -17,8 +17,8 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 
 from device.video_producer import VideoProducer
-from src.infrastructure.di_container import DIContainer
-from src.infrastructure.api.game_controller import GameController, GameActionsController
+from shotclock.infrastructure.di_container import DIContainer
+from shotclock.infrastructure.api.game_controller import GameController, GameActionsController
 
 
 # Load environment variables

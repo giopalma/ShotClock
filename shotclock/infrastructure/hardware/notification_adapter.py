@@ -5,7 +5,7 @@ This handles WebSocket notifications and sound alarms.
 import time
 import threading
 from typing import Any, Optional
-from src.domain.services.notification_service import NotificationService
+from shotclock.domain.services.notification_service import NotificationService
 
 
 try:

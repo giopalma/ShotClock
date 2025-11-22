@@ -8,10 +8,10 @@ This directory contains the Clean Architecture refactoring of the ShotClock proj
 
 ```bash
 # From the project root
-python -m src.main
+python -m shotclock.main
 
 # With debug mode
-python -m src.main --debug
+python -m shotclock.main --debug
 ```
 
 ### Running Tests
@@ -28,7 +28,7 @@ python -m unittest tests.application.test_create_game_use_case
 ## Architecture Overview
 
 ```
-src/
+shotclock/
 ├── domain/              # Core business logic (no external dependencies)
 │   ├── entities/       # Business entities (Game, Ruleset, TablePreset)
 │   ├── repositories/   # Repository interfaces (Ports)
@@ -62,7 +62,7 @@ Domain has NO dependencies on outer layers
 ### Creating a Game
 
 ```python
-from src.infrastructure.di_container import DIContainer
+from shotclock.infrastructure.di_container import DIContainer
 
 # Initialize container with dependencies
 container = DIContainer(db=db, video_producer=vp, socketio=socketio)
@@ -156,7 +156,7 @@ curl -X POST http://localhost:5000/api/v2/game/actions \
 ```python
 import unittest
 from unittest.mock import Mock
-from src.application.use_cases.create_game import CreateGameUseCase
+from shotclock.application.use_cases.create_game import CreateGameUseCase
 
 class TestCreateGameUseCase(unittest.TestCase):
     def test_execute_success(self):
@@ -180,7 +180,7 @@ class TestCreateGameUseCase(unittest.TestCase):
 
 ```python
 import unittest
-from src.infrastructure.di_container import DIContainer
+from shotclock.infrastructure.di_container import DIContainer
 
 class TestGameIntegration(unittest.TestCase):
     def setUp(self):

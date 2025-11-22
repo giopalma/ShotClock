@@ -3,8 +3,8 @@ Video adapter implementation.
 This wraps the existing VideoProducer and VideoConsumer as a service adapter.
 """
 from typing import Any, Callable, Optional
-from src.domain.services.video_service import VideoService
-from src.domain.entities.table_preset import TablePreset
+from shotclock.domain.services.video_service import VideoService
+from shotclock.domain.entities.table_preset import TablePreset
 
 
 class VideoAdapter(VideoService):

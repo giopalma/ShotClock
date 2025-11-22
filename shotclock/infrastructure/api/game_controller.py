@@ -4,9 +4,9 @@ This is an example of how to integrate the new architecture with Flask.
 """
 from flask import request, jsonify
 from flask_restful import Resource
-from src.infrastructure.di_container import DIContainer
-from src.domain.entities.game import Game
-from src.infrastructure.api.game_manager_singleton import GameManagerSingleton
+from shotclock.infrastructure.di_container import DIContainer
+from shotclock.domain.entities.game import Game
+from shotclock.infrastructure.api.game_manager_singleton import GameManagerSingleton
 
 
 class GameController(Resource):

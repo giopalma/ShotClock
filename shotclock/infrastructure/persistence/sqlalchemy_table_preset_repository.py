@@ -6,8 +6,8 @@ from typing import List, Optional, Tuple
 import json
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from flask_sqlalchemy import SQLAlchemy
-from src.domain.entities.table_preset import TablePreset
-from src.domain.repositories.table_preset_repository import TablePresetRepository
+from shotclock.domain.entities.table_preset import TablePreset
+from shotclock.domain.repositories.table_preset_repository import TablePresetRepository
 
 
 class TablePresetModel(DeclarativeBase):

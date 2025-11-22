@@ -6,7 +6,7 @@ import time
 from threading import Lock, Thread, Event
 import math
 from typing import Callable
-from src.domain.services.timer_service import TimerService
+from shotclock.domain.services.timer_service import TimerService
 
 
 class Timer:

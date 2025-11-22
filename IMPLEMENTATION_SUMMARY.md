@@ -8,14 +8,14 @@ The ShotClock project has been successfully refactored to follow **Clean Archite
 
 ### 1. Complete Architectural Layers
 
-#### Domain Layer (`src/domain/`)
+#### Domain Layer (`shotclock/domain/`)
 - **Pure business entities** with zero external dependencies
 - **Repository interfaces** (Ports) defining data access contracts
 - **Service interfaces** (Ports) defining external service contracts
 
 **Files Created:**
 ```
-src/domain/
+shotclock/domain/
 ├── entities/
 │   ├── ruleset.py          # Business rules entity
 │   ├── table_preset.py     # Table configuration entity
@@ -29,25 +29,25 @@ src/domain/
     └── notification_service.py
 ```
 
-#### Application Layer (`src/application/`)
+#### Application Layer (`shotclock/application/`)
 - **Use cases** implementing application-specific business logic
 - Orchestrates domain entities and interfaces
 
 **Files Created:**
 ```
-src/application/
+shotclock/application/
 └── use_cases/
     ├── create_game.py      # Game creation logic
     └── manage_game.py      # Game lifecycle management
 ```
 
-#### Infrastructure Layer (`src/infrastructure/`)
+#### Infrastructure Layer (`shotclock/infrastructure/`)
 - **Adapters** implementing domain interfaces
 - All external framework dependencies confined here
 
 **Files Created:**
 ```
-src/infrastructure/
+shotclock/infrastructure/
 ├── persistence/
 │   ├── sqlalchemy_ruleset_repository.py
 │   └── sqlalchemy_table_preset_repository.py
@@ -76,12 +76,12 @@ src/infrastructure/
 1. `CLEAN_ARCHITECTURE.md` - Complete architecture documentation
 2. `INTEGRATION_GUIDE.md` - Migration strategies and examples
 3. `REFACTORING_PLAN.md` - Detailed action plan
-4. `src/README.md` - Quick start guide
+4. `shotclock/README.md` - Quick start guide
 5. `IMPLEMENTATION_SUMMARY.md` - This document
 
 ### 4. Bootstrap and Configuration
 
-- `src/main.py` - Application entry point with DI setup
+- `shotclock/main.py` - Application entry point with DI setup
 - Proper Flask-RESTful integration
 - Thread-safe game state management
 
@@ -192,10 +192,10 @@ class Ruleset:
 
 ```bash
 # Clean Architecture version
-python -m src.main
+python -m shotclock.main
 
 # With debug mode
-python -m src.main --debug
+python -m shotclock.main --debug
 ```
 
 ### API Endpoints
@@ -240,7 +240,7 @@ python -m unittest tests.application.test_create_game_use_case
 ### Using in Code
 
 ```python
-from src.infrastructure.di_container import DIContainer
+from shotclock.infrastructure.di_container import DIContainer
 from device.api import db, socketio
 from device.video_producer import VideoProducer
 
@@ -276,7 +276,7 @@ The new architecture **coexists** with the existing code:
    - No breaking changes
 
 2. **New system available alongside:**
-   - Located in `src/` directory
+   - Located in `shotclock/` directory
    - New endpoints: `/api/v2/*`
    - Uses Clean Architecture
 
@@ -317,7 +317,7 @@ Clients can migrate at their own pace!
 - ✅ Architecture documentation (CLEAN_ARCHITECTURE.md)
 - ✅ Integration guide (INTEGRATION_GUIDE.md)
 - ✅ Refactoring plan (REFACTORING_PLAN.md)
-- ✅ Quick start guide (src/README.md)
+- ✅ Quick start guide (shotclock/README.md)
 - ✅ Code examples throughout
 - ✅ API usage examples
 
@@ -336,9 +336,9 @@ Clients can migrate at their own pace!
 
 **Obiettivo:** Organizzare directory secondo Clean Architecture
 **Completato:**
-- ✅ Directory `src/domain/` - Entities e interfaces
-- ✅ Directory `src/application/` - Use cases
-- ✅ Directory `src/infrastructure/` - Adapters
+- ✅ Directory `shotclock/domain/` - Entities e interfaces
+- ✅ Directory `shotclock/application/` - Use cases
+- ✅ Directory `shotclock/infrastructure/` - Adapters
 - ✅ Dependency rule enforced (dependencies point inward)
 - ✅ Abstraction with ABC classes
 
@@ -346,10 +346,10 @@ Clients can migrate at their own pace!
 
 **Obiettivo:** Implementare flusso completo
 **Completato:**
-- ✅ Entity: `src/domain/entities/ruleset.py`
-- ✅ Repository Interface: `src/domain/repositories/ruleset_repository.py`
-- ✅ Use Case: `src/application/use_cases/create_game.py`
-- ✅ Adapter: `src/infrastructure/persistence/sqlalchemy_ruleset_repository.py`
+- ✅ Entity: `shotclock/domain/entities/ruleset.py`
+- ✅ Repository Interface: `shotclock/domain/repositories/ruleset_repository.py`
+- ✅ Use Case: `shotclock/application/use_cases/create_game.py`
+- ✅ Adapter: `shotclock/infrastructure/persistence/sqlalchemy_ruleset_repository.py`
 
 **Example Flow Implemented:**
 ```python
@@ -391,7 +391,7 @@ class SQLAlchemyRulesetRepository(RulesetRepository):
 - ✅ Mock objects per isolamento
 - ✅ DIContainer per dependency injection
 - ✅ Factory pattern implementation
-- ✅ Bootstrap/entrypoint (`src/main.py`)
+- ✅ Bootstrap/entrypoint (`shotclock/main.py`)
 
 ## Statistics
 
@@ -472,5 +472,5 @@ For questions about the architecture:
 - See `CLEAN_ARCHITECTURE.md` for architectural details
 - See `INTEGRATION_GUIDE.md` for migration strategies
 - See `REFACTORING_PLAN.md` for next steps
-- Review code examples in `src/` directory
+- Review code examples in `shotclock/` directory
 - Check unit tests in `tests/` directory

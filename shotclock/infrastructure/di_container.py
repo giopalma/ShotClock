@@ -5,20 +5,20 @@ This configures and provides all dependencies for the application.
 from typing import Optional
 from flask_sqlalchemy import SQLAlchemy
 
-from src.domain.repositories.ruleset_repository import RulesetRepository
-from src.domain.repositories.table_preset_repository import TablePresetRepository
-from src.domain.services.timer_service import TimerService
-from src.domain.services.video_service import VideoService
-from src.domain.services.notification_service import NotificationService
+from shotclock.domain.repositories.ruleset_repository import RulesetRepository
+from shotclock.domain.repositories.table_preset_repository import TablePresetRepository
+from shotclock.domain.services.timer_service import TimerService
+from shotclock.domain.services.video_service import VideoService
+from shotclock.domain.services.notification_service import NotificationService
 
-from src.application.use_cases.create_game import CreateGameUseCase
-from src.application.use_cases.manage_game import ManageGameUseCase
+from shotclock.application.use_cases.create_game import CreateGameUseCase
+from shotclock.application.use_cases.manage_game import ManageGameUseCase
 
-from src.infrastructure.persistence.sqlalchemy_ruleset_repository import SQLAlchemyRulesetRepository
-from src.infrastructure.persistence.sqlalchemy_table_preset_repository import SQLAlchemyTablePresetRepository
-from src.infrastructure.hardware.timer_adapter import TimerAdapter
-from src.infrastructure.hardware.notification_adapter import NotificationAdapter
-from src.infrastructure.video.video_adapter import VideoAdapter
+from shotclock.infrastructure.persistence.sqlalchemy_ruleset_repository import SQLAlchemyRulesetRepository
+from shotclock.infrastructure.persistence.sqlalchemy_table_preset_repository import SQLAlchemyTablePresetRepository
+from shotclock.infrastructure.hardware.timer_adapter import TimerAdapter
+from shotclock.infrastructure.hardware.notification_adapter import NotificationAdapter
+from shotclock.infrastructure.video.video_adapter import VideoAdapter
 
 
 class DIContainer:

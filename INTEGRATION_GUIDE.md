@@ -12,15 +12,15 @@ Questa guida spiega come integrare gradualmente il codice esistente con la nuova
 
 ### Opzione 1: Co-esistenza (Minimal Changes)
 
-Il vecchio codice in `device/` continua a funzionare. Il nuovo codice in `src/` può essere usato per nuove funzionalità o refactoring progressivo.
+Il vecchio codice in `device/` continua a funzionare. Il nuovo codice in `shotclock/` può essere usato per nuove funzionalità o refactoring progressivo.
 
 ```python
 # device/__main__.py (rimane invariato)
 # Il vecchio codice continua a funzionare normalmente
 
 # Nuovo entrypoint per Clean Architecture
-# src/main.py
-from src.infrastructure.di_container import DIContainer
+# shotclock/main.py
+from shotclock.infrastructure.di_container import DIContainer
 from device.api import db, socketio
 from device.video_producer import VideoProducer
 
@@ -51,8 +51,8 @@ from dotenv import load_dotenv
 import os
 
 # Importa il DI Container
-from src.infrastructure.di_container import DIContainer
-from src.infrastructure.api.game_controller import GameController, GameActionsController
+from shotclock.infrastructure.di_container import DIContainer
+from shotclock.infrastructure.api.game_controller import GameController, GameActionsController
 
 load_dotenv()
 
@@ -108,7 +108,7 @@ class GameResource(Resource):
 ### Dopo (Clean Architecture)
 
 ```python
-# src/infrastructure/api/game_controller.py
+# shotclock/infrastructure/api/game_controller.py
 class GameController(Resource):
     def __init__(self, container: DIContainer):
         self.create_game_use_case = container.get_create_game_use_case()
@@ -267,7 +267,7 @@ class TestCreateGameUseCase(unittest.TestCase):
 
 ```python
 import unittest
-from src.infrastructure.persistence.sqlalchemy_ruleset_repository import SQLAlchemyRulesetRepository
+from shotclock.infrastructure.persistence.sqlalchemy_ruleset_repository import SQLAlchemyRulesetRepository
 
 class TestSQLAlchemyRulesetRepository(unittest.TestCase):
     def setUp(self):
@@ -343,7 +343,7 @@ class Game:
 
 **R:** No! Puoi:
 1. Mantenere il codice esistente in `device/`
-2. Usare la nuova architettura in `src/` per nuove funzionalità
+2. Usare la nuova architettura in `shotclock/` per nuove funzionalità
 3. Migrare gradualmente le funzionalità più importanti
 
 ### Q: Come testo il codice esistente che usa il database?
