@@ -77,20 +77,17 @@ def create_app():
         socketio=socketio,
     )
     
-    # Create controllers with dependency injection
-    game_controller = GameController(container)
-    game_actions_controller = GameActionsController(container, game_controller)
-    
     # Register API routes (Clean Architecture endpoints)
+    # Flask-RESTful will instantiate the resource class for each request
     api.add_resource(
-        lambda: game_controller,
+        GameController,
         "/api/v2/game",
         resource_class_kwargs={'container': container}
     )
     api.add_resource(
-        lambda: game_actions_controller,
+        GameActionsController,
         "/api/v2/game/actions",
-        resource_class_kwargs={'container': container, 'game_controller': game_controller}
+        resource_class_kwargs={'container': container}
     )
     
     # You can also register legacy endpoints for backward compatibility

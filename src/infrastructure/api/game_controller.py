@@ -6,6 +6,7 @@ from flask import request, jsonify
 from flask_restful import Resource
 from src.infrastructure.di_container import DIContainer
 from src.domain.entities.game import Game
+from src.infrastructure.api.game_manager_singleton import GameManagerSingleton
 
 
 class GameController(Resource):
@@ -26,7 +27,7 @@ class GameController(Resource):
         self.container = container
         self.create_game_use_case = container.get_create_game_use_case()
         self.manage_game_use_case = container.get_manage_game_use_case()
-        self.current_game: Game = None
+        self.game_manager = GameManagerSingleton()
     
     def post(self):
         """
@@ -58,8 +59,8 @@ class GameController(Resource):
         if not game:
             return {"error": "Failed to create game. Invalid ruleset or table preset."}, 400
         
-        # Store current game (in production, use proper session management)
-        self.current_game = game
+        # Store current game
+        self.game_manager.set_current_game(game)
         
         return {
             "message": "Game created successfully",
@@ -74,28 +75,30 @@ class GameController(Resource):
         """
         Get current game status.
         """
-        if not self.current_game:
+        game = self.game_manager.get_current_game()
+        if not game:
             return {"error": "No game in progress"}, 404
         
         return {
-            "status": self.current_game.status,
-            "player_names": self.current_game.player_names,
-            "increments": self.current_game.increments,
-            "last_remaining_time": self.current_game.last_remaining_time,
+            "status": game.status,
+            "player_names": game.player_names,
+            "increments": game.increments,
+            "last_remaining_time": game.last_remaining_time,
         }, 200
     
     def delete(self):
         """
         End the current game.
         """
-        if not self.current_game:
+        game = self.game_manager.get_current_game()
+        if not game:
             return {"error": "No game in progress"}, 404
         
-        error = self.manage_game_use_case.end_game(self.current_game)
+        error = self.manage_game_use_case.end_game(game)
         if error:
             return {"error": error}, 400
         
-        self.current_game = None
+        self.game_manager.clear_game()
         return {"message": "Game ended successfully"}, 200
 
 
@@ -104,16 +107,15 @@ class GameActionsController(Resource):
     Controller for game actions (start, pause, resume, increment).
     """
     
-    def __init__(self, container: DIContainer, game_controller: GameController):
+    def __init__(self, container: DIContainer):
         """
         Initialize the controller.
         
         Args:
             container: Dependency Injection Container
-            game_controller: Reference to GameController to access current game
         """
         self.container = container
-        self.game_controller = game_controller
+        self.game_manager = GameManagerSingleton()
         self.manage_game_use_case = container.get_manage_game_use_case()
     
     def post(self):
@@ -131,7 +133,7 @@ class GameActionsController(Resource):
         if not data or "action" not in data:
             return {"error": "Action is required"}, 400
         
-        game = self.game_controller.current_game
+        game = self.game_manager.get_current_game()
         if not game:
             return {"error": "No game in progress"}, 404
         
